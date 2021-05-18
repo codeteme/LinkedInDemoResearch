@@ -31,6 +31,8 @@ headers = getHeadersFromFirefox(testheaders)
 # print(headers)
 
 
+import requests
+
 # Copy the client ID, secret, and redirect URI in the fields below
 CLIENT_ID    = '789co3vxpoql46'
 CLIENT_SECRET = 'HPbG1NGzo0BSrsfh'

@@ -32,34 +32,16 @@ Accept-Encoding: gzip, deflate, br
 Prefer: safe
 x-restli-protocol-version: 2.0.0
 x-li-lang: en_US
-x-li-track: {"clientVersion":"2.4.652","mpVersion":"2.4.652","osName":"web","timezoneOffset":3,"timezone":"Asia/Qatar","deviceFormFactor":"DESKTOP","mpName":"campaign-manager-web","displayDensity":2,"displayWidth":3360,"displayHeight":2100}
-x-li-page-instance: urn:li:page:d_campaign_details;2qS3G82kRcio0/eFB17DtQ==
+x-li-track: {"clientVersion":"2.4.657","mpVersion":"2.4.657","osName":"web","timezoneOffset":3,"timezone":"Asia/Qatar","deviceFormFactor":"DESKTOP","mpName":"campaign-manager-web","displayDensity":2,"displayWidth":3360,"displayHeight":2100}
+x-li-page-instance: urn:li:page:d_campaign_details;3ZNx7MmlRzOXyXne65YaRA==
 csrf-token: ajax:5901664971532134280
 x-http-method-override: GET
 content-type: application/x-www-form-urlencoded
-Content-Length: 502
+Content-Length: 2410
 Origin: https://www.linkedin.com
 Connection: keep-alive
 Referer: https://www.linkedin.com/campaignmanager/accounts/507131805/campaigns/new/details?campaignGroupId=615557454
-Cookie: JSESSIONID="ajax:5901664971532134280"; bcookie="v=2&c5f27fc8-a995-4dfd-8c37-03810153ea44"; bscookie="v=1&20210504140158723c598c-f005-41c1-8b84-6421b12f6089AQFS-UeasGOrxz960bmdW19hEqvgLdJF"; _ga=GA1.2.1101044002.1620136918; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C18761%7CMCMID%7C33440669679956594540176137054812188594%7CMCAAMLH-1621515256%7C6%7CMCAAMB-1621515256%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1620917656s%7CNONE%7CvVersion%7C5.1.1%7CMCCIDH%7C-1529527004; li_rm=AQGbZvsvtq8xxAAAAXk3r43BIwOwUOJqrRMQoA-nXXBCc5Xlflp62qe6ftE4-iHYdKn0mrIeEvvlftV1T82_25ZKeJ468C0zTS02yHh9pUK42WY0_Rfzpvc6; _gcl_au=1.1.1049138754.1620136927; aam_uuid=33618448150752971410197855517193788537; g_state={"i_l":0}; li_at=AQEDATWfwXIAnTaoAAABeWiPU3YAAAF5jJvXdk4AKeMGpI8ZK9ZQujD_YFZUXx6eF2e8x16QP3CO07zo9CV0yEU9r3Znf5c4yOTZgJUzhBTrMdZKlkBSUdstL__jkb29m_QkOk9k4S9DGlbOaBGHv082; liap=true; timezone=Asia/Qatar; _guid=d8116692-cff4-4116-bbd5-37609e1b4828; li_sugr=558bab07-f0ec-415c-90b8-0d9041dd1343; AnalyticsSyncHistory=AQLXw7cjG7SmQgAAAXlkrtXKF72DkSNUm1tUHYzIjH34mHYNFCl7uwHV5keJjDisZu69K7m3CLgKBBw90eWlgw; lms_ads=AQGtG0nN-cKoIQAAAXlorZs4LuSeb6dNmmuf7PBlMipi_0xpHZAp1TJiXmnabKKkUJc73C2cG8LaL3KY7ONejDl-T-9e3Zr4; lms_analytics=AQGtG0nN-cKoIQAAAXlorZs4LuSeb6dNmmuf7PBlMipi_0xpHZAp1TJiXmnabKKkUJc73C2cG8LaL3KY7ONejDl-T-9e3Zr4; gpv_pn=learning.linkedin.com%2Fpartners; s_tslv=1620911110516; lang=v=2&lang=en-us; AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg=1; s_plt=5.53; s_pltp=learning.linkedin.com%2Fpartners; s_ppv=learning.linkedin.com%2Fpartners%2C37%2C26%2C1224%2C1%2C3; s_ips=860; s_tp=3265; s_cc=true; s_sq=%5B%5BB%5D%5D; PLAY_LANG=en; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InNlc3Npb25faWQiOiIyY2QwMjNmNy03ZGY2LTRhZjEtYjhjMC0yMDVjMTk2YTY2NjR8MTYyMDkxMDc4NSIsInJlY2VudGx5LXNlYXJjaGVkIjoiIiwicmVmZXJyYWwtdXJsIjoiaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NhbXBhaWdubWFuYWdlci9hY2NvdW50cy81MDcxMzE4MDUvY2FtcGFpZ25zL25ldy9kZXRhaWxzIiwiYWlkIjoiIiwiUk5ULWlkIjoifDAiLCJyZWNlbnRseS12aWV3ZWQiOiI0MTg5Mjl8NDEyNDM2fDcxMHwxMDA4MjZ8NjAiLCJDUFQtaWQiOiJRw4LCkDtcdTAwMDXDlUlrwqhcZsOdQ8Odw4PDkjUiLCJmbG93VHJhY2tpbmdJZCI6InFoSXovelFqUUthNVFSOHZyMHlqN2c9PSIsImV4cGVyaWVuY2UiOiJlbnRpdHkiLCJpc19uYXRpdmUiOiJmYWxzZSIsIndoaXRlbGlzdCI6IntcIkJ1c2luZXNzIFNlZ21lbnQ6U3RyYXRlZ2ljXCI6XCJmYWxzZVwifSIsInRyayI6IiJ9LCJuYmYiOjE2MjA5MTY4MTcsImlhdCI6MTYyMDkxNjgxN30.PS4XL9VNzRmAy7DkBy7DTMmrQHURD8p_slkrCpPaiU4; liveagent_oref=https://www.linkedin.com/care/embed/chat/cmtChat?useDefaultButton=false&hostApplicationName=undefined; liveagent_vc=2; liveagent_sid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; liveagent_ptid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; lidc="b=TB94:s=T:r=T:a=T:p=T:g=2686:u=5:i=1620958885:t=1620965872:v=2:sig=AQEC49lh2UwPrwiMU-GYWJUwfBjrDUDS"; SID=649c2966-7875-4785-ae85-adc8d0e09530; VID=V_2021_05_13_12_608948; _gid=GA1.2.347635451.1620910470; _gac_UA-62256447-1=1.1620910764.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; at_check=true; mbox=session#5a777e17d30d4b2a95995d02ac77f687#1620912626|PC#5a777e17d30d4b2a95995d02ac77f687.37_0#1636463112; _gcl_aw=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; _gcl_dc=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; li_gc=MTswOzE2MjA5MTExMTA7MjswMjEpcmTLSZu3fJDVPJzfL58besDb12i6qNcL87iKStnHSQ==; UserMatchHistory=AQLMLeegf2arfgAAAXlorZnx-wGXfIMzKjLKiBmki5Kf18ozXZF-2wb-n_iItevVgL33-Em_OLJq_g
-TE: TrailersHost: www.linkedin.com
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0
-Accept: */*
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate, br
-Prefer: safe
-x-restli-protocol-version: 2.0.0
-x-li-lang: en_US
-x-li-track: {"clientVersion":"2.4.652","mpVersion":"2.4.652","osName":"web","timezoneOffset":3,"timezone":"Asia/Qatar","deviceFormFactor":"DESKTOP","mpName":"campaign-manager-web","displayDensity":2,"displayWidth":3360,"displayHeight":2100}
-x-li-page-instance: urn:li:page:d_campaign_details;2qS3G82kRcio0/eFB17DtQ==
-csrf-token: ajax:5901664971532134280
-x-http-method-override: GET
-content-type: application/x-www-form-urlencoded
-Content-Length: 502
-Origin: https://www.linkedin.com
-Connection: keep-alive
-Referer: https://www.linkedin.com/campaignmanager/accounts/507131805/campaigns/new/details?campaignGroupId=615557454
-Cookie: JSESSIONID="ajax:5901664971532134280"; bcookie="v=2&c5f27fc8-a995-4dfd-8c37-03810153ea44"; bscookie="v=1&20210504140158723c598c-f005-41c1-8b84-6421b12f6089AQFS-UeasGOrxz960bmdW19hEqvgLdJF"; _ga=GA1.2.1101044002.1620136918; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C18761%7CMCMID%7C33440669679956594540176137054812188594%7CMCAAMLH-1621515256%7C6%7CMCAAMB-1621515256%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1620917656s%7CNONE%7CvVersion%7C5.1.1%7CMCCIDH%7C-1529527004; li_rm=AQGbZvsvtq8xxAAAAXk3r43BIwOwUOJqrRMQoA-nXXBCc5Xlflp62qe6ftE4-iHYdKn0mrIeEvvlftV1T82_25ZKeJ468C0zTS02yHh9pUK42WY0_Rfzpvc6; _gcl_au=1.1.1049138754.1620136927; aam_uuid=33618448150752971410197855517193788537; g_state={"i_l":0}; li_at=AQEDATWfwXIAnTaoAAABeWiPU3YAAAF5jJvXdk4AKeMGpI8ZK9ZQujD_YFZUXx6eF2e8x16QP3CO07zo9CV0yEU9r3Znf5c4yOTZgJUzhBTrMdZKlkBSUdstL__jkb29m_QkOk9k4S9DGlbOaBGHv082; liap=true; timezone=Asia/Qatar; _guid=d8116692-cff4-4116-bbd5-37609e1b4828; li_sugr=558bab07-f0ec-415c-90b8-0d9041dd1343; AnalyticsSyncHistory=AQLXw7cjG7SmQgAAAXlkrtXKF72DkSNUm1tUHYzIjH34mHYNFCl7uwHV5keJjDisZu69K7m3CLgKBBw90eWlgw; lms_ads=AQGtG0nN-cKoIQAAAXlorZs4LuSeb6dNmmuf7PBlMipi_0xpHZAp1TJiXmnabKKkUJc73C2cG8LaL3KY7ONejDl-T-9e3Zr4; lms_analytics=AQGtG0nN-cKoIQAAAXlorZs4LuSeb6dNmmuf7PBlMipi_0xpHZAp1TJiXmnabKKkUJc73C2cG8LaL3KY7ONejDl-T-9e3Zr4; gpv_pn=learning.linkedin.com%2Fpartners; s_tslv=1620911110516; lang=v=2&lang=en-us; AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg=1; s_plt=5.53; s_pltp=learning.linkedin.com%2Fpartners; s_ppv=learning.linkedin.com%2Fpartners%2C37%2C26%2C1224%2C1%2C3; s_ips=860; s_tp=3265; s_cc=true; s_sq=%5B%5BB%5D%5D; PLAY_LANG=en; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InNlc3Npb25faWQiOiIyY2QwMjNmNy03ZGY2LTRhZjEtYjhjMC0yMDVjMTk2YTY2NjR8MTYyMDkxMDc4NSIsInJlY2VudGx5LXNlYXJjaGVkIjoiIiwicmVmZXJyYWwtdXJsIjoiaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NhbXBhaWdubWFuYWdlci9hY2NvdW50cy81MDcxMzE4MDUvY2FtcGFpZ25zL25ldy9kZXRhaWxzIiwiYWlkIjoiIiwiUk5ULWlkIjoifDAiLCJyZWNlbnRseS12aWV3ZWQiOiI0MTg5Mjl8NDEyNDM2fDcxMHwxMDA4MjZ8NjAiLCJDUFQtaWQiOiJRw4LCkDtcdTAwMDXDlUlrwqhcZsOdQ8Odw4PDkjUiLCJmbG93VHJhY2tpbmdJZCI6InFoSXovelFqUUthNVFSOHZyMHlqN2c9PSIsImV4cGVyaWVuY2UiOiJlbnRpdHkiLCJpc19uYXRpdmUiOiJmYWxzZSIsIndoaXRlbGlzdCI6IntcIkJ1c2luZXNzIFNlZ21lbnQ6U3RyYXRlZ2ljXCI6XCJmYWxzZVwifSIsInRyayI6IiJ9LCJuYmYiOjE2MjA5MTY4MTcsImlhdCI6MTYyMDkxNjgxN30.PS4XL9VNzRmAy7DkBy7DTMmrQHURD8p_slkrCpPaiU4; liveagent_oref=https://www.linkedin.com/care/embed/chat/cmtChat?useDefaultButton=false&hostApplicationName=undefined; liveagent_vc=2; liveagent_sid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; liveagent_ptid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; lidc="b=TB94:s=T:r=T:a=T:p=T:g=2686:u=5:i=1620958885:t=1620965872:v=2:sig=AQEC49lh2UwPrwiMU-GYWJUwfBjrDUDS"; SID=649c2966-7875-4785-ae85-adc8d0e09530; VID=V_2021_05_13_12_608948; _gid=GA1.2.347635451.1620910470; _gac_UA-62256447-1=1.1620910764.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; at_check=true; mbox=session#5a777e17d30d4b2a95995d02ac77f687#1620912626|PC#5a777e17d30d4b2a95995d02ac77f687.37_0#1636463112; _gcl_aw=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; _gcl_dc=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; li_gc=MTswOzE2MjA5MTExMTA7MjswMjEpcmTLSZu3fJDVPJzfL58besDb12i6qNcL87iKStnHSQ==; UserMatchHistory=AQLMLeegf2arfgAAAXlorZnx-wGXfIMzKjLKiBmki5Kf18ozXZF-2wb-n_iItevVgL33-Em_OLJq_g
+Cookie: JSESSIONID="ajax:5901664971532134280"; bcookie="v=2&c5f27fc8-a995-4dfd-8c37-03810153ea44"; bscookie="v=1&20210504140158723c598c-f005-41c1-8b84-6421b12f6089AQFS-UeasGOrxz960bmdW19hEqvgLdJF"; _ga=GA1.2.1101044002.1620136918; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C18761%7CMCMID%7C33440669679956594540176137054812188594%7CMCAAMLH-1621515256%7C6%7CMCAAMB-1621515256%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1620917656s%7CNONE%7CvVersion%7C5.1.1%7CMCCIDH%7C-1529527004; li_rm=AQGbZvsvtq8xxAAAAXk3r43BIwOwUOJqrRMQoA-nXXBCc5Xlflp62qe6ftE4-iHYdKn0mrIeEvvlftV1T82_25ZKeJ468C0zTS02yHh9pUK42WY0_Rfzpvc6; _gcl_au=1.1.1049138754.1620136927; aam_uuid=33618448150752971410197855517193788537; g_state={"i_l":0}; li_at=AQEDATWfwXIBJ1RGAAABeWjIvSEAAAF5jNVBIU4Asisvz-mwh0pjdaIM5XyxDIESZSSmIUNpDJ2WY9ESJAkoupo3P-eokv38g5gXRs3D7OUDDsg5a6LhfRZqs7i-YzaNH4z7OGeHlW6qEL-MIPFb7Xzu; liap=true; timezone=Asia/Qatar; _guid=d8116692-cff4-4116-bbd5-37609e1b4828; li_sugr=558bab07-f0ec-415c-90b8-0d9041dd1343; AnalyticsSyncHistory=AQITn3h8GvuvsQAAAXl1sEkZI7OnsFN2tG-AmigkHJjxkqYbaKtBk0q6H0mKIhvvW67Tk_n_pjm30Bxr44J0GA; lms_ads=AQERYsZwHQLQyQAAAXl1sEoj2z1YYHdF8keOI7fNAy57wn-Xy-IXIzhuHQageAAkZQuWe-9eUwDe94Zlc_XklbEJLB3Hd44U; lms_analytics=AQERYsZwHQLQyQAAAXl1sEoj2z1YYHdF8keOI7fNAy57wn-Xy-IXIzhuHQageAAkZQuWe-9eUwDe94Zlc_XklbEJLB3Hd44U; gpv_pn=www.linkedin.com%2Fcampaignmanager%2Faccounts%2F507131805%2Fcampaigns%2Fnew%2Fdetails; s_tslv=1620960622654; liveagent_oref=https://www.linkedin.com/care/embed/chat/cmtChat?useDefaultButton=false&hostApplicationName=undefined; liveagent_vc=2; liveagent_ptid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; VID=V_2021_05_13_12_608948; _gac_UA-62256447-1=1.1620910764.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; mbox=session#5a777e17d30d4b2a95995d02ac77f687#1620912626|PC#5a777e17d30d4b2a95995d02ac77f687.37_0#1636463112; _gcl_aw=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; _gcl_dc=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; li_gc=MTswOzE2MjA5MTExMTA7MjswMjEpcmTLSZu3fJDVPJzfL58besDb12i6qNcL87iKStnHSQ==; lang=v=2&lang=en-us; lidc="b=TB94:s=T:r=T:a=T:p=T:g=2686:u=5:i=1621177160:t=1621262794:v=2:sig=AQFWzSDsygSrugDqc3umYHTRN5WPHkJX"; UserMatchHistory=AQJlEKavHAj0_AAAAXl1sEkYChWZl9KnnRGjvaSkftt78hobqQezN3eUfOu86nkm4UOoUxXY55Jm-w
 TE: Trailers
 """
 def getHeadersFromFirefox(headers):
@@ -120,6 +102,79 @@ profilelanguagefacet = {"urn": "urn:li:adTargetingFacet:interfaceLocales", "name
 profilelanguagesegments = [
     {"urn": "urn:li:locale:en_US","name": "English","facetUrn": "urn:li:adTargetingFacet:interfaceLocales"} 
     ]
+memberbehaviorfacet = {"urn": "urn:li:adTargetingFacet:memberBehaviors", "name": "Member Traits"}
+memberbehaviorsegments = [ 
+    {
+        "urn": "urn:li:memberBehavior:22", 
+        "name": "Open to Relocation (Domestic)",  # TODO: Check the space here
+        "facetUrn": "urn:li:adTargetingFacet:memberBehaviors", 
+        "ancestorUrns" : ["urn:li:memberBehavior:21"]
+    }, 
+    {
+        "urn": "urn:li:memberBehavior:23", 
+        "name": "Open to Relocation (International)", # TODO: Check the space here 
+        "facetUrn": "urn:li:adTargetingFacet:memberBehaviors", 
+        "ancestorUrns" : ["urn:li:memberBehavior:21"]
+    }
+]
+
+
+# TODO: Add Standardized Job Seniorities
+jobseniorityfacet = {"urn" : "urn:li:adTargetingFacet:seniorities", "name": "Job Seniorities"}
+jobsenioritysegments = [
+    {
+        "urn": "urn:li:seniority:1", 
+        "name" : "Unpaid", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",
+    },  
+    {
+        "urn": "urn:li:seniority:2",
+        "name" : "Training", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",
+    }, 
+    {
+        "urn": "urn:li:seniority:3", 
+        "name" : "Entry", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",
+    },
+    {
+        "urn": "urn:li:seniority:4", 
+        "name" : "Senior", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",
+    }, 
+    {
+        "urn": "urn:li:seniority:5", 
+        "name" : "Manager", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",    
+    },
+    {
+        "urn": "urn:li:seniority:6", 
+        "name" : "Director", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",  
+    }, 
+    {
+        "urn": "urn:li:seniority:7", 
+        "name" : "VP", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",  
+    },
+    {
+        "urn": "urn:li:seniority:8", 
+        "name" : "CXO", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",  
+    }, 
+    {
+        "urn": "urn:li:seniority:9", 
+        "name" : "Partner", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",  
+    }, 
+    {
+        "urn": "urn:li:seniority:10", 
+        "name" : "Owner", 
+        "facetUrn": "urn:li:adTargetingFacet:seniorities",  
+    }
+]
+
+
 
 locationfacet = {"urn": "urn:li:adTargetingFacet:profileLocations","name": "Locations"}
 locationsegments = [
@@ -152,13 +207,46 @@ locationsegments = [
         "name": "Qatar",
         "facetUrn": "urn:li:adTargetingFacet:locations",
     }, 
-    {
+    { 
         "urn": "urn:li:geo:100459316", 
         "name": "Saudi Arabia",
         "facetUrn": "urn:li:adTargetingFacet:locations",
         "ancestorUrns": {
             "urn:li:geo:102393603"
         } 
+    },
+    {
+        "urn": "urn:li:geo:103619019",
+        "name": "Oman",
+        "facetUrn": "urn:li:adTargetingFacet:locations",
+        "ancestorUrns": {
+            "urn:li:geo:102393603"
+        }
+    },
+    {
+        "urn": "urn:li:geo:103239229",
+        "name": "Kuwait",
+        "facetUrn": "urn:li:adTargetingFacet:locations",
+        "ancestorUrns": {
+            "urn:li:geo:102393603"
+        }
+    },
+    {
+        "urn": "urn:li:geo:104305776",
+        "name": "United Arab Emirates",
+        "facetUrn": "urn:li:adTargetingFacet:locations",
+        "ancestorUrns": {
+            "urn:li:geo:102393603"
+        }
+    },
+
+    {
+        "urn": "urn:li:geo:100425729",
+        "name": "Bahrain",
+        "facetUrn": "urn:li:adTargetingFacet:locations",
+        "ancestorUrns": {
+        "urn:li:geo:102393603"
+        }
     }
 ]
 agerangefacet = {"urn": "urn:li:adTargetingFacet:ageRanges","name": "Member Age"}
@@ -171,15 +259,12 @@ genderfacet = {"urn": "urn:li:adTargetingFacet:genders","name": "Member Gender"}
 gendersegments = [ {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
                    {"urn": "urn:li:gender:MALE","name": "male","facetUrn": "urn:li:adTargetingFacet:genders"}]
 
-# TODO: Add Standardized Job Seniorities
-# jobseniorityfacet = {"urn" : "urn:li:seniority", "name": "Job Seniority"}
-# jobsenioritysegments = ["urn": "urn:li:seniority:"]     
-
 # %%
 # create the request-data from a list of single criteria
 # up until now, this only allows the chaining of criteria via "AND"
 
-def createRequestDataForAudienceCounts(locations, genders,ageranges, profilelanguages,degrees = []):
+
+def createRequestDataForAudienceCounts(locations, genders,ageranges, profilelanguages, memberbehaviors, jobseniorities,degrees = []):
 
     tc= """
 q=targetingCriteria&cmTargetingCriteria=
@@ -219,6 +304,46 @@ q=targetingCriteria&cmTargetingCriteria=
         tc += ",facetUrn:" + encodeInner(profilelanguage['facetUrn']) 
         tc += ")"
         if i<len(profilelanguages)-1:
+            tc +=","
+    tc += """   
+      )
+     )
+    )
+   ),
+   (or:List
+    (
+     (facet:
+      (urn:urn:li:adTargetingFacet:interfaceLocales,name:member Traits
+      ),segments:List
+      ( """
+    for i,memberbehavior in enumerate(memberbehaviors): # TODO: Add function parameter
+        # print("profilelanguage:",profilelanguage, profilelanguages)
+        #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
+        tc += "(urn:" + encodeInner(profilelanguage['urn']) 
+        tc += ",name:" + encodeInner(profilelanguage["name"])
+        tc += ",facetUrn:" + encodeInner(profilelanguage['facetUrn']) 
+        tc += ")"
+        if i<len(memberbehaviors)-1:
+            tc +=","
+    tc += """   
+      )
+     )
+    )
+   ),
+   (or:List
+    (
+     (facet:
+      (urn:urn:li:adTargetingFacet:interfaceLocales,name:Job Seniorities
+      ),segments:List
+      ( """
+    for i,jobseniority in enumerate(jobseniorities): # TODO: Add function parameter
+        # print("profilelanguage:",profilelanguage, profilelanguages)
+        #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
+        tc += "(urn:" + encodeInner(profilelanguage['urn']) 
+        tc += ",name:" + encodeInner(profilelanguage["name"])
+        tc += ",facetUrn:" + encodeInner(profilelanguage['facetUrn']) 
+        tc += ")"
+        if i<len(jobseniorities)-1:
             tc +=","
     tc += """   
       )
@@ -276,111 +401,24 @@ q=targetingCriteria&cmTargetingCriteria=
     tc=tc.replace(' ','')
     return tc
 
-    # locationsegments = ['France', 'Italy', 'United States', 'Qatar']
-    # genders = ['Female', 'Male']
-    # ageranges = ['18 - 24', '35 - 34', '35 - 54', '55+']
-    # profilelanguages = ['en_US']
-    # degrees = []
+# locationsegments = ['France', 'Italy', 'United States', 'Qatar', Saudi Arabia, Oman, Kuait, United Arab Emirates, Bahrain]
+# genders = ['Female', 'Male']
+# ageranges = ['18 - 24', '35 - 34', '35 - 54', '55+']
+# profilelanguages = ['en_US']
+# memberbehaviors = ['Open to Relocation (Domestic)', 'Open to Relocation (International)']
+# jobseniorities = ['Unpaid', 'Training', 'Entry', 'Senior', 'Manager', 'Director', 'VP', 'CXO', 'Owner', 'Partner']
+# degrees = []
 requestCriteria = createRequestDataForAudienceCounts(
-    locations = locationsegments[4:5],
+    locations = locationsegments[3:4],
     genders = gendersegments[0:2],
-    ageranges = agerangesegments[1:2],
+    ageranges = agerangesegments[0:1],
     profilelanguages = profilelanguagesegments[0:1],
+    memberbehaviors = memberbehaviorsegments[0:2],
+    jobseniorities = jobsenioritysegments[0:1],
     degrees = [])
-print(requestCriteria)
+# print(requestCriteria)
 # q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List()))&withValidation=true
 
-# %%
-
-# create the request-data from a list of single criteria
-# up until now, this only allows the chaining of criteria via "AND"
-
-# def createRequestDataForAudienceCounts(locations, genders,ageranges, profilelanguages,degrees = []):
-
-#     tc= """
-# q=targetingCriteria&cmTargetingCriteria=
-# (include:
-#  (and:List
-#   (
-#    (or:List
-#     (
-#      (facet:
-#       (urn:urn:li:adTargetingFacet:locations,name:Locations
-#       ),segments:List
-#       ( """
-#     for i,location in enumerate(locations):
-#         #(urn:urn:li:geo:101282230,name:Germany,facetUrn:urn:li:adTargetingFacet:locations)
-#         tc += "(urn:" + encodeInner(location['urn']) 
-#         tc += ",name:" + encodeInner(location["name"])
-#         tc += ",facetUrn:" + encodeInner(location['facetUrn']) 
-#         tc += ")"
-#         if i<len(locations)-1:
-#             tc +=","
-#     tc += """   
-#       )
-#      )
-#     ) 
-#    ),
-#    (or:List
-#     (
-#      (facet:
-#       (urn:urn:li:adTargetingFacet:interfaceLocales,name:Profilelanguage
-#       ),segments:List
-#       ( """
-#     for i,profilelanguage in enumerate(profilelanguages):
-#         # print("profilelanguage:",profilelanguage, profilelanguages)
-#         #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
-#         tc += "(urn:" + encodeInner(profilelanguage['urn']) 
-#         tc += ",name:" + encodeInner(profilelanguage["name"])
-#         tc += ",facetUrn:" + encodeInner(profilelanguage['facetUrn']) 
-#         tc += ")"
-#         if i<len(genders)-1:
-#             tc +=","
-#     tc += """   
-#       )
-#      )
-#     )
-#    ),
-#    (or:List
-#     (
-#      (facet:
-#       (urn:urn:li:adTargetingFacet:genders,name:Member Gender
-#       ),segments:List
-#       ( """
-#     for i,gender in enumerate(genders):
-#         #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
-#         tc += "(urn:" + encodeInner(gender['urn']) 
-#         tc += ",name:" + encodeInner(gender["name"])
-#         tc += ",facetUrn:" + encodeInner(gender['facetUrn']) 
-#         tc += ")"
-#         if i<len(genders)-1:
-#             tc +=","
-#     tc += """   
-#       )
-#      )
-#     )
-#    )
-#   )
-#  ),exclude:
-#  (or:List
-#   (
-#   )
-#  )
-# )&withValidation=true
-
-# """
-    
-#     tc=linkedinEncodeURL(tc)
-#     tc=tc.replace(' ','')
-#     return tc
-
-# requestCriteria = createRequestDataForAudienceCounts(
-#     locations = locationsegments[0:3],
-#     genders = gendersegments[0:1],
-#     ageranges = [agerangesegments[0]],
-#     profilelanguages = profilelanguagesegments[0:1],
-#     degrees = [])
-# # print(requestCriteria)
 
 #%% 
 response = requests.post(
@@ -390,9 +428,6 @@ response = requests.post(
 )
 response.content 
 print(response.text)
-
-
-
 
 
 # %%
