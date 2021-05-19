@@ -1,0 +1,45 @@
+# Temporary company industries script
+
+industryfacet = {"urn": "urn:li:adTargetingFacet:industries", "name": "Company Industries"}
+industrysegments = [
+    {
+        "urn": "urn:li:adTargetingFacet:industry:118", 
+        "name" : "Computer & Network Security",
+        "facetUrn": "urn:li:adTargetingFacet:industries"
+    },
+    {
+        "urn": "urn:li:adTargetingFacet:industry:4", 
+        "name" : "Computer Software",
+        "facetUrn": "urn:li:adTargetingFacet:industries"
+    },
+    {
+        "urn": "urn:li:adTargetingFacet:industry:6", 
+        "name" : "Internet",
+        "facetUrn": "urn:li:adTargetingFacet:industries"
+    },
+    {
+        "urn": "urn:li:adTargetingFacet:industry:96", 
+        "name" : "Information Technology & Services",
+        "facetUrn": "urn:li:adTargetingFacet:industries"
+    }
+]
+
+
+   (or:List
+    (
+     (facet:
+      (urn:urn:li:adTargetingFacet:industries,name: Company Industries
+      ),segments:List
+      ( """
+    for i,industry in enumerate(industries):
+        tc += "(urn:" + encodeInner(agerange['urn']) 
+        tc += ",name:" + encodeInner(agerange["name"])
+        tc += ",facetUrn:" + encodeInner(agerange['facetUrn']) 
+        tc += ")"
+        if i<len(industries)-1:
+            tc +=","
+    tc += """   
+      )
+     )
+    )
+   ),
