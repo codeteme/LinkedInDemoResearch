@@ -157,7 +157,7 @@ industrysegments = [ {"urn": "urn:li:adTargetingFacet:industry:118", "name": "Co
 # up until now, this only allows the chaining of criteria via "AND"
 
 
-def createRequestDataForAudienceCounts(locations, genders,ageranges, profilelanguages, memberbehaviors, degrees = []):
+def createRequestDataForAudienceCounts(locations, genders,ageranges, profilelanguages, memberbehaviors, jobseniorities, industries, degrees = []):
 
     tc= """
 q=targetingCriteria&cmTargetingCriteria=
@@ -222,7 +222,27 @@ q=targetingCriteria&cmTargetingCriteria=
       )
      )
     )
-   )
+   ),
+   (or:List
+    (
+     (facet:
+      (urn:urn:li:adTargetingFacet:interfaceLocales,name:Job Seniorities
+      ),segments:List
+      ( """
+    for i,jobseniority in enumerate(jobseniorities): # TODO: Add function parameter
+        # print("profilelanguage:",profilelanguage, profilelanguages)
+        #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
+        tc += "(urn:" + encodeInner(profilelanguage['urn'])
+        tc += ",name:" + encodeInner(profilelanguage["name"])
+        tc += ",facetUrn:" + encodeInner(profilelanguage['facetUrn'])
+        tc += ")"
+        if i<len(jobseniorities)-1:
+            tc +=","
+    tc += """
+      )
+     )
+    )
+   ),
    (or:List
     (
      (facet:
@@ -237,6 +257,24 @@ q=targetingCriteria&cmTargetingCriteria=
         if i<len(ageranges)-1:
             tc +=","
     tc += """
+      )
+     )
+    )
+   ),
+    (or:List
+    (
+     (facet:
+      (urn:urn:li:adTargetingFacet:industries,name: Company Industries
+      ),segments:List
+      ( """
+    for i,industry in enumerate(industries):
+        tc += "(urn:" + encodeInner(agerange['urn']) 
+        tc += ",name:" + encodeInner(agerange["name"])
+        tc += ",facetUrn:" + encodeInner(agerange['facetUrn']) 
+        tc += ")"
+        if i<len(industries)-1:
+            tc +=","
+    tc += """   
       )
      )
     )
@@ -288,10 +326,10 @@ requestCriteria = createRequestDataForAudienceCounts(
     ageranges = agerangesegments[0:4],
     profilelanguages = profilelanguagesegments[0:1],
     memberbehaviors = memberbehaviorsegments[0:2],
-    # jobseniorities = jobsenioritysegments[3:8],
-    # industries = industrysegments[0:4],
+    jobseniorities = jobsenioritysegments[3:9],
+    industries = industrysegments[0:3],
     degrees = [])
-print(requestCriteria)
+# print(requestCriteria)
 # q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List()))&withValidation=true
 
 
