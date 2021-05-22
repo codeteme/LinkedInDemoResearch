@@ -1,0 +1,114 @@
+Simplest request
+
+(
+    include:
+        (and:List
+            (
+                (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations)))))
+            )
+        ),
+    exclude:(or:List())
+)
+
+Simple OR request : Qatar + (Female OR Open to Education)
+(
+    include:
+        (and:List
+            (
+                (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations))))),
+                (or:List
+                    (
+                        (facet:(urn:urn:li:adTargetingFacet:genders,name:Member Gender),segments:List((urn:urn:li:gender:FEMALE,name:Female,facetUrn:urn:li:adTargetingFacet:genders))),
+                        (facet:(urn:urn:li:adTargetingFacet:memberBehaviors,name:Member Traits),segments:List((urn:urn:li:memberBehavior:13,name:Open to Education,facetUrn:urn:li:adTargetingFacet:memberBehaviors)))
+                    )
+                )
+            )
+        ),
+    exclude:(or:List())
+)
+
+Simple OR request : Qatar + (Female + 18 to 24)
+
+(
+    include:
+    (and:List
+        (
+            (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+            (or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations))))),
+            (or:List
+                (
+                    (facet:(urn:urn:li:adTargetingFacet:genders,name:Member Gender),segments:List((urn:urn:li:gender:FEMALE,name:Female,facetUrn:urn:li:adTargetingFacet:genders))),
+                    (facet:(urn:urn:li:adTargetingFacet:ageRanges,name:Member Age),segments:List((urn:urn:li:ageRange:(18,24),name:18 to 24,facetUrn:urn:li:adTargetingFacet:ageRanges)))
+                )
+            )
+        )
+    ),
+        exclude:(or:List())
+)
+
+Simple Qatar or Saudi Arabia
+(
+    include:
+        (and:List
+            (
+                (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+                (or:List
+                    (
+                        (facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations),(urn:urn:li:geo:100459316,name:Saudi Arabia,facetUrn:urn:li:adTargetingFacet:locations,ancestorUrns:List(urn:li:geo:102393603))))
+                    )
+                )
+            )
+        ),
+        exclude:(or:List())
+)
+
+{ "urn": "urn:li:geo:104170880", "name": "Qatar","facetUrn": "urn:li:adTargetingFacet:locations"}, 
+{ "urn": "urn:li:geo:100459316", "name": "Saudi Arabia", "facetUrn": "urn:li:adTargetingFacet:locations",
+    "ancestorUrns": {
+        "urn:li:geo:102393603"
+    } 
+}
+
+Qatar or Saudi AND Female or Male AND 18 t0 24 or 25 to 34
+(
+    include:
+        (
+            and:List
+            (
+                (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations),(urn:urn:li:geo:100459316,name:Saudi Arabia,facetUrn:urn:li:adTargetingFacet:locations,ancestorUrns:List(urn:li:geo:102393603)))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:genders,name:Member Gender),segments:List((urn:urn:li:gender:FEMALE,name:Female,facetUrn:urn:li:adTargetingFacet:genders),(urn:urn:li:gender:MALE,name:Male,facetUrn:urn:li:adTargetingFacet:genders))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:ageRanges,name:Member Age),segments:List((urn:urn:li:ageRange:(18,24),name:18 to 24,facetUrn:urn:li:adTargetingFacet:ageRanges),(urn:urn:li:ageRange:(25,34),name:25 to 34,facetUrn:urn:li:adTargetingFacet:ageRanges)))))
+            )
+        ),
+        exclude:(or:List())
+)
+
+Qatar AND Female or Male OR 18 t0 25 or 25 t0 34
+
+(
+    include:(
+        and:List(
+                (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+                (or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:104170880,name:Qatar,facetUrn:urn:li:adTargetingFacet:locations))))),
+                (or:List(
+                        (facet:(urn:urn:li:adTargetingFacet:genders,name:Member Gender),segments:List((urn:urn:li:gender:FEMALE,name:Female,facetUrn:urn:li:adTargetingFacet:genders),(urn:urn:li:gender:MALE,name:Male,facetUrn:urn:li:adTargetingFacet:genders))),
+                        (facet:(urn:urn:li:adTargetingFacet:ageRanges,name:Member Age),segments:List((urn:urn:li:ageRange:(18,24),name:18 to 24,facetUrn:urn:li:adTargetingFacet:ageRanges),(urn:urn:li:ageRange:(25,34),name:25 to 34,facetUrn:urn:li:adTargetingFacet:ageRanges)))
+                    )
+                )
+            )
+    )
+    ,exclude:(or:List())
+)
+
+q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders),(urn:urn%3Ali%3Agender%3AMALE,name:Male,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List()))
+q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders),(urn:urn%3Ali%3Agender%3AMALE,name:Male,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List()))&withValidation=true
+
+q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders),(urn:urn%3Ali%3Agender%3AMALE,name:Male,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aseniorities,name:Job%20Seniorities),segments:List((urn:urn%3Ali%3Aseniority%3A1,name:Unpaid,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A2,name:Training,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A3,name:Entry,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities))))))),exclude:(or:List()))
+q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders),(urn:urn%3Ali%3Agender%3AMALE,name:Male,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aseniorities,name:Job%20Seniorities),segments:List((urn:urn%3Ali%3Aseniority%3A1,name:Unpaid,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A2,name:Training,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A3,name:Entry,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities))))))),exclude:(or:List()))&withValidation=true
+
+Qatar AND (Female OR (18 t0 24 OR 25 to 34))  NOT (Unpaid OR Traning OR Entry)
+(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aseniorities,name:Job%20Seniorities),segments:List((urn:urn%3Ali%3Aseniority%3A1,name:Unpaid,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A2,name:Training,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A3,name:Entry,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities))))))
+(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A104170880,name:Qatar,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))),(facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aseniorities,name:Job%20Seniorities),segments:List((urn:urn%3Ali%3Aseniority%3A1,name:Unpaid,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A2,name:Training,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A3,name:Entry,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities))))))&withValidation=true
