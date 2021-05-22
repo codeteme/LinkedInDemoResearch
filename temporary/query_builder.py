@@ -1,14 +1,7 @@
 ### Checklist 
 # Add %20 to name 
 
-from authentication import *
-
-"""
-A regular expression (or RE) specifies a set of strings that matches it; 
-the functions in this module let you check if a particular string matches a given regular expression 
-(or if a given regular expression matches a particular string, 
-which comes down to the same thing).
-"""
+# from authentication import *
 
 import re
 def linkedinEncodeURL(strout):
@@ -63,16 +56,25 @@ def location_builder(locations):
     return conc
 
 locationfacet = {"urn": "urn:li:adTargetingFacet:profileLocations","name": "Locations"}
-locationsegments = [
-    {"urn": "urn:li:geo:104170880", "name": "Qatar","facetUrn": "urn:li:adTargetingFacet:locations"}, 
-    {"urn": "urn:li:geo:100459316", "name": "Saudi Arabia", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"} },
-    {"urn": "urn:li:geo:103619019", "name": "Oman", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
-    {"urn": "urn:li:geo:103239229", "name": "Kuwait", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
-    {"urn": "urn:li:geo:104305776", "name": "United Arab Emirates", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
-    {"urn": "urn:li:geo:100425729", "name": "Bahrain", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}}
-]
+# locationsegments = [
+#     {"urn": "urn:li:geo:104170880", "name": "Qatar","facetUrn": "urn:li:adTargetingFacet:locations"}, 
+#     {"urn": "urn:li:geo:100459316", "name": "Saudi Arabia", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"} },
+#     {"urn": "urn:li:geo:103619019", "name": "Oman", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
+#     {"urn": "urn:li:geo:103239229", "name": "Kuwait", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
+#     {"urn": "urn:li:geo:104305776", "name": "United Arab Emirates", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
+#     {"urn": "urn:li:geo:100425729", "name": "Bahrain", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}}
+# ]
 
-answer = location_builder(locationsegments[0:2])
+locationsegments = {
+    "Qatar": {"urn": "urn:li:geo:104170880", "name": "Qatar","facetUrn": "urn:li:adTargetingFacet:locations"}, 
+    "Saudi Arabia": {"urn": "urn:li:geo:100459316", "name": "Saudi Arabia", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"} },
+    "Oman": {"urn": "urn:li:geo:103619019", "name": "Oman", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}},
+    "Kuwait": {"urn": "urn:li:geo:103239229", "name": "Kuwait", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}}, 
+    "UAE": {"urn": "urn:li:geo:104305776", "name": "United Arab Emirates", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}} ,
+    "Bahrain":  {"urn": "urn:li:geo:100425729", "name": "Bahrain", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"}}
+}
+
+# answer = location_builder(locationsegments[0:2])
 # print(answer)
 
 # def gender_builder(genders): 
@@ -138,19 +140,18 @@ def jobseniority_builder(jobseniorities):
     return conc
 
 jobseniorityfacet = {"urn" : "urn:li:adTargetingFacet:seniorities", "name": "Job Seniorities"}
-jobsenioritysegments = [{ "urn": "urn:li:seniority:1", "name" : "Unpaid", "facetUrn": "urn:li:adTargetingFacet:seniorities"},  
-                        { "urn": "urn:li:seniority:2", "name" : "Training",  "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        { "urn": "urn:li:seniority:3", "name" : "Entry", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        { "urn": "urn:li:seniority:4", "name" : "Senior", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        { "urn": "urn:li:seniority:5", "name" : "Manager", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        { "urn": "urn:li:seniority:6", "name" : "Director", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        { "urn": "urn:li:seniority:7", "name" : "VP", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        { "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }]
+jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpaid", "facetUrn": "urn:li:adTargetingFacet:seniorities"},  
+                        "Training" : { "urn": "urn:li:seniority:2", "name" : "Training",  "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "Entry" : { "urn": "urn:li:seniority:3", "name" : "Entry", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        "Senior" : { "urn": "urn:li:seniority:4", "name" : "Senior", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "Manager" : { "urn": "urn:li:seniority:5", "name" : "Manager", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        "Director" : { "urn": "urn:li:seniority:6", "name" : "Director", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "VP" : { "urn": "urn:li:seniority:7", "name" : "VP", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        "CXO" : { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "Partner" : { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }}
 
-def exclude():
-    return "exclude:(or:List())"
+
     
 def OR_builder(args):
     conc = "(or:List("
@@ -175,15 +176,26 @@ def NOT_builder(args):
     conc += OR_builder(args)
     return conc
 
-# arg_list = [locale_builder(), 
-            # location_builder(locationsegments[1:5]), 
-            # OR_builder([gender_builder(gendersegments[0:1]), age_builder(agerangesegments[0:2])])]
+# Specify countries
+selected_countries = ['Qatar', 'UAE', 'Oman']
+country_list = []
+for country in selected_countries:
+    country_info = locationsegments.get(country)
+    country_list.append(country_info)
+
+# Select Job Seniorities
+selected_seniorities = ["Unpaid", "Training", "Entry", "Senior", "Manager"]
+seniority_list = []
+for seniority in selected_seniorities:
+    seniority_info = jobsenioritysegments.get(seniority)
+    seniority_list.append(seniority_info)
 
 arg_list = [locale_builder(), 
-            location_builder(locationsegments[0:1])]
+            location_builder(country_list),
+            gender_builder(gendersegments[0:1])]
 
-# exclude_list = []
-exclude_list = [OR_builder([jobseniority_builder(jobsenioritysegments[0:3])])]
+exclude_list = []
+# exclude_list = [OR_builder([jobseniority_builder(seniority_list)])]
 
 def include_all():
     output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"
