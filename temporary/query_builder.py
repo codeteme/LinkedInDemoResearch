@@ -1,8 +1,6 @@
 ### Checklist 
 # Add %20 to name 
 
-# from authentication import *
-
 import re
 def linkedinEncodeURL(strout):
     #strout = strout.replace(' ', '%20')
@@ -96,10 +94,10 @@ def gender_builder(genders):
     return conc
 
 genderfacet = {"urn": "urn:li:adTargetingFacet:genders","name": "Member Gender"}
-gendersegments = [ {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
-                   {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"}]
-
-answer = gender_builder(gendersegments[0:2])
+# gendersegments = [ {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
+#                    {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"}]
+gendersegments = {"Female": {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
+                  "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"}}
 
 
 # def age_builder(ageranges): 
@@ -120,12 +118,15 @@ def age_builder(ageranges):
     return conc
 
 agerangefacet = {"urn": "urn:li:adTargetingFacet:ageRanges","name": "Member Age"}
-agerangesegments = [{"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
-                    {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
-                    {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
-                    {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"}]
+# agerangesegments = [{"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+#                     {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+#                     {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+#                     {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"}]
 
-answer = age_builder(agerangesegments[0:2])
+agerangesegments = {"18 to 24": {"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+                    "25 to 34": {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    "35 to 54": {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"}}
 
 def jobseniority_builder(jobseniorities):
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:seniorities,name:Job%20Seniorities),segments:List("""
@@ -176,6 +177,13 @@ def NOT_builder(args):
     conc += OR_builder(args)
     return conc
 
+# Specify genders 
+selected_genders = ["Female", "Male"]
+gender_list = []
+for gender in selected_genders:
+    gender_info = gendersegments.get(gender)
+    gender_list.append(gender_info)
+
 # Specify countries
 selected_countries = ['Qatar', 'UAE', 'Oman']
 country_list = []
@@ -190,9 +198,18 @@ for seniority in selected_seniorities:
     seniority_info = jobsenioritysegments.get(seniority)
     seniority_list.append(seniority_info)
 
+# Select age range
+selected_ageranges = ["18 to 24", "25 to 34"]
+agerange_list = []
+for agerange in selected_ageranges:
+    agerange_info = agerangesegments.get(agerange)
+    agerange_list.append(agerange_info)
+
 arg_list = [locale_builder(), 
             location_builder(country_list),
-            gender_builder(gendersegments[0:1])]
+            gender_builder(gender_list),
+            age_builder(agerange_list)]
+
 
 exclude_list = []
 # exclude_list = [OR_builder([jobseniority_builder(seniority_list)])]

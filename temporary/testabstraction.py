@@ -1,4 +1,16 @@
 
+gendersegments = {"Female": {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
+                  "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"}}
+
+target_gender_output = [{'urn': 'urn:li:gender:FEMALE', 'name': 'Female', 'facetUrn': 'urn:li:adTargetingFacet:genders'}, {'urn': 'urn:li:gender:MALE', 'name': 'Male', 'facetUrn': 'urn:li:adTargetingFacet:genders'}]
+
+selected_genders = ["Female", "Male"]
+gender_list = []
+for gender in selected_genders:
+    gender_info = gendersegments.get(gender)
+    gender_list.append(gender_info)
+assert(gender_list == target_gender_output)
+
 locationsegments = {
     "Qatar": {"urn": "urn:li:geo:104170880", "name": "Qatar","facetUrn": "urn:li:adTargetingFacet:locations"}, 
     "Saudi Arabia": {"urn": "urn:li:geo:100459316", "name": "Saudi Arabia", "facetUrn": "urn:li:adTargetingFacet:locations", "ancestorUrns": {"urn:li:geo:102393603"} },
@@ -39,3 +51,17 @@ for seniority in selected_seniorities:
 
 target_seniority_output = [{'urn': 'urn:li:seniority:1', 'name': 'Unpaid', 'facetUrn': 'urn:li:adTargetingFacet:seniorities'}, {'urn': 'urn:li:seniority:2', 'name': 'Training', 'facetUrn': 'urn:li:adTargetingFacet:seniorities'}, {'urn': 'urn:li:seniority:3', 'name': 'Entry', 'facetUrn': 'urn:li:adTargetingFacet:seniorities'}]
 assert (seniority_list == target_seniority_output)
+
+agerangesegments = {"18 to 24": {"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+                    "25 to 34": {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    "35 to 54": {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"}}
+
+selected_ageranges = ["18 to 24", "25 to 34"]
+agerange_list = []
+for agerange in selected_ageranges:
+    agerange_info = agerangesegments.get(agerange)
+    agerange_list.append(agerange_info)
+
+target_agerange_ouptput = [{'urn': 'urn:li:ageRange:(18,24)', 'name': '18 to 24', 'facetUrn': 'urn:li:adTargetingFacet:ageRanges'}, {'urn': 'urn:li:ageRange:(25,34)', 'name': '25 to 34', 'facetUrn': 'urn:li:adTargetingFacet:ageRanges'}]
+assert (agerange_list == target_agerange_ouptput)
