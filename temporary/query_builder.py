@@ -185,14 +185,14 @@ for gender in selected_genders:
     gender_list.append(gender_info)
 
 # Specify countries
-selected_countries = ['Qatar', 'UAE', 'Oman']
+selected_countries = ['Qatar', 'UAE', 'Oman', 'Kuwait']
 country_list = []
 for country in selected_countries:
     country_info = locationsegments.get(country)
     country_list.append(country_info)
 
 # Select Job Seniorities
-selected_seniorities = ["Unpaid", "Training", "Entry", "Senior", "Manager"]
+selected_seniorities = ["Unpaid", "Training", "Entry", "Senior", "Manager", 'Owner']
 seniority_list = []
 for seniority in selected_seniorities:
     seniority_info = jobsenioritysegments.get(seniority)
