@@ -226,9 +226,18 @@ jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpa
                         "CXO" : { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
                         "Partner" : { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
                         "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }}
+              
+
+employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
+employersegments = {"Facebook": {"urn":"urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
+                    "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"}}
+
+# ((urn:urn:li:company:10667,name:Facebook,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:1586,name:Amazon,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:162479,name:Apple,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:165158,name:Netflix,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:1441,name:Google,facetUrn:urn:li:adTargetingFacet:employers))))),(or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:103644278,name:United States,facetUrn:urn:li:adTargetingFacet:locations,ancestorUrns:List(urn:li:geo:102221843)))))))),exclude:(or:List()))
+
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()
 locationsegments = dict(zip(country_code_id_map['ISO 3 Digit'], list(locationsegments.values())))
+# print(locationsegments)
 
 # # The function returns all the locations available
 def getList(dict):

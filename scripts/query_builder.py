@@ -1,6 +1,6 @@
 import re
 #  Import all the API supported specifiable variables 
-from country_code_ID_mapper import * # imports locationsegments, agerangesegments, etc ...
+from variables_dictionaries import * # imports locationsegments, agerangesegments, etc ...
 from requester import * # imports request sender and reponse parser
 
 # TODO: Add %20 to name of every variable for example instead of Member Gender put in Member%20Gender
@@ -24,7 +24,6 @@ def encodeInner(strout):
 # test if the encoding works
 def encodeTest():
     testurl = '''urn:urn:li:seniority:8,name:CXO,facetUrn:urn:li:adTargetingFacet:seniorities),(urn:urn:li:seniority:10,name:Owner,facetUrn:urn:li:adTargetingFacet:seniorities),'''
-    # print(linkedinEncodeURL(testurl))
     assert linkedinEncodeURL(testurl) =='urn:urn%3Ali%3Aseniority%3A8,name:CXO,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),(urn:urn%3Ali%3Aseniority%3A10,name:Owner,facetUrn:urn%3Ali%3AadTargetingFacet%3Aseniorities),'
 
 # Assume interface locale andlocation are dealt with
@@ -89,6 +88,17 @@ def jobseniority_builder(jobseniorities):
     conc += """))))"""
     return conc
 
+def employer_builder(employers):
+    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:employers,name:Company%20Names),segments:List("""
+    for i,employer in enumerate(employers): 
+        conc += "(urn:" + encodeInner(employer['urn']) 
+        conc += ",name:" + encodeInner(employer["name"])
+        conc += ",facetUrn:" + encodeInner(employer['facetUrn']) 
+        conc += ")"
+        if i<len(employers)-1:
+            conc +=","
+    conc += """))))"""
+    return conc
 
 
 # returns OR concatenated query string 
@@ -117,7 +127,7 @@ def NOT_builder(args):
     return conc
 
 # Specify countries
-selected_countries = ['AFG', 'ALB']
+selected_countries = ['USA']
 country_list = []
 for country in selected_countries:
     country_info = locationsegments.get(country)
@@ -131,11 +141,18 @@ for gender in selected_genders:
     gender_list.append(gender_info)
 
 # Select age range
-selected_ageranges = ["18 to 24", "25 to 34"]
+selected_ageranges = ["18 to 24"]
 agerange_list = []
 for agerange in selected_ageranges:
     agerange_info = agerangesegments.get(agerange)
     agerange_list.append(agerange_info)
+
+# Select company
+selected_employers = ["Facebook"]
+employer_list = []
+for employer in selected_employers:
+    employer_info = employersegments.get(employer)
+    employer_list.append(employer_info)
 
 # Specify genders 
 # selected_genders_1 = ["Female"]
@@ -177,10 +194,17 @@ exclude_list = []
 #             location_builder(country_list),
 #             or_connected_3]
 
-arg_list = [locale_builder(), 
-            location_builder(country_list),
-            gender_builder(gender_list),
-            age_builder(agerange_list)]
+# arg_list = [locale_builder(), 
+#             location_builder(country_list),
+#             gender_builder(gender_list),
+#             age_builder(agerange_list),
+#             employer_builder(employer_list)]
+
+arg_list = [
+    locale_builder(), 
+    location_builder(country_list),
+    employer_builder(employer_list)
+    ]
 
 def include_all():
     output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"

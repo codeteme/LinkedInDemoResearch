@@ -42,7 +42,6 @@ def getHeadersFromFirefox(headers):
         headers1[line.split(':')[0]]= line[line.find(':')+2:]
     return headers1
 headers = getHeadersFromFirefox(testheaders)
-# print(headers)
 
 
 
