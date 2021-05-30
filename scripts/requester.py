@@ -52,33 +52,29 @@ response = requests.post(
     headers=headers,
     data='q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A103644278,name:United%20States,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A102221843)))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Profile%20language),segments:List((urn:urn%3Ali%3Alocale%3Ade_DE,name:German,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))))),exclude:(or:List()))&withValidation=true',
 )
-# print(response.text)
-
-# Paste the result in query_builder file
-
-testCriteria = 'q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A106395874,name:Algeria,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations),(urn:urn%3Ali%3Ageo%3A106100033,name:The%20Gambia,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Agenders,name:Member%20Gender),segments:List((urn:urn%3Ali%3Agender%3AFEMALE,name:Female,facetUrn:urn%3Ali%3AadTargetingFacet%3Agenders))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AageRanges,name:Member%20Age),segments:List((urn:urn%3Ali%3AageRange%3A%2818%2C24%29,name:18%20to%2024,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges),(urn:urn%3Ali%3AageRange%3A%2825%2C34%29,name:25%20to%2034,facetUrn:urn%3Ali%3AadTargetingFacet%3AageRanges))))))),exclude:(or:List()))'
 
 # Execute to get the result
-response = requests.post(
-    'https://www.linkedin.com/campaign-manager-api/campaignManagerAudienceCounts',
-    headers=headers,
-    data=testCriteria
-)
+def get_response(testCriteria):
+    response = requests.post(
+        'https://www.linkedin.com/campaign-manager-api/campaignManagerAudienceCounts',
+        headers=headers,
+        data=testCriteria
+    )
+    return response
 
 # Functions accepts string, delimiter and nth occurence of the delimiter where string is split up. 
 def split_at(s, delim, n):
     r = s.split(delim, n)[n]
     return s[:-len(r)-len(delim)], r
 
-
-
+# Extracts only the count from the returned response string
 def parse_response(response_string):
     temp_str_1 = split_at(response_string, ',', 1)[0]
     temp_str_2 = split_at(temp_str_1, ':', 2)[1][:-2] 
     return int(temp_str_2) # convert to number
 
-print(parse_response(response.text))
-
-# print(response.text)
+# Accepts the query built by userand calls appropriate functions
+def getCount(testCriteria):
+    return parse_response(get_response(testCriteria).text)
 
 
