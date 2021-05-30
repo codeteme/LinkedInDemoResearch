@@ -147,6 +147,13 @@ for agerange in selected_ageranges:
     agerange_info = agerangesegments.get(agerange)
     agerange_list.append(agerange_info)
 
+# Select job seniority
+selected_jobseniority = ["Owner"]
+jobseniority_list = []
+for jobseniority in selected_jobseniority:
+    jobseniority_info = jobsenioritysegments.get(jobseniority)
+    jobseniority_list.append(jobseniority_info)
+
 # Select company
 selected_employers = ["Facebook"]
 employer_list = []
@@ -203,6 +210,8 @@ exclude_list = []
 arg_list = [
     locale_builder(), 
     location_builder(country_list),
+    gender_builder(gender_list),
+    jobseniority_builder(jobseniority_list),
     employer_builder(employer_list)
     ]
 

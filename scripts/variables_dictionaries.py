@@ -230,9 +230,11 @@ jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpa
 
 employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
 employersegments = {"Facebook": {"urn":"urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
-                    "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"}}
-
-# ((urn:urn:li:company:10667,name:Facebook,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:1586,name:Amazon,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:162479,name:Apple,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:165158,name:Netflix,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:1441,name:Google,facetUrn:urn:li:adTargetingFacet:employers))))),(or:List((facet:(urn:urn:li:adTargetingFacet:locations,name:Locations),segments:List((urn:urn:li:geo:103644278,name:United States,facetUrn:urn:li:adTargetingFacet:locations,ancestorUrns:List(urn:li:geo:102221843)))))))),exclude:(or:List()))
+                    "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Apple": {"urn": "urn:li:company:162479", "name": "Appple", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"}, 
+                    }
 
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()
