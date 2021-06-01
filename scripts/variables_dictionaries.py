@@ -233,8 +233,10 @@ employersegments = {"Facebook": {"urn":"urn:li:company:10667", "name":"Facebook"
                     "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Apple": {"urn": "urn:li:company:162479", "name": "Apple", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"}, 
-                    }
+                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"}}
+
+memberbehaviorfacet = {"urn" : "urn:li:adTargetingFacet:memberBehaviors","name": "Member Traits"}
+memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "name": "Job Seekers", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"}}
 
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()

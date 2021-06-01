@@ -101,6 +101,17 @@ def employer_builder(employers):
     conc += """))))"""
     return conc
 
+def memberbehavior_builder(memberbehaviors):
+    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:memberBehaviors,name:Member%20Traits),segments:List("""
+    for i, memberbehavior in enumerate(memberbehaviors): 
+        conc += "(urn:" + encodeInner(memberbehavior['urn']) 
+        conc += ",name:" + encodeInner(memberbehavior["name"])
+        conc += ",facetUrn:" + encodeInner(memberbehavior['facetUrn']) 
+        conc += ")"
+        if i<len(memberbehaviors)-1:
+            conc +=","
+    conc += """))))"""
+    return conc
 
 # returns OR concatenated query string 
 def OR_builder(args):
@@ -141,26 +152,33 @@ for gender in selected_genders:
     gender_info = gendersegments.get(gender)
     gender_list.append(gender_info)
 
-# Select age range
-selected_ageranges = ["18 to 24"]
-agerange_list = []
-for agerange in selected_ageranges:
-    agerange_info = agerangesegments.get(agerange)
-    agerange_list.append(agerange_info)
+# # Select age range
+# selected_ageranges = ["18 to 24"]
+# agerange_list = []
+# for agerange in selected_ageranges:
+#     agerange_info = agerangesegments.get(agerange)
+#     agerange_list.append(agerange_info)
 
-# Select job seniority
-selected_jobseniority = ["Owner"]
-jobseniority_list = []
-for jobseniority in selected_jobseniority:
-    jobseniority_info = jobsenioritysegments.get(jobseniority)
-    jobseniority_list.append(jobseniority_info)
+# # Select job seniority
+# selected_jobseniority = ["Owner"]
+# jobseniority_list = []
+# for jobseniority in selected_jobseniority:
+#     jobseniority_info = jobsenioritysegments.get(jobseniority)
+#     jobseniority_list.append(jobseniority_info)
 
-# # Select company
-# selected_employers = ["Facebook"]
-# employer_list = []
-# for employer in selected_employers:
-#     employer_info = employersegments.get(employer)
-#     employer_list.append(employer_info)
+# Select company
+selected_employers = ["Facebook"]
+employer_list = []
+for employer in selected_employers:
+    employer_info = employersegments.get(employer)
+    employer_list.append(employer_info)
+
+# Select member behavior
+selected_memberbehavior = ["Job Seekers"]
+memberbehavior_list = []
+for memberbehavior in selected_memberbehavior:
+    memberbehavior_info = memberbehaviorsegments.get(memberbehavior)
+    memberbehavior_list.append(memberbehavior_info)
 
 # Specify genders 
 # selected_genders_1 = ["Female"]
@@ -202,11 +220,12 @@ exclude_list = []
 #             location_builder(country_list),
 #             or_connected_3]
 
-# arg_list = [locale_builder(), 
-#             location_builder(country_list),
-#             gender_builder(gender_list),
-#             age_builder(agerange_list),
-#             employer_builder(employer_list)]
+arg_list = [locale_builder(), 
+            location_builder(country_list),
+            gender_builder(gender_list),
+            employer_builder(employer_list),
+            memberbehavior_builder(memberbehavior_list)
+            ]
 
 # arg_list = [
 #     locale_builder(), 
@@ -220,28 +239,16 @@ def include_all():
     output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"
     return linkedinEncodeURL(output)
 
-# Put include_all() in a loop
-# fixed variables for now: locale, location, gender, jobseniority
-# changing varaibles for now: employer
-# Select company
-# employersegments  
-
-arg_list = [
-    locale_builder(), 
-    location_builder(country_list),
-    gender_builder(gender_list)
-    ]
-
 # Calls the requesting function and parse the return count
 def make_call():
     criteria = include_all()
-    # print(criteria)
     count = getCount(criteria)
+    print(count)
     return count
 
+make_call()
+
 # Intialize an empty dataframe with only column names
-# column_names = ["Country", "Gender", "Job seniority", "Employer"]
-# df = pd.DataFrame(columns = column_names)
 df = pd.DataFrame()
 
 
@@ -261,40 +268,44 @@ df = pd.DataFrame()
 #     # arg_list.pop()
 #    
 
-jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-for jobseniority in jobsenioritysegments.keys():
-    print("*****************")
-    print("*****************")
-    jobseniority_info = jobsenioritysegments.get(jobseniority)
-    jobseniority_list.append(jobseniority_info)
-    arg_list.append(jobseniority_builder(jobseniority_list))
-    row_value = ['US', 'Male']
-    row_value.append(jobseniority)
+def collect():
+    jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+    employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+    for jobseniority in jobsenioritysegments.keys():
+        print("*****************")
+        print("*****************")
+        jobseniority_info = jobsenioritysegments.get(jobseniority)
+        jobseniority_list.append(jobseniority_info)
+        arg_list.append(jobseniority_builder(jobseniority_list))
+        row_value = ['US', 'Male']
+        row_value.append(jobseniority)
 
-    for employer in employersegments.keys(): # iterate through segment and get name of element
-        employer_info = employersegments.get(employer) # extract the corresponding value of the element
-        employer_list.append(employer_info) # add element information to the list 
-        arg_list.append(employer_builder(employer_list)) # pass the list to build query 
-        count =  make_call() # makes the api call and parses and prints count
-        row_value.append(employer)
-        row_value.append(count)
-        row = pd.Series(row_value)
-        row_df = pd.DataFrame([row])
-        df = pd.concat([row_df, df], ignore_index=True)
-        print(df.head())
-        arg_list.pop() # remove the last added query parameter which is the current variable
-        employer_list.pop() # empty the list to step to the next element in the list
-        row_value.pop() # remove the count value
-        row_value.pop() # remove the employer value
+        for employer in employersegments.keys(): # iterate through segment and get name of element
+            employer_info = employersegments.get(employer) # extract the corresponding value of the element
+            employer_list.append(employer_info) # add element information to the list 
+            arg_list.append(employer_builder(employer_list)) # pass the list to build query 
+            count =  make_call() # makes the api call and parses and prints count
+            row_value.append(employer)
+            row_value.append(count)
+            row = pd.Series(row_value)
+            row_df = pd.DataFrame([row])
+            df = pd.concat([row_df, df], ignore_index=True)
+            print(df.head())
+            arg_list.pop() # remove the last added query parameter which is the current variable
+            employer_list.pop() # empty the list to step to the next element in the list
+            row_value.pop() # remove the count value
+            row_value.pop() # remove the employer value
 
-        time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
-    row_value.clear()
-    arg_list.pop()
-    jobseniority_list.pop()
+            time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+        row_value.clear()
+        arg_list.pop()
+        jobseniority_list.pop()
+    df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
+    df.to_csv('../intermediate/output.csv', index=False)
 
-df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
-df.to_csv('../intermediate.csv', index=False)
+# collect()
+
+
 
 
 
