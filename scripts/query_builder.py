@@ -1,4 +1,5 @@
-import re
+import re # module to work with RegEx
+import time # api request needs to be timed
 #  Import all the API supported specifiable variables 
 from variables_dictionaries import * # imports locationsegments, agerangesegments, etc ...
 from requester import * # imports request sender and reponse parser
@@ -76,7 +77,7 @@ def age_builder(ageranges):
 
 
 
-def jobseniority_builder(jobseniorities):
+def jobseniority_builder(jobseniorities): 
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:seniorities,name:Job%20Seniorities),segments:List("""
     for i,jobseniority in enumerate(jobseniorities): 
         conc += "(urn:" + encodeInner(jobseniority['urn']) 
@@ -134,7 +135,7 @@ for country in selected_countries:
     country_list.append(country_info)
 
 # Specify genders 
-selected_genders = ["Female"]
+selected_genders = ["Male"]
 gender_list = []
 for gender in selected_genders:
     gender_info = gendersegments.get(gender)
@@ -154,12 +155,12 @@ for jobseniority in selected_jobseniority:
     jobseniority_info = jobsenioritysegments.get(jobseniority)
     jobseniority_list.append(jobseniority_info)
 
-# Select company
-selected_employers = ["Facebook"]
-employer_list = []
-for employer in selected_employers:
-    employer_info = employersegments.get(employer)
-    employer_list.append(employer_info)
+# # Select company
+# selected_employers = ["Facebook"]
+# employer_list = []
+# for employer in selected_employers:
+#     employer_info = employersegments.get(employer)
+#     employer_list.append(employer_info)
 
 # Specify genders 
 # selected_genders_1 = ["Female"]
@@ -207,21 +208,80 @@ exclude_list = []
 #             age_builder(agerange_list),
 #             employer_builder(employer_list)]
 
-arg_list = [
-    locale_builder(), 
-    location_builder(country_list),
-    gender_builder(gender_list),
-    jobseniority_builder(jobseniority_list),
-    employer_builder(employer_list)
-    ]
+# arg_list = [
+#     locale_builder(), 
+#     location_builder(country_list),
+#     gender_builder(gender_list),
+#     jobseniority_builder(jobseniority_list),
+#     employer_builder(employer_list)
+#     ]
 
 def include_all():
     output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"
     return linkedinEncodeURL(output)
 
-criteria = include_all()
-count = getCount(criteria)
-print(count)
+# Put include_all() in a loop
+# fixed variables for now: locale, location, gender, jobseniority
+# changing varaibles for now: employer
+# Select company
+# employersegments  
+
+arg_list = [
+    locale_builder(), 
+    location_builder(country_list),
+    gender_builder(gender_list),
+    jobseniority_builder(jobseniority_list),
+    ]
+
+# Calls the requesting function and parse the return count
+def make_call():
+    criteria = include_all()
+    count = getCount(criteria)
+    return count
+
+# Intialize an empty dataframe with only column names
+# column_names = ["Country", "Gender", "Job seniority", "Employer"]
+# df = pd.DataFrame(columns = column_names)
+df = pd.DataFrame()
+
+
+# # Select job seniority
+# selected_jobseniority = ["Owner"]
+# jobseniority_list = []
+# for jobseniority in selected_jobseniority:
+#     jobseniority_info = jobsenioritysegments.get(jobseniority)
+#     jobseniority_list.append(jobseniority_info)
+    
+# employer_list = []
+# for employer in employersegments:
+#     employer_list.append(employer)
+#     arg_list.append(employer_builder(employer_list))
+#     # print(arg_list)
+#     # print_count()
+#     # arg_list.pop()
+#    
+
+
+employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+for employer in employersegments.keys(): # iterate through segment and get name of element
+    employer_info = employersegments.get(employer) # extract the corresponding value of the element
+    employer_list.append(employer_info) # add element information to the list 
+    arg_list.append(employer_builder(employer_list)) # pass the list to build query 
+    make_call() # makes the api call and parses and prints count
+    row_value = ['US', 'Male', 'Owner']
+    row_value.append(employer)
+    row_value.append(make_call())
+    row = pd.Series(row_value)
+    row_df = pd.DataFrame([row])
+    df = pd.concat([row_df, df], ignore_index=True)
+    arg_list.pop() # remove the last added query parameter which is the current variable
+    employer_list.pop() # empty the list to step to the next element in the list
+    time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+
+df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
+print(df.head())
+
+
 
 
 
