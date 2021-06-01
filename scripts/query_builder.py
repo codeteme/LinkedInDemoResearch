@@ -235,7 +235,7 @@ arg_list = [
 # Calls the requesting function and parse the return count
 def make_call():
     criteria = include_all()
-    print(criteria)
+    # print(criteria)
     count = getCount(criteria)
     return count
 
@@ -271,8 +271,6 @@ for jobseniority in jobsenioritysegments.keys():
     arg_list.append(jobseniority_builder(jobseniority_list))
     row_value = ['US', 'Male']
     row_value.append(jobseniority)
-    print("*****************")
-    print("*****************")
 
     for employer in employersegments.keys(): # iterate through segment and get name of element
         employer_info = employersegments.get(employer) # extract the corresponding value of the element
@@ -294,12 +292,9 @@ for jobseniority in jobsenioritysegments.keys():
     row_value.clear()
     arg_list.pop()
     jobseniority_list.pop()
-    df.to_csv('../intermediate.csv', index=False)
 
 df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
-df.to_csv(index=False)  
-# print(df.head())
-
+df.to_csv('../intermediate.csv', index=False)
 
 
 
