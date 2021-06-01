@@ -101,18 +101,6 @@ def employer_builder(employers):
     conc += """))))"""
     return conc
 
-def memberbehavior_builder(memberbehaviors):
-    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:memberBehaviors,name:Member%20Traits),segments:List("""
-    for i, memberbehavior in enumerate(memberbehaviors): 
-        conc += "(urn:" + encodeInner(memberbehavior['urn']) 
-        conc += ",name:" + encodeInner(memberbehavior["name"])
-        conc += ",facetUrn:" + encodeInner(memberbehavior['facetUrn']) 
-        conc += ")"
-        if i<len(memberbehaviors)-1:
-            conc +=","
-    conc += """))))"""
-    return conc
-
 # returns OR concatenated query string 
 def OR_builder(args):
     conc = "(or:List("
@@ -138,103 +126,7 @@ def NOT_builder(args):
     conc += OR_builder(args)
     return conc
 
-# Specify countries
-selected_countries = ['USA']
-country_list = []
-for country in selected_countries:
-    country_info = locationsegments.get(country)
-    country_list.append(country_info)
-
-# Specify genders 
-selected_genders = ["Male"]
-gender_list = []
-for gender in selected_genders:
-    gender_info = gendersegments.get(gender)
-    gender_list.append(gender_info)
-
-# # Select age range
-# selected_ageranges = ["18 to 24"]
-# agerange_list = []
-# for agerange in selected_ageranges:
-#     agerange_info = agerangesegments.get(agerange)
-#     agerange_list.append(agerange_info)
-
-# # Select job seniority
-# selected_jobseniority = ["Owner"]
-# jobseniority_list = []
-# for jobseniority in selected_jobseniority:
-#     jobseniority_info = jobsenioritysegments.get(jobseniority)
-#     jobseniority_list.append(jobseniority_info)
-
-# Select company
-selected_employers = ["Facebook"]
-employer_list = []
-for employer in selected_employers:
-    employer_info = employersegments.get(employer)
-    employer_list.append(employer_info)
-
-# Select member behavior
-selected_memberbehavior = ["Job Seekers"]
-memberbehavior_list = []
-for memberbehavior in selected_memberbehavior:
-    memberbehavior_info = memberbehaviorsegments.get(memberbehavior)
-    memberbehavior_list.append(memberbehavior_info)
-
-# Specify genders 
-# selected_genders_1 = ["Female"]
-# gender_list_1 = []
-# for gender in selected_genders_1:
-#     gender_info = gendersegments.get(gender)
-#     gender_list_1.append(gender_info)
-
-# # Specify genders 
-# selected_genders_2 = ["Male"]
-# gender_list_2 = []
-# for gender in selected_genders_2:
-#     gender_info = gendersegments.get(gender)
-#     gender_list_2.append(gender_info)
-
-# # Select age range
-# selected_ageranges_1 = ["25 to 34"]
-# agerange_list_1 = []
-# for agerange in selected_ageranges_1:
-#     agerange_info = agerangesegments.get(agerange)
-#     agerange_list_1.append(agerange_info)
-
-# selected_ageranges_2 = ["18 to 24"]
-# agerange_list_2 = []
-# for agerange in selected_ageranges_2:
-#     agerange_info = agerangesegments.get(agerange)
-#     agerange_list_2.append(agerange_info)
-
-# # Lengthy or connected queries work
-# or_connected_1 = OR_builder([gender_builder(gender_list_1), age_builder(agerange_list_1)])
-# or_connected_2 = OR_builder([gender_builder(gender_list_2), age_builder(agerange_list_2)])
-# or_connected_3 = OR_builder([or_connected_1, or_connected_2])
-
-# or_connected
-exclude_list = []
-# exclude_list = [OR_builder([jobseniority_builder(seniority_list)])]
-
-# arg_list = [locale_builder(), 
-#             location_builder(country_list),
-#             or_connected_3]
-
-arg_list = [locale_builder(), 
-            location_builder(country_list),
-            gender_builder(gender_list),
-            employer_builder(employer_list),
-            memberbehavior_builder(memberbehavior_list)
-            ]
-
-# arg_list = [
-#     locale_builder(), 
-#     location_builder(country_list),
-#     gender_builder(gender_list),
-#     jobseniority_builder(jobseniority_list),
-#     employer_builder(employer_list)
-#     ]
-
+# Concatenates all the different request string components
 def include_all():
     output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"
     return linkedinEncodeURL(output)
@@ -243,49 +135,56 @@ def include_all():
 def make_call():
     criteria = include_all()
     count = getCount(criteria)
-    print(count)
     return count
 
-make_call()
+# Specify countries
+selected_countries = ['USA']
+country_list = []
+for country in selected_countries:
+    country_info = locationsegments.get(country)
+    country_list.append(country_info)
+
+# # Specify genders 
+# selected_genders = ["Male"]
+# gender_list = []
+# for gender in selected_genders:
+#     gender_info = gendersegments.get(gender)
+#     gender_list.append(gender_info)
+
+exclude_list = []
+
+arg_list = [
+    locale_builder(), 
+    location_builder(country_list)]
 
 # Intialize an empty dataframe with only column names
-df = pd.DataFrame()
+df = pd.DataFrame() 
 
+gender_list = [] # Initialize an empty list to be populated by each item in segment (from library) 
+jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
 
-# # Select job seniority
-# selected_jobseniority = ["Owner"]
-# jobseniority_list = []
-# for jobseniority in selected_jobseniority:
-#     jobseniority_info = jobsenioritysegments.get(jobseniority)
-#     jobseniority_list.append(jobseniority_info)
+for gender in gendersegments.keys():
+    print("*****************")
+    print("*****************")
+    gender_info = gendersegments.get(gender)
+    gender_list.append(gender_info)
+    arg_list.append(gender_builder(gender_list))
+    row_value = ['US']
+    row_value.append(gender) 
     
-# employer_list = []
-# for employer in employersegments:
-#     employer_list.append(employer)
-#     arg_list.append(employer_builder(employer_list))
-#     # print(arg_list)
-#     # print_count()
-#     # arg_list.pop()
-#    
-
-def collect():
-    jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-    employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
     for jobseniority in jobsenioritysegments.keys():
-        print("*****************")
-        print("*****************")
         jobseniority_info = jobsenioritysegments.get(jobseniority)
         jobseniority_list.append(jobseniority_info)
         arg_list.append(jobseniority_builder(jobseniority_list))
-        row_value = ['US', 'Male']
         row_value.append(jobseniority)
 
         for employer in employersegments.keys(): # iterate through segment and get name of element
             employer_info = employersegments.get(employer) # extract the corresponding value of the element
             employer_list.append(employer_info) # add element information to the list 
             arg_list.append(employer_builder(employer_list)) # pass the list to build query 
-            count =  make_call() # makes the api call and parses and prints count
             row_value.append(employer)
+            count =  make_call() # makes the api call and parses and prints count
             row_value.append(count)
             row = pd.Series(row_value)
             row_df = pd.DataFrame([row])
@@ -295,17 +194,19 @@ def collect():
             employer_list.pop() # empty the list to step to the next element in the list
             row_value.pop() # remove the count value
             row_value.pop() # remove the employer value
-
             time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
-        row_value.clear()
-        arg_list.pop()
-        jobseniority_list.pop()
-    df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
-    df.to_csv('../intermediate/output.csv', index=False)
+        
+        arg_list.pop() # remove the last added query parameter which is the job seniority variable
+        jobseniority_list.pop() # empty the list to step to the next element in the list
+        row_value.pop() # remove the job seniority value
 
-# collect()
+    arg_list.pop() # remove the last added query parameter which is the gender variable
+    gender_list.pop() # empty the list to step to the next element in the list
+    row_value.clear() # remove the gender value
+        
 
-
+df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
+df.to_csv('../intermediate/output.csv', index=False)
 
 
 
