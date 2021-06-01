@@ -1,6 +1,6 @@
 import pandas as pd
 
-country_code_id_map = pd.read_excel(open('../raw/filtered_iso_2digit_3digit_alpha_country_codes.xlsx', 'rb'),
+country_code_id_map = pd.read_excel(open('/Users/tmt0947/Development/workspaces/QCRI/LinkedInDemoResearch/raw/filtered_iso_2digit_3digit_alpha_country_codes.xlsx', 'rb'),
                 sheet_name='Countries avaiiable on API')
 
 locationfacet = {"urn": "urn:li:adTargetingFacet:profileLocations","name": "Locations"}

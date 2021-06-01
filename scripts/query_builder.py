@@ -229,13 +229,13 @@ def include_all():
 arg_list = [
     locale_builder(), 
     location_builder(country_list),
-    gender_builder(gender_list),
-    jobseniority_builder(jobseniority_list),
+    gender_builder(gender_list)
     ]
 
 # Calls the requesting function and parse the return count
 def make_call():
     criteria = include_all()
+    print(criteria)
     count = getCount(criteria)
     return count
 
@@ -261,25 +261,44 @@ df = pd.DataFrame()
 #     # arg_list.pop()
 #    
 
-
+jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
 employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-for employer in employersegments.keys(): # iterate through segment and get name of element
-    employer_info = employersegments.get(employer) # extract the corresponding value of the element
-    employer_list.append(employer_info) # add element information to the list 
-    arg_list.append(employer_builder(employer_list)) # pass the list to build query 
-    make_call() # makes the api call and parses and prints count
-    row_value = ['US', 'Male', 'Owner']
-    row_value.append(employer)
-    row_value.append(make_call())
-    row = pd.Series(row_value)
-    row_df = pd.DataFrame([row])
-    df = pd.concat([row_df, df], ignore_index=True)
-    arg_list.pop() # remove the last added query parameter which is the current variable
-    employer_list.pop() # empty the list to step to the next element in the list
-    time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+for jobseniority in jobsenioritysegments.keys():
+    print("*****************")
+    print("*****************")
+    jobseniority_info = jobsenioritysegments.get(jobseniority)
+    jobseniority_list.append(jobseniority_info)
+    arg_list.append(jobseniority_builder(jobseniority_list))
+    row_value = ['US', 'Male']
+    row_value.append(jobseniority)
+    print("*****************")
+    print("*****************")
+
+    for employer in employersegments.keys(): # iterate through segment and get name of element
+        employer_info = employersegments.get(employer) # extract the corresponding value of the element
+        employer_list.append(employer_info) # add element information to the list 
+        arg_list.append(employer_builder(employer_list)) # pass the list to build query 
+        count =  make_call() # makes the api call and parses and prints count
+        row_value.append(employer)
+        row_value.append(count)
+        row = pd.Series(row_value)
+        row_df = pd.DataFrame([row])
+        df = pd.concat([row_df, df], ignore_index=True)
+        print(df.head())
+        arg_list.pop() # remove the last added query parameter which is the current variable
+        employer_list.pop() # empty the list to step to the next element in the list
+        row_value.pop() # remove the count value
+        row_value.pop() # remove the employer value
+
+        time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+    row_value.clear()
+    arg_list.pop()
+    jobseniority_list.pop()
+    df.to_csv('../intermediate.csv', index=False)
 
 df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
-print(df.head())
+df.to_csv(index=False)  
+# print(df.head())
 
 
 
