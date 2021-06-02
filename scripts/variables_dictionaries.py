@@ -233,10 +233,24 @@ employersegments = {"Facebook": {"urn":"urn:li:company:10667", "name":"Facebook"
                     "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Apple": {"urn": "urn:li:company:162479", "name": "Apple", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"}}
+                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Amazon Web Services (AWS)": {"urn": "urn:li:company:2382910", "name": "Amazon Web Services (AWS)", "facetUrn": "urn:li:adTargetingFacet:employers"}}
+
+# (urn:urn%3Ali%3AmemberBehavior%3A20,name:Recently%20Switched%20Jobs,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors),
+#             (urn:urn%3Ali%3AmemberBehavior%3A23,name:Open%20to%20Relocation%20%28International%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors,ancestorUrns:List(urn%3Ali%3AmemberBehavior%3A21)),
+#             (urn:urn%3Ali%3AmemberBehavior%3A22,name:Open%20to%20Relocation%20%28Domestic%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors,ancestorUrns:List(urn%3Ali%3AmemberBehavior%3A21)))))))),
+
+  # (urn:urn:li:memberBehavior:20,name:Recently Switched Jobs,facetUrn:urn:li:adTargetingFacet:memberBehaviors),
+  # (urn:urn:li:memberBehavior:22,name:Open to Relocation (Domestic),facetUrn:urn:li:adTargetingFacet:memberBehaviors,ancestorUrns:List(urn:li:memberBehavior:21))))))))
+  # (urn:urn:li:memberBehavior:23,name:Open to Relocation (International),facetUrn:urn:li:adTargetingFacet:memberBehaviors,ancestorUrns:List(urn:li:memberBehavior:21)),
 
 memberbehaviorfacet = {"urn" : "urn:li:adTargetingFacet:memberBehaviors","name": "Member Traits"}
-memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "name": "Job Seekers", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"}}
+memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "name": "Job Seekers", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"},
+                          "Recently Switched Jobs": {"urn": "urn:li:memberBehavior:20", "name": "Recently Switched Jobs", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"},
+                          "Open to Relocation (Domestic)": {"urn": "urn:li:memberBehavior:22", "name": "Open to Relocation (Domestic)", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors", 
+                            "ancestorUrns": "ancestorUrns:List(urn:li:memberBehavior:21)"},
+                          "Open to Relocation (International)": {"urn": "urn:li:memberBehavior:23", "name": "Open to Relocation (International)", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors", 
+                            "ancestorUrns": "ancestorUrns:List(urn:li:memberBehavior:21)"}}
 
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()

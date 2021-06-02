@@ -101,6 +101,19 @@ def employer_builder(employers):
     conc += """))))"""
     return conc
 
+# memberbehavior
+def memberbehavior_builder(memberbehaviors):
+    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:memberBehaviors,name:Member%20Traits),segments:List("""
+    for i, memberbehavior in enumerate(memberbehaviors): 
+        conc += "(urn:" + encodeInner(memberbehavior['urn']) 
+        conc += ",name:" + encodeInner(memberbehavior["name"])
+        conc += ",facetUrn:" + encodeInner(memberbehavior['facetUrn']) 
+        conc += ")"
+        if i<len(memberbehaviors)-1:
+            conc +=","
+    conc += """))))"""
+    return conc
+
 # returns OR concatenated query string 
 def OR_builder(args):
     conc = "(or:List("
@@ -144,13 +157,6 @@ for country in selected_countries:
     country_info = locationsegments.get(country)
     country_list.append(country_info)
 
-# # Specify genders 
-# selected_genders = ["Male"]
-# gender_list = []
-# for gender in selected_genders:
-#     gender_info = gendersegments.get(gender)
-#     gender_list.append(gender_info)
-
 exclude_list = []
 
 arg_list = [
@@ -162,6 +168,7 @@ df = pd.DataFrame()
 
 gender_list = [] # Initialize an empty list to be populated by each item in segment (from library) 
 jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+memberbehavior_list = [] # Initialize an empty list to be populate by each item in segment (from library)
 employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
 
 for gender in gendersegments.keys():
@@ -179,23 +186,46 @@ for gender in gendersegments.keys():
         arg_list.append(jobseniority_builder(jobseniority_list))
         row_value.append(jobseniority)
 
-        for employer in employersegments.keys(): # iterate through segment and get name of element
-            employer_info = employersegments.get(employer) # extract the corresponding value of the element
-            employer_list.append(employer_info) # add element information to the list 
-            arg_list.append(employer_builder(employer_list)) # pass the list to build query 
-            row_value.append(employer)
-            count =  make_call() # makes the api call and parses and prints count
-            row_value.append(count)
-            row = pd.Series(row_value)
-            row_df = pd.DataFrame([row])
-            df = pd.concat([row_df, df], ignore_index=True)
-            print(df.head())
-            arg_list.pop() # remove the last added query parameter which is the current variable
-            employer_list.pop() # empty the list to step to the next element in the list
-            row_value.pop() # remove the count value
-            row_value.pop() # remove the employer value
-            time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
-        
+        for memberbehavior in memberbehaviorsegments.keys():
+            memberbehavior_info = memberbehaviorsegments.get(memberbehavior)
+            memberbehavior_list.append(memberbehavior_info)
+            arg_list.append(memberbehavior_builder(memberbehavior_list))
+            row_value.append(memberbehavior) 
+            
+            for employer in employersegments.keys(): # iterate through segment and get name of element
+                employer_info = employersegments.get(employer) # extract the corresponding value of the element
+                employer_list.append(employer_info) # add element information to the list 
+                arg_list.append(employer_builder(employer_list)) # pass the processed list to build query 
+                row_value.append(employer)
+                count =  make_call() # makes the api call and parses and prints count
+                row_value.append(count)
+                row = pd.Series(row_value)
+                row_df = pd.DataFrame([row])
+                df = pd.concat([row_df, df], ignore_index=True)
+                print(df.head())
+                arg_list.pop() # remove the last added query parameter which is the current variable
+                employer_list.pop() # empty the list to step to the next element in the list
+                row_value.pop() # remove the count value
+                row_value.pop() # remove the employer value
+                time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+            
+            # # employer-agnostic value
+            # string_general = "general"
+            # row_value.append(string_general)
+            # print(row_value)
+            # count = make_call()
+            # row_value.append(count)
+            # row = pd.Series(row_value)
+            # row_df = pd.DataFrame([row])
+            # df = pd.concat([row_df, df], ignore_index=True)
+            # # print(df.head())
+            # row_value.pop() # remove the employer value
+
+
+            arg_list.pop() # remove the last added query parameter which is the member behavior variable
+            memberbehavior_list.pop() # empty the list to step to the next element in the list
+            row_value.pop() # remove the member behavior value
+
         arg_list.pop() # remove the last added query parameter which is the job seniority variable
         jobseniority_list.pop() # empty the list to step to the next element in the list
         row_value.pop() # remove the job seniority value
@@ -205,7 +235,7 @@ for gender in gendersegments.keys():
     row_value.clear() # remove the gender value
         
 
-df.columns = ["Country", "Gender", "Job seniority", "Employer", "Count"]
+df.columns = ["Country", "Gender", "Job seniority", "Member Behavior", "Employer", "Count"]
 df.to_csv('../intermediate/output.csv', index=False)
 
 
