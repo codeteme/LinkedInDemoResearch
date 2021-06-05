@@ -177,7 +177,7 @@ def make_call():
     return count
 
 # Specify countries
-selected_countries = ['USA']
+selected_countries = ['US']
 country_list = []
 for country in selected_countries:
     country_info = locationsegments.get(country)

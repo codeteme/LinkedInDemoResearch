@@ -1,0 +1,721 @@
+Country,Company Industry,Gender,Age Range,Job seniority,Company Size,Count
+PHL,IT,Male,55+,Owner,"10,001+ employees",0
+PHL,IT,Male,55+,Owner,"5001-10,000 employees",0
+PHL,IT,Male,55+,Owner,1001-5000 employees,0
+PHL,IT,Male,55+,Owner,501-1000 employees,0
+PHL,IT,Male,55+,Owner,201-500 employees,0
+PHL,IT,Male,55+,Owner,51-200 employees,0
+PHL,IT,Male,55+,Owner,11-50 employees,0
+PHL,IT,Male,55+,Owner,2-10 employees,0
+PHL,IT,Male,55+,Owner,Myself Only,0
+PHL,IT,Male,55+,Partner,"10,001+ employees",0
+PHL,IT,Male,55+,Partner,"5001-10,000 employees",0
+PHL,IT,Male,55+,Partner,1001-5000 employees,0
+PHL,IT,Male,55+,Partner,501-1000 employees,0
+PHL,IT,Male,55+,Partner,201-500 employees,0
+PHL,IT,Male,55+,Partner,51-200 employees,0
+PHL,IT,Male,55+,Partner,11-50 employees,0
+PHL,IT,Male,55+,Partner,2-10 employees,0
+PHL,IT,Male,55+,Partner,Myself Only,0
+PHL,IT,Male,55+,CXO,"10,001+ employees",0
+PHL,IT,Male,55+,CXO,"5001-10,000 employees",0
+PHL,IT,Male,55+,CXO,1001-5000 employees,0
+PHL,IT,Male,55+,CXO,501-1000 employees,0
+PHL,IT,Male,55+,CXO,201-500 employees,0
+PHL,IT,Male,55+,CXO,51-200 employees,0
+PHL,IT,Male,55+,CXO,11-50 employees,0
+PHL,IT,Male,55+,CXO,2-10 employees,0
+PHL,IT,Male,55+,CXO,Myself Only,0
+PHL,IT,Male,55+,VP,"10,001+ employees",0
+PHL,IT,Male,55+,VP,"5001-10,000 employees",0
+PHL,IT,Male,55+,VP,1001-5000 employees,0
+PHL,IT,Male,55+,VP,501-1000 employees,0
+PHL,IT,Male,55+,VP,201-500 employees,0
+PHL,IT,Male,55+,VP,51-200 employees,0
+PHL,IT,Male,55+,VP,11-50 employees,0
+PHL,IT,Male,55+,VP,2-10 employees,0
+PHL,IT,Male,55+,VP,Myself Only,0
+PHL,IT,Male,55+,Director,"10,001+ employees",0
+PHL,IT,Male,55+,Director,"5001-10,000 employees",0
+PHL,IT,Male,55+,Director,1001-5000 employees,0
+PHL,IT,Male,55+,Director,501-1000 employees,0
+PHL,IT,Male,55+,Director,201-500 employees,0
+PHL,IT,Male,55+,Director,51-200 employees,0
+PHL,IT,Male,55+,Director,11-50 employees,0
+PHL,IT,Male,55+,Director,2-10 employees,0
+PHL,IT,Male,55+,Director,Myself Only,0
+PHL,IT,Male,55+,Manager,"10,001+ employees",0
+PHL,IT,Male,55+,Manager,"5001-10,000 employees",0
+PHL,IT,Male,55+,Manager,1001-5000 employees,0
+PHL,IT,Male,55+,Manager,501-1000 employees,0
+PHL,IT,Male,55+,Manager,201-500 employees,0
+PHL,IT,Male,55+,Manager,51-200 employees,0
+PHL,IT,Male,55+,Manager,11-50 employees,0
+PHL,IT,Male,55+,Manager,2-10 employees,0
+PHL,IT,Male,55+,Manager,Myself Only,0
+PHL,IT,Male,55+,Senior,"10,001+ employees",370
+PHL,IT,Male,55+,Senior,"5001-10,000 employees",0
+PHL,IT,Male,55+,Senior,1001-5000 employees,0
+PHL,IT,Male,55+,Senior,501-1000 employees,0
+PHL,IT,Male,55+,Senior,201-500 employees,0
+PHL,IT,Male,55+,Senior,51-200 employees,0
+PHL,IT,Male,55+,Senior,11-50 employees,0
+PHL,IT,Male,55+,Senior,2-10 employees,0
+PHL,IT,Male,55+,Senior,Myself Only,0
+PHL,IT,Male,55+,Entry,"10,001+ employees",0
+PHL,IT,Male,55+,Entry,"5001-10,000 employees",0
+PHL,IT,Male,55+,Entry,1001-5000 employees,0
+PHL,IT,Male,55+,Entry,501-1000 employees,0
+PHL,IT,Male,55+,Entry,201-500 employees,0
+PHL,IT,Male,55+,Entry,51-200 employees,0
+PHL,IT,Male,55+,Entry,11-50 employees,0
+PHL,IT,Male,55+,Entry,2-10 employees,0
+PHL,IT,Male,55+,Entry,Myself Only,0
+PHL,IT,Male,55+,Training,"10,001+ employees",0
+PHL,IT,Male,55+,Training,"5001-10,000 employees",0
+PHL,IT,Male,55+,Training,1001-5000 employees,0
+PHL,IT,Male,55+,Training,501-1000 employees,0
+PHL,IT,Male,55+,Training,201-500 employees,0
+PHL,IT,Male,55+,Training,51-200 employees,0
+PHL,IT,Male,55+,Training,11-50 employees,0
+PHL,IT,Male,55+,Training,2-10 employees,0
+PHL,IT,Male,55+,Training,Myself Only,0
+PHL,IT,Male,55+,Unpaid,"10,001+ employees",0
+PHL,IT,Male,55+,Unpaid,"5001-10,000 employees",0
+PHL,IT,Male,55+,Unpaid,1001-5000 employees,0
+PHL,IT,Male,55+,Unpaid,501-1000 employees,0
+PHL,IT,Male,55+,Unpaid,201-500 employees,0
+PHL,IT,Male,55+,Unpaid,51-200 employees,0
+PHL,IT,Male,55+,Unpaid,11-50 employees,0
+PHL,IT,Male,55+,Unpaid,2-10 employees,0
+PHL,IT,Male,55+,Unpaid,Myself Only,0
+PHL,IT,Male,35 to 54,Owner,"10,001+ employees",0
+PHL,IT,Male,35 to 54,Owner,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,Owner,1001-5000 employees,0
+PHL,IT,Male,35 to 54,Owner,501-1000 employees,0
+PHL,IT,Male,35 to 54,Owner,201-500 employees,0
+PHL,IT,Male,35 to 54,Owner,51-200 employees,340
+PHL,IT,Male,35 to 54,Owner,11-50 employees,650
+PHL,IT,Male,35 to 54,Owner,2-10 employees,700
+PHL,IT,Male,35 to 54,Owner,Myself Only,0
+PHL,IT,Male,35 to 54,Partner,"10,001+ employees",0
+PHL,IT,Male,35 to 54,Partner,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,Partner,1001-5000 employees,0
+PHL,IT,Male,35 to 54,Partner,501-1000 employees,0
+PHL,IT,Male,35 to 54,Partner,201-500 employees,0
+PHL,IT,Male,35 to 54,Partner,51-200 employees,0
+PHL,IT,Male,35 to 54,Partner,11-50 employees,0
+PHL,IT,Male,35 to 54,Partner,2-10 employees,0
+PHL,IT,Male,35 to 54,Partner,Myself Only,0
+PHL,IT,Male,35 to 54,CXO,"10,001+ employees",0
+PHL,IT,Male,35 to 54,CXO,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,CXO,1001-5000 employees,0
+PHL,IT,Male,35 to 54,CXO,501-1000 employees,0
+PHL,IT,Male,35 to 54,CXO,201-500 employees,0
+PHL,IT,Male,35 to 54,CXO,51-200 employees,340
+PHL,IT,Male,35 to 54,CXO,11-50 employees,610
+PHL,IT,Male,35 to 54,CXO,2-10 employees,480
+PHL,IT,Male,35 to 54,CXO,Myself Only,0
+PHL,IT,Male,35 to 54,VP,"10,001+ employees",330
+PHL,IT,Male,35 to 54,VP,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,VP,1001-5000 employees,0
+PHL,IT,Male,35 to 54,VP,501-1000 employees,0
+PHL,IT,Male,35 to 54,VP,201-500 employees,0
+PHL,IT,Male,35 to 54,VP,51-200 employees,0
+PHL,IT,Male,35 to 54,VP,11-50 employees,360
+PHL,IT,Male,35 to 54,VP,2-10 employees,0
+PHL,IT,Male,35 to 54,VP,Myself Only,0
+PHL,IT,Male,35 to 54,Director,"10,001+ employees",1000
+PHL,IT,Male,35 to 54,Director,"5001-10,000 employees",590
+PHL,IT,Male,35 to 54,Director,1001-5000 employees,370
+PHL,IT,Male,35 to 54,Director,501-1000 employees,0
+PHL,IT,Male,35 to 54,Director,201-500 employees,310
+PHL,IT,Male,35 to 54,Director,51-200 employees,520
+PHL,IT,Male,35 to 54,Director,11-50 employees,610
+PHL,IT,Male,35 to 54,Director,2-10 employees,370
+PHL,IT,Male,35 to 54,Director,Myself Only,0
+PHL,IT,Male,35 to 54,Manager,"10,001+ employees",3600
+PHL,IT,Male,35 to 54,Manager,"5001-10,000 employees",980
+PHL,IT,Male,35 to 54,Manager,1001-5000 employees,800
+PHL,IT,Male,35 to 54,Manager,501-1000 employees,500
+PHL,IT,Male,35 to 54,Manager,201-500 employees,530
+PHL,IT,Male,35 to 54,Manager,51-200 employees,800
+PHL,IT,Male,35 to 54,Manager,11-50 employees,770
+PHL,IT,Male,35 to 54,Manager,2-10 employees,380
+PHL,IT,Male,35 to 54,Manager,Myself Only,0
+PHL,IT,Male,35 to 54,Senior,"10,001+ employees",11000
+PHL,IT,Male,35 to 54,Senior,"5001-10,000 employees",1800
+PHL,IT,Male,35 to 54,Senior,1001-5000 employees,2400
+PHL,IT,Male,35 to 54,Senior,501-1000 employees,1500
+PHL,IT,Male,35 to 54,Senior,201-500 employees,1600
+PHL,IT,Male,35 to 54,Senior,51-200 employees,2200
+PHL,IT,Male,35 to 54,Senior,11-50 employees,1900
+PHL,IT,Male,35 to 54,Senior,2-10 employees,790
+PHL,IT,Male,35 to 54,Senior,Myself Only,0
+PHL,IT,Male,35 to 54,Entry,"10,001+ employees",7500
+PHL,IT,Male,35 to 54,Entry,"5001-10,000 employees",1600
+PHL,IT,Male,35 to 54,Entry,1001-5000 employees,1900
+PHL,IT,Male,35 to 54,Entry,501-1000 employees,1400
+PHL,IT,Male,35 to 54,Entry,201-500 employees,1300
+PHL,IT,Male,35 to 54,Entry,51-200 employees,2000
+PHL,IT,Male,35 to 54,Entry,11-50 employees,2000
+PHL,IT,Male,35 to 54,Entry,2-10 employees,880
+PHL,IT,Male,35 to 54,Entry,Myself Only,0
+PHL,IT,Male,35 to 54,Training,"10,001+ employees",0
+PHL,IT,Male,35 to 54,Training,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,Training,1001-5000 employees,0
+PHL,IT,Male,35 to 54,Training,501-1000 employees,0
+PHL,IT,Male,35 to 54,Training,201-500 employees,0
+PHL,IT,Male,35 to 54,Training,51-200 employees,0
+PHL,IT,Male,35 to 54,Training,11-50 employees,0
+PHL,IT,Male,35 to 54,Training,2-10 employees,0
+PHL,IT,Male,35 to 54,Training,Myself Only,0
+PHL,IT,Male,35 to 54,Unpaid,"10,001+ employees",0
+PHL,IT,Male,35 to 54,Unpaid,"5001-10,000 employees",0
+PHL,IT,Male,35 to 54,Unpaid,1001-5000 employees,0
+PHL,IT,Male,35 to 54,Unpaid,501-1000 employees,0
+PHL,IT,Male,35 to 54,Unpaid,201-500 employees,0
+PHL,IT,Male,35 to 54,Unpaid,51-200 employees,0
+PHL,IT,Male,35 to 54,Unpaid,11-50 employees,0
+PHL,IT,Male,35 to 54,Unpaid,2-10 employees,0
+PHL,IT,Male,35 to 54,Unpaid,Myself Only,0
+PHL,IT,Male,25 to 34,Owner,"10,001+ employees",310
+PHL,IT,Male,25 to 34,Owner,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,Owner,1001-5000 employees,0
+PHL,IT,Male,25 to 34,Owner,501-1000 employees,0
+PHL,IT,Male,25 to 34,Owner,201-500 employees,0
+PHL,IT,Male,25 to 34,Owner,51-200 employees,0
+PHL,IT,Male,25 to 34,Owner,11-50 employees,530
+PHL,IT,Male,25 to 34,Owner,2-10 employees,680
+PHL,IT,Male,25 to 34,Owner,Myself Only,0
+PHL,IT,Male,25 to 34,Partner,"10,001+ employees",0
+PHL,IT,Male,25 to 34,Partner,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,Partner,1001-5000 employees,0
+PHL,IT,Male,25 to 34,Partner,501-1000 employees,0
+PHL,IT,Male,25 to 34,Partner,201-500 employees,0
+PHL,IT,Male,25 to 34,Partner,51-200 employees,0
+PHL,IT,Male,25 to 34,Partner,11-50 employees,0
+PHL,IT,Male,25 to 34,Partner,2-10 employees,0
+PHL,IT,Male,25 to 34,Partner,Myself Only,0
+PHL,IT,Male,25 to 34,CXO,"10,001+ employees",0
+PHL,IT,Male,25 to 34,CXO,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,CXO,1001-5000 employees,0
+PHL,IT,Male,25 to 34,CXO,501-1000 employees,0
+PHL,IT,Male,25 to 34,CXO,201-500 employees,0
+PHL,IT,Male,25 to 34,CXO,51-200 employees,0
+PHL,IT,Male,25 to 34,CXO,11-50 employees,440
+PHL,IT,Male,25 to 34,CXO,2-10 employees,420
+PHL,IT,Male,25 to 34,CXO,Myself Only,0
+PHL,IT,Male,25 to 34,VP,"10,001+ employees",340
+PHL,IT,Male,25 to 34,VP,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,VP,1001-5000 employees,0
+PHL,IT,Male,25 to 34,VP,501-1000 employees,0
+PHL,IT,Male,25 to 34,VP,201-500 employees,0
+PHL,IT,Male,25 to 34,VP,51-200 employees,0
+PHL,IT,Male,25 to 34,VP,11-50 employees,310
+PHL,IT,Male,25 to 34,VP,2-10 employees,0
+PHL,IT,Male,25 to 34,VP,Myself Only,0
+PHL,IT,Male,25 to 34,Director,"10,001+ employees",680
+PHL,IT,Male,25 to 34,Director,"5001-10,000 employees",340
+PHL,IT,Male,25 to 34,Director,1001-5000 employees,0
+PHL,IT,Male,25 to 34,Director,501-1000 employees,0
+PHL,IT,Male,25 to 34,Director,201-500 employees,0
+PHL,IT,Male,25 to 34,Director,51-200 employees,400
+PHL,IT,Male,25 to 34,Director,11-50 employees,530
+PHL,IT,Male,25 to 34,Director,2-10 employees,340
+PHL,IT,Male,25 to 34,Director,Myself Only,0
+PHL,IT,Male,25 to 34,Manager,"10,001+ employees",3100
+PHL,IT,Male,25 to 34,Manager,"5001-10,000 employees",840
+PHL,IT,Male,25 to 34,Manager,1001-5000 employees,860
+PHL,IT,Male,25 to 34,Manager,501-1000 employees,560
+PHL,IT,Male,25 to 34,Manager,201-500 employees,610
+PHL,IT,Male,25 to 34,Manager,51-200 employees,930
+PHL,IT,Male,25 to 34,Manager,11-50 employees,1300
+PHL,IT,Male,25 to 34,Manager,2-10 employees,690
+PHL,IT,Male,25 to 34,Manager,Myself Only,0
+PHL,IT,Male,25 to 34,Senior,"10,001+ employees",22000
+PHL,IT,Male,25 to 34,Senior,"5001-10,000 employees",3400
+PHL,IT,Male,25 to 34,Senior,1001-5000 employees,4600
+PHL,IT,Male,25 to 34,Senior,501-1000 employees,3400
+PHL,IT,Male,25 to 34,Senior,201-500 employees,3400
+PHL,IT,Male,25 to 34,Senior,51-200 employees,5900
+PHL,IT,Male,25 to 34,Senior,11-50 employees,5300
+PHL,IT,Male,25 to 34,Senior,2-10 employees,2500
+PHL,IT,Male,25 to 34,Senior,Myself Only,520
+PHL,IT,Male,25 to 34,Entry,"10,001+ employees",29000
+PHL,IT,Male,25 to 34,Entry,"5001-10,000 employees",6000
+PHL,IT,Male,25 to 34,Entry,1001-5000 employees,7400
+PHL,IT,Male,25 to 34,Entry,501-1000 employees,6500
+PHL,IT,Male,25 to 34,Entry,201-500 employees,6000
+PHL,IT,Male,25 to 34,Entry,51-200 employees,9800
+PHL,IT,Male,25 to 34,Entry,11-50 employees,11000
+PHL,IT,Male,25 to 34,Entry,2-10 employees,5800
+PHL,IT,Male,25 to 34,Entry,Myself Only,1400
+PHL,IT,Male,25 to 34,Training,"10,001+ employees",410
+PHL,IT,Male,25 to 34,Training,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,Training,1001-5000 employees,0
+PHL,IT,Male,25 to 34,Training,501-1000 employees,0
+PHL,IT,Male,25 to 34,Training,201-500 employees,0
+PHL,IT,Male,25 to 34,Training,51-200 employees,0
+PHL,IT,Male,25 to 34,Training,11-50 employees,0
+PHL,IT,Male,25 to 34,Training,2-10 employees,0
+PHL,IT,Male,25 to 34,Training,Myself Only,0
+PHL,IT,Male,25 to 34,Unpaid,"10,001+ employees",0
+PHL,IT,Male,25 to 34,Unpaid,"5001-10,000 employees",0
+PHL,IT,Male,25 to 34,Unpaid,1001-5000 employees,0
+PHL,IT,Male,25 to 34,Unpaid,501-1000 employees,0
+PHL,IT,Male,25 to 34,Unpaid,201-500 employees,0
+PHL,IT,Male,25 to 34,Unpaid,51-200 employees,0
+PHL,IT,Male,25 to 34,Unpaid,11-50 employees,0
+PHL,IT,Male,25 to 34,Unpaid,2-10 employees,0
+PHL,IT,Male,25 to 34,Unpaid,Myself Only,0
+PHL,IT,Male,18 to 24,Owner,"10,001+ employees",0
+PHL,IT,Male,18 to 24,Owner,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Owner,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Owner,501-1000 employees,0
+PHL,IT,Male,18 to 24,Owner,201-500 employees,0
+PHL,IT,Male,18 to 24,Owner,51-200 employees,0
+PHL,IT,Male,18 to 24,Owner,11-50 employees,0
+PHL,IT,Male,18 to 24,Owner,2-10 employees,0
+PHL,IT,Male,18 to 24,Owner,Myself Only,0
+PHL,IT,Male,18 to 24,Partner,"10,001+ employees",0
+PHL,IT,Male,18 to 24,Partner,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Partner,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Partner,501-1000 employees,0
+PHL,IT,Male,18 to 24,Partner,201-500 employees,0
+PHL,IT,Male,18 to 24,Partner,51-200 employees,0
+PHL,IT,Male,18 to 24,Partner,11-50 employees,0
+PHL,IT,Male,18 to 24,Partner,2-10 employees,0
+PHL,IT,Male,18 to 24,Partner,Myself Only,0
+PHL,IT,Male,18 to 24,CXO,"10,001+ employees",0
+PHL,IT,Male,18 to 24,CXO,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,CXO,1001-5000 employees,0
+PHL,IT,Male,18 to 24,CXO,501-1000 employees,0
+PHL,IT,Male,18 to 24,CXO,201-500 employees,0
+PHL,IT,Male,18 to 24,CXO,51-200 employees,0
+PHL,IT,Male,18 to 24,CXO,11-50 employees,0
+PHL,IT,Male,18 to 24,CXO,2-10 employees,0
+PHL,IT,Male,18 to 24,CXO,Myself Only,0
+PHL,IT,Male,18 to 24,VP,"10,001+ employees",0
+PHL,IT,Male,18 to 24,VP,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,VP,1001-5000 employees,0
+PHL,IT,Male,18 to 24,VP,501-1000 employees,0
+PHL,IT,Male,18 to 24,VP,201-500 employees,0
+PHL,IT,Male,18 to 24,VP,51-200 employees,0
+PHL,IT,Male,18 to 24,VP,11-50 employees,0
+PHL,IT,Male,18 to 24,VP,2-10 employees,0
+PHL,IT,Male,18 to 24,VP,Myself Only,0
+PHL,IT,Male,18 to 24,Director,"10,001+ employees",0
+PHL,IT,Male,18 to 24,Director,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Director,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Director,501-1000 employees,0
+PHL,IT,Male,18 to 24,Director,201-500 employees,0
+PHL,IT,Male,18 to 24,Director,51-200 employees,0
+PHL,IT,Male,18 to 24,Director,11-50 employees,0
+PHL,IT,Male,18 to 24,Director,2-10 employees,0
+PHL,IT,Male,18 to 24,Director,Myself Only,0
+PHL,IT,Male,18 to 24,Manager,"10,001+ employees",580
+PHL,IT,Male,18 to 24,Manager,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Manager,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Manager,501-1000 employees,0
+PHL,IT,Male,18 to 24,Manager,201-500 employees,0
+PHL,IT,Male,18 to 24,Manager,51-200 employees,0
+PHL,IT,Male,18 to 24,Manager,11-50 employees,0
+PHL,IT,Male,18 to 24,Manager,2-10 employees,0
+PHL,IT,Male,18 to 24,Manager,Myself Only,0
+PHL,IT,Male,18 to 24,Senior,"10,001+ employees",5200
+PHL,IT,Male,18 to 24,Senior,"5001-10,000 employees",460
+PHL,IT,Male,18 to 24,Senior,1001-5000 employees,700
+PHL,IT,Male,18 to 24,Senior,501-1000 employees,520
+PHL,IT,Male,18 to 24,Senior,201-500 employees,560
+PHL,IT,Male,18 to 24,Senior,51-200 employees,900
+PHL,IT,Male,18 to 24,Senior,11-50 employees,890
+PHL,IT,Male,18 to 24,Senior,2-10 employees,480
+PHL,IT,Male,18 to 24,Senior,Myself Only,0
+PHL,IT,Male,18 to 24,Entry,"10,001+ employees",7900
+PHL,IT,Male,18 to 24,Entry,"5001-10,000 employees",1700
+PHL,IT,Male,18 to 24,Entry,1001-5000 employees,1600
+PHL,IT,Male,18 to 24,Entry,501-1000 employees,1700
+PHL,IT,Male,18 to 24,Entry,201-500 employees,1500
+PHL,IT,Male,18 to 24,Entry,51-200 employees,2100
+PHL,IT,Male,18 to 24,Entry,11-50 employees,2600
+PHL,IT,Male,18 to 24,Entry,2-10 employees,1900
+PHL,IT,Male,18 to 24,Entry,Myself Only,550
+PHL,IT,Male,18 to 24,Training,"10,001+ employees",0
+PHL,IT,Male,18 to 24,Training,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Training,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Training,501-1000 employees,0
+PHL,IT,Male,18 to 24,Training,201-500 employees,0
+PHL,IT,Male,18 to 24,Training,51-200 employees,0
+PHL,IT,Male,18 to 24,Training,11-50 employees,0
+PHL,IT,Male,18 to 24,Training,2-10 employees,0
+PHL,IT,Male,18 to 24,Training,Myself Only,0
+PHL,IT,Male,18 to 24,Unpaid,"10,001+ employees",0
+PHL,IT,Male,18 to 24,Unpaid,"5001-10,000 employees",0
+PHL,IT,Male,18 to 24,Unpaid,1001-5000 employees,0
+PHL,IT,Male,18 to 24,Unpaid,501-1000 employees,0
+PHL,IT,Male,18 to 24,Unpaid,201-500 employees,0
+PHL,IT,Male,18 to 24,Unpaid,51-200 employees,0
+PHL,IT,Male,18 to 24,Unpaid,11-50 employees,0
+PHL,IT,Male,18 to 24,Unpaid,2-10 employees,0
+PHL,IT,Male,18 to 24,Unpaid,Myself Only,0
+PHL,IT,Female,55+,Owner,"10,001+ employees",0
+PHL,IT,Female,55+,Owner,"5001-10,000 employees",0
+PHL,IT,Female,55+,Owner,1001-5000 employees,0
+PHL,IT,Female,55+,Owner,501-1000 employees,0
+PHL,IT,Female,55+,Owner,201-500 employees,0
+PHL,IT,Female,55+,Owner,51-200 employees,0
+PHL,IT,Female,55+,Owner,11-50 employees,0
+PHL,IT,Female,55+,Owner,2-10 employees,0
+PHL,IT,Female,55+,Owner,Myself Only,0
+PHL,IT,Female,55+,Partner,"10,001+ employees",0
+PHL,IT,Female,55+,Partner,"5001-10,000 employees",0
+PHL,IT,Female,55+,Partner,1001-5000 employees,0
+PHL,IT,Female,55+,Partner,501-1000 employees,0
+PHL,IT,Female,55+,Partner,201-500 employees,0
+PHL,IT,Female,55+,Partner,51-200 employees,0
+PHL,IT,Female,55+,Partner,11-50 employees,0
+PHL,IT,Female,55+,Partner,2-10 employees,0
+PHL,IT,Female,55+,Partner,Myself Only,0
+PHL,IT,Female,55+,CXO,"10,001+ employees",0
+PHL,IT,Female,55+,CXO,"5001-10,000 employees",0
+PHL,IT,Female,55+,CXO,1001-5000 employees,0
+PHL,IT,Female,55+,CXO,501-1000 employees,0
+PHL,IT,Female,55+,CXO,201-500 employees,0
+PHL,IT,Female,55+,CXO,51-200 employees,0
+PHL,IT,Female,55+,CXO,11-50 employees,0
+PHL,IT,Female,55+,CXO,2-10 employees,0
+PHL,IT,Female,55+,CXO,Myself Only,0
+PHL,IT,Female,55+,VP,"10,001+ employees",0
+PHL,IT,Female,55+,VP,"5001-10,000 employees",0
+PHL,IT,Female,55+,VP,1001-5000 employees,0
+PHL,IT,Female,55+,VP,501-1000 employees,0
+PHL,IT,Female,55+,VP,201-500 employees,0
+PHL,IT,Female,55+,VP,51-200 employees,0
+PHL,IT,Female,55+,VP,11-50 employees,0
+PHL,IT,Female,55+,VP,2-10 employees,0
+PHL,IT,Female,55+,VP,Myself Only,0
+PHL,IT,Female,55+,Director,"10,001+ employees",0
+PHL,IT,Female,55+,Director,"5001-10,000 employees",0
+PHL,IT,Female,55+,Director,1001-5000 employees,0
+PHL,IT,Female,55+,Director,501-1000 employees,0
+PHL,IT,Female,55+,Director,201-500 employees,0
+PHL,IT,Female,55+,Director,51-200 employees,0
+PHL,IT,Female,55+,Director,11-50 employees,0
+PHL,IT,Female,55+,Director,2-10 employees,0
+PHL,IT,Female,55+,Director,Myself Only,0
+PHL,IT,Female,55+,Manager,"10,001+ employees",0
+PHL,IT,Female,55+,Manager,"5001-10,000 employees",0
+PHL,IT,Female,55+,Manager,1001-5000 employees,0
+PHL,IT,Female,55+,Manager,501-1000 employees,0
+PHL,IT,Female,55+,Manager,201-500 employees,0
+PHL,IT,Female,55+,Manager,51-200 employees,0
+PHL,IT,Female,55+,Manager,11-50 employees,0
+PHL,IT,Female,55+,Manager,2-10 employees,0
+PHL,IT,Female,55+,Manager,Myself Only,0
+PHL,IT,Female,55+,Senior,"10,001+ employees",0
+PHL,IT,Female,55+,Senior,"5001-10,000 employees",0
+PHL,IT,Female,55+,Senior,1001-5000 employees,0
+PHL,IT,Female,55+,Senior,501-1000 employees,0
+PHL,IT,Female,55+,Senior,201-500 employees,0
+PHL,IT,Female,55+,Senior,51-200 employees,0
+PHL,IT,Female,55+,Senior,11-50 employees,0
+PHL,IT,Female,55+,Senior,2-10 employees,0
+PHL,IT,Female,55+,Senior,Myself Only,0
+PHL,IT,Female,55+,Entry,"10,001+ employees",0
+PHL,IT,Female,55+,Entry,"5001-10,000 employees",0
+PHL,IT,Female,55+,Entry,1001-5000 employees,0
+PHL,IT,Female,55+,Entry,501-1000 employees,0
+PHL,IT,Female,55+,Entry,201-500 employees,0
+PHL,IT,Female,55+,Entry,51-200 employees,0
+PHL,IT,Female,55+,Entry,11-50 employees,0
+PHL,IT,Female,55+,Entry,2-10 employees,0
+PHL,IT,Female,55+,Entry,Myself Only,0
+PHL,IT,Female,55+,Training,"10,001+ employees",0
+PHL,IT,Female,55+,Training,"5001-10,000 employees",0
+PHL,IT,Female,55+,Training,1001-5000 employees,0
+PHL,IT,Female,55+,Training,501-1000 employees,0
+PHL,IT,Female,55+,Training,201-500 employees,0
+PHL,IT,Female,55+,Training,51-200 employees,0
+PHL,IT,Female,55+,Training,11-50 employees,0
+PHL,IT,Female,55+,Training,2-10 employees,0
+PHL,IT,Female,55+,Training,Myself Only,0
+PHL,IT,Female,55+,Unpaid,"10,001+ employees",0
+PHL,IT,Female,55+,Unpaid,"5001-10,000 employees",0
+PHL,IT,Female,55+,Unpaid,1001-5000 employees,0
+PHL,IT,Female,55+,Unpaid,501-1000 employees,0
+PHL,IT,Female,55+,Unpaid,201-500 employees,0
+PHL,IT,Female,55+,Unpaid,51-200 employees,0
+PHL,IT,Female,55+,Unpaid,11-50 employees,0
+PHL,IT,Female,55+,Unpaid,2-10 employees,0
+PHL,IT,Female,55+,Unpaid,Myself Only,0
+PHL,IT,Female,35 to 54,Owner,"10,001+ employees",0
+PHL,IT,Female,35 to 54,Owner,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,Owner,1001-5000 employees,0
+PHL,IT,Female,35 to 54,Owner,501-1000 employees,0
+PHL,IT,Female,35 to 54,Owner,201-500 employees,0
+PHL,IT,Female,35 to 54,Owner,51-200 employees,0
+PHL,IT,Female,35 to 54,Owner,11-50 employees,0
+PHL,IT,Female,35 to 54,Owner,2-10 employees,330
+PHL,IT,Female,35 to 54,Owner,Myself Only,0
+PHL,IT,Female,35 to 54,Partner,"10,001+ employees",0
+PHL,IT,Female,35 to 54,Partner,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,Partner,1001-5000 employees,0
+PHL,IT,Female,35 to 54,Partner,501-1000 employees,0
+PHL,IT,Female,35 to 54,Partner,201-500 employees,0
+PHL,IT,Female,35 to 54,Partner,51-200 employees,0
+PHL,IT,Female,35 to 54,Partner,11-50 employees,0
+PHL,IT,Female,35 to 54,Partner,2-10 employees,0
+PHL,IT,Female,35 to 54,Partner,Myself Only,0
+PHL,IT,Female,35 to 54,CXO,"10,001+ employees",0
+PHL,IT,Female,35 to 54,CXO,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,CXO,1001-5000 employees,0
+PHL,IT,Female,35 to 54,CXO,501-1000 employees,0
+PHL,IT,Female,35 to 54,CXO,201-500 employees,0
+PHL,IT,Female,35 to 54,CXO,51-200 employees,0
+PHL,IT,Female,35 to 54,CXO,11-50 employees,0
+PHL,IT,Female,35 to 54,CXO,2-10 employees,0
+PHL,IT,Female,35 to 54,CXO,Myself Only,0
+PHL,IT,Female,35 to 54,VP,"10,001+ employees",0
+PHL,IT,Female,35 to 54,VP,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,VP,1001-5000 employees,0
+PHL,IT,Female,35 to 54,VP,501-1000 employees,0
+PHL,IT,Female,35 to 54,VP,201-500 employees,0
+PHL,IT,Female,35 to 54,VP,51-200 employees,0
+PHL,IT,Female,35 to 54,VP,11-50 employees,0
+PHL,IT,Female,35 to 54,VP,2-10 employees,0
+PHL,IT,Female,35 to 54,VP,Myself Only,0
+PHL,IT,Female,35 to 54,Director,"10,001+ employees",700
+PHL,IT,Female,35 to 54,Director,"5001-10,000 employees",420
+PHL,IT,Female,35 to 54,Director,1001-5000 employees,0
+PHL,IT,Female,35 to 54,Director,501-1000 employees,0
+PHL,IT,Female,35 to 54,Director,201-500 employees,0
+PHL,IT,Female,35 to 54,Director,51-200 employees,340
+PHL,IT,Female,35 to 54,Director,11-50 employees,320
+PHL,IT,Female,35 to 54,Director,2-10 employees,0
+PHL,IT,Female,35 to 54,Director,Myself Only,0
+PHL,IT,Female,35 to 54,Manager,"10,001+ employees",2700
+PHL,IT,Female,35 to 54,Manager,"5001-10,000 employees",760
+PHL,IT,Female,35 to 54,Manager,1001-5000 employees,600
+PHL,IT,Female,35 to 54,Manager,501-1000 employees,430
+PHL,IT,Female,35 to 54,Manager,201-500 employees,440
+PHL,IT,Female,35 to 54,Manager,51-200 employees,570
+PHL,IT,Female,35 to 54,Manager,11-50 employees,630
+PHL,IT,Female,35 to 54,Manager,2-10 employees,0
+PHL,IT,Female,35 to 54,Manager,Myself Only,0
+PHL,IT,Female,35 to 54,Senior,"10,001+ employees",9400
+PHL,IT,Female,35 to 54,Senior,"5001-10,000 employees",1700
+PHL,IT,Female,35 to 54,Senior,1001-5000 employees,1700
+PHL,IT,Female,35 to 54,Senior,501-1000 employees,1600
+PHL,IT,Female,35 to 54,Senior,201-500 employees,1300
+PHL,IT,Female,35 to 54,Senior,51-200 employees,1900
+PHL,IT,Female,35 to 54,Senior,11-50 employees,1700
+PHL,IT,Female,35 to 54,Senior,2-10 employees,830
+PHL,IT,Female,35 to 54,Senior,Myself Only,0
+PHL,IT,Female,35 to 54,Entry,"10,001+ employees",5600
+PHL,IT,Female,35 to 54,Entry,"5001-10,000 employees",1200
+PHL,IT,Female,35 to 54,Entry,1001-5000 employees,1300
+PHL,IT,Female,35 to 54,Entry,501-1000 employees,1600
+PHL,IT,Female,35 to 54,Entry,201-500 employees,1100
+PHL,IT,Female,35 to 54,Entry,51-200 employees,1700
+PHL,IT,Female,35 to 54,Entry,11-50 employees,1600
+PHL,IT,Female,35 to 54,Entry,2-10 employees,850
+PHL,IT,Female,35 to 54,Entry,Myself Only,0
+PHL,IT,Female,35 to 54,Training,"10,001+ employees",0
+PHL,IT,Female,35 to 54,Training,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,Training,1001-5000 employees,0
+PHL,IT,Female,35 to 54,Training,501-1000 employees,0
+PHL,IT,Female,35 to 54,Training,201-500 employees,0
+PHL,IT,Female,35 to 54,Training,51-200 employees,0
+PHL,IT,Female,35 to 54,Training,11-50 employees,0
+PHL,IT,Female,35 to 54,Training,2-10 employees,0
+PHL,IT,Female,35 to 54,Training,Myself Only,0
+PHL,IT,Female,35 to 54,Unpaid,"10,001+ employees",0
+PHL,IT,Female,35 to 54,Unpaid,"5001-10,000 employees",0
+PHL,IT,Female,35 to 54,Unpaid,1001-5000 employees,0
+PHL,IT,Female,35 to 54,Unpaid,501-1000 employees,0
+PHL,IT,Female,35 to 54,Unpaid,201-500 employees,0
+PHL,IT,Female,35 to 54,Unpaid,51-200 employees,0
+PHL,IT,Female,35 to 54,Unpaid,11-50 employees,0
+PHL,IT,Female,35 to 54,Unpaid,2-10 employees,0
+PHL,IT,Female,35 to 54,Unpaid,Myself Only,0
+PHL,IT,Female,25 to 34,Owner,"10,001+ employees",310
+PHL,IT,Female,25 to 34,Owner,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,Owner,1001-5000 employees,0
+PHL,IT,Female,25 to 34,Owner,501-1000 employees,0
+PHL,IT,Female,25 to 34,Owner,201-500 employees,0
+PHL,IT,Female,25 to 34,Owner,51-200 employees,0
+PHL,IT,Female,25 to 34,Owner,11-50 employees,390
+PHL,IT,Female,25 to 34,Owner,2-10 employees,430
+PHL,IT,Female,25 to 34,Owner,Myself Only,0
+PHL,IT,Female,25 to 34,Partner,"10,001+ employees",0
+PHL,IT,Female,25 to 34,Partner,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,Partner,1001-5000 employees,0
+PHL,IT,Female,25 to 34,Partner,501-1000 employees,0
+PHL,IT,Female,25 to 34,Partner,201-500 employees,0
+PHL,IT,Female,25 to 34,Partner,51-200 employees,0
+PHL,IT,Female,25 to 34,Partner,11-50 employees,0
+PHL,IT,Female,25 to 34,Partner,2-10 employees,0
+PHL,IT,Female,25 to 34,Partner,Myself Only,0
+PHL,IT,Female,25 to 34,CXO,"10,001+ employees",0
+PHL,IT,Female,25 to 34,CXO,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,CXO,1001-5000 employees,0
+PHL,IT,Female,25 to 34,CXO,501-1000 employees,0
+PHL,IT,Female,25 to 34,CXO,201-500 employees,0
+PHL,IT,Female,25 to 34,CXO,51-200 employees,0
+PHL,IT,Female,25 to 34,CXO,11-50 employees,0
+PHL,IT,Female,25 to 34,CXO,2-10 employees,0
+PHL,IT,Female,25 to 34,CXO,Myself Only,0
+PHL,IT,Female,25 to 34,VP,"10,001+ employees",0
+PHL,IT,Female,25 to 34,VP,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,VP,1001-5000 employees,0
+PHL,IT,Female,25 to 34,VP,501-1000 employees,0
+PHL,IT,Female,25 to 34,VP,201-500 employees,0
+PHL,IT,Female,25 to 34,VP,51-200 employees,0
+PHL,IT,Female,25 to 34,VP,11-50 employees,0
+PHL,IT,Female,25 to 34,VP,2-10 employees,0
+PHL,IT,Female,25 to 34,VP,Myself Only,0
+PHL,IT,Female,25 to 34,Director,"10,001+ employees",590
+PHL,IT,Female,25 to 34,Director,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,Director,1001-5000 employees,0
+PHL,IT,Female,25 to 34,Director,501-1000 employees,0
+PHL,IT,Female,25 to 34,Director,201-500 employees,0
+PHL,IT,Female,25 to 34,Director,51-200 employees,380
+PHL,IT,Female,25 to 34,Director,11-50 employees,430
+PHL,IT,Female,25 to 34,Director,2-10 employees,0
+PHL,IT,Female,25 to 34,Director,Myself Only,0
+PHL,IT,Female,25 to 34,Manager,"10,001+ employees",2600
+PHL,IT,Female,25 to 34,Manager,"5001-10,000 employees",700
+PHL,IT,Female,25 to 34,Manager,1001-5000 employees,680
+PHL,IT,Female,25 to 34,Manager,501-1000 employees,570
+PHL,IT,Female,25 to 34,Manager,201-500 employees,480
+PHL,IT,Female,25 to 34,Manager,51-200 employees,850
+PHL,IT,Female,25 to 34,Manager,11-50 employees,1200
+PHL,IT,Female,25 to 34,Manager,2-10 employees,630
+PHL,IT,Female,25 to 34,Manager,Myself Only,0
+PHL,IT,Female,25 to 34,Senior,"10,001+ employees",22000
+PHL,IT,Female,25 to 34,Senior,"5001-10,000 employees",3700
+PHL,IT,Female,25 to 34,Senior,1001-5000 employees,4600
+PHL,IT,Female,25 to 34,Senior,501-1000 employees,3900
+PHL,IT,Female,25 to 34,Senior,201-500 employees,3300
+PHL,IT,Female,25 to 34,Senior,51-200 employees,6900
+PHL,IT,Female,25 to 34,Senior,11-50 employees,5600
+PHL,IT,Female,25 to 34,Senior,2-10 employees,2700
+PHL,IT,Female,25 to 34,Senior,Myself Only,570
+PHL,IT,Female,25 to 34,Entry,"10,001+ employees",27000
+PHL,IT,Female,25 to 34,Entry,"5001-10,000 employees",5100
+PHL,IT,Female,25 to 34,Entry,1001-5000 employees,6400
+PHL,IT,Female,25 to 34,Entry,501-1000 employees,6600
+PHL,IT,Female,25 to 34,Entry,201-500 employees,5100
+PHL,IT,Female,25 to 34,Entry,51-200 employees,8400
+PHL,IT,Female,25 to 34,Entry,11-50 employees,9700
+PHL,IT,Female,25 to 34,Entry,2-10 employees,6200
+PHL,IT,Female,25 to 34,Entry,Myself Only,1600
+PHL,IT,Female,25 to 34,Training,"10,001+ employees",420
+PHL,IT,Female,25 to 34,Training,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,Training,1001-5000 employees,0
+PHL,IT,Female,25 to 34,Training,501-1000 employees,0
+PHL,IT,Female,25 to 34,Training,201-500 employees,0
+PHL,IT,Female,25 to 34,Training,51-200 employees,0
+PHL,IT,Female,25 to 34,Training,11-50 employees,0
+PHL,IT,Female,25 to 34,Training,2-10 employees,0
+PHL,IT,Female,25 to 34,Training,Myself Only,0
+PHL,IT,Female,25 to 34,Unpaid,"10,001+ employees",0
+PHL,IT,Female,25 to 34,Unpaid,"5001-10,000 employees",0
+PHL,IT,Female,25 to 34,Unpaid,1001-5000 employees,0
+PHL,IT,Female,25 to 34,Unpaid,501-1000 employees,0
+PHL,IT,Female,25 to 34,Unpaid,201-500 employees,0
+PHL,IT,Female,25 to 34,Unpaid,51-200 employees,0
+PHL,IT,Female,25 to 34,Unpaid,11-50 employees,0
+PHL,IT,Female,25 to 34,Unpaid,2-10 employees,0
+PHL,IT,Female,25 to 34,Unpaid,Myself Only,0
+PHL,IT,Female,18 to 24,Owner,"10,001+ employees",0
+PHL,IT,Female,18 to 24,Owner,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Owner,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Owner,501-1000 employees,0
+PHL,IT,Female,18 to 24,Owner,201-500 employees,0
+PHL,IT,Female,18 to 24,Owner,51-200 employees,0
+PHL,IT,Female,18 to 24,Owner,11-50 employees,0
+PHL,IT,Female,18 to 24,Owner,2-10 employees,0
+PHL,IT,Female,18 to 24,Owner,Myself Only,0
+PHL,IT,Female,18 to 24,Partner,"10,001+ employees",0
+PHL,IT,Female,18 to 24,Partner,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Partner,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Partner,501-1000 employees,0
+PHL,IT,Female,18 to 24,Partner,201-500 employees,0
+PHL,IT,Female,18 to 24,Partner,51-200 employees,0
+PHL,IT,Female,18 to 24,Partner,11-50 employees,0
+PHL,IT,Female,18 to 24,Partner,2-10 employees,0
+PHL,IT,Female,18 to 24,Partner,Myself Only,0
+PHL,IT,Female,18 to 24,CXO,"10,001+ employees",0
+PHL,IT,Female,18 to 24,CXO,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,CXO,1001-5000 employees,0
+PHL,IT,Female,18 to 24,CXO,501-1000 employees,0
+PHL,IT,Female,18 to 24,CXO,201-500 employees,0
+PHL,IT,Female,18 to 24,CXO,51-200 employees,0
+PHL,IT,Female,18 to 24,CXO,11-50 employees,0
+PHL,IT,Female,18 to 24,CXO,2-10 employees,0
+PHL,IT,Female,18 to 24,CXO,Myself Only,0
+PHL,IT,Female,18 to 24,VP,"10,001+ employees",0
+PHL,IT,Female,18 to 24,VP,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,VP,1001-5000 employees,0
+PHL,IT,Female,18 to 24,VP,501-1000 employees,0
+PHL,IT,Female,18 to 24,VP,201-500 employees,0
+PHL,IT,Female,18 to 24,VP,51-200 employees,0
+PHL,IT,Female,18 to 24,VP,11-50 employees,0
+PHL,IT,Female,18 to 24,VP,2-10 employees,0
+PHL,IT,Female,18 to 24,VP,Myself Only,0
+PHL,IT,Female,18 to 24,Director,"10,001+ employees",0
+PHL,IT,Female,18 to 24,Director,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Director,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Director,501-1000 employees,0
+PHL,IT,Female,18 to 24,Director,201-500 employees,0
+PHL,IT,Female,18 to 24,Director,51-200 employees,0
+PHL,IT,Female,18 to 24,Director,11-50 employees,0
+PHL,IT,Female,18 to 24,Director,2-10 employees,0
+PHL,IT,Female,18 to 24,Director,Myself Only,0
+PHL,IT,Female,18 to 24,Manager,"10,001+ employees",420
+PHL,IT,Female,18 to 24,Manager,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Manager,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Manager,501-1000 employees,0
+PHL,IT,Female,18 to 24,Manager,201-500 employees,0
+PHL,IT,Female,18 to 24,Manager,51-200 employees,0
+PHL,IT,Female,18 to 24,Manager,11-50 employees,0
+PHL,IT,Female,18 to 24,Manager,2-10 employees,0
+PHL,IT,Female,18 to 24,Manager,Myself Only,0
+PHL,IT,Female,18 to 24,Senior,"10,001+ employees",6100
+PHL,IT,Female,18 to 24,Senior,"5001-10,000 employees",510
+PHL,IT,Female,18 to 24,Senior,1001-5000 employees,720
+PHL,IT,Female,18 to 24,Senior,501-1000 employees,590
+PHL,IT,Female,18 to 24,Senior,201-500 employees,590
+PHL,IT,Female,18 to 24,Senior,51-200 employees,1200
+PHL,IT,Female,18 to 24,Senior,11-50 employees,1000
+PHL,IT,Female,18 to 24,Senior,2-10 employees,520
+PHL,IT,Female,18 to 24,Senior,Myself Only,0
+PHL,IT,Female,18 to 24,Entry,"10,001+ employees",8000
+PHL,IT,Female,18 to 24,Entry,"5001-10,000 employees",1100
+PHL,IT,Female,18 to 24,Entry,1001-5000 employees,1400
+PHL,IT,Female,18 to 24,Entry,501-1000 employees,1700
+PHL,IT,Female,18 to 24,Entry,201-500 employees,1300
+PHL,IT,Female,18 to 24,Entry,51-200 employees,1800
+PHL,IT,Female,18 to 24,Entry,11-50 employees,2400
+PHL,IT,Female,18 to 24,Entry,2-10 employees,1900
+PHL,IT,Female,18 to 24,Entry,Myself Only,580
+PHL,IT,Female,18 to 24,Training,"10,001+ employees",0
+PHL,IT,Female,18 to 24,Training,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Training,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Training,501-1000 employees,0
+PHL,IT,Female,18 to 24,Training,201-500 employees,0
+PHL,IT,Female,18 to 24,Training,51-200 employees,0
+PHL,IT,Female,18 to 24,Training,11-50 employees,0
+PHL,IT,Female,18 to 24,Training,2-10 employees,0
+PHL,IT,Female,18 to 24,Training,Myself Only,0
+PHL,IT,Female,18 to 24,Unpaid,"10,001+ employees",0
+PHL,IT,Female,18 to 24,Unpaid,"5001-10,000 employees",0
+PHL,IT,Female,18 to 24,Unpaid,1001-5000 employees,0
+PHL,IT,Female,18 to 24,Unpaid,501-1000 employees,0
+PHL,IT,Female,18 to 24,Unpaid,201-500 employees,0
+PHL,IT,Female,18 to 24,Unpaid,51-200 employees,0
+PHL,IT,Female,18 to 24,Unpaid,11-50 employees,0
+PHL,IT,Female,18 to 24,Unpaid,2-10 employees,0
+PHL,IT,Female,18 to 24,Unpaid,Myself Only,0

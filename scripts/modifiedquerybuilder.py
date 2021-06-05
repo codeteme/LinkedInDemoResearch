@@ -176,91 +176,89 @@ def make_call():
     count = getCount(criteria)
     return count
 
-# Specify countries
-selected_countries = ['IND']
-country_list = []
-for country in selected_countries:
-    country_info = locationsegments.get(country)
-    country_list.append(country_info)
+# 5 countries * 3 genders * 3 sectors * 7 senioritis * 6 company sizes * 6 age groups * 2 connectivity status
 
-IT_company_industry = ["Internet", "Information Technology & Services", "Computer Software", "Computer & Network Security", "Computer Hardware", "Computer Networking", "Wireless", "Telecommunications", "Semiconductors", "Nanotechnology", "Consumer Electronics"]
+country_list = [] # Initialize an empty list to be populated by each item in segment (from library)
+gender_list = [] 
+jobseniority_list = [] 
+companysize_list = []
+agerange_list = [] 
+
+selected_locations = ['USA', 'UK', 'VNM', 'IND', 'PHL']
+Finance_company_industry = ["Banking", "Capital Markets", "Financial Services", "Insurance", "Investment Banking", "Investment Management", "Venture Capital & Private Equity"]
 companyindustry_list = [] # Initialize an empty list to be populate by each item in segment (from library) 
-for companyindustry in IT_company_industry:
+for companyindustry in Finance_company_industry:
     companyindustry_info = companyindustrysegments.get(companyindustry)
     companyindustry_list.append(companyindustry_info)
 
 exclude_list = []
 
-arg_list = [
-    locale_builder(), 
-    location_builder(country_list),
-    companyindustry_builder(companyindustry_list)]
+arg_list = [locale_builder(), companyindustry_builder(companyindustry_list)]
 
 # Intialize an empty dataframe with only column names
 df = pd.DataFrame()
 
-# 5 countries * 3 genders * 3 sectors * 7 senioritis * 6 company sizes * 6 age groups * 2 connectivity status
+for location in selected_locations:
+    country_info = locationsegments.get(location)
+    country_list.append(country_info)
+    arg_list.append(location_builder(country_list))
+    row_value = ['Finance']
+    row_value.append(location) 
 
-gender_list = [] # Initialize an empty list to be populated by each item in segment (from library)
-agerange_list = [] # Initialize an empty list to be populated by each item in segment (from library) 
-jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-companysize_list = [] # Initialize an empty list to be populate by each item in segment (from library)  
+    for gender in gendersegments.keys():
+        gender_info = gendersegments.get(gender)
+        gender_list.append(gender_info)
+        arg_list.append(gender_builder(gender_list))
+        row_value.append(gender)
 
-for gender in gendersegments.keys():
-    print("*****************")
-    print("*****************")
-    gender_info = gendersegments.get(gender)
-    gender_list.append(gender_info)
-    arg_list.append(gender_builder(gender_list))
-    row_value = ['VNM', 'IT']
-    row_value.append(gender)
+        for agerange in agerangesegments.keys():
+            agerange_info = agerangesegments.get(agerange)
+            agerange_list.append(agerange_info)
+            arg_list.append(age_builder(agerange_list))
+            row_value.append(agerange) 
 
-    for agerange in agerangesegments.keys():
-        agerange_info = agerangesegments.get(agerange)
-        agerange_list.append(agerange_info)
-        arg_list.append(age_builder(agerange_list))
-        row_value.append(agerange) 
+            for jobseniority in jobsenioritysegments.keys():
+                jobseniority_info = jobsenioritysegments.get(jobseniority)
+                jobseniority_list.append(jobseniority_info)
+                arg_list.append(jobseniority_builder(jobseniority_list))
+                row_value.append(jobseniority)
+
+                for companysize in companysizesegments.keys(): # iterate through segment and get name of element
+                    companysize_info = companysizesegments.get(companysize) # extract the corresponding value of the element
+                    companysize_list.append(companysize_info) # add element information to the list 
+                    arg_list.append(companysize_builder(companysize_list)) # pass the processed list to build query 
+                    row_value.append(companysize)
+                    count =  make_call() # makes the api call and parses and prints count
+                    row_value.append(count)
+                    row = pd.Series(row_value)
+                    row_df = pd.DataFrame([row])
+                    df = pd.concat([row_df, df], ignore_index=True)
+                    print(df.head())
+                    arg_list.pop() # remove the last added query parameter which is the current variable
+                    companysize_list.pop() # empty the list to step to the next element in the list
+                    row_value.pop() # remove the count value
+                    row_value.pop() # remove the company size value
+                    time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
+
+                df.to_csv('../intermediate/male_female_finance_temp_2.csv', index=False)
+
+                arg_list.pop() # remove the last added query parameter which is the job seniority variable
+                jobseniority_list.pop() # empty the list to step to the next element in the list
+                row_value.pop() # remove the job seniority value
+
+            arg_list.pop() # remove the last added query parameter which is the age range variable
+            agerange_list.pop() # empty the list to step to the next element in the list
+            row_value.pop() # remove the age range value
+
+        arg_list.pop() # remove the last added query parameter which is the gender variable
+        gender_list.pop() # empty the list to step to the next element in the list
+        row_value.pop() # remove the gender value
     
-        for jobseniority in jobsenioritysegments.keys():
-            jobseniority_info = jobsenioritysegments.get(jobseniority)
-            jobseniority_list.append(jobseniority_info)
-            arg_list.append(jobseniority_builder(jobseniority_list))
-            row_value.append(jobseniority)
+    arg_list.pop() # remove the last added query parameter which is the location variable
+    country_list.pop() # empty the list to step to the next element in the list
+    row_value.clear() # remove the location value
 
-            for companysize in companysizesegments.keys(): # iterate through segment and get name of element
-                companysize_info = companysizesegments.get(companysize) # extract the corresponding value of the element
-                companysize_list.append(companysize_info) # add element information to the list 
-                arg_list.append(companysize_builder(companysize_list)) # pass the processed list to build query 
-                row_value.append(companysize)
-                count =  make_call() # makes the api call and parses and prints count
-                row_value.append(count)
-                row = pd.Series(row_value)
-                row_df = pd.DataFrame([row])
-                df = pd.concat([row_df, df], ignore_index=True)
-                print(df.head())
-                arg_list.pop() # remove the last added query parameter which is the current variable
-                companysize_list.pop() # empty the list to step to the next element in the list
-                row_value.pop() # remove the count value
-                row_value.pop() # remove the company size value
-                time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
-
-            df.to_csv('../intermediate/VNM_temp.csv', index=False)
-
-            arg_list.pop() # remove the last added query parameter which is the job seniority variable
-            jobseniority_list.pop() # empty the list to step to the next element in the list
-            row_value.pop() # remove the job seniority value
-
-        arg_list.pop() # remove the last added query parameter which is the age range variable
-        agerange_list.pop() # empty the list to step to the next element in the list
-        row_value.pop() # remove the age range value
-
-    arg_list.pop() # remove the last added query parameter which is the gender variable
-    gender_list.pop() # empty the list to step to the next element in the list
-    row_value.clear() # remove the gender value
-        
-
-
-df.columns = ["Country", "Company Industry", "Gender", "Age Range", "Job seniority", "Company Size", "Count"]
-df.to_csv('../intermediate/VNM.csv', index=False)
+df.columns = ["Company Industry", "Country", "Gender", "Age Range", "Job seniority", "Company Size", "Count"]
+df.to_csv('../intermediate/male_female_finance_2.csv', index=False)
 
 

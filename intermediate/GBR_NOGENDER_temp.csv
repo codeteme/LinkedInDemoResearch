@@ -1,0 +1,361 @@
+0,1,2,3,4,5
+GBR,IT,55+,Owner,"10,001+ employees",1000
+GBR,IT,55+,Owner,"5001-10,000 employees",0
+GBR,IT,55+,Owner,1001-5000 employees,820
+GBR,IT,55+,Owner,501-1000 employees,430
+GBR,IT,55+,Owner,201-500 employees,800
+GBR,IT,55+,Owner,51-200 employees,1800
+GBR,IT,55+,Owner,11-50 employees,3900
+GBR,IT,55+,Owner,2-10 employees,5700
+GBR,IT,55+,Owner,Myself Only,790
+GBR,IT,55+,Partner,"10,001+ employees",630
+GBR,IT,55+,Partner,"5001-10,000 employees",0
+GBR,IT,55+,Partner,1001-5000 employees,600
+GBR,IT,55+,Partner,501-1000 employees,350
+GBR,IT,55+,Partner,201-500 employees,570
+GBR,IT,55+,Partner,51-200 employees,1200
+GBR,IT,55+,Partner,11-50 employees,2100
+GBR,IT,55+,Partner,2-10 employees,2200
+GBR,IT,55+,Partner,Myself Only,0
+GBR,IT,55+,CXO,"10,001+ employees",900
+GBR,IT,55+,CXO,"5001-10,000 employees",310
+GBR,IT,55+,CXO,1001-5000 employees,850
+GBR,IT,55+,CXO,501-1000 employees,480
+GBR,IT,55+,CXO,201-500 employees,930
+GBR,IT,55+,CXO,51-200 employees,2300
+GBR,IT,55+,CXO,11-50 employees,3800
+GBR,IT,55+,CXO,2-10 employees,3400
+GBR,IT,55+,CXO,Myself Only,310
+GBR,IT,55+,VP,"10,001+ employees",1500
+GBR,IT,55+,VP,"5001-10,000 employees",330
+GBR,IT,55+,VP,1001-5000 employees,920
+GBR,IT,55+,VP,501-1000 employees,430
+GBR,IT,55+,VP,201-500 employees,760
+GBR,IT,55+,VP,51-200 employees,1500
+GBR,IT,55+,VP,11-50 employees,2900
+GBR,IT,55+,VP,2-10 employees,3600
+GBR,IT,55+,VP,Myself Only,0
+GBR,IT,55+,Director,"10,001+ employees",6800
+GBR,IT,55+,Director,"5001-10,000 employees",1400
+GBR,IT,55+,Director,1001-5000 employees,3500
+GBR,IT,55+,Director,501-1000 employees,1700
+GBR,IT,55+,Director,201-500 employees,2600
+GBR,IT,55+,Director,51-200 employees,4800
+GBR,IT,55+,Director,11-50 employees,7700
+GBR,IT,55+,Director,2-10 employees,9000
+GBR,IT,55+,Director,Myself Only,900
+GBR,IT,55+,Manager,"10,001+ employees",5800
+GBR,IT,55+,Manager,"5001-10,000 employees",850
+GBR,IT,55+,Manager,1001-5000 employees,2000
+GBR,IT,55+,Manager,501-1000 employees,730
+GBR,IT,55+,Manager,201-500 employees,1000
+GBR,IT,55+,Manager,51-200 employees,1600
+GBR,IT,55+,Manager,11-50 employees,1700
+GBR,IT,55+,Manager,2-10 employees,1400
+GBR,IT,55+,Manager,Myself Only,0
+GBR,IT,55+,Senior,"10,001+ employees",15000
+GBR,IT,55+,Senior,"5001-10,000 employees",2100
+GBR,IT,55+,Senior,1001-5000 employees,5200
+GBR,IT,55+,Senior,501-1000 employees,2100
+GBR,IT,55+,Senior,201-500 employees,3100
+GBR,IT,55+,Senior,51-200 employees,4600
+GBR,IT,55+,Senior,11-50 employees,4600
+GBR,IT,55+,Senior,2-10 employees,3000
+GBR,IT,55+,Senior,Myself Only,720
+GBR,IT,55+,Entry,"10,001+ employees",6600
+GBR,IT,55+,Entry,"5001-10,000 employees",830
+GBR,IT,55+,Entry,1001-5000 employees,2300
+GBR,IT,55+,Entry,501-1000 employees,970
+GBR,IT,55+,Entry,201-500 employees,1500
+GBR,IT,55+,Entry,51-200 employees,2300
+GBR,IT,55+,Entry,11-50 employees,2400
+GBR,IT,55+,Entry,2-10 employees,1500
+GBR,IT,55+,Entry,Myself Only,420
+GBR,IT,55+,Training,"10,001+ employees",0
+GBR,IT,55+,Training,"5001-10,000 employees",0
+GBR,IT,55+,Training,1001-5000 employees,0
+GBR,IT,55+,Training,501-1000 employees,0
+GBR,IT,55+,Training,201-500 employees,0
+GBR,IT,55+,Training,51-200 employees,0
+GBR,IT,55+,Training,11-50 employees,0
+GBR,IT,55+,Training,2-10 employees,0
+GBR,IT,55+,Training,Myself Only,0
+GBR,IT,55+,Unpaid,"10,001+ employees",0
+GBR,IT,55+,Unpaid,"5001-10,000 employees",0
+GBR,IT,55+,Unpaid,1001-5000 employees,0
+GBR,IT,55+,Unpaid,501-1000 employees,0
+GBR,IT,55+,Unpaid,201-500 employees,0
+GBR,IT,55+,Unpaid,51-200 employees,0
+GBR,IT,55+,Unpaid,11-50 employees,0
+GBR,IT,55+,Unpaid,2-10 employees,0
+GBR,IT,55+,Unpaid,Myself Only,0
+GBR,IT,35 to 54,Owner,"10,001+ employees",4000
+GBR,IT,35 to 54,Owner,"5001-10,000 employees",1100
+GBR,IT,35 to 54,Owner,1001-5000 employees,2900
+GBR,IT,35 to 54,Owner,501-1000 employees,1400
+GBR,IT,35 to 54,Owner,201-500 employees,2500
+GBR,IT,35 to 54,Owner,51-200 employees,6200
+GBR,IT,35 to 54,Owner,11-50 employees,14000
+GBR,IT,35 to 54,Owner,2-10 employees,21000
+GBR,IT,35 to 54,Owner,Myself Only,3300
+GBR,IT,35 to 54,Partner,"10,001+ employees",2000
+GBR,IT,35 to 54,Partner,"5001-10,000 employees",550
+GBR,IT,35 to 54,Partner,1001-5000 employees,1500
+GBR,IT,35 to 54,Partner,501-1000 employees,890
+GBR,IT,35 to 54,Partner,201-500 employees,1500
+GBR,IT,35 to 54,Partner,51-200 employees,3200
+GBR,IT,35 to 54,Partner,11-50 employees,5100
+GBR,IT,35 to 54,Partner,2-10 employees,5300
+GBR,IT,35 to 54,Partner,Myself Only,580
+GBR,IT,35 to 54,CXO,"10,001+ employees",2700
+GBR,IT,35 to 54,CXO,"5001-10,000 employees",730
+GBR,IT,35 to 54,CXO,1001-5000 employees,2000
+GBR,IT,35 to 54,CXO,501-1000 employees,1100
+GBR,IT,35 to 54,CXO,201-500 employees,2300
+GBR,IT,35 to 54,CXO,51-200 employees,6000
+GBR,IT,35 to 54,CXO,11-50 employees,10000
+GBR,IT,35 to 54,CXO,2-10 employees,9500
+GBR,IT,35 to 54,CXO,Myself Only,940
+GBR,IT,35 to 54,VP,"10,001+ employees",5700
+GBR,IT,35 to 54,VP,"5001-10,000 employees",1100
+GBR,IT,35 to 54,VP,1001-5000 employees,3100
+GBR,IT,35 to 54,VP,501-1000 employees,1500
+GBR,IT,35 to 54,VP,201-500 employees,2400
+GBR,IT,35 to 54,VP,51-200 employees,4400
+GBR,IT,35 to 54,VP,11-50 employees,7600
+GBR,IT,35 to 54,VP,2-10 employees,8900
+GBR,IT,35 to 54,VP,Myself Only,880
+GBR,IT,35 to 54,Director,"10,001+ employees",30000
+GBR,IT,35 to 54,Director,"5001-10,000 employees",5900
+GBR,IT,35 to 54,Director,1001-5000 employees,15000
+GBR,IT,35 to 54,Director,501-1000 employees,7000
+GBR,IT,35 to 54,Director,201-500 employees,11000
+GBR,IT,35 to 54,Director,51-200 employees,19000
+GBR,IT,35 to 54,Director,11-50 employees,26000
+GBR,IT,35 to 54,Director,2-10 employees,27000
+GBR,IT,35 to 54,Director,Myself Only,3500
+GBR,IT,35 to 54,Manager,"10,001+ employees",34000
+GBR,IT,35 to 54,Manager,"5001-10,000 employees",4800
+GBR,IT,35 to 54,Manager,1001-5000 employees,12000
+GBR,IT,35 to 54,Manager,501-1000 employees,4500
+GBR,IT,35 to 54,Manager,201-500 employees,6300
+GBR,IT,35 to 54,Manager,51-200 employees,9300
+GBR,IT,35 to 54,Manager,11-50 employees,9000
+GBR,IT,35 to 54,Manager,2-10 employees,5800
+GBR,IT,35 to 54,Manager,Myself Only,960
+GBR,IT,35 to 54,Senior,"10,001+ employees",94000
+GBR,IT,35 to 54,Senior,"5001-10,000 employees",14000
+GBR,IT,35 to 54,Senior,1001-5000 employees,36000
+GBR,IT,35 to 54,Senior,501-1000 employees,15000
+GBR,IT,35 to 54,Senior,201-500 employees,22000
+GBR,IT,35 to 54,Senior,51-200 employees,32000
+GBR,IT,35 to 54,Senior,11-50 employees,30000
+GBR,IT,35 to 54,Senior,2-10 employees,14000
+GBR,IT,35 to 54,Senior,Myself Only,2500
+GBR,IT,35 to 54,Entry,"10,001+ employees",45000
+GBR,IT,35 to 54,Entry,"5001-10,000 employees",5900
+GBR,IT,35 to 54,Entry,1001-5000 employees,17000
+GBR,IT,35 to 54,Entry,501-1000 employees,7400
+GBR,IT,35 to 54,Entry,201-500 employees,12000
+GBR,IT,35 to 54,Entry,51-200 employees,18000
+GBR,IT,35 to 54,Entry,11-50 employees,19000
+GBR,IT,35 to 54,Entry,2-10 employees,8900
+GBR,IT,35 to 54,Entry,Myself Only,2200
+GBR,IT,35 to 54,Training,"10,001+ employees",340
+GBR,IT,35 to 54,Training,"5001-10,000 employees",0
+GBR,IT,35 to 54,Training,1001-5000 employees,0
+GBR,IT,35 to 54,Training,501-1000 employees,0
+GBR,IT,35 to 54,Training,201-500 employees,0
+GBR,IT,35 to 54,Training,51-200 employees,0
+GBR,IT,35 to 54,Training,11-50 employees,0
+GBR,IT,35 to 54,Training,2-10 employees,0
+GBR,IT,35 to 54,Training,Myself Only,0
+GBR,IT,35 to 54,Unpaid,"10,001+ employees",380
+GBR,IT,35 to 54,Unpaid,"5001-10,000 employees",0
+GBR,IT,35 to 54,Unpaid,1001-5000 employees,0
+GBR,IT,35 to 54,Unpaid,501-1000 employees,0
+GBR,IT,35 to 54,Unpaid,201-500 employees,0
+GBR,IT,35 to 54,Unpaid,51-200 employees,0
+GBR,IT,35 to 54,Unpaid,11-50 employees,0
+GBR,IT,35 to 54,Unpaid,2-10 employees,0
+GBR,IT,35 to 54,Unpaid,Myself Only,360
+GBR,IT,25 to 34,Owner,"10,001+ employees",2200
+GBR,IT,25 to 34,Owner,"5001-10,000 employees",510
+GBR,IT,25 to 34,Owner,1001-5000 employees,1600
+GBR,IT,25 to 34,Owner,501-1000 employees,630
+GBR,IT,25 to 34,Owner,201-500 employees,1300
+GBR,IT,25 to 34,Owner,51-200 employees,2400
+GBR,IT,25 to 34,Owner,11-50 employees,5700
+GBR,IT,25 to 34,Owner,2-10 employees,10000
+GBR,IT,25 to 34,Owner,Myself Only,1700
+GBR,IT,25 to 34,Partner,"10,001+ employees",620
+GBR,IT,25 to 34,Partner,"5001-10,000 employees",0
+GBR,IT,25 to 34,Partner,1001-5000 employees,570
+GBR,IT,25 to 34,Partner,501-1000 employees,0
+GBR,IT,25 to 34,Partner,201-500 employees,410
+GBR,IT,25 to 34,Partner,51-200 employees,910
+GBR,IT,25 to 34,Partner,11-50 employees,1400
+GBR,IT,25 to 34,Partner,2-10 employees,1500
+GBR,IT,25 to 34,Partner,Myself Only,0
+GBR,IT,25 to 34,CXO,"10,001+ employees",1700
+GBR,IT,25 to 34,CXO,"5001-10,000 employees",0
+GBR,IT,25 to 34,CXO,1001-5000 employees,750
+GBR,IT,25 to 34,CXO,501-1000 employees,360
+GBR,IT,25 to 34,CXO,201-500 employees,690
+GBR,IT,25 to 34,CXO,51-200 employees,1600
+GBR,IT,25 to 34,CXO,11-50 employees,3400
+GBR,IT,25 to 34,CXO,2-10 employees,4300
+GBR,IT,25 to 34,CXO,Myself Only,400
+GBR,IT,25 to 34,VP,"10,001+ employees",2100
+GBR,IT,25 to 34,VP,"5001-10,000 employees",420
+GBR,IT,25 to 34,VP,1001-5000 employees,1000
+GBR,IT,25 to 34,VP,501-1000 employees,440
+GBR,IT,25 to 34,VP,201-500 employees,800
+GBR,IT,25 to 34,VP,51-200 employees,1500
+GBR,IT,25 to 34,VP,11-50 employees,2900
+GBR,IT,25 to 34,VP,2-10 employees,3800
+GBR,IT,25 to 34,VP,Myself Only,410
+GBR,IT,25 to 34,Director,"10,001+ employees",7900
+GBR,IT,25 to 34,Director,"5001-10,000 employees",1600
+GBR,IT,25 to 34,Director,1001-5000 employees,4100
+GBR,IT,25 to 34,Director,501-1000 employees,2000
+GBR,IT,25 to 34,Director,201-500 employees,3400
+GBR,IT,25 to 34,Director,51-200 employees,6600
+GBR,IT,25 to 34,Director,11-50 employees,10000
+GBR,IT,25 to 34,Director,2-10 employees,12000
+GBR,IT,25 to 34,Director,Myself Only,1600
+GBR,IT,25 to 34,Manager,"10,001+ employees",19000
+GBR,IT,25 to 34,Manager,"5001-10,000 employees",2500
+GBR,IT,25 to 34,Manager,1001-5000 employees,6600
+GBR,IT,25 to 34,Manager,501-1000 employees,2800
+GBR,IT,25 to 34,Manager,201-500 employees,4400
+GBR,IT,25 to 34,Manager,51-200 employees,6700
+GBR,IT,25 to 34,Manager,11-50 employees,8500
+GBR,IT,25 to 34,Manager,2-10 employees,6600
+GBR,IT,25 to 34,Manager,Myself Only,1300
+GBR,IT,25 to 34,Senior,"10,001+ employees",71000
+GBR,IT,25 to 34,Senior,"5001-10,000 employees",11000
+GBR,IT,25 to 34,Senior,1001-5000 employees,28000
+GBR,IT,25 to 34,Senior,501-1000 employees,12000
+GBR,IT,25 to 34,Senior,201-500 employees,20000
+GBR,IT,25 to 34,Senior,51-200 employees,31000
+GBR,IT,25 to 34,Senior,11-50 employees,33000
+GBR,IT,25 to 34,Senior,2-10 employees,19000
+GBR,IT,25 to 34,Senior,Myself Only,3900
+GBR,IT,25 to 34,Entry,"10,001+ employees",75000
+GBR,IT,25 to 34,Entry,"5001-10,000 employees",9700
+GBR,IT,25 to 34,Entry,1001-5000 employees,30000
+GBR,IT,25 to 34,Entry,501-1000 employees,12000
+GBR,IT,25 to 34,Entry,201-500 employees,21000
+GBR,IT,25 to 34,Entry,51-200 employees,35000
+GBR,IT,25 to 34,Entry,11-50 employees,43000
+GBR,IT,25 to 34,Entry,2-10 employees,29000
+GBR,IT,25 to 34,Entry,Myself Only,10000
+GBR,IT,25 to 34,Training,"10,001+ employees",2200
+GBR,IT,25 to 34,Training,"5001-10,000 employees",340
+GBR,IT,25 to 34,Training,1001-5000 employees,560
+GBR,IT,25 to 34,Training,501-1000 employees,0
+GBR,IT,25 to 34,Training,201-500 employees,680
+GBR,IT,25 to 34,Training,51-200 employees,870
+GBR,IT,25 to 34,Training,11-50 employees,1300
+GBR,IT,25 to 34,Training,2-10 employees,790
+GBR,IT,25 to 34,Training,Myself Only,0
+GBR,IT,25 to 34,Unpaid,"10,001+ employees",2000
+GBR,IT,25 to 34,Unpaid,"5001-10,000 employees",0
+GBR,IT,25 to 34,Unpaid,1001-5000 employees,510
+GBR,IT,25 to 34,Unpaid,501-1000 employees,0
+GBR,IT,25 to 34,Unpaid,201-500 employees,460
+GBR,IT,25 to 34,Unpaid,51-200 employees,750
+GBR,IT,25 to 34,Unpaid,11-50 employees,1100
+GBR,IT,25 to 34,Unpaid,2-10 employees,1700
+GBR,IT,25 to 34,Unpaid,Myself Only,3100
+GBR,IT,18 to 24,Owner,"10,001+ employees",760
+GBR,IT,18 to 24,Owner,"5001-10,000 employees",0
+GBR,IT,18 to 24,Owner,1001-5000 employees,360
+GBR,IT,18 to 24,Owner,501-1000 employees,0
+GBR,IT,18 to 24,Owner,201-500 employees,0
+GBR,IT,18 to 24,Owner,51-200 employees,430
+GBR,IT,18 to 24,Owner,11-50 employees,740
+GBR,IT,18 to 24,Owner,2-10 employees,1500
+GBR,IT,18 to 24,Owner,Myself Only,320
+GBR,IT,18 to 24,Partner,"10,001+ employees",0
+GBR,IT,18 to 24,Partner,"5001-10,000 employees",0
+GBR,IT,18 to 24,Partner,1001-5000 employees,0
+GBR,IT,18 to 24,Partner,501-1000 employees,0
+GBR,IT,18 to 24,Partner,201-500 employees,0
+GBR,IT,18 to 24,Partner,51-200 employees,0
+GBR,IT,18 to 24,Partner,11-50 employees,0
+GBR,IT,18 to 24,Partner,2-10 employees,0
+GBR,IT,18 to 24,Partner,Myself Only,0
+GBR,IT,18 to 24,CXO,"10,001+ employees",720
+GBR,IT,18 to 24,CXO,"5001-10,000 employees",0
+GBR,IT,18 to 24,CXO,1001-5000 employees,0
+GBR,IT,18 to 24,CXO,501-1000 employees,0
+GBR,IT,18 to 24,CXO,201-500 employees,0
+GBR,IT,18 to 24,CXO,51-200 employees,0
+GBR,IT,18 to 24,CXO,11-50 employees,520
+GBR,IT,18 to 24,CXO,2-10 employees,780
+GBR,IT,18 to 24,CXO,Myself Only,0
+GBR,IT,18 to 24,VP,"10,001+ employees",680
+GBR,IT,18 to 24,VP,"5001-10,000 employees",0
+GBR,IT,18 to 24,VP,1001-5000 employees,0
+GBR,IT,18 to 24,VP,501-1000 employees,0
+GBR,IT,18 to 24,VP,201-500 employees,0
+GBR,IT,18 to 24,VP,51-200 employees,0
+GBR,IT,18 to 24,VP,11-50 employees,400
+GBR,IT,18 to 24,VP,2-10 employees,450
+GBR,IT,18 to 24,VP,Myself Only,0
+GBR,IT,18 to 24,Director,"10,001+ employees",1400
+GBR,IT,18 to 24,Director,"5001-10,000 employees",0
+GBR,IT,18 to 24,Director,1001-5000 employees,600
+GBR,IT,18 to 24,Director,501-1000 employees,0
+GBR,IT,18 to 24,Director,201-500 employees,380
+GBR,IT,18 to 24,Director,51-200 employees,700
+GBR,IT,18 to 24,Director,11-50 employees,1200
+GBR,IT,18 to 24,Director,2-10 employees,1400
+GBR,IT,18 to 24,Director,Myself Only,0
+GBR,IT,18 to 24,Manager,"10,001+ employees",3600
+GBR,IT,18 to 24,Manager,"5001-10,000 employees",380
+GBR,IT,18 to 24,Manager,1001-5000 employees,860
+GBR,IT,18 to 24,Manager,501-1000 employees,330
+GBR,IT,18 to 24,Manager,201-500 employees,540
+GBR,IT,18 to 24,Manager,51-200 employees,830
+GBR,IT,18 to 24,Manager,11-50 employees,1100
+GBR,IT,18 to 24,Manager,2-10 employees,1000
+GBR,IT,18 to 24,Manager,Myself Only,0
+GBR,IT,18 to 24,Senior,"10,001+ employees",14000
+GBR,IT,18 to 24,Senior,"5001-10,000 employees",1800
+GBR,IT,18 to 24,Senior,1001-5000 employees,4300
+GBR,IT,18 to 24,Senior,501-1000 employees,1700
+GBR,IT,18 to 24,Senior,201-500 employees,2700
+GBR,IT,18 to 24,Senior,51-200 employees,4600
+GBR,IT,18 to 24,Senior,11-50 employees,5600
+GBR,IT,18 to 24,Senior,2-10 employees,3800
+GBR,IT,18 to 24,Senior,Myself Only,630
+GBR,IT,18 to 24,Entry,"10,001+ employees",28000
+GBR,IT,18 to 24,Entry,"5001-10,000 employees",2600
+GBR,IT,18 to 24,Entry,1001-5000 employees,7900
+GBR,IT,18 to 24,Entry,501-1000 employees,2900
+GBR,IT,18 to 24,Entry,201-500 employees,4800
+GBR,IT,18 to 24,Entry,51-200 employees,7700
+GBR,IT,18 to 24,Entry,11-50 employees,10000
+GBR,IT,18 to 24,Entry,2-10 employees,7300
+GBR,IT,18 to 24,Entry,Myself Only,2500
+GBR,IT,18 to 24,Training,"10,001+ employees",1400
+GBR,IT,18 to 24,Training,"5001-10,000 employees",0
+GBR,IT,18 to 24,Training,1001-5000 employees,360
+GBR,IT,18 to 24,Training,501-1000 employees,0
+GBR,IT,18 to 24,Training,201-500 employees,0
+GBR,IT,18 to 24,Training,51-200 employees,370
+GBR,IT,18 to 24,Training,11-50 employees,600
+GBR,IT,18 to 24,Training,2-10 employees,370
+GBR,IT,18 to 24,Training,Myself Only,0
+GBR,IT,18 to 24,Unpaid,"10,001+ employees",780
+GBR,IT,18 to 24,Unpaid,"5001-10,000 employees",0
+GBR,IT,18 to 24,Unpaid,1001-5000 employees,0
+GBR,IT,18 to 24,Unpaid,501-1000 employees,0
+GBR,IT,18 to 24,Unpaid,201-500 employees,0
+GBR,IT,18 to 24,Unpaid,51-200 employees,0
+GBR,IT,18 to 24,Unpaid,11-50 employees,0
+GBR,IT,18 to 24,Unpaid,2-10 employees,0
+GBR,IT,18 to 24,Unpaid,Myself Only,340

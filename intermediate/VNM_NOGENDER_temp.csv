@@ -1,0 +1,361 @@
+0,1,2,3,4,5
+VNM,IT,55+,Owner,"10,001+ employees",0
+VNM,IT,55+,Owner,"5001-10,000 employees",0
+VNM,IT,55+,Owner,1001-5000 employees,0
+VNM,IT,55+,Owner,501-1000 employees,0
+VNM,IT,55+,Owner,201-500 employees,0
+VNM,IT,55+,Owner,51-200 employees,0
+VNM,IT,55+,Owner,11-50 employees,0
+VNM,IT,55+,Owner,2-10 employees,0
+VNM,IT,55+,Owner,Myself Only,0
+VNM,IT,55+,Partner,"10,001+ employees",0
+VNM,IT,55+,Partner,"5001-10,000 employees",0
+VNM,IT,55+,Partner,1001-5000 employees,0
+VNM,IT,55+,Partner,501-1000 employees,0
+VNM,IT,55+,Partner,201-500 employees,0
+VNM,IT,55+,Partner,51-200 employees,0
+VNM,IT,55+,Partner,11-50 employees,0
+VNM,IT,55+,Partner,2-10 employees,0
+VNM,IT,55+,Partner,Myself Only,0
+VNM,IT,55+,CXO,"10,001+ employees",0
+VNM,IT,55+,CXO,"5001-10,000 employees",0
+VNM,IT,55+,CXO,1001-5000 employees,0
+VNM,IT,55+,CXO,501-1000 employees,0
+VNM,IT,55+,CXO,201-500 employees,0
+VNM,IT,55+,CXO,51-200 employees,0
+VNM,IT,55+,CXO,11-50 employees,0
+VNM,IT,55+,CXO,2-10 employees,0
+VNM,IT,55+,CXO,Myself Only,0
+VNM,IT,55+,VP,"10,001+ employees",0
+VNM,IT,55+,VP,"5001-10,000 employees",0
+VNM,IT,55+,VP,1001-5000 employees,0
+VNM,IT,55+,VP,501-1000 employees,0
+VNM,IT,55+,VP,201-500 employees,0
+VNM,IT,55+,VP,51-200 employees,0
+VNM,IT,55+,VP,11-50 employees,0
+VNM,IT,55+,VP,2-10 employees,0
+VNM,IT,55+,VP,Myself Only,0
+VNM,IT,55+,Director,"10,001+ employees",0
+VNM,IT,55+,Director,"5001-10,000 employees",0
+VNM,IT,55+,Director,1001-5000 employees,0
+VNM,IT,55+,Director,501-1000 employees,0
+VNM,IT,55+,Director,201-500 employees,0
+VNM,IT,55+,Director,51-200 employees,0
+VNM,IT,55+,Director,11-50 employees,0
+VNM,IT,55+,Director,2-10 employees,0
+VNM,IT,55+,Director,Myself Only,0
+VNM,IT,55+,Manager,"10,001+ employees",0
+VNM,IT,55+,Manager,"5001-10,000 employees",0
+VNM,IT,55+,Manager,1001-5000 employees,0
+VNM,IT,55+,Manager,501-1000 employees,0
+VNM,IT,55+,Manager,201-500 employees,0
+VNM,IT,55+,Manager,51-200 employees,0
+VNM,IT,55+,Manager,11-50 employees,0
+VNM,IT,55+,Manager,2-10 employees,0
+VNM,IT,55+,Manager,Myself Only,0
+VNM,IT,55+,Senior,"10,001+ employees",0
+VNM,IT,55+,Senior,"5001-10,000 employees",0
+VNM,IT,55+,Senior,1001-5000 employees,0
+VNM,IT,55+,Senior,501-1000 employees,0
+VNM,IT,55+,Senior,201-500 employees,0
+VNM,IT,55+,Senior,51-200 employees,0
+VNM,IT,55+,Senior,11-50 employees,0
+VNM,IT,55+,Senior,2-10 employees,0
+VNM,IT,55+,Senior,Myself Only,0
+VNM,IT,55+,Entry,"10,001+ employees",0
+VNM,IT,55+,Entry,"5001-10,000 employees",0
+VNM,IT,55+,Entry,1001-5000 employees,0
+VNM,IT,55+,Entry,501-1000 employees,0
+VNM,IT,55+,Entry,201-500 employees,0
+VNM,IT,55+,Entry,51-200 employees,0
+VNM,IT,55+,Entry,11-50 employees,0
+VNM,IT,55+,Entry,2-10 employees,0
+VNM,IT,55+,Entry,Myself Only,0
+VNM,IT,55+,Training,"10,001+ employees",0
+VNM,IT,55+,Training,"5001-10,000 employees",0
+VNM,IT,55+,Training,1001-5000 employees,0
+VNM,IT,55+,Training,501-1000 employees,0
+VNM,IT,55+,Training,201-500 employees,0
+VNM,IT,55+,Training,51-200 employees,0
+VNM,IT,55+,Training,11-50 employees,0
+VNM,IT,55+,Training,2-10 employees,0
+VNM,IT,55+,Training,Myself Only,0
+VNM,IT,55+,Unpaid,"10,001+ employees",0
+VNM,IT,55+,Unpaid,"5001-10,000 employees",0
+VNM,IT,55+,Unpaid,1001-5000 employees,0
+VNM,IT,55+,Unpaid,501-1000 employees,0
+VNM,IT,55+,Unpaid,201-500 employees,0
+VNM,IT,55+,Unpaid,51-200 employees,0
+VNM,IT,55+,Unpaid,11-50 employees,0
+VNM,IT,55+,Unpaid,2-10 employees,0
+VNM,IT,55+,Unpaid,Myself Only,0
+VNM,IT,35 to 54,Owner,"10,001+ employees",0
+VNM,IT,35 to 54,Owner,"5001-10,000 employees",0
+VNM,IT,35 to 54,Owner,1001-5000 employees,0
+VNM,IT,35 to 54,Owner,501-1000 employees,0
+VNM,IT,35 to 54,Owner,201-500 employees,0
+VNM,IT,35 to 54,Owner,51-200 employees,0
+VNM,IT,35 to 54,Owner,11-50 employees,500
+VNM,IT,35 to 54,Owner,2-10 employees,310
+VNM,IT,35 to 54,Owner,Myself Only,0
+VNM,IT,35 to 54,Partner,"10,001+ employees",0
+VNM,IT,35 to 54,Partner,"5001-10,000 employees",0
+VNM,IT,35 to 54,Partner,1001-5000 employees,0
+VNM,IT,35 to 54,Partner,501-1000 employees,0
+VNM,IT,35 to 54,Partner,201-500 employees,0
+VNM,IT,35 to 54,Partner,51-200 employees,0
+VNM,IT,35 to 54,Partner,11-50 employees,0
+VNM,IT,35 to 54,Partner,2-10 employees,0
+VNM,IT,35 to 54,Partner,Myself Only,0
+VNM,IT,35 to 54,CXO,"10,001+ employees",0
+VNM,IT,35 to 54,CXO,"5001-10,000 employees",0
+VNM,IT,35 to 54,CXO,1001-5000 employees,0
+VNM,IT,35 to 54,CXO,501-1000 employees,0
+VNM,IT,35 to 54,CXO,201-500 employees,0
+VNM,IT,35 to 54,CXO,51-200 employees,400
+VNM,IT,35 to 54,CXO,11-50 employees,610
+VNM,IT,35 to 54,CXO,2-10 employees,0
+VNM,IT,35 to 54,CXO,Myself Only,0
+VNM,IT,35 to 54,VP,"10,001+ employees",0
+VNM,IT,35 to 54,VP,"5001-10,000 employees",0
+VNM,IT,35 to 54,VP,1001-5000 employees,0
+VNM,IT,35 to 54,VP,501-1000 employees,0
+VNM,IT,35 to 54,VP,201-500 employees,0
+VNM,IT,35 to 54,VP,51-200 employees,0
+VNM,IT,35 to 54,VP,11-50 employees,0
+VNM,IT,35 to 54,VP,2-10 employees,0
+VNM,IT,35 to 54,VP,Myself Only,0
+VNM,IT,35 to 54,Director,"10,001+ employees",610
+VNM,IT,35 to 54,Director,"5001-10,000 employees",0
+VNM,IT,35 to 54,Director,1001-5000 employees,430
+VNM,IT,35 to 54,Director,501-1000 employees,360
+VNM,IT,35 to 54,Director,201-500 employees,340
+VNM,IT,35 to 54,Director,51-200 employees,500
+VNM,IT,35 to 54,Director,11-50 employees,500
+VNM,IT,35 to 54,Director,2-10 employees,0
+VNM,IT,35 to 54,Director,Myself Only,0
+VNM,IT,35 to 54,Manager,"10,001+ employees",990
+VNM,IT,35 to 54,Manager,"5001-10,000 employees",0
+VNM,IT,35 to 54,Manager,1001-5000 employees,490
+VNM,IT,35 to 54,Manager,501-1000 employees,340
+VNM,IT,35 to 54,Manager,201-500 employees,310
+VNM,IT,35 to 54,Manager,51-200 employees,480
+VNM,IT,35 to 54,Manager,11-50 employees,340
+VNM,IT,35 to 54,Manager,2-10 employees,0
+VNM,IT,35 to 54,Manager,Myself Only,0
+VNM,IT,35 to 54,Senior,"10,001+ employees",2000
+VNM,IT,35 to 54,Senior,"5001-10,000 employees",0
+VNM,IT,35 to 54,Senior,1001-5000 employees,1200
+VNM,IT,35 to 54,Senior,501-1000 employees,830
+VNM,IT,35 to 54,Senior,201-500 employees,860
+VNM,IT,35 to 54,Senior,51-200 employees,1100
+VNM,IT,35 to 54,Senior,11-50 employees,860
+VNM,IT,35 to 54,Senior,2-10 employees,340
+VNM,IT,35 to 54,Senior,Myself Only,0
+VNM,IT,35 to 54,Entry,"10,001+ employees",1600
+VNM,IT,35 to 54,Entry,"5001-10,000 employees",0
+VNM,IT,35 to 54,Entry,1001-5000 employees,750
+VNM,IT,35 to 54,Entry,501-1000 employees,550
+VNM,IT,35 to 54,Entry,201-500 employees,620
+VNM,IT,35 to 54,Entry,51-200 employees,850
+VNM,IT,35 to 54,Entry,11-50 employees,740
+VNM,IT,35 to 54,Entry,2-10 employees,390
+VNM,IT,35 to 54,Entry,Myself Only,0
+VNM,IT,35 to 54,Training,"10,001+ employees",0
+VNM,IT,35 to 54,Training,"5001-10,000 employees",0
+VNM,IT,35 to 54,Training,1001-5000 employees,0
+VNM,IT,35 to 54,Training,501-1000 employees,0
+VNM,IT,35 to 54,Training,201-500 employees,0
+VNM,IT,35 to 54,Training,51-200 employees,0
+VNM,IT,35 to 54,Training,11-50 employees,0
+VNM,IT,35 to 54,Training,2-10 employees,0
+VNM,IT,35 to 54,Training,Myself Only,0
+VNM,IT,35 to 54,Unpaid,"10,001+ employees",0
+VNM,IT,35 to 54,Unpaid,"5001-10,000 employees",0
+VNM,IT,35 to 54,Unpaid,1001-5000 employees,0
+VNM,IT,35 to 54,Unpaid,501-1000 employees,0
+VNM,IT,35 to 54,Unpaid,201-500 employees,0
+VNM,IT,35 to 54,Unpaid,51-200 employees,0
+VNM,IT,35 to 54,Unpaid,11-50 employees,0
+VNM,IT,35 to 54,Unpaid,2-10 employees,0
+VNM,IT,35 to 54,Unpaid,Myself Only,0
+VNM,IT,25 to 34,Owner,"10,001+ employees",500
+VNM,IT,25 to 34,Owner,"5001-10,000 employees",0
+VNM,IT,25 to 34,Owner,1001-5000 employees,0
+VNM,IT,25 to 34,Owner,501-1000 employees,0
+VNM,IT,25 to 34,Owner,201-500 employees,0
+VNM,IT,25 to 34,Owner,51-200 employees,350
+VNM,IT,25 to 34,Owner,11-50 employees,690
+VNM,IT,25 to 34,Owner,2-10 employees,590
+VNM,IT,25 to 34,Owner,Myself Only,0
+VNM,IT,25 to 34,Partner,"10,001+ employees",0
+VNM,IT,25 to 34,Partner,"5001-10,000 employees",0
+VNM,IT,25 to 34,Partner,1001-5000 employees,0
+VNM,IT,25 to 34,Partner,501-1000 employees,0
+VNM,IT,25 to 34,Partner,201-500 employees,0
+VNM,IT,25 to 34,Partner,51-200 employees,0
+VNM,IT,25 to 34,Partner,11-50 employees,0
+VNM,IT,25 to 34,Partner,2-10 employees,0
+VNM,IT,25 to 34,Partner,Myself Only,0
+VNM,IT,25 to 34,CXO,"10,001+ employees",370
+VNM,IT,25 to 34,CXO,"5001-10,000 employees",0
+VNM,IT,25 to 34,CXO,1001-5000 employees,0
+VNM,IT,25 to 34,CXO,501-1000 employees,0
+VNM,IT,25 to 34,CXO,201-500 employees,0
+VNM,IT,25 to 34,CXO,51-200 employees,430
+VNM,IT,25 to 34,CXO,11-50 employees,740
+VNM,IT,25 to 34,CXO,2-10 employees,410
+VNM,IT,25 to 34,CXO,Myself Only,0
+VNM,IT,25 to 34,VP,"10,001+ employees",600
+VNM,IT,25 to 34,VP,"5001-10,000 employees",0
+VNM,IT,25 to 34,VP,1001-5000 employees,0
+VNM,IT,25 to 34,VP,501-1000 employees,0
+VNM,IT,25 to 34,VP,201-500 employees,0
+VNM,IT,25 to 34,VP,51-200 employees,0
+VNM,IT,25 to 34,VP,11-50 employees,0
+VNM,IT,25 to 34,VP,2-10 employees,0
+VNM,IT,25 to 34,VP,Myself Only,0
+VNM,IT,25 to 34,Director,"10,001+ employees",920
+VNM,IT,25 to 34,Director,"5001-10,000 employees",0
+VNM,IT,25 to 34,Director,1001-5000 employees,500
+VNM,IT,25 to 34,Director,501-1000 employees,400
+VNM,IT,25 to 34,Director,201-500 employees,480
+VNM,IT,25 to 34,Director,51-200 employees,730
+VNM,IT,25 to 34,Director,11-50 employees,790
+VNM,IT,25 to 34,Director,2-10 employees,460
+VNM,IT,25 to 34,Director,Myself Only,0
+VNM,IT,25 to 34,Manager,"10,001+ employees",2200
+VNM,IT,25 to 34,Manager,"5001-10,000 employees",460
+VNM,IT,25 to 34,Manager,1001-5000 employees,950
+VNM,IT,25 to 34,Manager,501-1000 employees,670
+VNM,IT,25 to 34,Manager,201-500 employees,650
+VNM,IT,25 to 34,Manager,51-200 employees,1000
+VNM,IT,25 to 34,Manager,11-50 employees,1100
+VNM,IT,25 to 34,Manager,2-10 employees,620
+VNM,IT,25 to 34,Manager,Myself Only,0
+VNM,IT,25 to 34,Senior,"10,001+ employees",8900
+VNM,IT,25 to 34,Senior,"5001-10,000 employees",1800
+VNM,IT,25 to 34,Senior,1001-5000 employees,5900
+VNM,IT,25 to 34,Senior,501-1000 employees,4000
+VNM,IT,25 to 34,Senior,201-500 employees,4400
+VNM,IT,25 to 34,Senior,51-200 employees,6200
+VNM,IT,25 to 34,Senior,11-50 employees,5200
+VNM,IT,25 to 34,Senior,2-10 employees,2400
+VNM,IT,25 to 34,Senior,Myself Only,580
+VNM,IT,25 to 34,Entry,"10,001+ employees",17000
+VNM,IT,25 to 34,Entry,"5001-10,000 employees",2000
+VNM,IT,25 to 34,Entry,1001-5000 employees,8400
+VNM,IT,25 to 34,Entry,501-1000 employees,5900
+VNM,IT,25 to 34,Entry,201-500 employees,8500
+VNM,IT,25 to 34,Entry,51-200 employees,9400
+VNM,IT,25 to 34,Entry,11-50 employees,8800
+VNM,IT,25 to 34,Entry,2-10 employees,4600
+VNM,IT,25 to 34,Entry,Myself Only,1700
+VNM,IT,25 to 34,Training,"10,001+ employees",1200
+VNM,IT,25 to 34,Training,"5001-10,000 employees",0
+VNM,IT,25 to 34,Training,1001-5000 employees,310
+VNM,IT,25 to 34,Training,501-1000 employees,0
+VNM,IT,25 to 34,Training,201-500 employees,0
+VNM,IT,25 to 34,Training,51-200 employees,380
+VNM,IT,25 to 34,Training,11-50 employees,410
+VNM,IT,25 to 34,Training,2-10 employees,320
+VNM,IT,25 to 34,Training,Myself Only,0
+VNM,IT,25 to 34,Unpaid,"10,001+ employees",0
+VNM,IT,25 to 34,Unpaid,"5001-10,000 employees",0
+VNM,IT,25 to 34,Unpaid,1001-5000 employees,0
+VNM,IT,25 to 34,Unpaid,501-1000 employees,0
+VNM,IT,25 to 34,Unpaid,201-500 employees,0
+VNM,IT,25 to 34,Unpaid,51-200 employees,0
+VNM,IT,25 to 34,Unpaid,11-50 employees,0
+VNM,IT,25 to 34,Unpaid,2-10 employees,0
+VNM,IT,25 to 34,Unpaid,Myself Only,0
+VNM,IT,18 to 24,Owner,"10,001+ employees",480
+VNM,IT,18 to 24,Owner,"5001-10,000 employees",0
+VNM,IT,18 to 24,Owner,1001-5000 employees,0
+VNM,IT,18 to 24,Owner,501-1000 employees,0
+VNM,IT,18 to 24,Owner,201-500 employees,0
+VNM,IT,18 to 24,Owner,51-200 employees,0
+VNM,IT,18 to 24,Owner,11-50 employees,0
+VNM,IT,18 to 24,Owner,2-10 employees,0
+VNM,IT,18 to 24,Owner,Myself Only,0
+VNM,IT,18 to 24,Partner,"10,001+ employees",0
+VNM,IT,18 to 24,Partner,"5001-10,000 employees",0
+VNM,IT,18 to 24,Partner,1001-5000 employees,0
+VNM,IT,18 to 24,Partner,501-1000 employees,0
+VNM,IT,18 to 24,Partner,201-500 employees,0
+VNM,IT,18 to 24,Partner,51-200 employees,0
+VNM,IT,18 to 24,Partner,11-50 employees,0
+VNM,IT,18 to 24,Partner,2-10 employees,0
+VNM,IT,18 to 24,Partner,Myself Only,0
+VNM,IT,18 to 24,CXO,"10,001+ employees",0
+VNM,IT,18 to 24,CXO,"5001-10,000 employees",0
+VNM,IT,18 to 24,CXO,1001-5000 employees,0
+VNM,IT,18 to 24,CXO,501-1000 employees,0
+VNM,IT,18 to 24,CXO,201-500 employees,0
+VNM,IT,18 to 24,CXO,51-200 employees,0
+VNM,IT,18 to 24,CXO,11-50 employees,0
+VNM,IT,18 to 24,CXO,2-10 employees,0
+VNM,IT,18 to 24,CXO,Myself Only,0
+VNM,IT,18 to 24,VP,"10,001+ employees",500
+VNM,IT,18 to 24,VP,"5001-10,000 employees",0
+VNM,IT,18 to 24,VP,1001-5000 employees,0
+VNM,IT,18 to 24,VP,501-1000 employees,0
+VNM,IT,18 to 24,VP,201-500 employees,0
+VNM,IT,18 to 24,VP,51-200 employees,0
+VNM,IT,18 to 24,VP,11-50 employees,0
+VNM,IT,18 to 24,VP,2-10 employees,0
+VNM,IT,18 to 24,VP,Myself Only,0
+VNM,IT,18 to 24,Director,"10,001+ employees",970
+VNM,IT,18 to 24,Director,"5001-10,000 employees",0
+VNM,IT,18 to 24,Director,1001-5000 employees,0
+VNM,IT,18 to 24,Director,501-1000 employees,0
+VNM,IT,18 to 24,Director,201-500 employees,0
+VNM,IT,18 to 24,Director,51-200 employees,0
+VNM,IT,18 to 24,Director,11-50 employees,0
+VNM,IT,18 to 24,Director,2-10 employees,0
+VNM,IT,18 to 24,Director,Myself Only,0
+VNM,IT,18 to 24,Manager,"10,001+ employees",1100
+VNM,IT,18 to 24,Manager,"5001-10,000 employees",0
+VNM,IT,18 to 24,Manager,1001-5000 employees,0
+VNM,IT,18 to 24,Manager,501-1000 employees,0
+VNM,IT,18 to 24,Manager,201-500 employees,0
+VNM,IT,18 to 24,Manager,51-200 employees,0
+VNM,IT,18 to 24,Manager,11-50 employees,0
+VNM,IT,18 to 24,Manager,2-10 employees,0
+VNM,IT,18 to 24,Manager,Myself Only,0
+VNM,IT,18 to 24,Senior,"10,001+ employees",4000
+VNM,IT,18 to 24,Senior,"5001-10,000 employees",460
+VNM,IT,18 to 24,Senior,1001-5000 employees,1200
+VNM,IT,18 to 24,Senior,501-1000 employees,820
+VNM,IT,18 to 24,Senior,201-500 employees,910
+VNM,IT,18 to 24,Senior,51-200 employees,1400
+VNM,IT,18 to 24,Senior,11-50 employees,1400
+VNM,IT,18 to 24,Senior,2-10 employees,700
+VNM,IT,18 to 24,Senior,Myself Only,0
+VNM,IT,18 to 24,Entry,"10,001+ employees",14000
+VNM,IT,18 to 24,Entry,"5001-10,000 employees",1000
+VNM,IT,18 to 24,Entry,1001-5000 employees,3400
+VNM,IT,18 to 24,Entry,501-1000 employees,1900
+VNM,IT,18 to 24,Entry,201-500 employees,2300
+VNM,IT,18 to 24,Entry,51-200 employees,3400
+VNM,IT,18 to 24,Entry,11-50 employees,3500
+VNM,IT,18 to 24,Entry,2-10 employees,1700
+VNM,IT,18 to 24,Entry,Myself Only,700
+VNM,IT,18 to 24,Training,"10,001+ employees",1500
+VNM,IT,18 to 24,Training,"5001-10,000 employees",0
+VNM,IT,18 to 24,Training,1001-5000 employees,360
+VNM,IT,18 to 24,Training,501-1000 employees,0
+VNM,IT,18 to 24,Training,201-500 employees,0
+VNM,IT,18 to 24,Training,51-200 employees,310
+VNM,IT,18 to 24,Training,11-50 employees,370
+VNM,IT,18 to 24,Training,2-10 employees,0
+VNM,IT,18 to 24,Training,Myself Only,0
+VNM,IT,18 to 24,Unpaid,"10,001+ employees",510
+VNM,IT,18 to 24,Unpaid,"5001-10,000 employees",0
+VNM,IT,18 to 24,Unpaid,1001-5000 employees,0
+VNM,IT,18 to 24,Unpaid,501-1000 employees,0
+VNM,IT,18 to 24,Unpaid,201-500 employees,0
+VNM,IT,18 to 24,Unpaid,51-200 employees,0
+VNM,IT,18 to 24,Unpaid,11-50 employees,0
+VNM,IT,18 to 24,Unpaid,2-10 employees,0
+VNM,IT,18 to 24,Unpaid,Myself Only,0
