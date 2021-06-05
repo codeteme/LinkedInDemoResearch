@@ -19,6 +19,7 @@ def encodeInner(strout):
    strout = strout.replace('(', '%28')
    strout = strout.replace(')', '%29')
    strout = strout.replace(',', '%2C')
+   strout = strout.replace('&', '%26')
    
    return strout
 
@@ -114,6 +115,30 @@ def memberbehavior_builder(memberbehaviors):
     conc += """))))"""
     return conc
 
+def companyindustry_builder(companyindustries):
+    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:industries,name:Company%20Industries),segments:List("""
+    for i, companyindustry in enumerate(companyindustries): 
+        conc += "(urn:" + encodeInner(companyindustry['urn']) 
+        conc += ",name:" + encodeInner(companyindustry["name"])
+        conc += ",facetUrn:" + encodeInner(companyindustry['facetUrn']) 
+        conc += ")"
+        if i<len(companyindustries)-1:
+            conc +=","
+    conc += """))))"""
+    return conc
+
+def companysize_builder(companysizes):
+    conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:staffCountRanges,name:Company%20Size),segments:List("""
+    for i, companysize in enumerate(companysizes): 
+        conc += "(urn:" + encodeInner(companysize['urn']) 
+        conc += ",name:" + encodeInner(companysize["name"])
+        conc += ",facetUrn:" + encodeInner(companysize['facetUrn']) 
+        conc += ")"
+        if i<len(companysizes)-1:
+            conc +=","
+    conc += """))))"""
+    return conc
+
 # returns OR concatenated query string 
 def OR_builder(args):
     conc = "(or:List("
@@ -147,6 +172,7 @@ def include_all():
 # Calls the requesting function and parse the return count
 def make_call():
     criteria = include_all()
+    print(criteria  )
     count = getCount(criteria)
     return count
 
@@ -164,12 +190,17 @@ arg_list = [
     location_builder(country_list)]
 
 # Intialize an empty dataframe with only column names
-df = pd.DataFrame() 
+df = pd.DataFrame()
 
-gender_list = [] # Initialize an empty list to be populated by each item in segment (from library) 
+# 5 countries * 3 genders * 3 sectors * 7 senioritis * 6 company sizes * 6 age groups * 2 connectivity status
+
+gender_list = [] # Initialize an empty list to be populated by each item in segment (from library)
+agerange_list = [] # Initialize an empty list to be populated by each item in segment (from library) 
 jobseniority_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-memberbehavior_list = [] # Initialize an empty list to be populate by each item in segment (from library)
-employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+# memberbehavior_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+# employer_list = [] # Initialize an empty list to be populate by each item in segment (from library)
+companyindustry_list = [] # Initialize an empty list to be populate by each item in segment (from library) 
+companysize_list = [] # Initialize an empty list to be populate by each item in segment (from library)  
 
 for gender in gendersegments.keys():
     print("*****************")
@@ -178,66 +209,74 @@ for gender in gendersegments.keys():
     gender_list.append(gender_info)
     arg_list.append(gender_builder(gender_list))
     row_value = ['US']
-    row_value.append(gender) 
+    row_value.append(gender)
+
+    for agerange in agerangesegments.keys():
+        agerange_info = agerangesegments.get(agerange)
+        agerange_list.append(agerange_info)
+        arg_list.append(age_builder(agerange_list))
+        row_value.append(agerange) 
     
-    for jobseniority in jobsenioritysegments.keys():
-        jobseniority_info = jobsenioritysegments.get(jobseniority)
-        jobseniority_list.append(jobseniority_info)
-        arg_list.append(jobseniority_builder(jobseniority_list))
-        row_value.append(jobseniority)
+        for jobseniority in jobsenioritysegments.keys():
+            jobseniority_info = jobsenioritysegments.get(jobseniority)
+            jobseniority_list.append(jobseniority_info)
+            arg_list.append(jobseniority_builder(jobseniority_list))
+            row_value.append(jobseniority)
 
-        for memberbehavior in memberbehaviorsegments.keys():
-            memberbehavior_info = memberbehaviorsegments.get(memberbehavior)
-            memberbehavior_list.append(memberbehavior_info)
-            arg_list.append(memberbehavior_builder(memberbehavior_list))
-            row_value.append(memberbehavior) 
-            
-            for employer in employersegments.keys(): # iterate through segment and get name of element
-                employer_info = employersegments.get(employer) # extract the corresponding value of the element
-                employer_list.append(employer_info) # add element information to the list 
-                arg_list.append(employer_builder(employer_list)) # pass the processed list to build query 
-                row_value.append(employer)
-                count =  make_call() # makes the api call and parses and prints count
-                row_value.append(count)
-                row = pd.Series(row_value)
-                row_df = pd.DataFrame([row])
-                df = pd.concat([row_df, df], ignore_index=True)
-                print(df.head())
-                arg_list.pop() # remove the last added query parameter which is the current variable
-                employer_list.pop() # empty the list to step to the next element in the list
-                row_value.pop() # remove the count value
-                row_value.pop() # remove the employer value
-                time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
-            
-            # # employer-agnostic value
-            # string_general = "general"
-            # row_value.append(string_general)
-            # print(row_value)
-            # count = make_call()
-            # row_value.append(count)
-            # row = pd.Series(row_value)
-            # row_df = pd.DataFrame([row])
-            # df = pd.concat([row_df, df], ignore_index=True)
-            # # print(df.head())
-            # row_value.pop() # remove the employer value
+            # for memberbehavior in memberbehaviorsegments.keys():
+            #     memberbehavior_info = memberbehaviorsegments.get(memberbehavior)
+            #     memberbehavior_list.append(memberbehavior_info)
+            #     arg_list.append(memberbehavior_builder(memberbehavior_list))
+            #     row_value.append(memberbehavior) 
 
+            for companyindustry in companyindustrysegments.keys():
+                companyindustry_info = companyindustrysegments.get(companyindustry)
+                companyindustry_list.append(companyindustry_info)
+                arg_list.append(companyindustry_builder(companyindustry_list))
+                row_value.append(companyindustry)
+                
+                for companysize in companysizesegments.keys(): # iterate through segment and get name of element
+                    companysize_info = companysizesegments.get(companysize) # extract the corresponding value of the element
+                    companysize_list.append(companysize_info) # add element information to the list 
+                    arg_list.append(companysize_builder(companysize_list)) # pass the processed list to build query 
+                    row_value.append(companysize)
+                    count =  make_call() # makes the api call and parses and prints count
+                    row_value.append(count)
+                    row = pd.Series(row_value)
+                    row_df = pd.DataFrame([row])
+                    df = pd.concat([row_df, df], ignore_index=True)
+                    print(df.head())
+                    arg_list.pop() # remove the last added query parameter which is the current variable
+                    companysize_list.pop() # empty the list to step to the next element in the list
+                    row_value.pop() # remove the count value
+                    row_value.pop() # remove the company size value
+                    time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
 
-            arg_list.pop() # remove the last added query parameter which is the member behavior variable
-            memberbehavior_list.pop() # empty the list to step to the next element in the list
-            row_value.pop() # remove the member behavior value
+                df.to_csv('../intermediate/US_temp.csv', index=False)
 
-        arg_list.pop() # remove the last added query parameter which is the job seniority variable
-        jobseniority_list.pop() # empty the list to step to the next element in the list
-        row_value.pop() # remove the job seniority value
+                arg_list.pop() # remove the last added query parameter which is the company industry variable
+                companyindustry_list.pop() # empty the list to step to the next element in the list
+                row_value.pop() # remove the company industry value
+
+                # arg_list.pop() # remove the last added query parameter which is the member behavior variable
+                # memberbehavior_list.pop() # empty the list to step to the next element in the list
+                # row_value.pop() # remove the member behavior value
+
+            arg_list.pop() # remove the last added query parameter which is the job seniority variable
+            jobseniority_list.pop() # empty the list to step to the next element in the list
+            row_value.pop() # remove the job seniority value
+
+        arg_list.pop() # remove the last added query parameter which is the age range variable
+        agerange_list.pop() # empty the list to step to the next element in the list
+        row_value.pop() # remove the age range value
 
     arg_list.pop() # remove the last added query parameter which is the gender variable
     gender_list.pop() # empty the list to step to the next element in the list
     row_value.clear() # remove the gender value
         
 
-df.columns = ["Country", "Gender", "Job seniority", "Member Behavior", "Employer", "Count"]
-df.to_csv('../intermediate/output.csv', index=False)
 
-
+df.columns = ["Country", "Gender", "Age Range", "Job seniority", "Company Industry", "Company Size", "Count"]
+df.to_csv('../intermediate/US.csv', index=False)
 
 

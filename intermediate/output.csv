@@ -1,401 +1,1921 @@
-Country,Gender,Job seniority,Job Seeker,Employer,Count
-US,Male,Owner,Open to Relocation (International),Google,0
-US,Male,Owner,Open to Relocation (International),Netflix,0
-US,Male,Owner,Open to Relocation (International),Apple,0
-US,Male,Owner,Open to Relocation (International),Amazon,0
-US,Male,Owner,Open to Relocation (International),Facebook,0
-US,Male,Owner,Open to Relocation (Domestic),Google,0
-US,Male,Owner,Open to Relocation (Domestic),Netflix,0
-US,Male,Owner,Open to Relocation (Domestic),Apple,0
-US,Male,Owner,Open to Relocation (Domestic),Amazon,0
-US,Male,Owner,Open to Relocation (Domestic),Facebook,0
-US,Male,Owner,Recently Switched Jobs,Google,0
-US,Male,Owner,Recently Switched Jobs,Netflix,0
-US,Male,Owner,Recently Switched Jobs,Apple,0
-US,Male,Owner,Recently Switched Jobs,Amazon,0
-US,Male,Owner,Recently Switched Jobs,Facebook,0
-US,Male,Owner,Job Seekers,Google,450
-US,Male,Owner,Job Seekers,Netflix,0
-US,Male,Owner,Job Seekers,Apple,450
-US,Male,Owner,Job Seekers,Amazon,800
-US,Male,Owner,Job Seekers,Facebook,0
-US,Male,Partner,Open to Relocation (International),Google,0
-US,Male,Partner,Open to Relocation (International),Netflix,0
-US,Male,Partner,Open to Relocation (International),Apple,0
-US,Male,Partner,Open to Relocation (International),Amazon,0
-US,Male,Partner,Open to Relocation (International),Facebook,0
-US,Male,Partner,Open to Relocation (Domestic),Google,0
-US,Male,Partner,Open to Relocation (Domestic),Netflix,0
-US,Male,Partner,Open to Relocation (Domestic),Apple,0
-US,Male,Partner,Open to Relocation (Domestic),Amazon,0
-US,Male,Partner,Open to Relocation (Domestic),Facebook,0
-US,Male,Partner,Recently Switched Jobs,Google,0
-US,Male,Partner,Recently Switched Jobs,Netflix,0
-US,Male,Partner,Recently Switched Jobs,Apple,0
-US,Male,Partner,Recently Switched Jobs,Amazon,0
-US,Male,Partner,Recently Switched Jobs,Facebook,0
-US,Male,Partner,Job Seekers,Google,360
-US,Male,Partner,Job Seekers,Netflix,0
-US,Male,Partner,Job Seekers,Apple,0
-US,Male,Partner,Job Seekers,Amazon,0
-US,Male,Partner,Job Seekers,Facebook,0
-US,Male,CXO,Open to Relocation (International),Google,0
-US,Male,CXO,Open to Relocation (International),Netflix,0
-US,Male,CXO,Open to Relocation (International),Apple,0
-US,Male,CXO,Open to Relocation (International),Amazon,0
-US,Male,CXO,Open to Relocation (International),Facebook,0
-US,Male,CXO,Open to Relocation (Domestic),Google,0
-US,Male,CXO,Open to Relocation (Domestic),Netflix,0
-US,Male,CXO,Open to Relocation (Domestic),Apple,0
-US,Male,CXO,Open to Relocation (Domestic),Amazon,0
-US,Male,CXO,Open to Relocation (Domestic),Facebook,0
-US,Male,CXO,Recently Switched Jobs,Google,0
-US,Male,CXO,Recently Switched Jobs,Netflix,0
-US,Male,CXO,Recently Switched Jobs,Apple,0
-US,Male,CXO,Recently Switched Jobs,Amazon,0
-US,Male,CXO,Recently Switched Jobs,Facebook,0
-US,Male,CXO,Job Seekers,Google,0
-US,Male,CXO,Job Seekers,Netflix,0
-US,Male,CXO,Job Seekers,Apple,0
-US,Male,CXO,Job Seekers,Amazon,320
-US,Male,CXO,Job Seekers,Facebook,0
-US,Male,VP,Open to Relocation (International),Google,0
-US,Male,VP,Open to Relocation (International),Netflix,0
-US,Male,VP,Open to Relocation (International),Apple,0
-US,Male,VP,Open to Relocation (International),Amazon,0
-US,Male,VP,Open to Relocation (International),Facebook,0
-US,Male,VP,Open to Relocation (Domestic),Google,0
-US,Male,VP,Open to Relocation (Domestic),Netflix,0
-US,Male,VP,Open to Relocation (Domestic),Apple,0
-US,Male,VP,Open to Relocation (Domestic),Amazon,0
-US,Male,VP,Open to Relocation (Domestic),Facebook,0
-US,Male,VP,Recently Switched Jobs,Google,0
-US,Male,VP,Recently Switched Jobs,Netflix,0
-US,Male,VP,Recently Switched Jobs,Apple,0
-US,Male,VP,Recently Switched Jobs,Amazon,0
-US,Male,VP,Recently Switched Jobs,Facebook,0
-US,Male,VP,Job Seekers,Google,0
-US,Male,VP,Job Seekers,Netflix,0
-US,Male,VP,Job Seekers,Apple,0
-US,Male,VP,Job Seekers,Amazon,350
-US,Male,VP,Job Seekers,Facebook,0
-US,Male,Director,Open to Relocation (International),Google,0
-US,Male,Director,Open to Relocation (International),Netflix,0
-US,Male,Director,Open to Relocation (International),Apple,0
-US,Male,Director,Open to Relocation (International),Amazon,0
-US,Male,Director,Open to Relocation (International),Facebook,0
-US,Male,Director,Open to Relocation (Domestic),Google,0
-US,Male,Director,Open to Relocation (Domestic),Netflix,0
-US,Male,Director,Open to Relocation (Domestic),Apple,0
-US,Male,Director,Open to Relocation (Domestic),Amazon,370
-US,Male,Director,Open to Relocation (Domestic),Facebook,0
-US,Male,Director,Recently Switched Jobs,Google,0
-US,Male,Director,Recently Switched Jobs,Netflix,0
-US,Male,Director,Recently Switched Jobs,Apple,0
-US,Male,Director,Recently Switched Jobs,Amazon,0
-US,Male,Director,Recently Switched Jobs,Facebook,0
-US,Male,Director,Job Seekers,Google,1800
-US,Male,Director,Job Seekers,Netflix,0
-US,Male,Director,Job Seekers,Apple,790
-US,Male,Director,Job Seekers,Amazon,1700
-US,Male,Director,Job Seekers,Facebook,1000
-US,Male,Manager,Open to Relocation (International),Google,0
-US,Male,Manager,Open to Relocation (International),Netflix,0
-US,Male,Manager,Open to Relocation (International),Apple,0
-US,Male,Manager,Open to Relocation (International),Amazon,0
-US,Male,Manager,Open to Relocation (International),Facebook,0
-US,Male,Manager,Open to Relocation (Domestic),Google,410
-US,Male,Manager,Open to Relocation (Domestic),Netflix,0
-US,Male,Manager,Open to Relocation (Domestic),Apple,460
-US,Male,Manager,Open to Relocation (Domestic),Amazon,2400
-US,Male,Manager,Open to Relocation (Domestic),Facebook,410
-US,Male,Manager,Recently Switched Jobs,Google,360
-US,Male,Manager,Recently Switched Jobs,Netflix,0
-US,Male,Manager,Recently Switched Jobs,Apple,440
-US,Male,Manager,Recently Switched Jobs,Amazon,1500
-US,Male,Manager,Recently Switched Jobs,Facebook,0
-US,Male,Manager,Job Seekers,Google,2900
-US,Male,Manager,Job Seekers,Netflix,360
-US,Male,Manager,Job Seekers,Apple,3500
-US,Male,Manager,Job Seekers,Amazon,11000
-US,Male,Manager,Job Seekers,Facebook,2300
-US,Male,Senior,Open to Relocation (International),Google,0
-US,Male,Senior,Open to Relocation (International),Netflix,0
-US,Male,Senior,Open to Relocation (International),Apple,0
-US,Male,Senior,Open to Relocation (International),Amazon,0
-US,Male,Senior,Open to Relocation (International),Facebook,0
-US,Male,Senior,Open to Relocation (Domestic),Google,840
-US,Male,Senior,Open to Relocation (Domestic),Netflix,0
-US,Male,Senior,Open to Relocation (Domestic),Apple,1500
-US,Male,Senior,Open to Relocation (Domestic),Amazon,2500
-US,Male,Senior,Open to Relocation (Domestic),Facebook,680
-US,Male,Senior,Recently Switched Jobs,Google,900
-US,Male,Senior,Recently Switched Jobs,Netflix,0
-US,Male,Senior,Recently Switched Jobs,Apple,1100
-US,Male,Senior,Recently Switched Jobs,Amazon,1900
-US,Male,Senior,Recently Switched Jobs,Facebook,360
-US,Male,Senior,Job Seekers,Google,6000
-US,Male,Senior,Job Seekers,Netflix,850
-US,Male,Senior,Job Seekers,Apple,7400
-US,Male,Senior,Job Seekers,Amazon,11000
-US,Male,Senior,Job Seekers,Facebook,3300
-US,Male,Entry,Open to Relocation (International),Google,0
-US,Male,Entry,Open to Relocation (International),Netflix,0
-US,Male,Entry,Open to Relocation (International),Apple,0
-US,Male,Entry,Open to Relocation (International),Amazon,350
-US,Male,Entry,Open to Relocation (International),Facebook,0
-US,Male,Entry,Open to Relocation (Domestic),Google,670
-US,Male,Entry,Open to Relocation (Domestic),Netflix,0
-US,Male,Entry,Open to Relocation (Domestic),Apple,1100
-US,Male,Entry,Open to Relocation (Domestic),Amazon,4000
-US,Male,Entry,Open to Relocation (Domestic),Facebook,720
-US,Male,Entry,Recently Switched Jobs,Google,1100
-US,Male,Entry,Recently Switched Jobs,Netflix,0
-US,Male,Entry,Recently Switched Jobs,Apple,1500
-US,Male,Entry,Recently Switched Jobs,Amazon,3800
-US,Male,Entry,Recently Switched Jobs,Facebook,680
-US,Male,Entry,Job Seekers,Google,5900
-US,Male,Entry,Job Seekers,Netflix,380
-US,Male,Entry,Job Seekers,Apple,7300
-US,Male,Entry,Job Seekers,Amazon,17000
-US,Male,Entry,Job Seekers,Facebook,5000
-US,Male,Training,Open to Relocation (International),Google,0
-US,Male,Training,Open to Relocation (International),Netflix,0
-US,Male,Training,Open to Relocation (International),Apple,0
-US,Male,Training,Open to Relocation (International),Amazon,0
-US,Male,Training,Open to Relocation (International),Facebook,0
-US,Male,Training,Open to Relocation (Domestic),Google,0
-US,Male,Training,Open to Relocation (Domestic),Netflix,0
-US,Male,Training,Open to Relocation (Domestic),Apple,0
-US,Male,Training,Open to Relocation (Domestic),Amazon,0
-US,Male,Training,Open to Relocation (Domestic),Facebook,0
-US,Male,Training,Recently Switched Jobs,Google,0
-US,Male,Training,Recently Switched Jobs,Netflix,0
-US,Male,Training,Recently Switched Jobs,Apple,0
-US,Male,Training,Recently Switched Jobs,Amazon,0
-US,Male,Training,Recently Switched Jobs,Facebook,0
-US,Male,Training,Job Seekers,Google,0
-US,Male,Training,Job Seekers,Netflix,0
-US,Male,Training,Job Seekers,Apple,0
-US,Male,Training,Job Seekers,Amazon,440
-US,Male,Training,Job Seekers,Facebook,0
-US,Male,Unpaid,Open to Relocation (International),Google,0
-US,Male,Unpaid,Open to Relocation (International),Netflix,0
-US,Male,Unpaid,Open to Relocation (International),Apple,0
-US,Male,Unpaid,Open to Relocation (International),Amazon,0
-US,Male,Unpaid,Open to Relocation (International),Facebook,0
-US,Male,Unpaid,Open to Relocation (Domestic),Google,0
-US,Male,Unpaid,Open to Relocation (Domestic),Netflix,0
-US,Male,Unpaid,Open to Relocation (Domestic),Apple,0
-US,Male,Unpaid,Open to Relocation (Domestic),Amazon,0
-US,Male,Unpaid,Open to Relocation (Domestic),Facebook,0
-US,Male,Unpaid,Recently Switched Jobs,Google,0
-US,Male,Unpaid,Recently Switched Jobs,Netflix,0
-US,Male,Unpaid,Recently Switched Jobs,Apple,0
-US,Male,Unpaid,Recently Switched Jobs,Amazon,0
-US,Male,Unpaid,Recently Switched Jobs,Facebook,0
-US,Male,Unpaid,Job Seekers,Google,0
-US,Male,Unpaid,Job Seekers,Netflix,0
-US,Male,Unpaid,Job Seekers,Apple,0
-US,Male,Unpaid,Job Seekers,Amazon,0
-US,Male,Unpaid,Job Seekers,Facebook,0
-US,Female,Owner,Open to Relocation (International),Google,0
-US,Female,Owner,Open to Relocation (International),Netflix,0
-US,Female,Owner,Open to Relocation (International),Apple,0
-US,Female,Owner,Open to Relocation (International),Amazon,0
-US,Female,Owner,Open to Relocation (International),Facebook,0
-US,Female,Owner,Open to Relocation (Domestic),Google,0
-US,Female,Owner,Open to Relocation (Domestic),Netflix,0
-US,Female,Owner,Open to Relocation (Domestic),Apple,0
-US,Female,Owner,Open to Relocation (Domestic),Amazon,0
-US,Female,Owner,Open to Relocation (Domestic),Facebook,0
-US,Female,Owner,Recently Switched Jobs,Google,0
-US,Female,Owner,Recently Switched Jobs,Netflix,0
-US,Female,Owner,Recently Switched Jobs,Apple,0
-US,Female,Owner,Recently Switched Jobs,Amazon,0
-US,Female,Owner,Recently Switched Jobs,Facebook,0
-US,Female,Owner,Job Seekers,Google,0
-US,Female,Owner,Job Seekers,Netflix,0
-US,Female,Owner,Job Seekers,Apple,0
-US,Female,Owner,Job Seekers,Amazon,470
-US,Female,Owner,Job Seekers,Facebook,0
-US,Female,Partner,Open to Relocation (International),Google,0
-US,Female,Partner,Open to Relocation (International),Netflix,0
-US,Female,Partner,Open to Relocation (International),Apple,0
-US,Female,Partner,Open to Relocation (International),Amazon,0
-US,Female,Partner,Open to Relocation (International),Facebook,0
-US,Female,Partner,Open to Relocation (Domestic),Google,0
-US,Female,Partner,Open to Relocation (Domestic),Netflix,0
-US,Female,Partner,Open to Relocation (Domestic),Apple,0
-US,Female,Partner,Open to Relocation (Domestic),Amazon,0
-US,Female,Partner,Open to Relocation (Domestic),Facebook,0
-US,Female,Partner,Recently Switched Jobs,Google,0
-US,Female,Partner,Recently Switched Jobs,Netflix,0
-US,Female,Partner,Recently Switched Jobs,Apple,0
-US,Female,Partner,Recently Switched Jobs,Amazon,0
-US,Female,Partner,Recently Switched Jobs,Facebook,0
-US,Female,Partner,Job Seekers,Google,0
-US,Female,Partner,Job Seekers,Netflix,0
-US,Female,Partner,Job Seekers,Apple,0
-US,Female,Partner,Job Seekers,Amazon,0
-US,Female,Partner,Job Seekers,Facebook,0
-US,Female,CXO,Open to Relocation (International),Google,0
-US,Female,CXO,Open to Relocation (International),Netflix,0
-US,Female,CXO,Open to Relocation (International),Apple,0
-US,Female,CXO,Open to Relocation (International),Amazon,0
-US,Female,CXO,Open to Relocation (International),Facebook,0
-US,Female,CXO,Open to Relocation (Domestic),Google,0
-US,Female,CXO,Open to Relocation (Domestic),Netflix,0
-US,Female,CXO,Open to Relocation (Domestic),Apple,0
-US,Female,CXO,Open to Relocation (Domestic),Amazon,0
-US,Female,CXO,Open to Relocation (Domestic),Facebook,0
-US,Female,CXO,Recently Switched Jobs,Google,0
-US,Female,CXO,Recently Switched Jobs,Netflix,0
-US,Female,CXO,Recently Switched Jobs,Apple,0
-US,Female,CXO,Recently Switched Jobs,Amazon,0
-US,Female,CXO,Recently Switched Jobs,Facebook,0
-US,Female,CXO,Job Seekers,Google,0
-US,Female,CXO,Job Seekers,Netflix,0
-US,Female,CXO,Job Seekers,Apple,0
-US,Female,CXO,Job Seekers,Amazon,0
-US,Female,CXO,Job Seekers,Facebook,0
-US,Female,VP,Open to Relocation (International),Google,0
-US,Female,VP,Open to Relocation (International),Netflix,0
-US,Female,VP,Open to Relocation (International),Apple,0
-US,Female,VP,Open to Relocation (International),Amazon,0
-US,Female,VP,Open to Relocation (International),Facebook,0
-US,Female,VP,Open to Relocation (Domestic),Google,0
-US,Female,VP,Open to Relocation (Domestic),Netflix,0
-US,Female,VP,Open to Relocation (Domestic),Apple,0
-US,Female,VP,Open to Relocation (Domestic),Amazon,0
-US,Female,VP,Open to Relocation (Domestic),Facebook,0
-US,Female,VP,Recently Switched Jobs,Google,0
-US,Female,VP,Recently Switched Jobs,Netflix,0
-US,Female,VP,Recently Switched Jobs,Apple,0
-US,Female,VP,Recently Switched Jobs,Amazon,0
-US,Female,VP,Recently Switched Jobs,Facebook,0
-US,Female,VP,Job Seekers,Google,0
-US,Female,VP,Job Seekers,Netflix,0
-US,Female,VP,Job Seekers,Apple,0
-US,Female,VP,Job Seekers,Amazon,0
-US,Female,VP,Job Seekers,Facebook,0
-US,Female,Director,Open to Relocation (International),Google,0
-US,Female,Director,Open to Relocation (International),Netflix,0
-US,Female,Director,Open to Relocation (International),Apple,0
-US,Female,Director,Open to Relocation (International),Amazon,0
-US,Female,Director,Open to Relocation (International),Facebook,0
-US,Female,Director,Open to Relocation (Domestic),Google,0
-US,Female,Director,Open to Relocation (Domestic),Netflix,0
-US,Female,Director,Open to Relocation (Domestic),Apple,0
-US,Female,Director,Open to Relocation (Domestic),Amazon,0
-US,Female,Director,Open to Relocation (Domestic),Facebook,0
-US,Female,Director,Recently Switched Jobs,Google,0
-US,Female,Director,Recently Switched Jobs,Netflix,0
-US,Female,Director,Recently Switched Jobs,Apple,0
-US,Female,Director,Recently Switched Jobs,Amazon,0
-US,Female,Director,Recently Switched Jobs,Facebook,0
-US,Female,Director,Job Seekers,Google,1100
-US,Female,Director,Job Seekers,Netflix,0
-US,Female,Director,Job Seekers,Apple,350
-US,Female,Director,Job Seekers,Amazon,920
-US,Female,Director,Job Seekers,Facebook,680
-US,Female,Manager,Open to Relocation (International),Google,0
-US,Female,Manager,Open to Relocation (International),Netflix,0
-US,Female,Manager,Open to Relocation (International),Apple,0
-US,Female,Manager,Open to Relocation (International),Amazon,0
-US,Female,Manager,Open to Relocation (International),Facebook,0
-US,Female,Manager,Open to Relocation (Domestic),Google,0
-US,Female,Manager,Open to Relocation (Domestic),Netflix,0
-US,Female,Manager,Open to Relocation (Domestic),Apple,0
-US,Female,Manager,Open to Relocation (Domestic),Amazon,1300
-US,Female,Manager,Open to Relocation (Domestic),Facebook,0
-US,Female,Manager,Recently Switched Jobs,Google,0
-US,Female,Manager,Recently Switched Jobs,Netflix,0
-US,Female,Manager,Recently Switched Jobs,Apple,0
-US,Female,Manager,Recently Switched Jobs,Amazon,880
-US,Female,Manager,Recently Switched Jobs,Facebook,0
-US,Female,Manager,Job Seekers,Google,1900
-US,Female,Manager,Job Seekers,Netflix,410
-US,Female,Manager,Job Seekers,Apple,1800
-US,Female,Manager,Job Seekers,Amazon,5900
-US,Female,Manager,Job Seekers,Facebook,1500
-US,Female,Senior,Open to Relocation (International),Google,0
-US,Female,Senior,Open to Relocation (International),Netflix,0
-US,Female,Senior,Open to Relocation (International),Apple,0
-US,Female,Senior,Open to Relocation (International),Amazon,0
-US,Female,Senior,Open to Relocation (International),Facebook,0
-US,Female,Senior,Open to Relocation (Domestic),Google,680
-US,Female,Senior,Open to Relocation (Domestic),Netflix,0
-US,Female,Senior,Open to Relocation (Domestic),Apple,970
-US,Female,Senior,Open to Relocation (Domestic),Amazon,1700
-US,Female,Senior,Open to Relocation (Domestic),Facebook,630
-US,Female,Senior,Recently Switched Jobs,Google,620
-US,Female,Senior,Recently Switched Jobs,Netflix,0
-US,Female,Senior,Recently Switched Jobs,Apple,660
-US,Female,Senior,Recently Switched Jobs,Amazon,1400
-US,Female,Senior,Recently Switched Jobs,Facebook,340
-US,Female,Senior,Job Seekers,Google,4200
-US,Female,Senior,Job Seekers,Netflix,780
-US,Female,Senior,Job Seekers,Apple,4200
-US,Female,Senior,Job Seekers,Amazon,7500
-US,Female,Senior,Job Seekers,Facebook,3100
-US,Female,Entry,Open to Relocation (International),Google,0
-US,Female,Entry,Open to Relocation (International),Netflix,0
-US,Female,Entry,Open to Relocation (International),Apple,0
-US,Female,Entry,Open to Relocation (International),Amazon,0
-US,Female,Entry,Open to Relocation (International),Facebook,0
-US,Female,Entry,Open to Relocation (Domestic),Google,450
-US,Female,Entry,Open to Relocation (Domestic),Netflix,0
-US,Female,Entry,Open to Relocation (Domestic),Apple,630
-US,Female,Entry,Open to Relocation (Domestic),Amazon,2300
-US,Female,Entry,Open to Relocation (Domestic),Facebook,570
-US,Female,Entry,Recently Switched Jobs,Google,580
-US,Female,Entry,Recently Switched Jobs,Netflix,0
-US,Female,Entry,Recently Switched Jobs,Apple,800
-US,Female,Entry,Recently Switched Jobs,Amazon,2600
-US,Female,Entry,Recently Switched Jobs,Facebook,380
-US,Female,Entry,Job Seekers,Google,2900
-US,Female,Entry,Job Seekers,Netflix,470
-US,Female,Entry,Job Seekers,Apple,3300
-US,Female,Entry,Job Seekers,Amazon,10000
-US,Female,Entry,Job Seekers,Facebook,2800
-US,Female,Training,Open to Relocation (International),Google,0
-US,Female,Training,Open to Relocation (International),Netflix,0
-US,Female,Training,Open to Relocation (International),Apple,0
-US,Female,Training,Open to Relocation (International),Amazon,0
-US,Female,Training,Open to Relocation (International),Facebook,0
-US,Female,Training,Open to Relocation (Domestic),Google,0
-US,Female,Training,Open to Relocation (Domestic),Netflix,0
-US,Female,Training,Open to Relocation (Domestic),Apple,0
-US,Female,Training,Open to Relocation (Domestic),Amazon,0
-US,Female,Training,Open to Relocation (Domestic),Facebook,0
-US,Female,Training,Recently Switched Jobs,Google,0
-US,Female,Training,Recently Switched Jobs,Netflix,0
-US,Female,Training,Recently Switched Jobs,Apple,0
-US,Female,Training,Recently Switched Jobs,Amazon,0
-US,Female,Training,Recently Switched Jobs,Facebook,0
-US,Female,Training,Job Seekers,Google,0
-US,Female,Training,Job Seekers,Netflix,0
-US,Female,Training,Job Seekers,Apple,0
-US,Female,Training,Job Seekers,Amazon,0
-US,Female,Training,Job Seekers,Facebook,0
-US,Female,Unpaid,Open to Relocation (International),Google,0
-US,Female,Unpaid,Open to Relocation (International),Netflix,0
-US,Female,Unpaid,Open to Relocation (International),Apple,0
-US,Female,Unpaid,Open to Relocation (International),Amazon,0
-US,Female,Unpaid,Open to Relocation (International),Facebook,0
-US,Female,Unpaid,Open to Relocation (Domestic),Google,0
-US,Female,Unpaid,Open to Relocation (Domestic),Netflix,0
-US,Female,Unpaid,Open to Relocation (Domestic),Apple,0
-US,Female,Unpaid,Open to Relocation (Domestic),Amazon,0
-US,Female,Unpaid,Open to Relocation (Domestic),Facebook,0
-US,Female,Unpaid,Recently Switched Jobs,Google,0
-US,Female,Unpaid,Recently Switched Jobs,Netflix,0
-US,Female,Unpaid,Recently Switched Jobs,Apple,0
-US,Female,Unpaid,Recently Switched Jobs,Amazon,0
-US,Female,Unpaid,Recently Switched Jobs,Facebook,0
-US,Female,Unpaid,Job Seekers,Google,0
-US,Female,Unpaid,Job Seekers,Netflix,0
-US,Female,Unpaid,Job Seekers,Apple,0
-US,Female,Unpaid,Job Seekers,Amazon,0
-US,Female,Unpaid,Job Seekers,Facebook,0
+Country,Gender,Age Range,Job seniority,Member Behavior,Employer,Count
+US,Male,55+,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Owner,Open to Relocation (International),Google,0
+US,Male,55+,Owner,Open to Relocation (International),Netflix,0
+US,Male,55+,Owner,Open to Relocation (International),Apple,0
+US,Male,55+,Owner,Open to Relocation (International),Amazon,0
+US,Male,55+,Owner,Open to Relocation (International),Facebook,0
+US,Male,55+,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Owner,Open to Relocation (Domestic),Google,0
+US,Male,55+,Owner,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Owner,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Owner,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Owner,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Owner,Recently Switched Jobs,Google,0
+US,Male,55+,Owner,Recently Switched Jobs,Netflix,0
+US,Male,55+,Owner,Recently Switched Jobs,Apple,0
+US,Male,55+,Owner,Recently Switched Jobs,Amazon,0
+US,Male,55+,Owner,Recently Switched Jobs,Facebook,0
+US,Male,55+,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Owner,Job Seekers,Google,0
+US,Male,55+,Owner,Job Seekers,Netflix,0
+US,Male,55+,Owner,Job Seekers,Apple,0
+US,Male,55+,Owner,Job Seekers,Amazon,0
+US,Male,55+,Owner,Job Seekers,Facebook,0
+US,Male,55+,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Partner,Open to Relocation (International),Google,0
+US,Male,55+,Partner,Open to Relocation (International),Netflix,0
+US,Male,55+,Partner,Open to Relocation (International),Apple,0
+US,Male,55+,Partner,Open to Relocation (International),Amazon,0
+US,Male,55+,Partner,Open to Relocation (International),Facebook,0
+US,Male,55+,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Partner,Open to Relocation (Domestic),Google,0
+US,Male,55+,Partner,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Partner,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Partner,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Partner,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Partner,Recently Switched Jobs,Google,0
+US,Male,55+,Partner,Recently Switched Jobs,Netflix,0
+US,Male,55+,Partner,Recently Switched Jobs,Apple,0
+US,Male,55+,Partner,Recently Switched Jobs,Amazon,0
+US,Male,55+,Partner,Recently Switched Jobs,Facebook,0
+US,Male,55+,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Partner,Job Seekers,Google,0
+US,Male,55+,Partner,Job Seekers,Netflix,0
+US,Male,55+,Partner,Job Seekers,Apple,0
+US,Male,55+,Partner,Job Seekers,Amazon,0
+US,Male,55+,Partner,Job Seekers,Facebook,0
+US,Male,55+,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,CXO,Open to Relocation (International),Google,0
+US,Male,55+,CXO,Open to Relocation (International),Netflix,0
+US,Male,55+,CXO,Open to Relocation (International),Apple,0
+US,Male,55+,CXO,Open to Relocation (International),Amazon,0
+US,Male,55+,CXO,Open to Relocation (International),Facebook,0
+US,Male,55+,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,CXO,Open to Relocation (Domestic),Google,0
+US,Male,55+,CXO,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,CXO,Open to Relocation (Domestic),Apple,0
+US,Male,55+,CXO,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,CXO,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,CXO,Recently Switched Jobs,Google,0
+US,Male,55+,CXO,Recently Switched Jobs,Netflix,0
+US,Male,55+,CXO,Recently Switched Jobs,Apple,0
+US,Male,55+,CXO,Recently Switched Jobs,Amazon,0
+US,Male,55+,CXO,Recently Switched Jobs,Facebook,0
+US,Male,55+,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,CXO,Job Seekers,Google,0
+US,Male,55+,CXO,Job Seekers,Netflix,0
+US,Male,55+,CXO,Job Seekers,Apple,0
+US,Male,55+,CXO,Job Seekers,Amazon,0
+US,Male,55+,CXO,Job Seekers,Facebook,0
+US,Male,55+,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,VP,Open to Relocation (International),Google,0
+US,Male,55+,VP,Open to Relocation (International),Netflix,0
+US,Male,55+,VP,Open to Relocation (International),Apple,0
+US,Male,55+,VP,Open to Relocation (International),Amazon,0
+US,Male,55+,VP,Open to Relocation (International),Facebook,0
+US,Male,55+,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,VP,Open to Relocation (Domestic),Google,0
+US,Male,55+,VP,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,VP,Open to Relocation (Domestic),Apple,0
+US,Male,55+,VP,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,VP,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,VP,Recently Switched Jobs,Google,0
+US,Male,55+,VP,Recently Switched Jobs,Netflix,0
+US,Male,55+,VP,Recently Switched Jobs,Apple,0
+US,Male,55+,VP,Recently Switched Jobs,Amazon,0
+US,Male,55+,VP,Recently Switched Jobs,Facebook,0
+US,Male,55+,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,VP,Job Seekers,Google,0
+US,Male,55+,VP,Job Seekers,Netflix,0
+US,Male,55+,VP,Job Seekers,Apple,0
+US,Male,55+,VP,Job Seekers,Amazon,0
+US,Male,55+,VP,Job Seekers,Facebook,0
+US,Male,55+,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Director,Open to Relocation (International),Google,0
+US,Male,55+,Director,Open to Relocation (International),Netflix,0
+US,Male,55+,Director,Open to Relocation (International),Apple,0
+US,Male,55+,Director,Open to Relocation (International),Amazon,0
+US,Male,55+,Director,Open to Relocation (International),Facebook,0
+US,Male,55+,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Director,Open to Relocation (Domestic),Google,0
+US,Male,55+,Director,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Director,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Director,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Director,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Director,Recently Switched Jobs,Google,0
+US,Male,55+,Director,Recently Switched Jobs,Netflix,0
+US,Male,55+,Director,Recently Switched Jobs,Apple,0
+US,Male,55+,Director,Recently Switched Jobs,Amazon,0
+US,Male,55+,Director,Recently Switched Jobs,Facebook,0
+US,Male,55+,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Director,Job Seekers,Google,0
+US,Male,55+,Director,Job Seekers,Netflix,0
+US,Male,55+,Director,Job Seekers,Apple,0
+US,Male,55+,Director,Job Seekers,Amazon,0
+US,Male,55+,Director,Job Seekers,Facebook,0
+US,Male,55+,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Manager,Open to Relocation (International),Google,0
+US,Male,55+,Manager,Open to Relocation (International),Netflix,0
+US,Male,55+,Manager,Open to Relocation (International),Apple,0
+US,Male,55+,Manager,Open to Relocation (International),Amazon,0
+US,Male,55+,Manager,Open to Relocation (International),Facebook,0
+US,Male,55+,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Manager,Open to Relocation (Domestic),Google,0
+US,Male,55+,Manager,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Manager,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Manager,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Manager,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Manager,Recently Switched Jobs,Google,0
+US,Male,55+,Manager,Recently Switched Jobs,Netflix,0
+US,Male,55+,Manager,Recently Switched Jobs,Apple,0
+US,Male,55+,Manager,Recently Switched Jobs,Amazon,0
+US,Male,55+,Manager,Recently Switched Jobs,Facebook,0
+US,Male,55+,Manager,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Manager,Job Seekers,Google,0
+US,Male,55+,Manager,Job Seekers,Netflix,0
+US,Male,55+,Manager,Job Seekers,Apple,0
+US,Male,55+,Manager,Job Seekers,Amazon,0
+US,Male,55+,Manager,Job Seekers,Facebook,0
+US,Male,55+,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Senior,Open to Relocation (International),Google,0
+US,Male,55+,Senior,Open to Relocation (International),Netflix,0
+US,Male,55+,Senior,Open to Relocation (International),Apple,0
+US,Male,55+,Senior,Open to Relocation (International),Amazon,0
+US,Male,55+,Senior,Open to Relocation (International),Facebook,0
+US,Male,55+,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Senior,Open to Relocation (Domestic),Google,0
+US,Male,55+,Senior,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Senior,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Senior,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Senior,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Senior,Recently Switched Jobs,Google,0
+US,Male,55+,Senior,Recently Switched Jobs,Netflix,0
+US,Male,55+,Senior,Recently Switched Jobs,Apple,0
+US,Male,55+,Senior,Recently Switched Jobs,Amazon,0
+US,Male,55+,Senior,Recently Switched Jobs,Facebook,0
+US,Male,55+,Senior,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Senior,Job Seekers,Google,0
+US,Male,55+,Senior,Job Seekers,Netflix,0
+US,Male,55+,Senior,Job Seekers,Apple,0
+US,Male,55+,Senior,Job Seekers,Amazon,0
+US,Male,55+,Senior,Job Seekers,Facebook,0
+US,Male,55+,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Entry,Open to Relocation (International),Google,0
+US,Male,55+,Entry,Open to Relocation (International),Netflix,0
+US,Male,55+,Entry,Open to Relocation (International),Apple,0
+US,Male,55+,Entry,Open to Relocation (International),Amazon,0
+US,Male,55+,Entry,Open to Relocation (International),Facebook,0
+US,Male,55+,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Entry,Open to Relocation (Domestic),Google,0
+US,Male,55+,Entry,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Entry,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Entry,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Entry,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Entry,Recently Switched Jobs,Google,0
+US,Male,55+,Entry,Recently Switched Jobs,Netflix,0
+US,Male,55+,Entry,Recently Switched Jobs,Apple,0
+US,Male,55+,Entry,Recently Switched Jobs,Amazon,0
+US,Male,55+,Entry,Recently Switched Jobs,Facebook,0
+US,Male,55+,Entry,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Entry,Job Seekers,Google,0
+US,Male,55+,Entry,Job Seekers,Netflix,0
+US,Male,55+,Entry,Job Seekers,Apple,0
+US,Male,55+,Entry,Job Seekers,Amazon,0
+US,Male,55+,Entry,Job Seekers,Facebook,0
+US,Male,55+,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Training,Open to Relocation (International),Google,0
+US,Male,55+,Training,Open to Relocation (International),Netflix,0
+US,Male,55+,Training,Open to Relocation (International),Apple,0
+US,Male,55+,Training,Open to Relocation (International),Amazon,0
+US,Male,55+,Training,Open to Relocation (International),Facebook,0
+US,Male,55+,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Training,Open to Relocation (Domestic),Google,0
+US,Male,55+,Training,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Training,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Training,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Training,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Training,Recently Switched Jobs,Google,0
+US,Male,55+,Training,Recently Switched Jobs,Netflix,0
+US,Male,55+,Training,Recently Switched Jobs,Apple,0
+US,Male,55+,Training,Recently Switched Jobs,Amazon,0
+US,Male,55+,Training,Recently Switched Jobs,Facebook,0
+US,Male,55+,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Training,Job Seekers,Google,0
+US,Male,55+,Training,Job Seekers,Netflix,0
+US,Male,55+,Training,Job Seekers,Apple,0
+US,Male,55+,Training,Job Seekers,Amazon,0
+US,Male,55+,Training,Job Seekers,Facebook,0
+US,Male,55+,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,55+,Unpaid,Open to Relocation (International),Google,0
+US,Male,55+,Unpaid,Open to Relocation (International),Netflix,0
+US,Male,55+,Unpaid,Open to Relocation (International),Apple,0
+US,Male,55+,Unpaid,Open to Relocation (International),Amazon,0
+US,Male,55+,Unpaid,Open to Relocation (International),Facebook,0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Google,0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Male,55+,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Male,55+,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,55+,Unpaid,Recently Switched Jobs,Google,0
+US,Male,55+,Unpaid,Recently Switched Jobs,Netflix,0
+US,Male,55+,Unpaid,Recently Switched Jobs,Apple,0
+US,Male,55+,Unpaid,Recently Switched Jobs,Amazon,0
+US,Male,55+,Unpaid,Recently Switched Jobs,Facebook,0
+US,Male,55+,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Male,55+,Unpaid,Job Seekers,Google,0
+US,Male,55+,Unpaid,Job Seekers,Netflix,0
+US,Male,55+,Unpaid,Job Seekers,Apple,0
+US,Male,55+,Unpaid,Job Seekers,Amazon,0
+US,Male,55+,Unpaid,Job Seekers,Facebook,0
+US,Male,35 to 54,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Owner,Open to Relocation (International),Google,0
+US,Male,35 to 54,Owner,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Owner,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Owner,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Owner,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,Owner,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,Owner,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,Owner,Job Seekers,Google,0
+US,Male,35 to 54,Owner,Job Seekers,Netflix,0
+US,Male,35 to 54,Owner,Job Seekers,Apple,0
+US,Male,35 to 54,Owner,Job Seekers,Amazon,330
+US,Male,35 to 54,Owner,Job Seekers,Facebook,0
+US,Male,35 to 54,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Partner,Open to Relocation (International),Google,0
+US,Male,35 to 54,Partner,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Partner,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Partner,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Partner,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,Partner,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,Partner,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,Partner,Job Seekers,Google,0
+US,Male,35 to 54,Partner,Job Seekers,Netflix,0
+US,Male,35 to 54,Partner,Job Seekers,Apple,0
+US,Male,35 to 54,Partner,Job Seekers,Amazon,0
+US,Male,35 to 54,Partner,Job Seekers,Facebook,0
+US,Male,35 to 54,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,CXO,Open to Relocation (International),Google,0
+US,Male,35 to 54,CXO,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,CXO,Open to Relocation (International),Apple,0
+US,Male,35 to 54,CXO,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,CXO,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,CXO,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Google,0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,CXO,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,CXO,Job Seekers,Google,0
+US,Male,35 to 54,CXO,Job Seekers,Netflix,0
+US,Male,35 to 54,CXO,Job Seekers,Apple,0
+US,Male,35 to 54,CXO,Job Seekers,Amazon,0
+US,Male,35 to 54,CXO,Job Seekers,Facebook,0
+US,Male,35 to 54,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,VP,Open to Relocation (International),Google,0
+US,Male,35 to 54,VP,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,VP,Open to Relocation (International),Apple,0
+US,Male,35 to 54,VP,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,VP,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,VP,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,VP,Recently Switched Jobs,Google,0
+US,Male,35 to 54,VP,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,VP,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,VP,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,VP,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,VP,Job Seekers,Google,0
+US,Male,35 to 54,VP,Job Seekers,Netflix,0
+US,Male,35 to 54,VP,Job Seekers,Apple,0
+US,Male,35 to 54,VP,Job Seekers,Amazon,0
+US,Male,35 to 54,VP,Job Seekers,Facebook,0
+US,Male,35 to 54,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Director,Open to Relocation (International),Google,0
+US,Male,35 to 54,Director,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Director,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Director,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Director,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,Director,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Director,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Director,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Director,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Director,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,Director,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Director,Job Seekers,Amazon Web Services (AWS),670
+US,Male,35 to 54,Director,Job Seekers,Google,1400
+US,Male,35 to 54,Director,Job Seekers,Netflix,0
+US,Male,35 to 54,Director,Job Seekers,Apple,550
+US,Male,35 to 54,Director,Job Seekers,Amazon,1200
+US,Male,35 to 54,Director,Job Seekers,Facebook,780
+US,Male,35 to 54,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Manager,Open to Relocation (International),Google,0
+US,Male,35 to 54,Manager,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Manager,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Manager,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Manager,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),380
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Amazon,1000
+US,Male,35 to 54,Manager,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Manager,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Manager,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Manager,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Manager,Recently Switched Jobs,Amazon,600
+US,Male,35 to 54,Manager,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Manager,Job Seekers,Amazon Web Services (AWS),1700
+US,Male,35 to 54,Manager,Job Seekers,Google,2000
+US,Male,35 to 54,Manager,Job Seekers,Netflix,0
+US,Male,35 to 54,Manager,Job Seekers,Apple,2300
+US,Male,35 to 54,Manager,Job Seekers,Amazon,5000
+US,Male,35 to 54,Manager,Job Seekers,Facebook,1500
+US,Male,35 to 54,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Senior,Open to Relocation (International),Google,0
+US,Male,35 to 54,Senior,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Senior,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Senior,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Senior,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),700
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Google,360
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Apple,430
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Amazon,940
+US,Male,35 to 54,Senior,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Senior,Recently Switched Jobs,Amazon Web Services (AWS),530
+US,Male,35 to 54,Senior,Recently Switched Jobs,Google,500
+US,Male,35 to 54,Senior,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Senior,Recently Switched Jobs,Apple,440
+US,Male,35 to 54,Senior,Recently Switched Jobs,Amazon,670
+US,Male,35 to 54,Senior,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Senior,Job Seekers,Amazon Web Services (AWS),3900
+US,Male,35 to 54,Senior,Job Seekers,Google,3100
+US,Male,35 to 54,Senior,Job Seekers,Netflix,430
+US,Male,35 to 54,Senior,Job Seekers,Apple,3200
+US,Male,35 to 54,Senior,Job Seekers,Amazon,4700
+US,Male,35 to 54,Senior,Job Seekers,Facebook,1500
+US,Male,35 to 54,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Entry,Open to Relocation (International),Google,0
+US,Male,35 to 54,Entry,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Entry,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Entry,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Entry,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),300
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Amazon,690
+US,Male,35 to 54,Entry,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Entry,Recently Switched Jobs,Google,400
+US,Male,35 to 54,Entry,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Entry,Recently Switched Jobs,Apple,450
+US,Male,35 to 54,Entry,Recently Switched Jobs,Amazon,600
+US,Male,35 to 54,Entry,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Entry,Job Seekers,Amazon Web Services (AWS),1400
+US,Male,35 to 54,Entry,Job Seekers,Google,2300
+US,Male,35 to 54,Entry,Job Seekers,Netflix,0
+US,Male,35 to 54,Entry,Job Seekers,Apple,2900
+US,Male,35 to 54,Entry,Job Seekers,Amazon,3300
+US,Male,35 to 54,Entry,Job Seekers,Facebook,1900
+US,Male,35 to 54,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Training,Open to Relocation (International),Google,0
+US,Male,35 to 54,Training,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Training,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Training,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Training,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,Training,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Training,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Training,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Training,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Training,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,Training,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,Training,Job Seekers,Google,0
+US,Male,35 to 54,Training,Job Seekers,Netflix,0
+US,Male,35 to 54,Training,Job Seekers,Apple,0
+US,Male,35 to 54,Training,Job Seekers,Amazon,0
+US,Male,35 to 54,Training,Job Seekers,Facebook,0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Google,0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Netflix,0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Apple,0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Amazon,0
+US,Male,35 to 54,Unpaid,Open to Relocation (International),Facebook,0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Google,0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Male,35 to 54,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Google,0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Netflix,0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Apple,0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Amazon,0
+US,Male,35 to 54,Unpaid,Recently Switched Jobs,Facebook,0
+US,Male,35 to 54,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Male,35 to 54,Unpaid,Job Seekers,Google,0
+US,Male,35 to 54,Unpaid,Job Seekers,Netflix,0
+US,Male,35 to 54,Unpaid,Job Seekers,Apple,0
+US,Male,35 to 54,Unpaid,Job Seekers,Amazon,0
+US,Male,35 to 54,Unpaid,Job Seekers,Facebook,0
+US,Male,25 to 34,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Owner,Open to Relocation (International),Google,0
+US,Male,25 to 34,Owner,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Owner,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Owner,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Owner,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,Owner,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,Owner,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,Owner,Job Seekers,Google,0
+US,Male,25 to 34,Owner,Job Seekers,Netflix,0
+US,Male,25 to 34,Owner,Job Seekers,Apple,0
+US,Male,25 to 34,Owner,Job Seekers,Amazon,330
+US,Male,25 to 34,Owner,Job Seekers,Facebook,0
+US,Male,25 to 34,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Partner,Open to Relocation (International),Google,0
+US,Male,25 to 34,Partner,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Partner,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Partner,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Partner,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,Partner,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,Partner,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,Partner,Job Seekers,Google,0
+US,Male,25 to 34,Partner,Job Seekers,Netflix,0
+US,Male,25 to 34,Partner,Job Seekers,Apple,0
+US,Male,25 to 34,Partner,Job Seekers,Amazon,0
+US,Male,25 to 34,Partner,Job Seekers,Facebook,0
+US,Male,25 to 34,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,CXO,Open to Relocation (International),Google,0
+US,Male,25 to 34,CXO,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,CXO,Open to Relocation (International),Apple,0
+US,Male,25 to 34,CXO,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,CXO,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,CXO,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Google,0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,CXO,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,CXO,Job Seekers,Google,0
+US,Male,25 to 34,CXO,Job Seekers,Netflix,0
+US,Male,25 to 34,CXO,Job Seekers,Apple,0
+US,Male,25 to 34,CXO,Job Seekers,Amazon,0
+US,Male,25 to 34,CXO,Job Seekers,Facebook,0
+US,Male,25 to 34,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,VP,Open to Relocation (International),Google,0
+US,Male,25 to 34,VP,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,VP,Open to Relocation (International),Apple,0
+US,Male,25 to 34,VP,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,VP,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,VP,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,VP,Recently Switched Jobs,Google,0
+US,Male,25 to 34,VP,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,VP,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,VP,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,VP,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,VP,Job Seekers,Google,0
+US,Male,25 to 34,VP,Job Seekers,Netflix,0
+US,Male,25 to 34,VP,Job Seekers,Apple,0
+US,Male,25 to 34,VP,Job Seekers,Amazon,0
+US,Male,25 to 34,VP,Job Seekers,Facebook,0
+US,Male,25 to 34,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Director,Open to Relocation (International),Google,0
+US,Male,25 to 34,Director,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Director,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Director,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Director,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,Director,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Director,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Director,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Director,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Director,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,Director,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,Director,Job Seekers,Google,0
+US,Male,25 to 34,Director,Job Seekers,Netflix,0
+US,Male,25 to 34,Director,Job Seekers,Apple,0
+US,Male,25 to 34,Director,Job Seekers,Amazon,340
+US,Male,25 to 34,Director,Job Seekers,Facebook,0
+US,Male,25 to 34,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Manager,Open to Relocation (International),Google,0
+US,Male,25 to 34,Manager,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Manager,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Manager,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Manager,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Amazon,990
+US,Male,25 to 34,Manager,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Manager,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Manager,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Manager,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Manager,Recently Switched Jobs,Amazon,590
+US,Male,25 to 34,Manager,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Manager,Job Seekers,Amazon Web Services (AWS),640
+US,Male,25 to 34,Manager,Job Seekers,Google,790
+US,Male,25 to 34,Manager,Job Seekers,Netflix,0
+US,Male,25 to 34,Manager,Job Seekers,Apple,980
+US,Male,25 to 34,Manager,Job Seekers,Amazon,4200
+US,Male,25 to 34,Manager,Job Seekers,Facebook,760
+US,Male,25 to 34,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Senior,Open to Relocation (International),Google,0
+US,Male,25 to 34,Senior,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Senior,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Senior,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Senior,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),460
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Google,420
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Apple,740
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Amazon,1200
+US,Male,25 to 34,Senior,Open to Relocation (Domestic),Facebook,370
+US,Male,25 to 34,Senior,Recently Switched Jobs,Amazon Web Services (AWS),300
+US,Male,25 to 34,Senior,Recently Switched Jobs,Google,330
+US,Male,25 to 34,Senior,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Senior,Recently Switched Jobs,Apple,530
+US,Male,25 to 34,Senior,Recently Switched Jobs,Amazon,910
+US,Male,25 to 34,Senior,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Senior,Job Seekers,Amazon Web Services (AWS),2000
+US,Male,25 to 34,Senior,Job Seekers,Google,2500
+US,Male,25 to 34,Senior,Job Seekers,Netflix,380
+US,Male,25 to 34,Senior,Job Seekers,Apple,3100
+US,Male,25 to 34,Senior,Job Seekers,Amazon,5000
+US,Male,25 to 34,Senior,Job Seekers,Facebook,1600
+US,Male,25 to 34,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Entry,Open to Relocation (International),Google,0
+US,Male,25 to 34,Entry,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Entry,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Entry,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Entry,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),820
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Google,400
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Apple,670
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Amazon,2100
+US,Male,25 to 34,Entry,Open to Relocation (Domestic),Facebook,400
+US,Male,25 to 34,Entry,Recently Switched Jobs,Amazon Web Services (AWS),480
+US,Male,25 to 34,Entry,Recently Switched Jobs,Google,590
+US,Male,25 to 34,Entry,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Entry,Recently Switched Jobs,Apple,780
+US,Male,25 to 34,Entry,Recently Switched Jobs,Amazon,1900
+US,Male,25 to 34,Entry,Recently Switched Jobs,Facebook,380
+US,Male,25 to 34,Entry,Job Seekers,Amazon Web Services (AWS),3100
+US,Male,25 to 34,Entry,Job Seekers,Google,3100
+US,Male,25 to 34,Entry,Job Seekers,Netflix,0
+US,Male,25 to 34,Entry,Job Seekers,Apple,3600
+US,Male,25 to 34,Entry,Job Seekers,Amazon,8700
+US,Male,25 to 34,Entry,Job Seekers,Facebook,2700
+US,Male,25 to 34,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Training,Open to Relocation (International),Google,0
+US,Male,25 to 34,Training,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Training,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Training,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Training,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,Training,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Training,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Training,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Training,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Training,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,Training,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,Training,Job Seekers,Google,0
+US,Male,25 to 34,Training,Job Seekers,Netflix,0
+US,Male,25 to 34,Training,Job Seekers,Apple,0
+US,Male,25 to 34,Training,Job Seekers,Amazon,0
+US,Male,25 to 34,Training,Job Seekers,Facebook,0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Google,0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Netflix,0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Apple,0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Amazon,0
+US,Male,25 to 34,Unpaid,Open to Relocation (International),Facebook,0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Google,0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Male,25 to 34,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Google,0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Netflix,0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Apple,0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Amazon,0
+US,Male,25 to 34,Unpaid,Recently Switched Jobs,Facebook,0
+US,Male,25 to 34,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Male,25 to 34,Unpaid,Job Seekers,Google,0
+US,Male,25 to 34,Unpaid,Job Seekers,Netflix,0
+US,Male,25 to 34,Unpaid,Job Seekers,Apple,0
+US,Male,25 to 34,Unpaid,Job Seekers,Amazon,0
+US,Male,25 to 34,Unpaid,Job Seekers,Facebook,0
+US,Male,18 to 24,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Owner,Open to Relocation (International),Google,0
+US,Male,18 to 24,Owner,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Owner,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Owner,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Owner,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,Owner,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Owner,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Owner,Job Seekers,Google,0
+US,Male,18 to 24,Owner,Job Seekers,Netflix,0
+US,Male,18 to 24,Owner,Job Seekers,Apple,0
+US,Male,18 to 24,Owner,Job Seekers,Amazon,0
+US,Male,18 to 24,Owner,Job Seekers,Facebook,0
+US,Male,18 to 24,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Partner,Open to Relocation (International),Google,0
+US,Male,18 to 24,Partner,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Partner,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Partner,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Partner,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,Partner,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Partner,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Partner,Job Seekers,Google,0
+US,Male,18 to 24,Partner,Job Seekers,Netflix,0
+US,Male,18 to 24,Partner,Job Seekers,Apple,0
+US,Male,18 to 24,Partner,Job Seekers,Amazon,0
+US,Male,18 to 24,Partner,Job Seekers,Facebook,0
+US,Male,18 to 24,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,CXO,Open to Relocation (International),Google,0
+US,Male,18 to 24,CXO,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,CXO,Open to Relocation (International),Apple,0
+US,Male,18 to 24,CXO,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,CXO,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,CXO,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Google,0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,CXO,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,CXO,Job Seekers,Google,0
+US,Male,18 to 24,CXO,Job Seekers,Netflix,0
+US,Male,18 to 24,CXO,Job Seekers,Apple,0
+US,Male,18 to 24,CXO,Job Seekers,Amazon,0
+US,Male,18 to 24,CXO,Job Seekers,Facebook,0
+US,Male,18 to 24,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,VP,Open to Relocation (International),Google,0
+US,Male,18 to 24,VP,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,VP,Open to Relocation (International),Apple,0
+US,Male,18 to 24,VP,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,VP,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,VP,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,VP,Recently Switched Jobs,Google,0
+US,Male,18 to 24,VP,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,VP,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,VP,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,VP,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,VP,Job Seekers,Google,0
+US,Male,18 to 24,VP,Job Seekers,Netflix,0
+US,Male,18 to 24,VP,Job Seekers,Apple,0
+US,Male,18 to 24,VP,Job Seekers,Amazon,0
+US,Male,18 to 24,VP,Job Seekers,Facebook,0
+US,Male,18 to 24,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Director,Open to Relocation (International),Google,0
+US,Male,18 to 24,Director,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Director,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Director,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Director,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,Director,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Director,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Director,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Director,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Director,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Director,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Director,Job Seekers,Google,0
+US,Male,18 to 24,Director,Job Seekers,Netflix,0
+US,Male,18 to 24,Director,Job Seekers,Apple,0
+US,Male,18 to 24,Director,Job Seekers,Amazon,0
+US,Male,18 to 24,Director,Job Seekers,Facebook,0
+US,Male,18 to 24,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Manager,Open to Relocation (International),Google,0
+US,Male,18 to 24,Manager,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Manager,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Manager,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Manager,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Amazon,380
+US,Male,18 to 24,Manager,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Manager,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Manager,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Manager,Job Seekers,Google,0
+US,Male,18 to 24,Manager,Job Seekers,Netflix,0
+US,Male,18 to 24,Manager,Job Seekers,Apple,0
+US,Male,18 to 24,Manager,Job Seekers,Amazon,1300
+US,Male,18 to 24,Manager,Job Seekers,Facebook,0
+US,Male,18 to 24,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Senior,Open to Relocation (International),Google,0
+US,Male,18 to 24,Senior,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Senior,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Senior,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Senior,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Amazon,310
+US,Male,18 to 24,Senior,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Senior,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Senior,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Senior,Job Seekers,Google,0
+US,Male,18 to 24,Senior,Job Seekers,Netflix,0
+US,Male,18 to 24,Senior,Job Seekers,Apple,840
+US,Male,18 to 24,Senior,Job Seekers,Amazon,1000
+US,Male,18 to 24,Senior,Job Seekers,Facebook,0
+US,Male,18 to 24,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Entry,Open to Relocation (International),Google,0
+US,Male,18 to 24,Entry,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Entry,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Entry,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Entry,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Amazon,1200
+US,Male,18 to 24,Entry,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Entry,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Entry,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Entry,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Entry,Recently Switched Jobs,Amazon,1300
+US,Male,18 to 24,Entry,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Entry,Job Seekers,Amazon Web Services (AWS),650
+US,Male,18 to 24,Entry,Job Seekers,Google,390
+US,Male,18 to 24,Entry,Job Seekers,Netflix,0
+US,Male,18 to 24,Entry,Job Seekers,Apple,670
+US,Male,18 to 24,Entry,Job Seekers,Amazon,4700
+US,Male,18 to 24,Entry,Job Seekers,Facebook,330
+US,Male,18 to 24,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Training,Open to Relocation (International),Google,0
+US,Male,18 to 24,Training,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Training,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Training,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Training,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,Training,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Training,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Training,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Training,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Training,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Training,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Training,Job Seekers,Google,0
+US,Male,18 to 24,Training,Job Seekers,Netflix,0
+US,Male,18 to 24,Training,Job Seekers,Apple,0
+US,Male,18 to 24,Training,Job Seekers,Amazon,0
+US,Male,18 to 24,Training,Job Seekers,Facebook,0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Google,0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Netflix,0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Apple,0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Amazon,0
+US,Male,18 to 24,Unpaid,Open to Relocation (International),Facebook,0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Google,0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Male,18 to 24,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Google,0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Netflix,0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Apple,0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Amazon,0
+US,Male,18 to 24,Unpaid,Recently Switched Jobs,Facebook,0
+US,Male,18 to 24,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Male,18 to 24,Unpaid,Job Seekers,Google,0
+US,Male,18 to 24,Unpaid,Job Seekers,Netflix,0
+US,Male,18 to 24,Unpaid,Job Seekers,Apple,0
+US,Male,18 to 24,Unpaid,Job Seekers,Amazon,0
+US,Male,18 to 24,Unpaid,Job Seekers,Facebook,0
+US,Female,55+,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Owner,Open to Relocation (International),Google,0
+US,Female,55+,Owner,Open to Relocation (International),Netflix,0
+US,Female,55+,Owner,Open to Relocation (International),Apple,0
+US,Female,55+,Owner,Open to Relocation (International),Amazon,0
+US,Female,55+,Owner,Open to Relocation (International),Facebook,0
+US,Female,55+,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Owner,Open to Relocation (Domestic),Google,0
+US,Female,55+,Owner,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Owner,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Owner,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Owner,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Owner,Recently Switched Jobs,Google,0
+US,Female,55+,Owner,Recently Switched Jobs,Netflix,0
+US,Female,55+,Owner,Recently Switched Jobs,Apple,0
+US,Female,55+,Owner,Recently Switched Jobs,Amazon,0
+US,Female,55+,Owner,Recently Switched Jobs,Facebook,0
+US,Female,55+,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Owner,Job Seekers,Google,0
+US,Female,55+,Owner,Job Seekers,Netflix,0
+US,Female,55+,Owner,Job Seekers,Apple,0
+US,Female,55+,Owner,Job Seekers,Amazon,0
+US,Female,55+,Owner,Job Seekers,Facebook,0
+US,Female,55+,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Partner,Open to Relocation (International),Google,0
+US,Female,55+,Partner,Open to Relocation (International),Netflix,0
+US,Female,55+,Partner,Open to Relocation (International),Apple,0
+US,Female,55+,Partner,Open to Relocation (International),Amazon,0
+US,Female,55+,Partner,Open to Relocation (International),Facebook,0
+US,Female,55+,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Partner,Open to Relocation (Domestic),Google,0
+US,Female,55+,Partner,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Partner,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Partner,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Partner,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Partner,Recently Switched Jobs,Google,0
+US,Female,55+,Partner,Recently Switched Jobs,Netflix,0
+US,Female,55+,Partner,Recently Switched Jobs,Apple,0
+US,Female,55+,Partner,Recently Switched Jobs,Amazon,0
+US,Female,55+,Partner,Recently Switched Jobs,Facebook,0
+US,Female,55+,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Partner,Job Seekers,Google,0
+US,Female,55+,Partner,Job Seekers,Netflix,0
+US,Female,55+,Partner,Job Seekers,Apple,0
+US,Female,55+,Partner,Job Seekers,Amazon,0
+US,Female,55+,Partner,Job Seekers,Facebook,0
+US,Female,55+,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,CXO,Open to Relocation (International),Google,0
+US,Female,55+,CXO,Open to Relocation (International),Netflix,0
+US,Female,55+,CXO,Open to Relocation (International),Apple,0
+US,Female,55+,CXO,Open to Relocation (International),Amazon,0
+US,Female,55+,CXO,Open to Relocation (International),Facebook,0
+US,Female,55+,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,CXO,Open to Relocation (Domestic),Google,0
+US,Female,55+,CXO,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,CXO,Open to Relocation (Domestic),Apple,0
+US,Female,55+,CXO,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,CXO,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,CXO,Recently Switched Jobs,Google,0
+US,Female,55+,CXO,Recently Switched Jobs,Netflix,0
+US,Female,55+,CXO,Recently Switched Jobs,Apple,0
+US,Female,55+,CXO,Recently Switched Jobs,Amazon,0
+US,Female,55+,CXO,Recently Switched Jobs,Facebook,0
+US,Female,55+,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,CXO,Job Seekers,Google,0
+US,Female,55+,CXO,Job Seekers,Netflix,0
+US,Female,55+,CXO,Job Seekers,Apple,0
+US,Female,55+,CXO,Job Seekers,Amazon,0
+US,Female,55+,CXO,Job Seekers,Facebook,0
+US,Female,55+,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,VP,Open to Relocation (International),Google,0
+US,Female,55+,VP,Open to Relocation (International),Netflix,0
+US,Female,55+,VP,Open to Relocation (International),Apple,0
+US,Female,55+,VP,Open to Relocation (International),Amazon,0
+US,Female,55+,VP,Open to Relocation (International),Facebook,0
+US,Female,55+,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,VP,Open to Relocation (Domestic),Google,0
+US,Female,55+,VP,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,VP,Open to Relocation (Domestic),Apple,0
+US,Female,55+,VP,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,VP,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,VP,Recently Switched Jobs,Google,0
+US,Female,55+,VP,Recently Switched Jobs,Netflix,0
+US,Female,55+,VP,Recently Switched Jobs,Apple,0
+US,Female,55+,VP,Recently Switched Jobs,Amazon,0
+US,Female,55+,VP,Recently Switched Jobs,Facebook,0
+US,Female,55+,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,VP,Job Seekers,Google,0
+US,Female,55+,VP,Job Seekers,Netflix,0
+US,Female,55+,VP,Job Seekers,Apple,0
+US,Female,55+,VP,Job Seekers,Amazon,0
+US,Female,55+,VP,Job Seekers,Facebook,0
+US,Female,55+,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Director,Open to Relocation (International),Google,0
+US,Female,55+,Director,Open to Relocation (International),Netflix,0
+US,Female,55+,Director,Open to Relocation (International),Apple,0
+US,Female,55+,Director,Open to Relocation (International),Amazon,0
+US,Female,55+,Director,Open to Relocation (International),Facebook,0
+US,Female,55+,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Director,Open to Relocation (Domestic),Google,0
+US,Female,55+,Director,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Director,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Director,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Director,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Director,Recently Switched Jobs,Google,0
+US,Female,55+,Director,Recently Switched Jobs,Netflix,0
+US,Female,55+,Director,Recently Switched Jobs,Apple,0
+US,Female,55+,Director,Recently Switched Jobs,Amazon,0
+US,Female,55+,Director,Recently Switched Jobs,Facebook,0
+US,Female,55+,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Director,Job Seekers,Google,0
+US,Female,55+,Director,Job Seekers,Netflix,0
+US,Female,55+,Director,Job Seekers,Apple,0
+US,Female,55+,Director,Job Seekers,Amazon,0
+US,Female,55+,Director,Job Seekers,Facebook,0
+US,Female,55+,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Manager,Open to Relocation (International),Google,0
+US,Female,55+,Manager,Open to Relocation (International),Netflix,0
+US,Female,55+,Manager,Open to Relocation (International),Apple,0
+US,Female,55+,Manager,Open to Relocation (International),Amazon,0
+US,Female,55+,Manager,Open to Relocation (International),Facebook,0
+US,Female,55+,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Manager,Open to Relocation (Domestic),Google,0
+US,Female,55+,Manager,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Manager,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Manager,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Manager,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Manager,Recently Switched Jobs,Google,0
+US,Female,55+,Manager,Recently Switched Jobs,Netflix,0
+US,Female,55+,Manager,Recently Switched Jobs,Apple,0
+US,Female,55+,Manager,Recently Switched Jobs,Amazon,0
+US,Female,55+,Manager,Recently Switched Jobs,Facebook,0
+US,Female,55+,Manager,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Manager,Job Seekers,Google,0
+US,Female,55+,Manager,Job Seekers,Netflix,0
+US,Female,55+,Manager,Job Seekers,Apple,0
+US,Female,55+,Manager,Job Seekers,Amazon,0
+US,Female,55+,Manager,Job Seekers,Facebook,0
+US,Female,55+,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Senior,Open to Relocation (International),Google,0
+US,Female,55+,Senior,Open to Relocation (International),Netflix,0
+US,Female,55+,Senior,Open to Relocation (International),Apple,0
+US,Female,55+,Senior,Open to Relocation (International),Amazon,0
+US,Female,55+,Senior,Open to Relocation (International),Facebook,0
+US,Female,55+,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Senior,Open to Relocation (Domestic),Google,0
+US,Female,55+,Senior,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Senior,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Senior,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Senior,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Senior,Recently Switched Jobs,Google,0
+US,Female,55+,Senior,Recently Switched Jobs,Netflix,0
+US,Female,55+,Senior,Recently Switched Jobs,Apple,0
+US,Female,55+,Senior,Recently Switched Jobs,Amazon,0
+US,Female,55+,Senior,Recently Switched Jobs,Facebook,0
+US,Female,55+,Senior,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Senior,Job Seekers,Google,0
+US,Female,55+,Senior,Job Seekers,Netflix,0
+US,Female,55+,Senior,Job Seekers,Apple,0
+US,Female,55+,Senior,Job Seekers,Amazon,0
+US,Female,55+,Senior,Job Seekers,Facebook,0
+US,Female,55+,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Entry,Open to Relocation (International),Google,0
+US,Female,55+,Entry,Open to Relocation (International),Netflix,0
+US,Female,55+,Entry,Open to Relocation (International),Apple,0
+US,Female,55+,Entry,Open to Relocation (International),Amazon,0
+US,Female,55+,Entry,Open to Relocation (International),Facebook,0
+US,Female,55+,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Entry,Open to Relocation (Domestic),Google,0
+US,Female,55+,Entry,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Entry,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Entry,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Entry,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Entry,Recently Switched Jobs,Google,0
+US,Female,55+,Entry,Recently Switched Jobs,Netflix,0
+US,Female,55+,Entry,Recently Switched Jobs,Apple,0
+US,Female,55+,Entry,Recently Switched Jobs,Amazon,0
+US,Female,55+,Entry,Recently Switched Jobs,Facebook,0
+US,Female,55+,Entry,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Entry,Job Seekers,Google,0
+US,Female,55+,Entry,Job Seekers,Netflix,0
+US,Female,55+,Entry,Job Seekers,Apple,0
+US,Female,55+,Entry,Job Seekers,Amazon,0
+US,Female,55+,Entry,Job Seekers,Facebook,0
+US,Female,55+,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Training,Open to Relocation (International),Google,0
+US,Female,55+,Training,Open to Relocation (International),Netflix,0
+US,Female,55+,Training,Open to Relocation (International),Apple,0
+US,Female,55+,Training,Open to Relocation (International),Amazon,0
+US,Female,55+,Training,Open to Relocation (International),Facebook,0
+US,Female,55+,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Training,Open to Relocation (Domestic),Google,0
+US,Female,55+,Training,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Training,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Training,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Training,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Training,Recently Switched Jobs,Google,0
+US,Female,55+,Training,Recently Switched Jobs,Netflix,0
+US,Female,55+,Training,Recently Switched Jobs,Apple,0
+US,Female,55+,Training,Recently Switched Jobs,Amazon,0
+US,Female,55+,Training,Recently Switched Jobs,Facebook,0
+US,Female,55+,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Training,Job Seekers,Google,0
+US,Female,55+,Training,Job Seekers,Netflix,0
+US,Female,55+,Training,Job Seekers,Apple,0
+US,Female,55+,Training,Job Seekers,Amazon,0
+US,Female,55+,Training,Job Seekers,Facebook,0
+US,Female,55+,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,55+,Unpaid,Open to Relocation (International),Google,0
+US,Female,55+,Unpaid,Open to Relocation (International),Netflix,0
+US,Female,55+,Unpaid,Open to Relocation (International),Apple,0
+US,Female,55+,Unpaid,Open to Relocation (International),Amazon,0
+US,Female,55+,Unpaid,Open to Relocation (International),Facebook,0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Google,0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Female,55+,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Female,55+,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,55+,Unpaid,Recently Switched Jobs,Google,0
+US,Female,55+,Unpaid,Recently Switched Jobs,Netflix,0
+US,Female,55+,Unpaid,Recently Switched Jobs,Apple,0
+US,Female,55+,Unpaid,Recently Switched Jobs,Amazon,0
+US,Female,55+,Unpaid,Recently Switched Jobs,Facebook,0
+US,Female,55+,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Female,55+,Unpaid,Job Seekers,Google,0
+US,Female,55+,Unpaid,Job Seekers,Netflix,0
+US,Female,55+,Unpaid,Job Seekers,Apple,0
+US,Female,55+,Unpaid,Job Seekers,Amazon,0
+US,Female,55+,Unpaid,Job Seekers,Facebook,0
+US,Female,35 to 54,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Owner,Open to Relocation (International),Google,0
+US,Female,35 to 54,Owner,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Owner,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Owner,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Owner,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,Owner,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Owner,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,Owner,Job Seekers,Google,0
+US,Female,35 to 54,Owner,Job Seekers,Netflix,0
+US,Female,35 to 54,Owner,Job Seekers,Apple,0
+US,Female,35 to 54,Owner,Job Seekers,Amazon,0
+US,Female,35 to 54,Owner,Job Seekers,Facebook,0
+US,Female,35 to 54,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Partner,Open to Relocation (International),Google,0
+US,Female,35 to 54,Partner,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Partner,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Partner,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Partner,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,Partner,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Partner,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,Partner,Job Seekers,Google,0
+US,Female,35 to 54,Partner,Job Seekers,Netflix,0
+US,Female,35 to 54,Partner,Job Seekers,Apple,0
+US,Female,35 to 54,Partner,Job Seekers,Amazon,0
+US,Female,35 to 54,Partner,Job Seekers,Facebook,0
+US,Female,35 to 54,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,CXO,Open to Relocation (International),Google,0
+US,Female,35 to 54,CXO,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,CXO,Open to Relocation (International),Apple,0
+US,Female,35 to 54,CXO,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,CXO,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,CXO,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Google,0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,CXO,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,CXO,Job Seekers,Google,0
+US,Female,35 to 54,CXO,Job Seekers,Netflix,0
+US,Female,35 to 54,CXO,Job Seekers,Apple,0
+US,Female,35 to 54,CXO,Job Seekers,Amazon,0
+US,Female,35 to 54,CXO,Job Seekers,Facebook,0
+US,Female,35 to 54,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,VP,Open to Relocation (International),Google,0
+US,Female,35 to 54,VP,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,VP,Open to Relocation (International),Apple,0
+US,Female,35 to 54,VP,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,VP,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,VP,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,VP,Recently Switched Jobs,Google,0
+US,Female,35 to 54,VP,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,VP,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,VP,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,VP,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,VP,Job Seekers,Google,0
+US,Female,35 to 54,VP,Job Seekers,Netflix,0
+US,Female,35 to 54,VP,Job Seekers,Apple,0
+US,Female,35 to 54,VP,Job Seekers,Amazon,0
+US,Female,35 to 54,VP,Job Seekers,Facebook,0
+US,Female,35 to 54,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Director,Open to Relocation (International),Google,0
+US,Female,35 to 54,Director,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Director,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Director,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Director,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,Director,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Director,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Director,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Director,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Director,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Director,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,Director,Job Seekers,Google,810
+US,Female,35 to 54,Director,Job Seekers,Netflix,0
+US,Female,35 to 54,Director,Job Seekers,Apple,0
+US,Female,35 to 54,Director,Job Seekers,Amazon,610
+US,Female,35 to 54,Director,Job Seekers,Facebook,520
+US,Female,35 to 54,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Manager,Open to Relocation (International),Google,0
+US,Female,35 to 54,Manager,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Manager,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Manager,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Manager,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Amazon,440
+US,Female,35 to 54,Manager,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Manager,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Manager,Job Seekers,Amazon Web Services (AWS),690
+US,Female,35 to 54,Manager,Job Seekers,Google,970
+US,Female,35 to 54,Manager,Job Seekers,Netflix,0
+US,Female,35 to 54,Manager,Job Seekers,Apple,960
+US,Female,35 to 54,Manager,Job Seekers,Amazon,2400
+US,Female,35 to 54,Manager,Job Seekers,Facebook,750
+US,Female,35 to 54,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Senior,Open to Relocation (International),Google,0
+US,Female,35 to 54,Senior,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Senior,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Senior,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Senior,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Amazon,560
+US,Female,35 to 54,Senior,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Senior,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Senior,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Senior,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Senior,Recently Switched Jobs,Amazon,430
+US,Female,35 to 54,Senior,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Senior,Job Seekers,Amazon Web Services (AWS),1100
+US,Female,35 to 54,Senior,Job Seekers,Google,1700
+US,Female,35 to 54,Senior,Job Seekers,Netflix,340
+US,Female,35 to 54,Senior,Job Seekers,Apple,1600
+US,Female,35 to 54,Senior,Job Seekers,Amazon,2700
+US,Female,35 to 54,Senior,Job Seekers,Facebook,1200
+US,Female,35 to 54,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Entry,Open to Relocation (International),Google,0
+US,Female,35 to 54,Entry,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Entry,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Entry,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Entry,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Amazon,400
+US,Female,35 to 54,Entry,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Entry,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Entry,Job Seekers,Amazon Web Services (AWS),390
+US,Female,35 to 54,Entry,Job Seekers,Google,830
+US,Female,35 to 54,Entry,Job Seekers,Netflix,0
+US,Female,35 to 54,Entry,Job Seekers,Apple,1000
+US,Female,35 to 54,Entry,Job Seekers,Amazon,1700
+US,Female,35 to 54,Entry,Job Seekers,Facebook,710
+US,Female,35 to 54,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Training,Open to Relocation (International),Google,0
+US,Female,35 to 54,Training,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Training,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Training,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Training,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,Training,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Training,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Training,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Training,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Training,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Training,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,Training,Job Seekers,Google,0
+US,Female,35 to 54,Training,Job Seekers,Netflix,0
+US,Female,35 to 54,Training,Job Seekers,Apple,0
+US,Female,35 to 54,Training,Job Seekers,Amazon,0
+US,Female,35 to 54,Training,Job Seekers,Facebook,0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Google,0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Netflix,0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Apple,0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Amazon,0
+US,Female,35 to 54,Unpaid,Open to Relocation (International),Facebook,0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Google,0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Female,35 to 54,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Google,0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Netflix,0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Apple,0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Amazon,0
+US,Female,35 to 54,Unpaid,Recently Switched Jobs,Facebook,0
+US,Female,35 to 54,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Female,35 to 54,Unpaid,Job Seekers,Google,0
+US,Female,35 to 54,Unpaid,Job Seekers,Netflix,0
+US,Female,35 to 54,Unpaid,Job Seekers,Apple,0
+US,Female,35 to 54,Unpaid,Job Seekers,Amazon,0
+US,Female,35 to 54,Unpaid,Job Seekers,Facebook,0
+US,Female,25 to 34,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Owner,Open to Relocation (International),Google,0
+US,Female,25 to 34,Owner,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Owner,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Owner,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Owner,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,Owner,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,Owner,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,Owner,Job Seekers,Google,0
+US,Female,25 to 34,Owner,Job Seekers,Netflix,0
+US,Female,25 to 34,Owner,Job Seekers,Apple,0
+US,Female,25 to 34,Owner,Job Seekers,Amazon,0
+US,Female,25 to 34,Owner,Job Seekers,Facebook,0
+US,Female,25 to 34,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Partner,Open to Relocation (International),Google,0
+US,Female,25 to 34,Partner,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Partner,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Partner,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Partner,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,Partner,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,Partner,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,Partner,Job Seekers,Google,0
+US,Female,25 to 34,Partner,Job Seekers,Netflix,0
+US,Female,25 to 34,Partner,Job Seekers,Apple,0
+US,Female,25 to 34,Partner,Job Seekers,Amazon,0
+US,Female,25 to 34,Partner,Job Seekers,Facebook,0
+US,Female,25 to 34,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,CXO,Open to Relocation (International),Google,0
+US,Female,25 to 34,CXO,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,CXO,Open to Relocation (International),Apple,0
+US,Female,25 to 34,CXO,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,CXO,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,CXO,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Google,0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,CXO,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,CXO,Job Seekers,Google,0
+US,Female,25 to 34,CXO,Job Seekers,Netflix,0
+US,Female,25 to 34,CXO,Job Seekers,Apple,0
+US,Female,25 to 34,CXO,Job Seekers,Amazon,0
+US,Female,25 to 34,CXO,Job Seekers,Facebook,0
+US,Female,25 to 34,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,VP,Open to Relocation (International),Google,0
+US,Female,25 to 34,VP,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,VP,Open to Relocation (International),Apple,0
+US,Female,25 to 34,VP,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,VP,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,VP,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,VP,Recently Switched Jobs,Google,0
+US,Female,25 to 34,VP,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,VP,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,VP,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,VP,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,VP,Job Seekers,Google,0
+US,Female,25 to 34,VP,Job Seekers,Netflix,0
+US,Female,25 to 34,VP,Job Seekers,Apple,0
+US,Female,25 to 34,VP,Job Seekers,Amazon,0
+US,Female,25 to 34,VP,Job Seekers,Facebook,0
+US,Female,25 to 34,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Director,Open to Relocation (International),Google,0
+US,Female,25 to 34,Director,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Director,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Director,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Director,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,Director,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Director,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Director,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Director,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Director,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,Director,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,Director,Job Seekers,Google,0
+US,Female,25 to 34,Director,Job Seekers,Netflix,0
+US,Female,25 to 34,Director,Job Seekers,Apple,0
+US,Female,25 to 34,Director,Job Seekers,Amazon,0
+US,Female,25 to 34,Director,Job Seekers,Facebook,0
+US,Female,25 to 34,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Manager,Open to Relocation (International),Google,0
+US,Female,25 to 34,Manager,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Manager,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Manager,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Manager,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Amazon,640
+US,Female,25 to 34,Manager,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Manager,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Manager,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Manager,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Manager,Recently Switched Jobs,Amazon,420
+US,Female,25 to 34,Manager,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Manager,Job Seekers,Amazon Web Services (AWS),390
+US,Female,25 to 34,Manager,Job Seekers,Google,750
+US,Female,25 to 34,Manager,Job Seekers,Netflix,0
+US,Female,25 to 34,Manager,Job Seekers,Apple,710
+US,Female,25 to 34,Manager,Job Seekers,Amazon,2700
+US,Female,25 to 34,Manager,Job Seekers,Facebook,730
+US,Female,25 to 34,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Senior,Open to Relocation (International),Google,0
+US,Female,25 to 34,Senior,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Senior,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Senior,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Senior,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Google,390
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Apple,500
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Amazon,930
+US,Female,25 to 34,Senior,Open to Relocation (Domestic),Facebook,370
+US,Female,25 to 34,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Senior,Recently Switched Jobs,Google,320
+US,Female,25 to 34,Senior,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Senior,Recently Switched Jobs,Apple,310
+US,Female,25 to 34,Senior,Recently Switched Jobs,Amazon,750
+US,Female,25 to 34,Senior,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Senior,Job Seekers,Amazon Web Services (AWS),1000
+US,Female,25 to 34,Senior,Job Seekers,Google,2200
+US,Female,25 to 34,Senior,Job Seekers,Netflix,400
+US,Female,25 to 34,Senior,Job Seekers,Apple,2000
+US,Female,25 to 34,Senior,Job Seekers,Amazon,3800
+US,Female,25 to 34,Senior,Job Seekers,Facebook,1700
+US,Female,25 to 34,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Entry,Open to Relocation (International),Google,0
+US,Female,25 to 34,Entry,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Entry,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Entry,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Entry,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Apple,350
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Amazon,1200
+US,Female,25 to 34,Entry,Open to Relocation (Domestic),Facebook,380
+US,Female,25 to 34,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Entry,Recently Switched Jobs,Google,340
+US,Female,25 to 34,Entry,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Entry,Recently Switched Jobs,Apple,400
+US,Female,25 to 34,Entry,Recently Switched Jobs,Amazon,1400
+US,Female,25 to 34,Entry,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Entry,Job Seekers,Amazon Web Services (AWS),1000
+US,Female,25 to 34,Entry,Job Seekers,Google,1800
+US,Female,25 to 34,Entry,Job Seekers,Netflix,320
+US,Female,25 to 34,Entry,Job Seekers,Apple,1800
+US,Female,25 to 34,Entry,Job Seekers,Amazon,5100
+US,Female,25 to 34,Entry,Job Seekers,Facebook,1800
+US,Female,25 to 34,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Training,Open to Relocation (International),Google,0
+US,Female,25 to 34,Training,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Training,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Training,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Training,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,Training,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Training,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Training,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Training,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Training,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,Training,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,Training,Job Seekers,Google,0
+US,Female,25 to 34,Training,Job Seekers,Netflix,0
+US,Female,25 to 34,Training,Job Seekers,Apple,0
+US,Female,25 to 34,Training,Job Seekers,Amazon,0
+US,Female,25 to 34,Training,Job Seekers,Facebook,0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Google,0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Netflix,0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Apple,0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Amazon,0
+US,Female,25 to 34,Unpaid,Open to Relocation (International),Facebook,0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Google,0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Female,25 to 34,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Google,0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Netflix,0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Apple,0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Amazon,0
+US,Female,25 to 34,Unpaid,Recently Switched Jobs,Facebook,0
+US,Female,25 to 34,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Female,25 to 34,Unpaid,Job Seekers,Google,0
+US,Female,25 to 34,Unpaid,Job Seekers,Netflix,0
+US,Female,25 to 34,Unpaid,Job Seekers,Apple,0
+US,Female,25 to 34,Unpaid,Job Seekers,Amazon,0
+US,Female,25 to 34,Unpaid,Job Seekers,Facebook,0
+US,Female,18 to 24,Owner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Owner,Open to Relocation (International),Google,0
+US,Female,18 to 24,Owner,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Owner,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Owner,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Owner,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Owner,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Owner,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Owner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Owner,Job Seekers,Google,0
+US,Female,18 to 24,Owner,Job Seekers,Netflix,0
+US,Female,18 to 24,Owner,Job Seekers,Apple,0
+US,Female,18 to 24,Owner,Job Seekers,Amazon,0
+US,Female,18 to 24,Owner,Job Seekers,Facebook,0
+US,Female,18 to 24,Partner,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Partner,Open to Relocation (International),Google,0
+US,Female,18 to 24,Partner,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Partner,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Partner,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Partner,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Partner,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Partner,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Partner,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Partner,Job Seekers,Google,0
+US,Female,18 to 24,Partner,Job Seekers,Netflix,0
+US,Female,18 to 24,Partner,Job Seekers,Apple,0
+US,Female,18 to 24,Partner,Job Seekers,Amazon,0
+US,Female,18 to 24,Partner,Job Seekers,Facebook,0
+US,Female,18 to 24,CXO,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,CXO,Open to Relocation (International),Google,0
+US,Female,18 to 24,CXO,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,CXO,Open to Relocation (International),Apple,0
+US,Female,18 to 24,CXO,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,CXO,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,CXO,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Google,0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,CXO,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,CXO,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,CXO,Job Seekers,Google,0
+US,Female,18 to 24,CXO,Job Seekers,Netflix,0
+US,Female,18 to 24,CXO,Job Seekers,Apple,0
+US,Female,18 to 24,CXO,Job Seekers,Amazon,0
+US,Female,18 to 24,CXO,Job Seekers,Facebook,0
+US,Female,18 to 24,VP,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,VP,Open to Relocation (International),Google,0
+US,Female,18 to 24,VP,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,VP,Open to Relocation (International),Apple,0
+US,Female,18 to 24,VP,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,VP,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,VP,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,VP,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,VP,Recently Switched Jobs,Google,0
+US,Female,18 to 24,VP,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,VP,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,VP,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,VP,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,VP,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,VP,Job Seekers,Google,0
+US,Female,18 to 24,VP,Job Seekers,Netflix,0
+US,Female,18 to 24,VP,Job Seekers,Apple,0
+US,Female,18 to 24,VP,Job Seekers,Amazon,0
+US,Female,18 to 24,VP,Job Seekers,Facebook,0
+US,Female,18 to 24,Director,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Director,Open to Relocation (International),Google,0
+US,Female,18 to 24,Director,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Director,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Director,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Director,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Director,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Director,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Director,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Director,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Director,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Director,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Director,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Director,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Director,Job Seekers,Google,0
+US,Female,18 to 24,Director,Job Seekers,Netflix,0
+US,Female,18 to 24,Director,Job Seekers,Apple,0
+US,Female,18 to 24,Director,Job Seekers,Amazon,0
+US,Female,18 to 24,Director,Job Seekers,Facebook,0
+US,Female,18 to 24,Manager,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Manager,Open to Relocation (International),Google,0
+US,Female,18 to 24,Manager,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Manager,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Manager,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Manager,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Manager,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Manager,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Manager,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Manager,Job Seekers,Google,0
+US,Female,18 to 24,Manager,Job Seekers,Netflix,0
+US,Female,18 to 24,Manager,Job Seekers,Apple,0
+US,Female,18 to 24,Manager,Job Seekers,Amazon,770
+US,Female,18 to 24,Manager,Job Seekers,Facebook,0
+US,Female,18 to 24,Senior,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Senior,Open to Relocation (International),Google,0
+US,Female,18 to 24,Senior,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Senior,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Senior,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Senior,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Senior,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Senior,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Senior,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Senior,Job Seekers,Google,0
+US,Female,18 to 24,Senior,Job Seekers,Netflix,0
+US,Female,18 to 24,Senior,Job Seekers,Apple,580
+US,Female,18 to 24,Senior,Job Seekers,Amazon,920
+US,Female,18 to 24,Senior,Job Seekers,Facebook,0
+US,Female,18 to 24,Entry,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Entry,Open to Relocation (International),Google,0
+US,Female,18 to 24,Entry,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Entry,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Entry,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Entry,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Amazon,680
+US,Female,18 to 24,Entry,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Entry,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Entry,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Entry,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Entry,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Entry,Recently Switched Jobs,Amazon,910
+US,Female,18 to 24,Entry,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Entry,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Entry,Job Seekers,Google,0
+US,Female,18 to 24,Entry,Job Seekers,Netflix,0
+US,Female,18 to 24,Entry,Job Seekers,Apple,450
+US,Female,18 to 24,Entry,Job Seekers,Amazon,3100
+US,Female,18 to 24,Entry,Job Seekers,Facebook,0
+US,Female,18 to 24,Training,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Training,Open to Relocation (International),Google,0
+US,Female,18 to 24,Training,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Training,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Training,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Training,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Training,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Training,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Training,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Training,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Training,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Training,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Training,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Training,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Training,Job Seekers,Google,0
+US,Female,18 to 24,Training,Job Seekers,Netflix,0
+US,Female,18 to 24,Training,Job Seekers,Apple,0
+US,Female,18 to 24,Training,Job Seekers,Amazon,0
+US,Female,18 to 24,Training,Job Seekers,Facebook,0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Amazon Web Services (AWS),0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Google,0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Netflix,0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Apple,0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Amazon,0
+US,Female,18 to 24,Unpaid,Open to Relocation (International),Facebook,0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Amazon Web Services (AWS),0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Google,0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Netflix,0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Apple,0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Amazon,0
+US,Female,18 to 24,Unpaid,Open to Relocation (Domestic),Facebook,0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Amazon Web Services (AWS),0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Google,0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Netflix,0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Apple,0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Amazon,0
+US,Female,18 to 24,Unpaid,Recently Switched Jobs,Facebook,0
+US,Female,18 to 24,Unpaid,Job Seekers,Amazon Web Services (AWS),0
+US,Female,18 to 24,Unpaid,Job Seekers,Google,0
+US,Female,18 to 24,Unpaid,Job Seekers,Netflix,0
+US,Female,18 to 24,Unpaid,Job Seekers,Apple,0
+US,Female,18 to 24,Unpaid,Job Seekers,Amazon,0
+US,Female,18 to 24,Unpaid,Job Seekers,Facebook,0

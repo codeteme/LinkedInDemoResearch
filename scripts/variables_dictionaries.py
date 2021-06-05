@@ -229,20 +229,15 @@ jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpa
               
 
 employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
-employersegments = {"Facebook": {"urn":"urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
+employersegments = {"Facebook": {"urn": "urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
                     "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Apple": {"urn": "urn:li:company:162479", "name": "Apple", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
                     "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Amazon Web Services (AWS)": {"urn": "urn:li:company:2382910", "name": "Amazon Web Services (AWS)", "facetUrn": "urn:li:adTargetingFacet:employers"}}
-
-# (urn:urn%3Ali%3AmemberBehavior%3A20,name:Recently%20Switched%20Jobs,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors),
-#             (urn:urn%3Ali%3AmemberBehavior%3A23,name:Open%20to%20Relocation%20%28International%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors,ancestorUrns:List(urn%3Ali%3AmemberBehavior%3A21)),
-#             (urn:urn%3Ali%3AmemberBehavior%3A22,name:Open%20to%20Relocation%20%28Domestic%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AmemberBehaviors,ancestorUrns:List(urn%3Ali%3AmemberBehavior%3A21)))))))),
-
-  # (urn:urn:li:memberBehavior:20,name:Recently Switched Jobs,facetUrn:urn:li:adTargetingFacet:memberBehaviors),
-  # (urn:urn:li:memberBehavior:22,name:Open to Relocation (Domestic),facetUrn:urn:li:adTargetingFacet:memberBehaviors,ancestorUrns:List(urn:li:memberBehavior:21))))))))
-  # (urn:urn:li:memberBehavior:23,name:Open to Relocation (International),facetUrn:urn:li:adTargetingFacet:memberBehaviors,ancestorUrns:List(urn:li:memberBehavior:21)),
+                    "Amazon Web Services (AWS)": {"urn": "urn:li:company:2382910", "name": "Amazon Web Services (AWS)", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "J.P. Morgan": {"urn": "urn:li:company:1067", "name": "J.P. Morgan", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Chase": {"urn": "urn:li:company:1382", "name": "Chase", "facetUrn": "urn:li:adTargetingFacet:employers"},
+                    "Goldman Sachs": {"urn": "urn:li:company:1067", "name": "Goldman Sachs", "facetUrn": "urn:li:adTargetingFacet:employers"}}
 
 memberbehaviorfacet = {"urn" : "urn:li:adTargetingFacet:memberBehaviors","name": "Member Traits"}
 memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "name": "Job Seekers", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"},
@@ -252,6 +247,38 @@ memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "na
                           "Open to Relocation (International)": {"urn": "urn:li:memberBehavior:23", "name": "Open to Relocation (International)", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors", 
                             "ancestorUrns": "ancestorUrns:List(urn:li:memberBehavior:21)"}}
 
+companyindustryfacet = {"urn": "urn:li:adTargetingFacet:industries", "name": "Company Industries"}
+companyindustrysegments = {"Internet" : {"urn":"urn:li:industry:6", "name":"Internet","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Information Technology & Services" : {"urn":"urn:li:industry:96", "name":"Information Technology & Services","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Computer Software" : {"urn":"urn:li:industry:4", "name":"Computer Software","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Computer & Network Security" : {"urn":"urn:li:industry:118", "name":"Computer & Network Security","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Computer Hardware" : {"urn":"urn:li:industry:3", "name":"Computer Hardware","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Computer Networking" : {"urn":"urn:li:industry:5", "name":"Computer Networking","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Wireless" : {"urn":"urn:li:industry:119", "name":"Wireless","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Telecommunications" : {"urn":"urn:li:industry:8", "name":"Telecommunications","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Semiconductors" : {"urn":"urn:li:industry:7", "name":"Semiconductors","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Nanotechnology" : {"urn":"urn:li:industry:114", "name":"Nanotechnology","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Consumer Electronics" : {"urn":"urn:li:industry:24", "name":"Consumer Electronics","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Banking" : {"urn":"urn:li:industry:41", "name":"Banking","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Capital Markets" : {"urn":"urn:li:industry:129", "name":"Capital Markets","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Financial Services" : {"urn":"urn:li:industry:43", "name":"Financial Services","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Insurance" : {"urn":"urn:li:industry:42", "name":"Insurance","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Investment Banking" : {"urn":"urn:li:industry:45", "name":"Investment Banking","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Investment Management" : {"urn":"urn:li:industry:46", "name":"Investment Management","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Venture Capital & Private Equity" : {"urn":"urn:li:industry:106", "name":"Venture Capital & Private Equity","facetUrn" :"urn:li:adTargetingFacet:industries"}}
+
+companysizefacet = {"urn": "urn:li:adTargetingFacet:staffCountRanges", "name": "Company Size"}
+companysizesegments = {
+  "Myself Only": {"urn":"urn:li:staffCountRange:(1,1)", "name":"Myself Only","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "2-10 employees": {"urn":"urn:li:staffCountRange:(2,10)", "name":"2-10 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "11-50 employees": {"urn":"urn:li:staffCountRange:(11,50)", "name":"11-50 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "51-200 employees": {"urn":"urn:li:staffCountRange:(51,200)", "name":"51-200 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "201-500 employees": {"urn":"urn:li:staffCountRange:(201,500)", "name":"201-500 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "501-1000 employees": {"urn":"urn:li:staffCountRange:(501,1000)", "name":"501-1000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "1001-5000 employees": {"urn":"urn:li:staffCountRange:(1001,5000)", "name":"1001-5000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "5001-10,000 employees": {"urn":"urn:li:staffCountRange:(5001,10000)", "name":"5001-10,000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"}
+} 
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()
 locationsegments = dict(zip(country_code_id_map['ISO 3 Digit'], list(locationsegments.values())))
