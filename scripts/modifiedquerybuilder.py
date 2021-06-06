@@ -184,7 +184,7 @@ jobseniority_list = []
 companysize_list = []
 agerange_list = [] 
 
-selected_locations = ['USA', 'UK', 'VNM', 'IND', 'PHL']
+selected_locations = ['GBR', 'VNM', 'IND', 'PHL']
 Finance_company_industry = ["Banking", "Capital Markets", "Financial Services", "Insurance", "Investment Banking", "Investment Management", "Venture Capital & Private Equity"]
 companyindustry_list = [] # Initialize an empty list to be populate by each item in segment (from library) 
 for companyindustry in Finance_company_industry:
@@ -208,6 +208,8 @@ for location in selected_locations:
     for gender in gendersegments.keys():
         gender_info = gendersegments.get(gender)
         gender_list.append(gender_info)
+        # Add *any to the dictionary *segments in variables_dictionary.py
+        # If any don't append.
         arg_list.append(gender_builder(gender_list))
         row_value.append(gender)
 
@@ -240,7 +242,7 @@ for location in selected_locations:
                     row_value.pop() # remove the company size value
                     time.sleep(3) # set a timer so linkedin does not suspect a bot and block service
 
-                df.to_csv('../intermediate/male_female_finance_temp_2.csv', index=False)
+                df.to_csv('../intermediate/GBR_male_female_finance_temp_2.csv', index=False)
 
                 arg_list.pop() # remove the last added query parameter which is the job seniority variable
                 jobseniority_list.pop() # empty the list to step to the next element in the list
@@ -259,6 +261,6 @@ for location in selected_locations:
     row_value.clear() # remove the location value
 
 df.columns = ["Company Industry", "Country", "Gender", "Age Range", "Job seniority", "Company Size", "Count"]
-df.to_csv('../intermediate/male_female_finance_2.csv', index=False)
+df.to_csv('../intermediate/GBR_male_female_finance_2.csv', index=False)
 
 
