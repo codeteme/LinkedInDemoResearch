@@ -1,6 +1,6 @@
 import pandas as pd
 
-country_code_id_map = pd.read_excel(open('/Users/tmt0947/Development/workspaces/QCRI/LinkedInDemoResearch/raw/filtered_iso_2digit_3digit_alpha_country_codes.xlsx', 'rb'),
+country_code_id_map = pd.read_excel(open('raw/filtered_iso_2digit_3digit_alpha_country_codes.xlsx', 'rb'),
                 sheet_name='Countries avaiiable on API')
 
 locationfacet = {"urn": "urn:li:adTargetingFacet:profileLocations","name": "Locations"}
@@ -209,11 +209,13 @@ agerangefacet = {"urn": "urn:li:adTargetingFacet:ageRanges","name": "Member Age"
 agerangesegments = {"18 to 24": {"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
                     "25 to 34": {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
                     "35 to 54": {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
-                    "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"}}
+                    "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+                    "Any Age Range": {}}
 
 genderfacet = {"urn": "urn:li:adTargetingFacet:genders","name": "Member Gender"}
 gendersegments = {"Female": {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
-                  "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"}}
+                  "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"},
+                  "Any Gender": {}}
 
 jobseniorityfacet = {"urn" : "urn:li:adTargetingFacet:seniorities", "name": "Job Seniorities"}
 jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpaid", "facetUrn": "urn:li:adTargetingFacet:seniorities"},  
@@ -225,7 +227,8 @@ jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpa
                         "VP" : { "urn": "urn:li:seniority:7", "name" : "VP", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
                         "CXO" : { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
                         "Partner" : { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }}
+                        "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        "Any Job Seniority": {}}
               
 
 employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
@@ -265,8 +268,8 @@ companyindustrysegments = {"Internet" : {"urn":"urn:li:industry:6", "name":"Inte
                           "Insurance" : {"urn":"urn:li:industry:42", "name":"Insurance","facetUrn" :"urn:li:adTargetingFacet:industries"},
                           "Investment Banking" : {"urn":"urn:li:industry:45", "name":"Investment Banking","facetUrn" :"urn:li:adTargetingFacet:industries"},
                           "Investment Management" : {"urn":"urn:li:industry:46", "name":"Investment Management","facetUrn" :"urn:li:adTargetingFacet:industries"},
-                          "Venture Capital & Private Equity" : {"urn":"urn:li:industry:106", "name":"Venture Capital & Private Equity","facetUrn" :"urn:li:adTargetingFacet:industries"}}
-
+                          "Venture Capital & Private Equity" : {"urn":"urn:li:industry:106", "name":"Venture Capital & Private Equity","facetUrn" :"urn:li:adTargetingFacet:industries"},
+                          "Any Company Industry": {}}
 companysizefacet = {"urn": "urn:li:adTargetingFacet:staffCountRanges", "name": "Company Size"}
 companysizesegments = {
   "Myself Only": {"urn":"urn:li:staffCountRange:(1,1)", "name":"Myself Only","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
@@ -277,7 +280,8 @@ companysizesegments = {
   "501-1000 employees": {"urn":"urn:li:staffCountRange:(501,1000)", "name":"501-1000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
   "1001-5000 employees": {"urn":"urn:li:staffCountRange:(1001,5000)", "name":"1001-5000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
   "5001-10,000 employees": {"urn":"urn:li:staffCountRange:(5001,10000)", "name":"5001-10,000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"}
+  "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  "Any Company Size" : {}
 } 
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()
