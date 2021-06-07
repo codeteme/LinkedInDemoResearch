@@ -51,11 +51,7 @@ def location_builder(locations):
 
 # Manually add the space string variant
 def gender_builder(genders): 
-    print("genders")
-    print(type(genders))
-    print(genders)
-    print("*****")
-    print("*****")
+
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:genders,name:Member%20Gender),segments:List("""
     for i,gender in enumerate(genders):
         #(urn:urn:li:locale:de_DE,name:German,facetUrn:urn:li:adTargetingFacet:interfaceLocales)
@@ -121,9 +117,6 @@ def memberbehavior_builder(memberbehaviors):
     return conc
 
 def companyindustry_builder(companyindustries):
-    print("companyindustries")
-    print(type(companyindustries))
-    print(companyindustries)
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:industries,name:Company%20Industries),segments:List("""
     for i, companyindustry in enumerate(companyindustries): 
         conc += "(urn:" + encodeInner(companyindustry['urn']) 
@@ -199,7 +192,7 @@ any_jobseniority = 'Any Job Seniority'
 any_companysize = 'Any Company Size'
 any_agerange = 'Any Age Range'
 
-selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+selected_countries = ['VNM', 'IND', 'PHL']
 IT_company_industry = ["Internet", "Information Technology & Services", "Computer Software", "Computer & Network Security", "Computer Hardware", "Computer Networking", "Wireless", "Telecommunications", "Semiconductors", "Nanotechnology", "Consumer Electronics"]
 Finance_company_industry = ["Banking", "Capital Markets", "Financial Services", "Insurance", "Investment Banking", "Investment Management", "Venture Capital & Private Equity"]
 
@@ -246,7 +239,6 @@ for country in selected_countries:
             if an_info != any_companyindustry:
                 # parameter passed to companyindustry_builder should be a list so I have put it in one
                 value = company_industry_info_dict.get(an_info)
-                # print(value)
                 arg_list.append(companyindustry_builder(value))
                 if an_info == 'IT_info':
                     row_value.append('IT')
@@ -284,7 +276,6 @@ for country in selected_countries:
                         else: 
                             row_value.append(any_companysize)
                         count =  make_call() # makes the api call then parses and shows count
-                        print(count)
                         row_value.append(count)
                         row = pd.Series(row_value)
                         row_df = pd.DataFrame([row])
@@ -297,7 +288,7 @@ for country in selected_countries:
                         row_value.pop() # remove the company size value
                         time.sleep(2) # set a timer so linkedin does not suspect a bot and block service
 
-                    df.to_csv('intermediate/allpermutations_noexclude_temp.csv', index=False)
+                    df.to_csv('intermediate/allpermutations_noexclude_temp_4.csv', index=False)
 
                     if jobseniority != any_jobseniority:
                         arg_list.pop() # remove the last added query parameter which is the job seniority variable
