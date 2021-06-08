@@ -15,24 +15,23 @@ response = requests.get(
 
 testheaders="""
 Host: www.linkedin.com
-User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
 Accept: */*
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
-Prefer: safe
 x-restli-protocol-version: 2.0.0
 x-li-lang: en_US
-x-li-track: {"clientVersion":"2.4.904","mpVersion":"2.4.904","osName":"web","timezoneOffset":3,"timezone":"Asia/Qatar","deviceFormFactor":"DESKTOP","mpName":"campaign-manager-web","displayDensity":2,"displayWidth":3360,"displayHeight":2100}
-x-li-page-instance: urn:li:page:d_campaign_details;4vcvSjeHQmOZulnkcqtVDQ==
-csrf-token: ajax:5901664971532134280
+x-li-track: {"clientVersion":"2.4.1035","mpVersion":"2.4.1035","osName":"web","timezoneOffset":3,"timezone":"Asia/Riyadh","deviceFormFactor":"DESKTOP","mpName":"campaign-manager-web","displayDensity":1,"displayWidth":1680,"displayHeight":1050}
+x-li-page-instance: urn:li:page:d_campaign_details;BZpmAJLjQ5OhUxxN5zD0iA==
+csrf-token: ajax:2093587861622909016
 x-li-er-key: urn:li:sponsoredAccount:507131805
 x-http-method-override: GET
 content-type: application/x-www-form-urlencoded
-Content-Length: 1140
+Content-Length: 749
 Origin: https://www.linkedin.com
 Connection: keep-alive
 Referer: https://www.linkedin.com/campaignmanager/accounts/507131805/campaigns/new/details?campaignGroupId=615557454
-Cookie: JSESSIONID="ajax:5901664971532134280"; bcookie="v=2&c5f27fc8-a995-4dfd-8c37-03810153ea44"; bscookie="v=1&20210504140158723c598c-f005-41c1-8b84-6421b12f6089AQFS-UeasGOrxz960bmdW19hEqvgLdJF"; _ga=GA1.2.1101044002.1620136918; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C18761%7CMCMID%7C33440669679956594540176137054812188594%7CMCAAMLH-1621515256%7C6%7CMCAAMB-1621515256%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1620917656s%7CNONE%7CvVersion%7C5.1.1%7CMCCIDH%7C-1529527004; li_rm=AQGbZvsvtq8xxAAAAXk3r43BIwOwUOJqrRMQoA-nXXBCc5Xlflp62qe6ftE4-iHYdKn0mrIeEvvlftV1T82_25ZKeJ468C0zTS02yHh9pUK42WY0_Rfzpvc6; _gcl_au=1.1.1049138754.1620136927; aam_uuid=33618448150752971410197855517193788537; g_state={"i_l":0}; timezone=Asia/Qatar; _guid=d8116692-cff4-4116-bbd5-37609e1b4828; li_sugr=558bab07-f0ec-415c-90b8-0d9041dd1343; AnalyticsSyncHistory=AQJaCRnLuE_ReQAAAXnGOzeCmtn57wfTpeYYayuspO6BDxMedANJlP2nVIm7xsdlIYLzIP8W-MrkPv_OXZ2VWQ; lms_ads=AQFEpoaP7RQq6AAAAXnGOzt1XQVTGJAlMqQ5hC6BIM-74t3v3dzjxmKxYBZJOHrGUitgnEgGKvEfpHoYbK6ABwbu8PXPvIEV; lms_analytics=AQFEpoaP7RQq6AAAAXnGOzt1XQVTGJAlMqQ5hC6BIM-74t3v3dzjxmKxYBZJOHrGUitgnEgGKvEfpHoYbK6ABwbu8PXPvIEV; gpv_pn=www.linkedin.com%2Fcampaignmanager%2Faccounts%2F507131805%2Fcampaigns%2Fnew%2Fdetails; s_tslv=1620960622654; liveagent_oref=https://www.linkedin.com/care/embed/chat/cmtChat?useDefaultButton=false&hostApplicationName=undefined; liveagent_vc=2; liveagent_ptid=18843a9a-c4de-4a4e-afbd-581a77a3a6d5; VID=V_2021_05_13_12_608948; _gac_UA-62256447-1=1.1620910764.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; mbox=session#5a777e17d30d4b2a95995d02ac77f687#1620912626|PC#5a777e17d30d4b2a95995d02ac77f687.37_0#1636463112; _gcl_aw=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; _gcl_dc=GCL.1620910766.CjwKCAjwnPOEBhA0EiwA609ReTdS7ez2npmn2Itwq5CLvMPXFrqQBz--fCwaDV8KHiZjJV1H6wa5shoCEwgQAvD_BwE; li_gc=MTswOzE2MjA5MTExMTA7MjswMjEpcmTLSZu3fJDVPJzfL58besDb12i6qNcL87iKStnHSQ==; lang=v=2&lang=en-us; lidc="b=TB94:s=T:r=T:a=T:p=T:g=2691:u=12:i=1622545819:t=1622614169:v=2:sig=AQGkpd0jsobjUyYrJb16NBqkTBsnynhz"; UserMatchHistory=AQIzYEBVV5sKdgAAAXnGOzeCvuclhTOdxIVrvXbXhNFQQOZrJl4_cK2pkLKpwGS31rHl10oGFW1A2A; liap=true; li_at=AQEDATWfwXIE1Y7SAAABecdEZNMAAAF561Do004AQB4S4gAdXimaxJW3I45boeQkR0vAvj5PJat7cE8ZBMvjJsztIeLcw2jAFfvC8PdtjTPvSBtbOdoruMyLCYxQbjnXoiJ1L18jHDJegREVJ3WgP2RU
+Cookie: bcookie="v=2&12924590-f701-481b-85f7-c19b4542266d"; bscookie="v=1&20210605151237ae2ef469-025d-48ac-8628-cb7117040996AQEPTxcCAH5qpDBPxzyV-9d3SpqFoEf6"; li_rm=AQHdJsnLzYXlZgAAAXncu7Mrez01sR65KTDtTFtzv8HXlGQJ-pVvKLXNrhP1kkwPyC0Wy41g5FCFai3dpyPqz4OE2VN4r0OfhKu5hmhQsmv0jTQoUpeLgZmU; _ga=GA1.2.212018236.1622906017; AMCV_14215E3D5995C57C0A495C55%40AdobeOrg=-637568504%7CMCIDTS%7C18786%7CMCMID%7C06822997612877381543424692258512506413%7CMCAAMLH-1623698918%7C6%7CMCAAMB-1623698918%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1623101318s%7CNONE%7CvVersion%7C5.1.1%7CMCCIDH%7C-1529527004; _gcl_au=1.1.138998113.1622906018; aam_uuid=07000757872865609933407496805101469158; JSESSIONID="ajax:2093587861622909016"; gpv_pn=www.linkedin.com%2Fcampaignmanager%2Faccounts%2F507131805%2Fcampaigns%2Fnew%2Fdetails; s_tslv=1623094190127; li_sugr=1bfe14c9-67c9-4f52-a88e-1ce3103bbf32; UserMatchHistory=AQL2z9wSqsGR2wAAAXnn8oWn1wawCK_zUynDh2RyYrVEKPWqsxDUTbH-AFZq71YTCv6Xpou-RQydhaZ2LzGZzNLz3iXyJXUviQcRPQscezQAz1ybY2_iGGgHOtftmd-oMO7Trm9dU0T6EUH2mSFq-39mJ8VKsQNx-zCllmcJ80SawyD6afh0sGJu7Nw89S7SyIk-CA-7Y9pkRhQDRvdaArNBerNLcGRzdCitGUty-coXSGOd-9ZSPkdnD4FZ0ibqU0x9Vgf4hzQGLeejSaGqnJEBKqot5BfspOOwTzI; AnalyticsSyncHistory=AQIG0z27FkA4rgAAAXnhN2Ahw4RaiHpOYdJTE2CWMe8jpAA-v0mXaFcKxeZD3vE1f_nXMEU2tspgCHvXgbaNig; lms_ads=AQFKG4Ff3x2GHwAAAXnhN2F30dYHQt5ELBwLRNfiCRxAPVaTvGt64SfnGhH2RwFuOA56mbOzuxFKBK16AH0MHwLFEmIbqp-f; lms_analytics=AQFKG4Ff3x2GHwAAAXnhN2F30dYHQt5ELBwLRNfiCRxAPVaTvGt64SfnGhH2RwFuOA56mbOzuxFKBK16AH0MHwLFEmIbqp-f; lidc="b=TB94:s=T:r=T:a=T:p=T:g=2692:u=14:i=1623094120:t=1623135296:v=2:sig=AQFJl5uzJY1TdUQYBmY_ps3wEn7Mc8E8"; lang=v=2&lang=en-us; AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg=1; s_plt=1.17; s_pltp=www.linkedin.com%2Fcampaignmanager%2Faccounts%2F507131805%2Fcampaign-groups; s_ppv=www.linkedin.com%2Fcampaignmanager%2Faccounts%2F507131805%2Fcampaigns%2Fnew%2Fdetails%2C43%2C29%2C1369%2C3%2C6; s_ips=925; s_tp=3152; s_cc=true; s_sq=lnkdprod%3D%2526pid%253Dwww.linkedin.com%25252Fcampaignmanager%25252Faccounts%25252F507131805%25252Fcampaigns%25252Fnew%25252Fdetails%2526pidt%253D1%2526oid%253D%252528...o%252529%25253D%25253EUe%252528e%25252C%2525280%25252Cl.valueForRef%252529%252528t%252529%25252C%2525280%25252Cl.valueForRef%252529%252528r%252529%25252Cn%25252Ci%252529%252528...o%252529%2526oidt%253D2%2526ot%253DBUTTON; _gid=GA1.2.614274081.1623094036; liap=true; li_at=AQEDATWfwXICWsCfAAABeefyujwAAAF6C_8-PE0ADLxqY8aLjuvRh1wTyfms_6evUw3Xg_Atf9JOfxmGXXBrPhwFm2KJ3EtNiFm-WSLqw5KvUiI9_CiE3bebw-nuvoX5uxLL3tcPGtq2zJAzNnGjgO1Q; timezone=Asia/Riyadh; _guid=2ad3c301-26bf-4569-9497-1c5b62ae039b
 TE: Trailers
 """
 def getHeadersFromFirefox(headers):
@@ -67,6 +66,10 @@ def split_at(s, delim, n):
 
 # Extracts only the count from the returned response string
 def parse_response(response_string):
+    print("RESPONSE STRING")
+    print(response_string)
+    print("****")
+    print("****")
     temp_str_1 = split_at(response_string, ',', 1)[0]
     temp_str_2 = split_at(temp_str_1, ':', 2)[1][:-2] 
     return int(temp_str_2) # convert to number

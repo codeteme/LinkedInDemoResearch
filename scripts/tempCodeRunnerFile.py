@@ -1,1 +1,1 @@
-print
+from pandas_profiling import ProfileReport
