@@ -1,1 +1,0 @@
-),segments:List((urn:urn%3Ali%3Aindustry%3A6,name:Internet,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries))))),
