@@ -1,24 +1,26 @@
 """
-q=targetingCriteria&cmTargetingCriteria=(include:(and:List(
-    (or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),
-    (or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A103644278,name:United%20States,facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations))))))),
-    exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aindustries,name:Company%20Industries),segments:List(
-        (urn:urn%3Ali%3Aindustry%3A6,name:Internet,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A96,name:Information%20Technology%20%26%20Services,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A4,name:Computer%20Software,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A118,name:Computer%20%26%20Network%20Security,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A3,name:Computer%20Hardware,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A5,name:Computer%20Networking,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A119,name:Wireless,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A8,name:Telecommunications,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A7,name:Semiconductors,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A114,name:Nanotechnology,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A24,name:Consumer%20Electronics,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A41,name:Banking,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A129,name:Capital%20Markets,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A43,name:Financial%20Services,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A42,name:Insurance,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A45,name:Investment%20Banking,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A46,name:Investment%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries),
-        (urn:urn%3Ali%3Aindustry%3A106,name:Venture%20Capital%20%26%20Private%20Equity,facetUrn:urn%3Ali%3AadTargetingFacet%3Aindustries))))))
+(include:(and:List(
+    (or:List((facet:(urn:urn:li:adTargetingFacet:interfaceLocales,name:Interface Locales),segments:List((urn:urn:li:locale:en_US,name:English,facetUrn:urn:li:adTargetingFacet:interfaceLocales))))),
+    (or:List((facet:(urn:urn:li:adTargetingFacet:profileLocations,name:Locations),segments:List((urn:urn:li:geo:103644278,name:United States,facetUrn:urn:li:adTargetingFacet:profileLocations))))),
+    (or:List((facet:(urn:urn:li:adTargetingFacet:industries,name:Company Industries),segments:List(
+        (urn:urn:li:industry:6,name:Internet,facetUrn:urn:li:adTargetingFacet:industries),
+        (urn:urn:li:industry:24,name:Consumer Electronics,facetUrn:urn:li:adTargetingFacet:industries),
+        (urn:urn:li:industry:3,name:Computer Hardware,facetUrn:urn:li:adTargetingFacet:industries),
+        (urn:urn:li:industry:118,name:Computer & Network Security,facetUrn:urn:li:adTargetingFacet:industries),
+        (urn:urn:li:industry:4,name:Computer Software,facetUrn:urn:li:adTargetingFacet:industries),
+        (urn:urn:li:industry:96,name:Information Technology & Services,facetUrn:urn:li:adTargetingFacet:industries))))),
+    (or:List((facet:(urn:urn:li:adTargetingFacet:ageRanges,name:Member Age),segments:List((urn:urn:li:ageRange:(25,34),name:25 to 34,facetUrn:urn:li:adTargetingFacet:ageRanges))))),
+    (or:List((facet:(urn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies,name:Company Connections),segments:List(
+        (urn:urn:li:company:2382910,name:Amazon Web Services (AWS),facetUrn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies),
+        (urn:urn:li:company:1441,name:Google,facetUrn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies),
+        (urn:urn:li:company:10667,name:Facebook,facetUrn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies),
+        (urn:urn:li:company:162479,name:Apple,facetUrn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies),
+        (urn:urn:li:company:1035,name:Microsoft,facetUrn:urn:li:adTargetingFacet:firstDegreeConnectionCompanies))))),
+    (or:List((facet:(urn:urn:li:adTargetingFacet:genders,name:Member Gender),segments:List((urn:urn:li:gender:MALE,name:Male,facetUrn:urn:li:adTargetingFacet:genders))))))),
+    exclude:(or:List((facet:(urn:urn:li:adTargetingFacet:employers,name:Company Names),segments:List(
+        (urn:urn:li:company:1035,name:Microsoft,facetUrn:urn:li:adTargetingFacet:employers),
+        (urn:urn:li:company:1441,name:Google,facetUrn:urn:li:adTargetingFacet:employers),
+        (urn:urn:li:company:10667,name:Facebook,facetUrn:urn:li:adTargetingFacet:employers),
+        (urn:urn:li:company:2382910,name:Amazon Web Services (AWS),facetUrn:urn:li:adTargetingFacet:employers),
+        (urn:urn:li:company:162479,name:Apple,facetUrn:urn:li:adTargetingFacet:employers))))))
 """
