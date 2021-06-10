@@ -283,6 +283,7 @@ companysizesegments = {
   "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
   "Any Company Size" : {}
 } 
+
 # changing all keys of location segment dictionary
 # corresponding to pandas series using zip()
 locationsegments = dict(zip(country_code_id_map['ISO 3 Digit'], list(locationsegments.values())))
