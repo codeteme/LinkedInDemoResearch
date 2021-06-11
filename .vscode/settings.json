@@ -1,4 +1,4 @@
 {
     "jupyter.jupyterServerType": "local",
-    "python.pythonPath": "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps\\python3.9.exe"
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"
 }

@@ -129,9 +129,6 @@ def companyindustry_builder(companyindustries):
     return conc
 
 def companysize_builder(companysizes):
-    print("***")
-    print(companysizes)
-    print("***")
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:staffCountRanges,name:Company%20Size),segments:List("""
     for i, companysize in enumerate(companysizes): 
         conc += "(urn:" + encodeInner(companysize['urn']) 
@@ -144,9 +141,6 @@ def companysize_builder(companysizes):
     return conc
 
 def exclude_builder(excludes):
-    print("***")
-    print(excludes)
-    print("***")
     conc = """(or:List((facet:(urn:urn:li:adTargetingFacet:employers,name:Company%20Names),segments:List("""
     for i, exclude in enumerate(excludes): 
         conc += "(urn:" + encodeInner(exclude['urn']) 
@@ -156,9 +150,6 @@ def exclude_builder(excludes):
         if i<len(excludes)-1:
             conc +=","
     conc += """))))"""
-    print("conc")
-    print(conc)
-    print("***")
     return conc
 
 # returns OR concatenated query string 
@@ -197,7 +188,7 @@ def NOT_builder(args):
 def include_all():
     print("chk pt. include_all() is executed")
     # output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + NOT_builder(exclude_list) + ")"
-    output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + exclusion_script + ")"
+    output =  "q=targetingCriteria&cmTargetingCriteria=(include:(and:List(" + AND_builder(arg_list) + ")" + ")" + "," + exclusion_script
 
     return linkedinEncodeURL(output)
 
@@ -217,6 +208,7 @@ companyindustry_list = []
 jobseniority_list = [] 
 companysize_list = []
 agerange_list = [] 
+connection_list = ['connected to any', 'connected to big companies']
 
 any_gender = 'Any Gender'
 any_companyindustry = 'Any Company Industry'
@@ -224,6 +216,7 @@ any_jobseniority = 'Any Job Seniority'
 any_companysize = 'Any Company Size'
 any_agerange = 'Any Age Range'
 any_companyconnection = 'Any Company Connection'
+any_connection = 'connected to any'
 
 selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
 
@@ -251,12 +244,13 @@ company_industry_info_dict['IT_info'] = it_list
 company_industry_info_dict['Finance_info'] = finance_list
 
 arg_list = [locale_builder()]
-# exclude_list = []
-
 
 exclusion_script = []
-bigfive_exclusion_script = "exclude:(or:List((facet:(urn:urn:li:adTargetingFacet:employers,name:Company%20Names),segments:List((urn:urn:li:company:1035,name:Microsoft,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:1441,name:Google,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:10667,name:Facebook,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:2382910,name:Amazon%20Web%20Services%20%28AWS%29,facetUrn:urn:li:adTargetingFacet:employers),(urn:urn:li:company:162479,name:Apple,facetUrn:urn:li:adTargetingFacet:employers)))))"
-bigbank_exclusion_script = "exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A1067,name:J.P.%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers)))))"
+bigfive_exclusion_script = "exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A10667,name:Facebook,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A162479,name:Apple,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A2382910,name:Amazon%20Web%20Services%20%28AWS%29,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1035,name:Microsoft,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1441,name:Google,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers))))))"
+bigbank_exclusion_script = "exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A1067,name:J.P.%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A3492416,name:J.P.%20Morgan%20Asset%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1068,name:JPMorgan%20Chase%20%26%20Co.,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers))))))"
+connection_script = []
+bigfive_connection_script = "(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies,name:Company%20Connections),segments:List((urn:urn%3Ali%3Acompany%3A10667,name:Facebook,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A162479,name:Apple,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A2382910,name:Amazon%20Web%20Services%20%28AWS%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1035,name:Microsoft,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1441,name:Google,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies)))))"
+bigbank_connection_script = "(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A2038490,name:JP%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A3492416,name:J.P.%20Morgan%20Asset%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1068,name:JPMorgan%20Chase%20%26%20Co.,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers)))))"
 
 # Intialize an empty dataframe with only column names
 df = pd.DataFrame()
@@ -317,18 +311,44 @@ for country in selected_countries:
                         else: 
                             row_value.append(any_agerange)
 
-                        count =  make_call() # makes the api call then parses and shows count
-                        row_value.append(count)
-                        row = pd.Series(row_value)
-                        row_df = pd.DataFrame([row])
-                        df = pd.concat([row_df, df], ignore_index=True)
-                        print(df.head())
-                        print("row value", row_value)
+                        for connection in connection_list:
+                            print("***")
+                            print(connection)
+                            print("***")
+                            if connection == 'connected to any': 
+                                row_value.append(connection)
+                            elif connection == 'connected to big companies' and sector == 'IT_info': 
+                                arg_list.append(bigfive_connection_script)
+                                row_value.append(connection)
+                            elif connection == 'connected to big companies' and sector == 'Finance_info': 
+                                arg_list.append(bigbank_connection_script)
+                                row_value.append(connection)
+                            # count =  make_call() # makes the api call then parses and shows count
+                            # Handles ConnectionError exception that may be raised during execution 
+                            while True:
+                                try:
+                                    count =  make_call() # makes the api call then parses and shows count
+                                    print("count is executed")
+                                    break
+                                except:
+                                    # print("exception")
+                                    time.sleep(5) # Retry every five seconds
 
-                        row_value.pop() # remove the count value
-                        time.sleep(2)
-                        save_path = f'intermediate/data_collection_2/temp_{country}.csv'
-                        df.to_csv(save_path, index=False)
+                            row_value.append(count)
+                            row = pd.Series(row_value)
+                            row_df = pd.DataFrame([row])
+                            df = pd.concat([row_df, df], ignore_index=True)
+                            print(df.head())
+                            print("row value", row_value)
+
+                            row_value.pop() # remove the count value
+                            time.sleep(2)
+                            save_path = f'intermediate/data_collection_2/temp_{country}.csv'
+                            df.to_csv(save_path, index=False)
+
+                            if connection != any_connection: 
+                                arg_list.pop() # reomve the last added query parameter which is the connectivity status variable 
+                            row_value.pop() # remove the connectivity status value
             
                         if agerange != any_agerange:
                             arg_list.pop() # remove the last added query parameter which is the age range variable
@@ -344,11 +364,11 @@ for country in selected_countries:
                     arg_list.pop() # remove the last added query parameter which is the job seniority variable
                     jobseniority_list.pop() # empty the list to step to the next element in the list
                 row_value.pop() # remove the job seniority value
-                row_value.pop() # remove the job seniority value
-            if sector != any_companysize:
-                arg_list.pop() # remove the last added query parameter which is the current variable
-                companysize_list.pop() # empty the list to step to the next element in the list
+
+            # There is no list to append to or remove from + there 
+            arg_list.pop() # remove the last added query parameter which is the sector variable
             row_value.pop() # remove the company size value
+
         if gender != any_gender: # If gender is specified
             arg_list.pop() # remove the last added query parameter which is the gender variable
             gender_list.pop() # empty the list to step to the next element in the list
@@ -358,115 +378,7 @@ for country in selected_countries:
     country_list.pop() # empty the list to step to the next element in the list
     row_value.clear() # remove the location value
 
-
-# for country in selected_countries:
-#     country_info = locationsegments.get(country)
-#     country_list.append(country_info)
-#     arg_list.append(location_builder(country_list))
-#     row_value = []
-#     row_value.append(country)
-
-#     for gender in gendersegments.keys():
-#         if gender != any_gender:
-#             gender_info = gendersegments.get(gender)
-#             gender_list.append(gender_info)
-#             arg_list.append(gender_builder(gender_list))
-#             row_value.append(gender)
-#         else:
-#             row_value.append(any_gender)
-
-#         for agerange in agerangesegments.keys():
-#             if agerange != any_agerange:
-#                 agerange_info = agerangesegments.get(agerange)
-#                 agerange_list.append(agerange_info)
-#                 arg_list.append(age_builder(agerange_list))
-#                 row_value.append(agerange) 
-#             else: 
-#                 row_value.append(any_agerange)
-
-#             for jobseniority in jobsenioritysegments.keys():
-#                 if jobseniority != any_jobseniority:
-#                     jobseniority_info = jobsenioritysegments.get(jobseniority)
-#                     jobseniority_list.append(jobseniority_info)
-#                     arg_list.append(jobseniority_builder(jobseniority_list))
-#                     row_value.append(jobseniority)
-#                 else: 
-#                     row_value.append(any_jobseniority)
-
-#                 for companysize in companysizesegments.keys(): # iterate through segment and get name of element
-#                     if companysize != any_companysize:
-#                         companysize_info = companysizesegments.get(companysize) # extract the corresponding value of the element
-#                         companysize_list.append(companysize_info) # add element information to the list 
-#                         arg_list.append(companysize_builder(companysize_list)) # pass the processed list to build query 
-#                         row_value.append(companysize)
-#                     else: 
-#                         row_value.append(any_companysize)
-
-#                     for an_info in company_industry_info_dict.keys():
-#                         if an_info == 'IT_info':
-#                              # parameter passed to exclude_builder should be a list so I have put it in one
-#                             value = company_industry_info_dict.get(an_info)
-#                             arg_list.append(companyindustry_builder(value))
-#                             row_value.append('IT')
-#                         elif an_info == 'Finance_info':
-#                             value = company_industry_info_dict.get(an_info)
-#                             arg_list.append(companyindustry_builder(value))
-#                             row_value.append('Finance')
-#                         else: 
-#                             row_value.append('Neither IT nor Finance')                           
-                    
-#                         # Handles ConnectionError exception that may be raised during execution 
-#                         while True:
-#                             try:
-#                                 count =  make_call() # makes the api call then parses and shows count
-#                                 print("count is executed")
-#                                 break
-#                             except:
-#                                 # print("exception")
-#                                 time.sleep(5) # Retry every five seconds
-
-#                         # count =  make_call() # makes the api call then parses and shows count
-#                         exclude_list.pop()    
-#                         row_value.append(count)
-#                         row = pd.Series(row_value)
-#                         row_df = pd.DataFrame([row])
-#                         df = pd.concat([row_df, df], ignore_index=True)
-#                         print(df.head())
-#                         print("row value", row_value)
-
-#                         row_value.pop() # remove the count value
-#                         row_value.pop() # remove the excludes company industry value
-#                         time.sleep(2) # set a timer so linkedin does not suspect a bot and block service
-                    
-#                     # df.to_csv('intermediate/allpermutations_noexclude_temp_4.csv', index=False)
-#                     save_path = f'intermediate/allpermutations_exclude_temp_{country}.csv'
-#                     df.to_csv(save_path, index=False)
-#                     if companysize != any_companysize:
-#                         arg_list.pop() # remove the last added query parameter which is the current variable
-#                         companysize_list.pop() # empty the list to step to the next element in the list
-#                         row_value.pop() # remove the company size value
-#                 if jobseniority != any_jobseniority:
-#                     arg_list.pop() # remove the last added query parameter which is the job seniority variable
-#                     jobseniority_list.pop() # empty the list to step to the next element in the list
-#                 row_value.pop() # remove the job seniority value
-#                 row_value.pop() # remove the job seniority value
-
-            
-#             if agerange != any_agerange:
-#                 arg_list.pop() # remove the last added query parameter which is the age range variable
-#                 agerange_list.pop() # empty the list to step to the next element in the list
-#             row_value.pop() # remove the age range value
-       
-#         if gender != any_gender: # If gender is specified
-#             arg_list.pop() # remove the last added query parameter which is the gender variable
-#             gender_list.pop() # empty the list to step to the next element in the list
-#         row_value.pop() # remove the gender value
-    
-#     arg_list.pop() # remove the last added query parameter which is the location variable
-#     country_list.pop() # empty the list to step to the next element in the list
-#     row_value.clear() # remove the location value
-
-df.columns = ["Country", "Gender", "Sector", "Job Seniority", "Company Size", "Age Ranges", "Count"]
+df.columns = ["Country", "Gender", "Sector", "Job Seniority", "Company Size", "Age Ranges", "Connectivity Status", "Count"]
 df.to_csv('intermediate/data_collection_2/temp.csv', index=False)
 
 
