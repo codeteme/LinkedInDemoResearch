@@ -219,6 +219,8 @@ any_companyconnection = 'Any Company Connection'
 any_connection = 'connected to any'
 
 selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+selected_countries = ['USA']
+
 
 
 IT_company_industry = ["Internet", "Information Technology & Services", "Computer Software", "Computer & Network Security", "Computer Hardware", "Computer Networking", "Wireless", "Telecommunications", "Semiconductors", "Nanotechnology", "Consumer Electronics"]
@@ -240,8 +242,9 @@ for companyindustry in Finance_company_industry:
     finance_list.append(companyindustry_info)
 
 company_industry_info_dict = dict()
-company_industry_info_dict['IT_info'] = it_list
 company_industry_info_dict['Finance_info'] = finance_list
+company_industry_info_dict['IT_info'] = it_list
+
 
 arg_list = [locale_builder()]
 
@@ -250,7 +253,7 @@ bigfive_exclusion_script = "exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingF
 bigbank_exclusion_script = "exclude:(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A1067,name:J.P.%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A3492416,name:J.P.%20Morgan%20Asset%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1068,name:JPMorgan%20Chase%20%26%20Co.,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers))))))"
 connection_script = []
 bigfive_connection_script = "(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies,name:Company%20Connections),segments:List((urn:urn%3Ali%3Acompany%3A10667,name:Facebook,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A162479,name:Apple,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A2382910,name:Amazon%20Web%20Services%20%28AWS%29,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1035,name:Microsoft,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1441,name:Google,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies)))))"
-bigbank_connection_script = "(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Aemployers,name:Company%20Names),segments:List((urn:urn%3Ali%3Acompany%3A2038490,name:JP%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A3492416,name:J.P.%20Morgan%20Asset%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1068,name:JPMorgan%20Chase%20%26%20Co.,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3Aemployers)))))"
+bigbank_connection_script = "(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies,name:Company%20Connections),segments:List((urn:urn%3Ali%3Acompany%3A1067,name:J.P.%20Morgan,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A3492416,name:J.P.%20Morgan%20Asset%20Management,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1068,name:JPMorgan%20Chase%20%26%20Co.,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A163001,name:Chase,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies),(urn:urn%3Ali%3Acompany%3A1382,name:Goldman%20Sachs,facetUrn:urn%3Ali%3AadTargetingFacet%3AfirstDegreeConnectionCompanies)))))"
 
 # Intialize an empty dataframe with only column names
 df = pd.DataFrame()
@@ -343,7 +346,7 @@ for country in selected_countries:
 
                             row_value.pop() # remove the count value
                             time.sleep(2)
-                            save_path = f'intermediate/data_collection_2/temp_{country}.csv'
+                            save_path = f'intermediate/data_collection_2/temp_{country}_finance.csv'
                             df.to_csv(save_path, index=False)
 
                             if connection != any_connection: 

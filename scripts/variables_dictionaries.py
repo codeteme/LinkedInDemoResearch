@@ -206,10 +206,11 @@ locationsegments = {'Afghanistan': {'urn': 'urn:li:geo:101240012', 'name': 'Afgh
                     'Zimbabwe': {'urn': 'urn:li:geo:101367137', 'name': 'Zimbabwe', 'facetUrn': 'urn:li:adTargetingFacet:profileLocations', 'ancestorUrns': 'List(urn:li:geo:103537801)'}}
 
 agerangefacet = {"urn": "urn:li:adTargetingFacet:ageRanges","name": "Member Age"}
-agerangesegments = {"18 to 24": {"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
-                    "25 to 34": {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
-                    "35 to 54": {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
-                    "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+agerangesegments = {
+                    # "18 to 24": {"urn": "urn:li:ageRange:(18,24)","name": "18 to 24","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
+                    # "25 to 34": {"urn": "urn:li:ageRange:(25,34)","name": "25 to 34","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    # "35 to 54": {"urn": "urn:li:ageRange:(35,54)","name": "35 to 54","facetUrn": "urn:li:adTargetingFacet:ageRanges"}, 
+                    # "55+": {"urn": "urn:li:ageRange:(55,2147483647)","name": "55+","facetUrn": "urn:li:adTargetingFacet:ageRanges"},
                     "Any Age Range": {}}
 
 genderfacet = {"urn": "urn:li:adTargetingFacet:genders","name": "Member Gender"}
@@ -218,29 +219,30 @@ gendersegments = {"Female": {"urn": "urn:li:gender:FEMALE","name": "Female","fac
                   "Any Gender": {}}
 
 jobseniorityfacet = {"urn" : "urn:li:adTargetingFacet:seniorities", "name": "Job Seniorities"}
-jobsenioritysegments = {"Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpaid", "facetUrn": "urn:li:adTargetingFacet:seniorities"},  
-                        "Training" : { "urn": "urn:li:seniority:2", "name" : "Training",  "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "Entry" : { "urn": "urn:li:seniority:3", "name" : "Entry", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        "Senior" : { "urn": "urn:li:seniority:4", "name" : "Senior", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "Manager" : { "urn": "urn:li:seniority:5", "name" : "Manager", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        "Director" : { "urn": "urn:li:seniority:6", "name" : "Director", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "VP" : { "urn": "urn:li:seniority:7", "name" : "VP", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
-                        "CXO" : { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "Partner" : { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
-                        "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+jobsenioritysegments = {
+                        # "Unpaid" : { "urn": "urn:li:seniority:1", "name" : "Unpaid", "facetUrn": "urn:li:adTargetingFacet:seniorities"},  
+                        # "Training" : { "urn": "urn:li:seniority:2", "name" : "Training",  "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        # "Entry" : { "urn": "urn:li:seniority:3", "name" : "Entry", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        # "Senior" : { "urn": "urn:li:seniority:4", "name" : "Senior", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        # "Manager" : { "urn": "urn:li:seniority:5", "name" : "Manager", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        # "Director" : { "urn": "urn:li:seniority:6", "name" : "Director", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        # "VP" : { "urn": "urn:li:seniority:7", "name" : "VP", "facetUrn": "urn:li:adTargetingFacet:seniorities" },
+                        # "CXO" : { "urn": "urn:li:seniority:8", "name" : "CXO", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        # "Partner" : { "urn": "urn:li:seniority:9", "name" : "Partner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
+                        # "Owner" :{ "urn": "urn:li:seniority:10", "name" : "Owner", "facetUrn": "urn:li:adTargetingFacet:seniorities" }, 
                         "Any Job Seniority": {}}
               
 
-employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
-employersegments = {"Facebook": {"urn": "urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
-                    "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Apple": {"urn": "urn:li:company:162479", "name": "Apple", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Amazon Web Services (AWS)": {"urn": "urn:li:company:2382910", "name": "Amazon Web Services (AWS)", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "J.P. Morgan": {"urn": "urn:li:company:1067", "name": "J.P. Morgan", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Chase": {"urn": "urn:li:company:1382", "name": "Chase", "facetUrn": "urn:li:adTargetingFacet:employers"},
-                    "Goldman Sachs": {"urn": "urn:li:company:1067", "name": "Goldman Sachs", "facetUrn": "urn:li:adTargetingFacet:employers"}}
+# employerfacet = {"urn" : "urn:li:adTargetingFacet:employers","name": "Company Names"}
+# employersegments = {"Facebook": {"urn": "urn:li:company:10667", "name":"Facebook", "facetUrn":"urn:li:adTargetingFacet:employers"},
+#                     "Amazon": {"urn": "urn:li:company:1586", "name": "Amazon", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Apple": {"urn": "urn:li:company:162479", "name": "Apple", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Netflix": {"urn": "urn:li:company:165158", "name": "Netflix", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Google": {"urn": "urn:li:company:1441", "name": "Google", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Amazon Web Services (AWS)": {"urn": "urn:li:company:2382910", "name": "Amazon Web Services (AWS)", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "J.P. Morgan": {"urn": "urn:li:company:1067", "name": "J.P. Morgan", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Chase": {"urn": "urn:li:company:1382", "name": "Chase", "facetUrn": "urn:li:adTargetingFacet:employers"},
+#                     "Goldman Sachs": {"urn": "urn:li:company:1067", "name": "Goldman Sachs", "facetUrn": "urn:li:adTargetingFacet:employers"}}
 
 memberbehaviorfacet = {"urn" : "urn:li:adTargetingFacet:memberBehaviors","name": "Member Traits"}
 memberbehaviorsegments = {"Job Seekers": {"urn": "urn:li:memberBehavior:12", "name": "Job Seekers", "facetUrn": "urn:li:adTargetingFacet:memberBehaviors"},
@@ -272,15 +274,15 @@ companyindustrysegments = {"Internet" : {"urn":"urn:li:industry:6", "name":"Inte
                           "Any Company Industry": {}}
 companysizefacet = {"urn": "urn:li:adTargetingFacet:staffCountRanges", "name": "Company Size"}
 companysizesegments = {
-  "Myself Only": {"urn":"urn:li:staffCountRange:(1,1)", "name":"Myself Only","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "2-10 employees": {"urn":"urn:li:staffCountRange:(2,10)", "name":"2-10 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "11-50 employees": {"urn":"urn:li:staffCountRange:(11,50)", "name":"11-50 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "51-200 employees": {"urn":"urn:li:staffCountRange:(51,200)", "name":"51-200 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "201-500 employees": {"urn":"urn:li:staffCountRange:(201,500)", "name":"201-500 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "501-1000 employees": {"urn":"urn:li:staffCountRange:(501,1000)", "name":"501-1000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "1001-5000 employees": {"urn":"urn:li:staffCountRange:(1001,5000)", "name":"1001-5000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "5001-10,000 employees": {"urn":"urn:li:staffCountRange:(5001,10000)", "name":"5001-10,000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
-  "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "Myself Only": {"urn":"urn:li:staffCountRange:(1,1)", "name":"Myself Only","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "2-10 employees": {"urn":"urn:li:staffCountRange:(2,10)", "name":"2-10 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "11-50 employees": {"urn":"urn:li:staffCountRange:(11,50)", "name":"11-50 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "51-200 employees": {"urn":"urn:li:staffCountRange:(51,200)", "name":"51-200 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "201-500 employees": {"urn":"urn:li:staffCountRange:(201,500)", "name":"201-500 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "501-1000 employees": {"urn":"urn:li:staffCountRange:(501,1000)", "name":"501-1000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "1001-5000 employees": {"urn":"urn:li:staffCountRange:(1001,5000)", "name":"1001-5000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "5001-10,000 employees": {"urn":"urn:li:staffCountRange:(5001,10000)", "name":"5001-10,000 employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
+  # "10,001+ employees": {"urn":"urn:li:staffCountRange:(10001,2147483647)", "name":"10,001+ employees","facetUrn" :"urn:li:adTargetingFacet:staffCountRanges"},
   "Any Company Size" : {}
 } 
 
