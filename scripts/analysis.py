@@ -1,18 +1,18 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import streamlit as st
 
 
-df = pd.read_csv('intermediate/data_collection_2/temp_USA.csv')
+df = pd.read_csv('intermediate/data_collection_2/temp_PHL.csv')
 # rename the column headers
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
-
-
+df['Count'].replace(to_replace=0, value = 1, inplace = True)
+st.write(df[df['Count'] == 0])
 # select parameters
 def df_specifier(df, country, sector, size): 
     idx = np.where((df['Country'] == country) & (df['Sector'] == sector) & (df['Company Size'] == size) & (df['Age Ranges'] == 'Any Age Range'))
     return df.loc[idx]
-
 
 
 def filter_reshape(df, country, sector, size): 
@@ -83,12 +83,15 @@ def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
     fig = plotter(df)
-    
+
     total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
     fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
     plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
+
+    st.write(fig)
     
     save_path = f'plots/_{country}_{sector}_{size}.png'
+    # Uncomment to save figures
     fig.savefig(save_path)
 
 
@@ -96,9 +99,11 @@ def run_analysis():
     company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
+    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
     # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
-    for company_size in company_sizes:
-        filter_reshape_plot(df, 'USA', 'IT', company_size)
+    for country in countries: 
+        for company_size in company_sizes:
+            filter_reshape_plot(df, country, 'IT', company_size)
 
 
     
