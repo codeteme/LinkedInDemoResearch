@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('intermediate/data_collection_2/temp_USA.csv')
 # rename the column headers
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
-print(df['Company Size'].unique())
 
 
 # select parameters
@@ -17,7 +16,6 @@ def df_specifier(df, country, sector, size):
 
 
 def filter_reshape(df, country, sector, size): 
-
     # split data to with connection and any connection
     df_with_connection = df[df['Connectivity Status'] == 'connected to big companies']
     df_any_connection = df[df['Connectivity Status'] == 'connected to any']
@@ -47,14 +45,13 @@ def filter_reshape(df, country, sector, size):
     # df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
     df_reshaped = df_reshaped.sort_index(key=lambda x: x.map(sorting_dict))
 
-
     return df_reshaped
 
 
 def plotter(df): # plot
-    # df = df.drop([0, 1])
-    print(df.head())
-    print(df.index)
+    # set the ticklabel font size globally (i.e. for all figures/subplots in a script) using rcParams:
+    plt.rc('xtick',labelsize=8)
+    plt.rc('ytick',labelsize=8)
 
     # df.index -> df['Job Seniorities']
     # df['Male to Female', 'm:f'] -> df['male:female']
@@ -65,7 +62,7 @@ def plotter(df): # plot
     ax1.set_xlabel('Job Seniorities')
     ax1.set_ylabel('male:female', color=color)
     ax1.plot(df.index, df['Male to Female', 'm:f'], color=color)
-    ax1.tick_params(axis='y', labelcolor=color)
+    ax1.tick_params(axis='x', labelcolor=color)
 
     ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
@@ -84,8 +81,12 @@ def plotter(df): # plot
 
 def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
-    df = filter_reshape(df, country, sector, size) # USA, IT, Big Companies)
+    df = filter_reshape(df, country, sector, size)
     fig = plotter(df)
+    
+    total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
+    fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
+    plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
     
     save_path = f'plots/_{country}_{sector}_{size}.png'
     fig.savefig(save_path)
@@ -98,6 +99,8 @@ def run_analysis():
     # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
     for company_size in company_sizes:
         filter_reshape_plot(df, 'USA', 'IT', company_size)
+
+
     
 run_analysis()
 
