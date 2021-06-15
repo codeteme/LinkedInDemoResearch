@@ -218,8 +218,8 @@ any_agerange = 'Any Age Range'
 any_companyconnection = 'Any Company Connection'
 any_connection = 'connected to any'
 
-selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-selected_countries = ['USA']
+# selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+selected_countries = ['IND', 'PHL']
 
 
 
@@ -243,7 +243,7 @@ for companyindustry in Finance_company_industry:
 
 company_industry_info_dict = dict()
 company_industry_info_dict['Finance_info'] = finance_list
-company_industry_info_dict['IT_info'] = it_list
+# company_industry_info_dict['IT_info'] = it_list
 
 
 arg_list = [locale_builder()]
@@ -346,7 +346,7 @@ for country in selected_countries:
 
                             row_value.pop() # remove the count value
                             time.sleep(2)
-                            save_path = f'intermediate/data_collection_2/temp_{country}_finance.csv'
+                            save_path = f'intermediate/data_collection_2/temp_{country}_3_finance.csv'
                             df.to_csv(save_path, index=False)
 
                             if connection != any_connection: 
@@ -382,6 +382,6 @@ for country in selected_countries:
     row_value.clear() # remove the location value
 
 df.columns = ["Country", "Gender", "Sector", "Job Seniority", "Company Size", "Age Ranges", "Connectivity Status", "Count"]
-df.to_csv('intermediate/data_collection_2/temp.csv', index=False)
+df.to_csv('intermediate/data_collection_2/temp_3.csv', index=False)
 
 
