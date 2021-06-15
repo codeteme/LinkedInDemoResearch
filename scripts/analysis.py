@@ -4,10 +4,15 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-df = pd.read_csv('intermediate/data_collection_2/temp_PHL.csv')
-# rename the column headers
+df = pd.read_csv('processed/data_collection_2/dataset.csv')
+# drop the index
+df.drop(df.columns[[0]], axis = 1, inplace = True)
+# rename the colums
+print(df['Country'].unique())
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
+# replace all 0s by 1 so as to avoid arithmetic errors
 df['Count'].replace(to_replace=0, value = 1, inplace = True)
+
 st.write(df[df['Count'] == 0])
 # select parameters
 def df_specifier(df, country, sector, size): 
@@ -96,14 +101,16 @@ def filter_reshape_plot(df, country, sector, size):
 
 
 def run_analysis():
+    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
     company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+    sectors = ['IT', 'Finance']
     # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
     for country in countries: 
         for company_size in company_sizes:
-            filter_reshape_plot(df, country, 'IT', company_size)
+            for sector in sectors: 
+                filter_reshape_plot(df, country, sector, company_size)
 
 
     
