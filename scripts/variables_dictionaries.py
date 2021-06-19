@@ -214,8 +214,9 @@ agerangesegments = {
                     "Any Age Range": {}}
 
 genderfacet = {"urn": "urn:li:adTargetingFacet:genders","name": "Member Gender"}
-gendersegments = {"Female": {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
-                  "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"},
+gendersegments = {
+                  # "Female": {"urn": "urn:li:gender:FEMALE","name": "Female","facetUrn": "urn:li:adTargetingFacet:genders"}, 
+                  # "Male" : {"urn": "urn:li:gender:MALE","name": "Male","facetUrn": "urn:li:adTargetingFacet:genders"},
                   "Any Gender": {}}
 
 jobseniorityfacet = {"urn" : "urn:li:adTargetingFacet:seniorities", "name": "Job Seniorities"}
