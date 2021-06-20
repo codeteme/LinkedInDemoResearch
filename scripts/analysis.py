@@ -15,7 +15,7 @@ df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'A
 # replace all 0s by 1 so as to avoid arithmetic errors
 df['Count'].replace(to_replace=0, value = 1, inplace = True)
 
-st.write(df[df['Count'] == 0])
+st.write(df)
 # select parameters
 def df_specifier(df, country, sector, size): 
     idx = np.where((df['Country'] == country) & (df['Sector'] == sector) & (df['Company Size'] == size) & (df['Age Ranges'] == 'Any Age Range'))
