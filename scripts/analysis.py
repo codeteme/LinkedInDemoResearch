@@ -14,6 +14,7 @@ df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
 # replace all 0s by 1 so as to avoid arithmetic errors
 df['Count'].replace(to_replace=0, value = 1, inplace = True)
+# df['Count'].replace(to_replace=0, value = 290, inplace = True)
 
 st.write(df)
 # select parameters
@@ -45,7 +46,9 @@ def filter_reshape(df, country, sector, size):
     df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
     df_reshaped['Gender Proportion', 'Female'] = df_reshaped['Count_any_connection', 'Female'] / df_reshaped['Count_any_connection', 'Any Gender']
     df_reshaped['Gender Proportion', 'Male'] = df_reshaped['Count_any_connection', 'Male'] / df_reshaped['Count_any_connection', 'Any Gender']
-    df_reshaped['Male to Female', 'm:f'] = df_reshaped['with_:_any', 'Male'] / df_reshaped['with_:_any', 'Female']
+    # df_reshaped['Male to Female', 'm:f'] = df_reshaped['with_:_any', 'Male'] / df_reshaped['with_:_any', 'Female']
+    df_reshaped['Female to Male', 'f:m'] = df_reshaped['with_:_any', 'Female'] / df_reshaped['with_:_any', 'Male']
+
 
     # Sort the job seniorities
     sorting_dict = {'Unpaid': 0, 'Training': 1, 'Entry': 2, 'Senior': 3, 'Manager':4, 'Director': 5, 'VP': 6, 'CXO': 7, 'Partner': 8, 'Owner': 9, 'Any Job Security': 10}
@@ -67,8 +70,10 @@ def plotter(df): # plot
     fig, ax1 = plt.subplots()
     color = 'tab:red'
     ax1.set_xlabel('Job Seniorities')
-    ax1.set_ylabel('male:female', color=color)
-    ax1.plot(df.index, df['Male to Female', 'm:f'], color=color)
+    # ax1.set_ylabel('male:female', color=color)
+    # ax1.plot(df.index, df['Male to Female', 'm:f'], color=color)
+    ax1.set_ylabel('female:male', color=color)
+    ax1.plot(df.index, df['Female to Male', 'f:m'], color=color)
     ax1.tick_params(axis='x', labelcolor=color)
 
     ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
@@ -97,7 +102,7 @@ def filter_reshape_plot(df, country, sector, size):
 
     st.write(fig)
     
-    save_path = f'plots/_{country}_{sector}_{size}.png'
+    save_path = f'plots/plots_data_collection_2 2.1/_{country}_{sector}_{size}.png'
     # Uncomment to save figures
     fig.savefig(save_path)
 
@@ -114,6 +119,7 @@ def run_analysis():
             for sector in sectors: 
                 filter_reshape_plot(df, country, sector, company_size)
 
+    # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
 
     
 run_analysis()
