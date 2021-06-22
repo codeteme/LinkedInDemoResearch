@@ -30,6 +30,8 @@ def condition_any_gender(df):
     #     df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
     if (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] > 3000):
         return 290 / df['Count_any_connection', 'Any Gender']
+    elif (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] == 0):
+        return float('NaN')
     else:
         return df['Count_with_connection', 'Any Gender'] / df['Count_any_connection', 'Any Gender']
 
@@ -40,6 +42,8 @@ def condition_female(df):
     #     df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
     if (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] > 3000):
         return 290 / df['Count_any_connection', 'Female']
+    elif (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] == 0):
+        return float('NaN')
     else:
         return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
     # return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
@@ -51,6 +55,8 @@ def condition_male(df):
     #     df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
     if (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] > 3000):
         return 290 / df['Count_any_connection', 'Male']
+    elif (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] == 0):
+        return float('NaN')
     else:
         return df['Count_with_connection', 'Male'] / df['Count_any_connection', 'Male']
 
@@ -97,6 +103,10 @@ def filter_reshape(df, country, sector, size):
     return df_reshaped
 
 
+def lenz(df):
+    return len(df) == 0
+
+
 def plotter(df): # plot
     # set the ticklabel font size globally (i.e. for all figures/subplots in a script) using rcParams:
     plt.rc('xtick',labelsize=8)
@@ -112,8 +122,14 @@ def plotter(df): # plot
     # ax1.set_ylabel('male:female', color=color)
     # ax1.plot(df.index, df['Male to Female', 'm:f'], color=color)
     ax1.set_ylabel('female:male', color=color)
-    ax1.plot(df.index, df['Female to Male', 'f:m'], color=color)
+    ax1.set_ylim([0, 2])
+    ax1.plot(df.index, df['Female to Male', 'f:m'], color=color, markersize=23)
     ax1.tick_params(axis='x', labelcolor=color)
+
+    ## controls the extent of the plot.
+    offset = 1.0 
+    # ax1.set_xlim(min(x)-offset, max(x)+ offset)
+    # ax1.set_ylim(min(df['Female to Male', 'f:m'])-offset, max(df['Female to Male', 'f:m'])+ offset)
 
     ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
@@ -134,14 +150,18 @@ def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
     fig = plotter(df)
+    total_count = 0
+    if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
+        total_count == 0
+    else:
+        total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
 
-    total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
     fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
     plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
 
     st.write(fig)
     
-    save_path = f'plots/plots_data_collection_2 2.2/_{country}_{sector}_{size}.png'
+    save_path = f'plots/plots_data_collection_2 2.3/_{country}_{sector}_{size}.png'
     # Uncomment to save figures
     fig.savefig(save_path)
 
@@ -152,13 +172,13 @@ def run_analysis():
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
     sectors = ['IT', 'Finance']
-    # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
+    filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
     for country in countries: 
         for company_size in company_sizes:
             for sector in sectors: 
                 filter_reshape_plot(df, country, sector, company_size)
 
-    # filter_reshape_plot(df, 'GBR', 'IT', '1001-5000 employees')
+    # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
 
     
 run_analysis()
