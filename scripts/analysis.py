@@ -24,41 +24,29 @@ def df_specifier(df, country, sector, size):
 
 
 def condition_any_gender(df):
-    # if (df_reshaped['Count_with_connection', 'Any Gender'] == 1) &  (df_reshaped['Count_any_connection', 'Any Gender'] > 3000): 
-    #     df_reshaped['with_:_any', 'Any Gender'] = 290 / df_reshaped['Count_any_connection', 'Any Gender']
-    # else: 
-    #     df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
     if (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] > 3000):
-        return 290 / df['Count_any_connection', 'Any Gender']
-    elif (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] == 0):
+        return 290 
+    elif df['Count_with_connection', 'Any Gender'] == 0:
         return float('NaN')
     else:
-        return df['Count_with_connection', 'Any Gender'] / df['Count_any_connection', 'Any Gender']
+        return df['Count_with_connection', 'Any Gender']
 
 def condition_female(df):
-    # if (df_reshaped['Count_with_connection', 'Female'] == 1) &  (df_reshaped['Count_any_connection', 'Female']): 
-    #     df_reshaped['with_:_any', 'Female'] = 290 / df_reshaped['Count_any_connection', 'Female']
-    # else: 
-    #     df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
     if (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] > 3000):
-        return 290 / df['Count_any_connection', 'Female']
-    elif (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] == 0):
+        return 290 
+    elif df['Count_with_connection', 'Female'] == 0:
         return float('NaN')
     else:
-        return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
+        return df['Count_with_connection', 'Female']
     # return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
 
 def condition_male(df):
-    # if (df_reshaped['Count_with_connection', 'Male'] == 1) &  (df_reshaped['Count_any_connection', 'Male']):
-    #     df_reshaped['with_:_any', 'Male'] = 290 / df_reshaped['Count_any_connection', 'Male']
-    # else: 
-    #     df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
     if (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] > 3000):
-        return 290 / df['Count_any_connection', 'Male']
-    elif (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] == 0):
+        return 290 
+    elif df['Count_with_connection', 'Male'] == 0:
         return float('NaN')
     else:
-        return df['Count_with_connection', 'Male'] / df['Count_any_connection', 'Male']
+        return df['Count_with_connection', 'Male']
 
 
 def filter_reshape(df, country, sector, size): 
@@ -79,17 +67,16 @@ def filter_reshape(df, country, sector, size):
 
     df_reshaped = pd.merge(df_with_connection, df_any_connection, on='Job Seniority', suffixes=('_with_connection', '_any_connection'))
 
-    # df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
-    # df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
-    # df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
-    
-    df_reshaped['with_:_any', 'Any Gender'] = df_reshaped.apply(condition_any_gender, axis=1)
-    df_reshaped['with_:_any', 'Female'] = df_reshaped.apply(condition_female, axis=1)
-    df_reshaped['with_:_any', 'Male'] = df_reshaped.apply(condition_male, axis=1)
+    df_reshaped['Count_with_connection', 'Any Gender'] = df_reshaped.apply(condition_any_gender, axis=1)
+    df_reshaped['Count_with_connection', 'Female'] = df_reshaped.apply(condition_female, axis=1)
+    df_reshaped['Count_with_connection', 'Male'] = df_reshaped.apply(condition_male, axis=1)
+
+    df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
+    df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
+    df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
 
     df_reshaped['Gender Proportion', 'Female'] = df_reshaped['Count_any_connection', 'Female'] / df_reshaped['Count_any_connection', 'Any Gender']
     df_reshaped['Gender Proportion', 'Male'] = df_reshaped['Count_any_connection', 'Male'] / df_reshaped['Count_any_connection', 'Any Gender']
-    # # df_reshaped['Male to Female', 'm:f'] = df_reshaped['with_:_any', 'Male'] / df_reshaped['with_:_any', 'Female']
     df_reshaped['Female to Male', 'f:m'] = df_reshaped['with_:_any', 'Female'] / df_reshaped['with_:_any', 'Male']
 
     # Drop all Nan values
@@ -107,7 +94,17 @@ def lenz(df):
     return len(df) == 0
 
 
-def plotter(df): # plot
+def plotter(df):
+
+    # Keep track of changes made and add note to the relevant plots
+    is_sparsity_fix = False
+    if(290 in df['Count_with_connection', 'Any Gender'].values):
+        is_sparsity_fix = True
+    if(290 in df['Count_with_connection', 'Female'].values):
+        is_sparsity_fix = True
+    if(290 in df['Count_with_connection', 'Male'].values):
+        is_sparsity_fix = True
+        
     # set the ticklabel font size globally (i.e. for all figures/subplots in a script) using rcParams:
     plt.rc('xtick',labelsize=8)
     plt.rc('ytick',labelsize=8)
@@ -123,8 +120,13 @@ def plotter(df): # plot
     # ax1.plot(df.index, df['Male to Female', 'm:f'], color=color)
     ax1.set_ylabel('female:male', color=color)
     ax1.set_ylim([0, 2])
-    ax1.plot(df.index, df['Female to Male', 'f:m'], color=color, markersize=23)
+    ax1.plot(df.index, df['Female to Male', 'f:m'], color=color, marker = "o")
     ax1.tick_params(axis='x', labelcolor=color)
+
+    # print(sparsity_fix_counter)
+    # print(is_sparsity_fix)
+    if is_sparsity_fix == True: 
+        ax1.text(0.5, -0.5, 'Changes have been made to this plot', horizontalalignment='center', verticalalignment='center')
 
     ## controls the extent of the plot.
     offset = 1.0 
@@ -161,7 +163,7 @@ def filter_reshape_plot(df, country, sector, size):
 
     st.write(fig)
     
-    save_path = f'plots/plots_data_collection_2 2.3/_{country}_{sector}_{size}.png'
+    save_path = f'plots/plots_data_collection_2 2.4/_{country}_{sector}_{size}.png'
     # Uncomment to save figures
     fig.savefig(save_path)
 
@@ -172,7 +174,9 @@ def run_analysis():
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
     sectors = ['IT', 'Finance']
-    filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
+    
+    # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
+
     for country in countries: 
         for company_size in company_sizes:
             for sector in sectors: 
@@ -180,7 +184,6 @@ def run_analysis():
 
     # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
 
-    
 run_analysis()
 
 # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
