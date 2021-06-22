@@ -13,7 +13,7 @@ df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 # rename the colums
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
 # replace all 0s by 1 so as to avoid arithmetic errors
-df['Count'].replace(to_replace=0, value = 1, inplace = True)
+# df['Count'].replace(to_replace=0, value = 1, inplace = True)
 # df['Count'].replace(to_replace=0, value = 290, inplace = True)
 
 st.write(df)
@@ -21,6 +21,38 @@ st.write(df)
 def df_specifier(df, country, sector, size): 
     idx = np.where((df['Country'] == country) & (df['Sector'] == sector) & (df['Company Size'] == size) & (df['Age Ranges'] == 'Any Age Range'))
     return df.loc[idx]
+
+
+def condition_any_gender(df):
+    # if (df_reshaped['Count_with_connection', 'Any Gender'] == 1) &  (df_reshaped['Count_any_connection', 'Any Gender'] > 3000): 
+    #     df_reshaped['with_:_any', 'Any Gender'] = 290 / df_reshaped['Count_any_connection', 'Any Gender']
+    # else: 
+    #     df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
+    if (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] > 3000):
+        return 290 / df['Count_any_connection', 'Any Gender']
+    else:
+        return df['Count_with_connection', 'Any Gender'] / df['Count_any_connection', 'Any Gender']
+
+def condition_female(df):
+    # if (df_reshaped['Count_with_connection', 'Female'] == 1) &  (df_reshaped['Count_any_connection', 'Female']): 
+    #     df_reshaped['with_:_any', 'Female'] = 290 / df_reshaped['Count_any_connection', 'Female']
+    # else: 
+    #     df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
+    if (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] > 3000):
+        return 290 / df['Count_any_connection', 'Female']
+    else:
+        return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
+    # return df['Count_with_connection', 'Female'] / df['Count_any_connection', 'Female']
+
+def condition_male(df):
+    # if (df_reshaped['Count_with_connection', 'Male'] == 1) &  (df_reshaped['Count_any_connection', 'Male']):
+    #     df_reshaped['with_:_any', 'Male'] = 290 / df_reshaped['Count_any_connection', 'Male']
+    # else: 
+    #     df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
+    if (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] > 3000):
+        return 290 / df['Count_any_connection', 'Male']
+    else:
+        return df['Count_with_connection', 'Male'] / df['Count_any_connection', 'Male']
 
 
 def filter_reshape(df, country, sector, size): 
@@ -41,14 +73,21 @@ def filter_reshape(df, country, sector, size):
 
     df_reshaped = pd.merge(df_with_connection, df_any_connection, on='Job Seniority', suffixes=('_with_connection', '_any_connection'))
 
-    df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
-    df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
-    df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
+    # df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
+    # df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
+    # df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
+    
+    df_reshaped['with_:_any', 'Any Gender'] = df_reshaped.apply(condition_any_gender, axis=1)
+    df_reshaped['with_:_any', 'Female'] = df_reshaped.apply(condition_female, axis=1)
+    df_reshaped['with_:_any', 'Male'] = df_reshaped.apply(condition_male, axis=1)
+
     df_reshaped['Gender Proportion', 'Female'] = df_reshaped['Count_any_connection', 'Female'] / df_reshaped['Count_any_connection', 'Any Gender']
     df_reshaped['Gender Proportion', 'Male'] = df_reshaped['Count_any_connection', 'Male'] / df_reshaped['Count_any_connection', 'Any Gender']
-    # df_reshaped['Male to Female', 'm:f'] = df_reshaped['with_:_any', 'Male'] / df_reshaped['with_:_any', 'Female']
+    # # df_reshaped['Male to Female', 'm:f'] = df_reshaped['with_:_any', 'Male'] / df_reshaped['with_:_any', 'Female']
     df_reshaped['Female to Male', 'f:m'] = df_reshaped['with_:_any', 'Female'] / df_reshaped['with_:_any', 'Male']
 
+    # Drop all Nan values
+    df_reshaped =  df_reshaped.dropna()
 
     # Sort the job seniorities
     sorting_dict = {'Unpaid': 0, 'Training': 1, 'Entry': 2, 'Senior': 3, 'Manager':4, 'Director': 5, 'VP': 6, 'CXO': 7, 'Partner': 8, 'Owner': 9, 'Any Job Security': 10}
@@ -86,7 +125,7 @@ def plotter(df): # plot
     fig.tight_layout()  # otherwise the right y-label is slightly clipped
 
 
-    # # Program will only end when plt.show returns, which is after you closed all figures.
+    # Program will only end when plt.show returns, which is after you closed all figures.
     # plt.show(block=True)
 
     return fig
@@ -102,7 +141,7 @@ def filter_reshape_plot(df, country, sector, size):
 
     st.write(fig)
     
-    save_path = f'plots/plots_data_collection_2 2.1/_{country}_{sector}_{size}.png'
+    save_path = f'plots/plots_data_collection_2 2.2/_{country}_{sector}_{size}.png'
     # Uncomment to save figures
     fig.savefig(save_path)
 
@@ -119,7 +158,7 @@ def run_analysis():
             for sector in sectors: 
                 filter_reshape_plot(df, country, sector, company_size)
 
-    # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
+    # filter_reshape_plot(df, 'GBR', 'IT', '1001-5000 employees')
 
     
 run_analysis()
