@@ -17,6 +17,14 @@ df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'A
 # df['Count'].replace(to_replace=0, value = 290, inplace = True)
 
 st.write(df)
+
+counter = 0 # keeps track of modified data frames
+
+def increment_counter(): # calculate the total number of modified plots
+    global counter 
+    counter += 1
+
+
 # select parameters
 def df_specifier(df, country, sector, size): 
     idx = np.where((df['Country'] == country) & (df['Sector'] == sector) & (df['Company Size'] == size) & (df['Age Ranges'] == 'Any Age Range'))
@@ -25,6 +33,7 @@ def df_specifier(df, country, sector, size):
 
 def condition_any_gender(df):
     if (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Any Gender'] == 0:
         return float('NaN')
@@ -33,6 +42,7 @@ def condition_any_gender(df):
 
 def condition_female(df):
     if (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Female'] == 0:
         return float('NaN')
@@ -42,6 +52,7 @@ def condition_female(df):
 
 def condition_male(df):
     if (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Male'] == 0:
         return float('NaN')
@@ -181,8 +192,10 @@ def run_analysis():
         for company_size in company_sizes:
             for sector in sectors: 
                 filter_reshape_plot(df, country, sector, company_size)
-
     # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
+    st.write('Total Count of Modified Plots')
+    st.write(counter)
+
 
 run_analysis()
 
