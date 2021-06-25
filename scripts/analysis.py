@@ -18,6 +18,7 @@ df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'A
 
 st.write(df)
 
+df_ratio = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Ratio']) # dataframe for the ratio calculations of all permutations
 counter = 0 # keeps track of modified data frames
 
 def increment_counter(): # calculate the total number of modified plots
@@ -98,7 +99,82 @@ def filter_reshape(df, country, sector, size):
     # df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
     df_reshaped = df_reshaped.sort_index(key=lambda x: x.map(sorting_dict))
 
+    print(df_reshaped['Female to Male']['f:m'].values)
+    # print(df_reshaped.index)
+
+
     return df_reshaped
+
+def has_training(df):
+    return 'Training' in df.index.values
+
+def has_entry(df):
+    return 'Entry' in df.index.values
+
+def has_director(df):
+    return 'Director' in df.index.values
+
+def has_vp(df):
+    return 'VP' in df.index.values
+
+
+def low_high_ratio(df, country, sector, size):
+    
+    if has_training(df) & has_entry(df): 
+        training_fm = df.loc['Training']['Female to Male', 'f:m']
+        entry_fm = df.loc['Entry']['Female to Male', 'f:m']
+        numerator_ratio = min(training_fm, entry_fm)
+        print("Case 1")
+    elif has_training(df): 
+        training_fm = df.loc['Training']['Female to Male', 'f:m']
+        numerator_ratio = training_fm
+        print("Case 2")
+    elif has_entry(df): 
+        entry_fm = df.loc['Entry']['Female to Male', 'f:m']
+        numerator_ratio = entry_fm
+        print("Case 3")
+    else: 
+        numerator_ratio = np.nan
+        print("Case 4")
+
+
+    if has_director(df) & has_vp(df):
+        director_fm = df.loc['Director']['Female to Male', 'f:m']
+        vp_fm = df.loc['VP']['Female to Male', 'f:m']
+        denominator_ratio = max(director_fm, vp_fm)
+        print("Case 5")
+    elif has_director(df):
+        director_fm = df.loc['Director']['Female to Male', 'f:m']
+        denominator_ratio = director_fm
+        print("Case 6")       
+    elif has_vp(df):
+        vp_fm = df.loc['VP']['Female to Male', 'f:m']
+        denominator_ratio = vp_fm
+        print("Case 7")  
+    else:
+        denominator_ratio = np.nan
+        print("Case 8")
+    
+    
+    ratio = numerator_ratio/denominator_ratio
+    global df_ratio
+    row_value = [country, sector, size, ratio]
+    df_ratio_len = len(df_ratio)
+    df_ratio.loc[df_ratio_len] = row_value
+
+    # print(df_ratio)
+
+    # save_path = f'intermediate/ratio_dataframes.py/df_ratio.csv'
+    save_path = f'intermediate/ratio_dataframes.py/df_ratio.xlsx'
+
+    # Uncomment to save df_ratio as a .csv file
+    # df_ratio.to_csv(save_path)
+    # df_ratio.to_excel(save_path)
+
+    print(df_ratio)
+
+
+
 
 
 def lenz(df):
@@ -162,6 +238,7 @@ def plotter(df):
 def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
+    low_high_ratio(df, country, sector, size)
     fig = plotter(df)
     total_count = 0
     if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
@@ -169,22 +246,24 @@ def filter_reshape_plot(df, country, sector, size):
     else:
         total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
 
-    fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
-    plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
+    # fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
+    # plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
 
-    st.write(fig)
+    # st.write(fig)
     
-    save_path = f'plots/plots_data_collection_2 2.4/_{country}_{sector}_{size}.png'
-    # Uncomment to save figures
-    fig.savefig(save_path)
+    # save_path = f'plots/plots_data_collection_2 2.4/_{country}_{sector}_{size}.png'
+    # # Uncomment to save figures
+    # fig.savefig(save_path)
 
 
 def run_analysis():
+
     countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
     company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
     sectors = ['IT', 'Finance']
+
     
     # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
 
@@ -192,7 +271,12 @@ def run_analysis():
         for company_size in company_sizes:
             for sector in sectors: 
                 filter_reshape_plot(df, country, sector, company_size)
-    # filter_reshape_plot(df, 'GBR', 'Finance', 'Any Company Size')
+
+    # for company_size in company_sizes:
+    #     for sector in sectors: 
+    #         filter_reshape_plot(df, 'PHL', sector, company_size)
+
+    # filter_reshape_plot(df, 'USA', 'Finance', 'Any Company Size')
     st.write('Total Count of Modified Plots')
     st.write(counter)
 

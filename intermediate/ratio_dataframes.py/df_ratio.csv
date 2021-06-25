@@ -1,0 +1,101 @@
+,Country,Sector,Company Size,Ratio
+0,USA,IT,Any Company Size,0.7870445344129554
+1,USA,Finance,Any Company Size,0.6516559628573003
+2,USA,IT,"10,001+ employees",0.845587044534413
+3,USA,Finance,"10,001+ employees",0.5839824482483762
+4,USA,IT,"5001-10,000 employees",0.8492383979656708
+5,USA,Finance,"5001-10,000 employees",0.6309840425531914
+6,USA,IT,1001-5000 employees,0.799807135969142
+7,USA,Finance,1001-5000 employees,0.6384439359267735
+8,USA,IT,501-1000 employees,0.7604679802955666
+9,USA,Finance,501-1000 employees,0.6187704467846312
+10,USA,IT,201-500 employees,0.7768118203709363
+11,USA,Finance,201-500 employees,0.6384577482138457
+12,USA,IT,51-200 employees,0.7531755915317558
+13,USA,Finance,51-200 employees,0.6240369799691834
+14,USA,IT,11-50 employees,0.7601351351351351
+15,USA,Finance,11-50 employees,0.5632183908045979
+16,USA,IT,2-10 employees,0.7602574002574001
+17,USA,Finance,2-10 employees,0.6819126819126817
+18,USA,IT,Myself Only,0.44689655172413795
+19,USA,Finance,Myself Only,0.7426754552752777
+20,GBR,IT,Any Company Size,0.9255837740201518
+21,GBR,Finance,Any Company Size,0.6355028546332895
+22,GBR,IT,"10,001+ employees",1.1129177958446252
+23,GBR,Finance,"10,001+ employees",0.7201367781155016
+24,GBR,IT,"5001-10,000 employees",0.9594434733478117
+25,GBR,Finance,"5001-10,000 employees",0.6376021634615385
+26,GBR,IT,1001-5000 employees,1.0753246753246752
+27,GBR,Finance,1001-5000 employees,0.7172228453071154
+28,GBR,IT,501-1000 employees,0.9778456837280368
+29,GBR,Finance,501-1000 employees,0.5872915815942746
+30,GBR,IT,201-500 employees,0.9308176100628929
+31,GBR,Finance,201-500 employees,0.7663114873741059
+32,GBR,IT,51-200 employees,0.9429480381760339
+33,GBR,Finance,51-200 employees,0.6111362607514712
+34,GBR,IT,11-50 employees,0.9545668286347657
+35,GBR,Finance,11-50 employees,0.48372584744809594
+36,GBR,IT,2-10 employees,0.8588839285714287
+37,GBR,Finance,2-10 employees,0.7855131138884
+38,GBR,IT,Myself Only,0.6908672540299745
+39,GBR,Finance,Myself Only,1.2624176805447036
+40,VNM,IT,Any Company Size,1.1989569752281615
+41,VNM,Finance,Any Company Size,
+42,VNM,IT,"10,001+ employees",
+43,VNM,Finance,"10,001+ employees",
+44,VNM,IT,"5001-10,000 employees",
+45,VNM,Finance,"5001-10,000 employees",
+46,VNM,IT,1001-5000 employees,
+47,VNM,Finance,1001-5000 employees,
+48,VNM,IT,501-1000 employees,
+49,VNM,Finance,501-1000 employees,
+50,VNM,IT,201-500 employees,
+51,VNM,Finance,201-500 employees,
+52,VNM,IT,51-200 employees,
+53,VNM,Finance,51-200 employees,
+54,VNM,IT,11-50 employees,
+55,VNM,Finance,11-50 employees,
+56,VNM,IT,2-10 employees,
+57,VNM,Finance,2-10 employees,
+58,VNM,IT,Myself Only,
+59,VNM,Finance,Myself Only,
+60,IND,IT,Any Company Size,0.9
+61,IND,Finance,Any Company Size,0.8817683963032801
+62,IND,IT,"10,001+ employees",0.8964329268292682
+63,IND,Finance,"10,001+ employees",0.8804851335955014
+64,IND,IT,"5001-10,000 employees",1.0249799889809452
+65,IND,Finance,"5001-10,000 employees",
+66,IND,IT,1001-5000 employees,0.8045977011494254
+67,IND,Finance,1001-5000 employees,0.7261016949152542
+68,IND,IT,501-1000 employees,0.7713184931506848
+69,IND,Finance,501-1000 employees,
+70,IND,IT,201-500 employees,0.80103515625
+71,IND,Finance,201-500 employees,
+72,IND,IT,51-200 employees,0.7601328903654484
+73,IND,Finance,51-200 employees,0.9754775775640155
+74,IND,IT,11-50 employees,0.9377843328693992
+75,IND,Finance,11-50 employees,1.2528647822765469
+76,IND,IT,2-10 employees,1.0208791640477688
+77,IND,Finance,2-10 employees,
+78,IND,IT,Myself Only,
+79,IND,Finance,Myself Only,
+80,PHL,IT,Any Company Size,1.0148131197559116
+81,PHL,Finance,Any Company Size,0.8969690635451505
+82,PHL,IT,"10,001+ employees",
+83,PHL,Finance,"10,001+ employees",0.9969053934571177
+84,PHL,IT,"5001-10,000 employees",
+85,PHL,Finance,"5001-10,000 employees",
+86,PHL,IT,1001-5000 employees,
+87,PHL,Finance,1001-5000 employees,
+88,PHL,IT,501-1000 employees,
+89,PHL,Finance,501-1000 employees,
+90,PHL,IT,201-500 employees,
+91,PHL,Finance,201-500 employees,
+92,PHL,IT,51-200 employees,
+93,PHL,Finance,51-200 employees,
+94,PHL,IT,11-50 employees,
+95,PHL,Finance,11-50 employees,
+96,PHL,IT,2-10 employees,
+97,PHL,Finance,2-10 employees,
+98,PHL,IT,Myself Only,
+99,PHL,Finance,Myself Only,
