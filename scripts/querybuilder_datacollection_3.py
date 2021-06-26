@@ -226,10 +226,9 @@ any_companyconnection = 'Any Company Connection'
 any_connection = 'connected to any'
 any_recentstatus = 'any recent status'
 
-selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+# selected_countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
 # select any country or countries in the following manner
-# selected_countries = ['USA']
-
+selected_countries = ['GBR']
 
 IT_company_industry = ["Internet", "Information Technology & Services", "Computer Software", "Computer & Network Security", "Computer Hardware", "Computer Networking", "Wireless", "Telecommunications", "Semiconductors", "Nanotechnology", "Consumer Electronics"]
 Finance_company_industry = ["Banking", "Capital Markets", "Financial Services", "Insurance", "Investment Banking", "Investment Management", "Venture Capital & Private Equity"]
@@ -348,16 +347,16 @@ for country in selected_countries:
                                     arg_list.append(bigbank_connection_script)
                                     row_value.append(connection)
                                     
-                                count =  make_call() # makes the api call then parses and shows count
-                                # # Handles ConnectionError exception that may be raised during execution 
-                                # while True:
-                                #     try:
-                                #         count =  make_call() # makes the api call then parses and shows count
-                                #         print("count is executed")
-                                #         break
-                                #     except:
-                                #         # print("exception")
-                                #         time.sleep(5) # Retry every five seconds
+                                # count =  make_call() # makes the api call then parses and shows count
+                                # Handles ConnectionError exception that may be raised during execution 
+                                while True:
+                                    try:
+                                        count =  make_call() # makes the api call then parses and shows count
+                                        print("count is executed")
+                                        break
+                                    except:
+                                        # print("exception")
+                                        time.sleep(5) # Retry every five seconds
 
                                 row_value.append(count)
                                 row = pd.Series(row_value)
