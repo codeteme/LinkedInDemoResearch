@@ -9,16 +9,14 @@ df = pd.read_csv('processed/data_collection_2/dataset.csv')
 
 df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 
-
 # rename the colums
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
-# replace all 0s by 1 so as to avoid arithmetic errors
-# df['Count'].replace(to_replace=0, value = 1, inplace = True)
-# df['Count'].replace(to_replace=0, value = 290, inplace = True)
 
 st.write(df)
 
 df_ratio = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Ratio']) # dataframe for the ratio calculations of all permutations
+df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Seniority', 'Rank']) # dataframe that compute average rank value of each permutation
+df_averagerank = pd.Series()
 counter = 0 # keeps track of modified data frames
 
 def increment_counter(): # calculate the total number of modified plots
@@ -69,12 +67,10 @@ def filter_reshape(df, country, sector, size):
     df_with_connection = df_with_connection.groupby(["Job Seniority", "Gender"]).sum() # filter only job seniority and gender
     df_with_connection.reset_index(inplace=True) # Unstack the rows 
     df_with_connection = df_with_connection.pivot(index='Job Seniority', columns='Gender') # make values of Gender the columns headers
-    # print(df_with_connection.head())
 
     df_any_connection = df_any_connection.groupby(["Job Seniority", "Gender"]).sum()
     df_any_connection.reset_index(inplace=True)
     df_any_connection = df_any_connection.pivot(index='Job Seniority', columns='Gender')
-    # print(df_any_connection.head())
 
 
     df_reshaped = pd.merge(df_with_connection, df_any_connection, on='Job Seniority', suffixes=('_with_connection', '_any_connection'))
@@ -99,11 +95,14 @@ def filter_reshape(df, country, sector, size):
     # df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
     df_reshaped = df_reshaped.sort_index(key=lambda x: x.map(sorting_dict))
 
-    print(df_reshaped['Female to Male']['f:m'].values)
-    # print(df_reshaped.index)
+    # print(df_reshaped['Female to Male']['f:m'].values)
+    # print(df_reshaped)
 
 
     return df_reshaped
+
+def has_unpaid(df):
+    return 'Unpaid' in df.index.values
 
 def has_training(df):
     return 'Training' in df.index.values
@@ -111,12 +110,29 @@ def has_training(df):
 def has_entry(df):
     return 'Entry' in df.index.values
 
+def has_senior(df):
+    return 'Senior' in df.index.values
+
+def has_manager(df):
+    return 'Manager' in df.index.values
+
 def has_director(df):
     return 'Director' in df.index.values
 
 def has_vp(df):
     return 'VP' in df.index.values
 
+def has_cxo(df):
+    return 'CXO' in df.index.values
+
+def has_partner(df):
+    return 'Partner' in df.index.values
+
+def has_owner(df):
+    return 'Owner' in df.index.values
+
+def has_anyjobseniority(df):
+    return 'Any Job Seniority' in df.index.values
 
 def low_high_ratio(df, country, sector, size):
     
@@ -124,36 +140,36 @@ def low_high_ratio(df, country, sector, size):
         training_fm = df.loc['Training']['Female to Male', 'f:m']
         entry_fm = df.loc['Entry']['Female to Male', 'f:m']
         numerator_ratio = min(training_fm, entry_fm)
-        print("Case 1")
+        # print("Case 1")
     elif has_training(df): 
         training_fm = df.loc['Training']['Female to Male', 'f:m']
         numerator_ratio = training_fm
-        print("Case 2")
+        # print("Case 2")
     elif has_entry(df): 
         entry_fm = df.loc['Entry']['Female to Male', 'f:m']
         numerator_ratio = entry_fm
-        print("Case 3")
+        # print("Case 3")
     else: 
         numerator_ratio = np.nan
-        print("Case 4")
+        # print("Case 4")
 
 
     if has_director(df) & has_vp(df):
         director_fm = df.loc['Director']['Female to Male', 'f:m']
         vp_fm = df.loc['VP']['Female to Male', 'f:m']
         denominator_ratio = max(director_fm, vp_fm)
-        print("Case 5")
+        # print("Case 5")
     elif has_director(df):
         director_fm = df.loc['Director']['Female to Male', 'f:m']
         denominator_ratio = director_fm
-        print("Case 6")       
+        # print("Case 6")       
     elif has_vp(df):
         vp_fm = df.loc['VP']['Female to Male', 'f:m']
         denominator_ratio = vp_fm
-        print("Case 7")  
+        # print("Case 7")  
     else:
         denominator_ratio = np.nan
-        print("Case 8")
+        # print("Case 8")
     
     
     ratio = numerator_ratio/denominator_ratio
@@ -171,15 +187,29 @@ def low_high_ratio(df, country, sector, size):
     # df_ratio.to_csv(save_path)
     # df_ratio.to_excel(save_path)
 
-    print(df_ratio)
+    # print(df_ratio)
 
+def rank_order(df, country, sector, size):
+    global df_rankorder
+    global df_averagerank
+    
+    if has_unpaid(df) & has_training(df) & has_entry(df) & has_senior(df) & has_manager(df) & has_director(df) & has_vp(df) & has_cxo(df) & has_partner(df) & has_owner(df) & has_anyjobseniority(df):
+        df['seniority'] = df.index
+        df['rank'] = df['Female to Male', 'f:m'].rank()
 
-
+        for i in range(0, 11):
+            row_value = [country, sector, size, df['seniority'].iloc[i], df['rank'].iloc[i]]
+            df_rankorder_len = len(df_rankorder)
+            df_rankorder.loc[df_rankorder_len] = row_value
+        
+    # save_path = f'intermediate/rank_dataframe.py/df_rankorder.csv'
+    # save_path = f'intermediate/rank_dataframe.py/df_rankorder.xlsx'
+    # df_rankorder.to_csv(save_path)
+    # df_rankorder.to_excel(save_path)
 
 
 def lenz(df):
     return len(df) == 0
-
 
 def plotter(df):
 
@@ -238,13 +268,14 @@ def plotter(df):
 def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
-    low_high_ratio(df, country, sector, size)
-    fig = plotter(df)
-    total_count = 0
-    if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
-        total_count == 0
-    else:
-        total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
+    # low_high_ratio(df, country, sector, size)
+    rank_order(df, country,sector,size)
+    # fig = plotter(df)
+    # total_count = 0
+    # if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
+    #     total_count == 0
+    # else:
+    #     total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
 
     # fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
     # plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
@@ -267,14 +298,14 @@ def run_analysis():
     
     # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
 
-    for country in countries: 
-        for company_size in company_sizes:
-            for sector in sectors: 
-                filter_reshape_plot(df, country, sector, company_size)
+    # for country in countries: 
+    #     for company_size in company_sizes:
+    #         for sector in sectors: 
+    #             filter_reshape_plot(df, country, sector, company_size)
 
-    # for company_size in company_sizes:
-    #     for sector in sectors: 
-    #         filter_reshape_plot(df, 'PHL', sector, company_size)
+    for company_size in company_sizes:
+        for sector in sectors: 
+            filter_reshape_plot(df, 'USA', sector, company_size)
 
     # filter_reshape_plot(df, 'USA', 'Finance', 'Any Company Size')
     st.write('Total Count of Modified Plots')
