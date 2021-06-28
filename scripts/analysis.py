@@ -19,6 +19,10 @@ df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Sen
 df_averagerank = pd.Series()
 counter = 0 # keeps track of modified data frames
 
+seniority_counter = 0
+country_sector_permutation_counter = 0
+
+
 def increment_counter(): # calculate the total number of modified plots
     global counter 
     counter += 1
@@ -97,8 +101,35 @@ def filter_reshape(df, country, sector, size):
 
     # print(df_reshaped['Female to Male']['f:m'].values)
     # print(df_reshaped)
+    
+    # Unpaid is a sparse data and is ignored completely
+    global seniority_counter
+    # if 'Unpaid' in df_reshaped.index: 
+    #     seniority_counter += 1
+    #     df_reshaped = df_reshaped.drop('Unpaid')
+    # if 'Training' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'Entry' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'Senior' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'Manager' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'Director' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'VP' in df_reshaped.index: 
+    #     seniority_counter += 1
+    # if 'CXO' in df_reshaped.index: 
+        # seniority_counter += 1
+    # if 'Partner' in df_reshaped.index: 
+        # seniority_counter += 1
+    # if 'Owner' in df_reshaped.index: 
+        # seniority_counter += 1
+    # if 'Any Job Seniority' in df_reshaped.index: 
+        # seniority_counter += 1
 
-
+    # df_reshaped = df_reshaped.drop('Unpaid')
+    # print(seniority_counter)
     return df_reshaped
 
 def has_unpaid(df):
@@ -184,28 +215,43 @@ def low_high_ratio(df, country, sector, size):
     save_path = f'intermediate/ratio_dataframes.py/df_ratio.xlsx'
 
     # Uncomment to save df_ratio as a .csv file
-    # df_ratio.to_csv(save_path)
-    # df_ratio.to_excel(save_path)
+    df_ratio.to_csv(save_path)
+    df_ratio.to_excel(save_path)
 
     # print(df_ratio)
 
 def rank_order(df, country, sector, size):
     global df_rankorder
     global df_averagerank
-    
-    if has_unpaid(df) & has_training(df) & has_entry(df) & has_senior(df) & has_manager(df) & has_director(df) & has_vp(df) & has_cxo(df) & has_partner(df) & has_owner(df) & has_anyjobseniority(df):
+    global country_sector_permutation_counter
+
+    df = df[df.index.isin(["Entry", "Senior", "Manager", "Director"])]
+
+    # todo: Drop unpaid completely (for the analysis)
+    # if has_unpaid(df) & has_training(df) & has_entry(df) & has_senior(df) & has_manager(df) & has_director(df) & has_vp(df) & has_cxo(df) & has_partner(df) & has_owner(df) & has_anyjobseniority(df):
+    # if has_entry(df) & has_senior(df) & has_manager(df) & has_director(df) & has_vp(df) & has_cxo(df) & has_partner(df) & has_owner(df) & has_anyjobseniority(df):
+    if has_entry(df) & has_senior(df) & has_manager(df) & has_director(df) :
+        country_sector_permutation_counter += 1
         df['seniority'] = df.index
         df['rank'] = df['Female to Male', 'f:m'].rank()
-
-        for i in range(0, 11):
+        
+        # for i in range(0, 11):
+        # for i in range(0, 9):
+        for i in range(0, 4):
             row_value = [country, sector, size, df['seniority'].iloc[i], df['rank'].iloc[i]]
             df_rankorder_len = len(df_rankorder)
             df_rankorder.loc[df_rankorder_len] = row_value
         
+        print(country_sector_permutation_counter)
+
     # save_path = f'intermediate/rank_dataframe.py/df_rankorder.csv'
     # save_path = f'intermediate/rank_dataframe.py/df_rankorder.xlsx'
     # df_rankorder.to_csv(save_path)
     # df_rankorder.to_excel(save_path)
+
+    # save_path = f'intermediate/rank_dataframe.py/df_rankorder_1.csv'
+    save_path = f'intermediate/rank_dataframe.py/df_rankorder_2.csv'
+    df_rankorder.to_csv(save_path)
 
 
 def lenz(df):
@@ -289,6 +335,8 @@ def filter_reshape_plot(df, country, sector, size):
 
 def run_analysis():
 
+    global country_sector_permutation_counter
+
     countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
     company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
@@ -303,11 +351,24 @@ def run_analysis():
     #         for sector in sectors: 
     #             filter_reshape_plot(df, country, sector, company_size)
 
-    for company_size in company_sizes:
+    for country in countries: 
         for sector in sectors: 
-            filter_reshape_plot(df, 'USA', sector, company_size)
+            for company_size in company_sizes:
+                filter_reshape_plot(df, country, sector, company_size)
+
+    # for company_size in company_sizes:
+    #     for sector in sectors: 
+    #         filter_reshape_plot(df, 'USA', sector, company_size)
 
     # filter_reshape_plot(df, 'USA', 'Finance', 'Any Company Size')
+
+
+    # print(country_sector_permutation_counter)
+
+    global df_rankorder
+    grouped_df = df_rankorder.groupby(['Country', 'Sector', 'Company Size']).count()
+    print(grouped_df)
+
     st.write('Total Count of Modified Plots')
     st.write(counter)
 

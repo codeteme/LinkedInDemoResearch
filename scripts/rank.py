@@ -1,20 +1,23 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder.csv')
+# df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder.csv')
+# df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_1.csv')
+df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_2.csv')
 
 country_list = list(df['Country'].unique())
 sector_list = list(df['Sector'].unique())
 
-for country in country_list:
-    for sector in sector_list:
-        df_ctry_sctr = df[(df['Country'] == country) & (df['Sector'] == sector)]
-        grouped_df = df_ctry_sctr.groupby("Seniority")['Rank'].mean()
-        print('Country: ', country, '\n', 'Sector: ', sector)
-        print(grouped_df)
-
-
-
+# for country in country_list:
+    # for sector in sector_list:
+        # df_ctry_sctr = df[(df['Country'] == country) & (df['Sector'] == sector)]
+        # grouped_df = df_ctry_sctr.groupby("Seniority")['Rank'].mean()
+        # print('Country: ', country, '\n', 'Sector: ', sector)
+        # print(grouped_df)
+# print(df[(df['Country'] == 'PHL') & (df['Sector'] == 'Finance')])
+df = df[(df['Country'] == 'PHL') & (df['Sector'] == 'Finance')]
+grouped_df = df.groupby("Seniority")['Rank'].mean()
+print(grouped_df)
 # mean_df = grouped_df['Rank'].mean()
 # mean_df = mean_df.drop('Any Job Seniority')
 # mean_df.sort_values(ascending=True)
