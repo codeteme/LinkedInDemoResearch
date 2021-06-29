@@ -1,0 +1,307 @@
+,Country,Sector,Company Size,Seniority,Rank
+0,USA,IT,Any Company Size,Unpaid,1.0
+1,USA,IT,Any Company Size,Training,11.0
+2,USA,IT,Any Company Size,Entry,2.0
+3,USA,IT,Any Company Size,Senior,3.0
+4,USA,IT,Any Company Size,Manager,9.0
+5,USA,IT,Any Company Size,Director,7.0
+6,USA,IT,Any Company Size,VP,8.0
+7,USA,IT,Any Company Size,CXO,6.0
+8,USA,IT,Any Company Size,Partner,10.0
+9,USA,IT,"10,001+ employees",Unpaid,1.0
+10,USA,IT,"10,001+ employees",Training,9.0
+11,USA,IT,"10,001+ employees",Entry,4.0
+12,USA,IT,"10,001+ employees",Senior,2.0
+13,USA,IT,"10,001+ employees",Manager,11.0
+14,USA,IT,"10,001+ employees",Director,8.0
+15,USA,IT,"10,001+ employees",VP,6.0
+16,USA,IT,"10,001+ employees",CXO,7.0
+17,USA,IT,"10,001+ employees",Partner,10.0
+18,USA,IT,"5001-10,000 employees",Training,10.0
+19,USA,IT,"5001-10,000 employees",Entry,2.0
+20,USA,IT,"5001-10,000 employees",Senior,1.0
+21,USA,IT,"5001-10,000 employees",Manager,8.0
+22,USA,IT,"5001-10,000 employees",Director,5.0
+23,USA,IT,"5001-10,000 employees",VP,7.0
+24,USA,IT,"5001-10,000 employees",CXO,6.0
+25,USA,IT,"5001-10,000 employees",Partner,9.0
+26,USA,IT,"5001-10,000 employees",Owner,3.0
+27,USA,IT,1001-5000 employees,Unpaid,11.0
+28,USA,IT,1001-5000 employees,Training,10.0
+29,USA,IT,1001-5000 employees,Entry,2.0
+30,USA,IT,1001-5000 employees,Senior,4.0
+31,USA,IT,1001-5000 employees,Manager,9.0
+32,USA,IT,1001-5000 employees,Director,7.0
+33,USA,IT,1001-5000 employees,VP,6.0
+34,USA,IT,1001-5000 employees,CXO,5.0
+35,USA,IT,1001-5000 employees,Partner,8.0
+36,USA,IT,501-1000 employees,Training,10.0
+37,USA,IT,501-1000 employees,Entry,2.0
+38,USA,IT,501-1000 employees,Senior,4.0
+39,USA,IT,501-1000 employees,Manager,9.0
+40,USA,IT,501-1000 employees,Director,5.0
+41,USA,IT,501-1000 employees,VP,7.0
+42,USA,IT,501-1000 employees,CXO,8.0
+43,USA,IT,501-1000 employees,Partner,6.0
+44,USA,IT,501-1000 employees,Owner,1.0
+45,USA,IT,201-500 employees,Training,7.0
+46,USA,IT,201-500 employees,Entry,1.0
+47,USA,IT,201-500 employees,Senior,4.0
+48,USA,IT,201-500 employees,Manager,9.0
+49,USA,IT,201-500 employees,Director,8.0
+50,USA,IT,201-500 employees,VP,6.0
+51,USA,IT,201-500 employees,CXO,5.0
+52,USA,IT,201-500 employees,Partner,10.0
+53,USA,IT,201-500 employees,Owner,3.0
+54,USA,IT,51-200 employees,Unpaid,11.0
+55,USA,IT,51-200 employees,Training,7.0
+56,USA,IT,51-200 employees,Entry,1.0
+57,USA,IT,51-200 employees,Senior,3.0
+58,USA,IT,51-200 employees,Manager,8.0
+59,USA,IT,51-200 employees,Director,6.0
+60,USA,IT,51-200 employees,VP,9.0
+61,USA,IT,51-200 employees,CXO,5.0
+62,USA,IT,51-200 employees,Partner,10.0
+63,USA,IT,11-50 employees,Unpaid,11.0
+64,USA,IT,11-50 employees,Training,10.0
+65,USA,IT,11-50 employees,Entry,2.0
+66,USA,IT,11-50 employees,Senior,3.0
+67,USA,IT,11-50 employees,Manager,7.0
+68,USA,IT,11-50 employees,Director,5.0
+69,USA,IT,11-50 employees,VP,8.0
+70,USA,IT,11-50 employees,CXO,6.0
+71,USA,IT,11-50 employees,Partner,9.0
+72,USA,IT,2-10 employees,Unpaid,11.0
+73,USA,IT,2-10 employees,Training,10.0
+74,USA,IT,2-10 employees,Entry,2.0
+75,USA,IT,2-10 employees,Senior,3.0
+76,USA,IT,2-10 employees,Manager,5.0
+77,USA,IT,2-10 employees,Director,6.0
+78,USA,IT,2-10 employees,VP,7.0
+79,USA,IT,2-10 employees,CXO,8.0
+80,USA,IT,2-10 employees,Partner,9.0
+81,USA,IT,Myself Only,Unpaid,4.0
+82,USA,IT,Myself Only,Entry,1.0
+83,USA,IT,Myself Only,Senior,3.0
+84,USA,IT,Myself Only,Manager,5.0
+85,USA,IT,Myself Only,Director,7.0
+86,USA,IT,Myself Only,VP,9.0
+87,USA,IT,Myself Only,CXO,6.0
+88,USA,IT,Myself Only,Partner,10.0
+89,USA,IT,Myself Only,Owner,8.0
+90,USA,Finance,Any Company Size,Unpaid,2.0
+91,USA,Finance,Any Company Size,Training,9.0
+92,USA,Finance,Any Company Size,Entry,1.0
+93,USA,Finance,Any Company Size,Senior,3.0
+94,USA,Finance,Any Company Size,Manager,5.0
+95,USA,Finance,Any Company Size,Director,7.0
+96,USA,Finance,Any Company Size,VP,10.0
+97,USA,Finance,Any Company Size,CXO,11.0
+98,USA,Finance,Any Company Size,Partner,8.0
+99,USA,Finance,"10,001+ employees",Unpaid,5.0
+100,USA,Finance,"10,001+ employees",Training,9.0
+101,USA,Finance,"10,001+ employees",Entry,1.0
+102,USA,Finance,"10,001+ employees",Senior,3.0
+103,USA,Finance,"10,001+ employees",Manager,4.0
+104,USA,Finance,"10,001+ employees",Director,7.0
+105,USA,Finance,"10,001+ employees",VP,10.0
+106,USA,Finance,"10,001+ employees",CXO,11.0
+107,USA,Finance,"10,001+ employees",Partner,6.0
+108,USA,Finance,"5001-10,000 employees",Training,9.0
+109,USA,Finance,"5001-10,000 employees",Entry,1.0
+110,USA,Finance,"5001-10,000 employees",Senior,3.0
+111,USA,Finance,"5001-10,000 employees",Manager,4.0
+112,USA,Finance,"5001-10,000 employees",Director,7.0
+113,USA,Finance,"5001-10,000 employees",VP,8.0
+114,USA,Finance,"5001-10,000 employees",CXO,10.0
+115,USA,Finance,"5001-10,000 employees",Partner,5.0
+116,USA,Finance,"5001-10,000 employees",Owner,6.0
+117,USA,Finance,1001-5000 employees,Training,9.0
+118,USA,Finance,1001-5000 employees,Entry,1.0
+119,USA,Finance,1001-5000 employees,Senior,3.0
+120,USA,Finance,1001-5000 employees,Manager,4.0
+121,USA,Finance,1001-5000 employees,Director,7.0
+122,USA,Finance,1001-5000 employees,VP,8.0
+123,USA,Finance,1001-5000 employees,CXO,10.0
+124,USA,Finance,1001-5000 employees,Partner,5.0
+125,USA,Finance,1001-5000 employees,Owner,6.0
+126,USA,Finance,501-1000 employees,Entry,1.0
+127,USA,Finance,501-1000 employees,Senior,3.0
+128,USA,Finance,501-1000 employees,Manager,5.0
+129,USA,Finance,501-1000 employees,Director,7.0
+130,USA,Finance,501-1000 employees,VP,8.0
+131,USA,Finance,501-1000 employees,CXO,9.0
+132,USA,Finance,501-1000 employees,Partner,4.0
+133,USA,Finance,501-1000 employees,Owner,6.0
+134,USA,Finance,501-1000 employees,Any Job Seniority,2.0
+135,USA,Finance,201-500 employees,Entry,1.0
+136,USA,Finance,201-500 employees,Senior,3.0
+137,USA,Finance,201-500 employees,Manager,5.0
+138,USA,Finance,201-500 employees,Director,7.0
+139,USA,Finance,201-500 employees,VP,8.0
+140,USA,Finance,201-500 employees,CXO,4.0
+141,USA,Finance,201-500 employees,Partner,9.0
+142,USA,Finance,201-500 employees,Owner,6.0
+143,USA,Finance,201-500 employees,Any Job Seniority,2.0
+144,USA,Finance,51-200 employees,Training,8.0
+145,USA,Finance,51-200 employees,Entry,1.0
+146,USA,Finance,51-200 employees,Senior,3.0
+147,USA,Finance,51-200 employees,Manager,4.0
+148,USA,Finance,51-200 employees,Director,6.0
+149,USA,Finance,51-200 employees,VP,7.0
+150,USA,Finance,51-200 employees,CXO,9.0
+151,USA,Finance,51-200 employees,Partner,10.0
+152,USA,Finance,51-200 employees,Owner,5.0
+153,USA,Finance,11-50 employees,Training,8.0
+154,USA,Finance,11-50 employees,Entry,1.0
+155,USA,Finance,11-50 employees,Senior,2.0
+156,USA,Finance,11-50 employees,Manager,4.0
+157,USA,Finance,11-50 employees,Director,6.0
+158,USA,Finance,11-50 employees,VP,7.0
+159,USA,Finance,11-50 employees,CXO,9.0
+160,USA,Finance,11-50 employees,Partner,10.0
+161,USA,Finance,11-50 employees,Owner,5.0
+162,USA,Finance,2-10 employees,Unpaid,11.0
+163,USA,Finance,2-10 employees,Training,8.0
+164,USA,Finance,2-10 employees,Entry,2.0
+165,USA,Finance,2-10 employees,Senior,3.0
+166,USA,Finance,2-10 employees,Manager,4.0
+167,USA,Finance,2-10 employees,Director,5.0
+168,USA,Finance,2-10 employees,VP,7.0
+169,USA,Finance,2-10 employees,CXO,9.0
+170,USA,Finance,2-10 employees,Partner,10.0
+171,GBR,IT,Any Company Size,Unpaid,1.0
+172,GBR,IT,Any Company Size,Training,11.0
+173,GBR,IT,Any Company Size,Entry,3.0
+174,GBR,IT,Any Company Size,Senior,2.0
+175,GBR,IT,Any Company Size,Manager,10.0
+176,GBR,IT,Any Company Size,Director,8.0
+177,GBR,IT,Any Company Size,VP,9.0
+178,GBR,IT,Any Company Size,CXO,6.0
+179,GBR,IT,Any Company Size,Partner,4.0
+180,GBR,IT,"10,001+ employees",Entry,8.0
+181,GBR,IT,"10,001+ employees",Senior,1.0
+182,GBR,IT,"10,001+ employees",Manager,9.0
+183,GBR,IT,"10,001+ employees",Director,6.0
+184,GBR,IT,"10,001+ employees",VP,3.0
+185,GBR,IT,"10,001+ employees",CXO,2.0
+186,GBR,IT,"10,001+ employees",Partner,7.0
+187,GBR,IT,"10,001+ employees",Owner,4.0
+188,GBR,IT,"10,001+ employees",Any Job Seniority,5.0
+189,GBR,IT,1001-5000 employees,Entry,8.0
+190,GBR,IT,1001-5000 employees,Senior,2.0
+191,GBR,IT,1001-5000 employees,Manager,9.0
+192,GBR,IT,1001-5000 employees,Director,6.0
+193,GBR,IT,1001-5000 employees,VP,1.0
+194,GBR,IT,1001-5000 employees,CXO,5.0
+195,GBR,IT,1001-5000 employees,Partner,4.0
+196,GBR,IT,1001-5000 employees,Owner,3.0
+197,GBR,IT,1001-5000 employees,Any Job Seniority,7.0
+198,GBR,IT,201-500 employees,Entry,4.0
+199,GBR,IT,201-500 employees,Senior,5.0
+200,GBR,IT,201-500 employees,Manager,9.0
+201,GBR,IT,201-500 employees,Director,3.0
+202,GBR,IT,201-500 employees,VP,8.0
+203,GBR,IT,201-500 employees,CXO,7.0
+204,GBR,IT,201-500 employees,Partner,6.0
+205,GBR,IT,201-500 employees,Owner,1.0
+206,GBR,IT,201-500 employees,Any Job Seniority,2.0
+207,GBR,IT,51-200 employees,Entry,4.0
+208,GBR,IT,51-200 employees,Senior,2.0
+209,GBR,IT,51-200 employees,Manager,7.0
+210,GBR,IT,51-200 employees,Director,6.0
+211,GBR,IT,51-200 employees,VP,3.0
+212,GBR,IT,51-200 employees,CXO,8.0
+213,GBR,IT,51-200 employees,Partner,9.0
+214,GBR,IT,51-200 employees,Owner,5.0
+215,GBR,IT,51-200 employees,Any Job Seniority,1.0
+216,GBR,IT,11-50 employees,Entry,3.0
+217,GBR,IT,11-50 employees,Senior,4.0
+218,GBR,IT,11-50 employees,Manager,5.0
+219,GBR,IT,11-50 employees,Director,7.0
+220,GBR,IT,11-50 employees,VP,2.0
+221,GBR,IT,11-50 employees,CXO,8.0
+222,GBR,IT,11-50 employees,Partner,9.0
+223,GBR,IT,11-50 employees,Owner,6.0
+224,GBR,IT,11-50 employees,Any Job Seniority,1.0
+225,GBR,IT,2-10 employees,Entry,2.0
+226,GBR,IT,2-10 employees,Senior,3.0
+227,GBR,IT,2-10 employees,Manager,5.0
+228,GBR,IT,2-10 employees,Director,4.0
+229,GBR,IT,2-10 employees,VP,6.0
+230,GBR,IT,2-10 employees,CXO,9.0
+231,GBR,IT,2-10 employees,Partner,7.0
+232,GBR,IT,2-10 employees,Owner,8.0
+233,GBR,IT,2-10 employees,Any Job Seniority,1.0
+234,GBR,Finance,Any Company Size,Unpaid,9.0
+235,GBR,Finance,Any Company Size,Training,6.0
+236,GBR,Finance,Any Company Size,Entry,1.0
+237,GBR,Finance,Any Company Size,Senior,2.0
+238,GBR,Finance,Any Company Size,Manager,4.0
+239,GBR,Finance,Any Company Size,Director,8.0
+240,GBR,Finance,Any Company Size,VP,11.0
+241,GBR,Finance,Any Company Size,CXO,10.0
+242,GBR,Finance,Any Company Size,Partner,7.0
+243,GBR,Finance,"10,001+ employees",Entry,1.0
+244,GBR,Finance,"10,001+ employees",Senior,2.0
+245,GBR,Finance,"10,001+ employees",Manager,5.0
+246,GBR,Finance,"10,001+ employees",Director,7.0
+247,GBR,Finance,"10,001+ employees",VP,9.0
+248,GBR,Finance,"10,001+ employees",CXO,6.0
+249,GBR,Finance,"10,001+ employees",Partner,4.0
+250,GBR,Finance,"10,001+ employees",Owner,8.0
+251,GBR,Finance,"10,001+ employees",Any Job Seniority,3.0
+252,GBR,Finance,51-200 employees,Entry,1.0
+253,GBR,Finance,51-200 employees,Senior,3.0
+254,GBR,Finance,51-200 employees,Manager,4.0
+255,GBR,Finance,51-200 employees,Director,6.0
+256,GBR,Finance,51-200 employees,VP,8.0
+257,GBR,Finance,51-200 employees,CXO,9.0
+258,GBR,Finance,51-200 employees,Partner,7.0
+259,GBR,Finance,51-200 employees,Owner,5.0
+260,GBR,Finance,51-200 employees,Any Job Seniority,2.0
+261,GBR,Finance,11-50 employees,Entry,1.0
+262,GBR,Finance,11-50 employees,Senior,3.0
+263,GBR,Finance,11-50 employees,Manager,4.0
+264,GBR,Finance,11-50 employees,Director,6.0
+265,GBR,Finance,11-50 employees,VP,9.0
+266,GBR,Finance,11-50 employees,CXO,8.0
+267,GBR,Finance,11-50 employees,Partner,7.0
+268,GBR,Finance,11-50 employees,Owner,5.0
+269,GBR,Finance,11-50 employees,Any Job Seniority,2.0
+270,GBR,Finance,2-10 employees,Entry,3.0
+271,GBR,Finance,2-10 employees,Senior,2.0
+272,GBR,Finance,2-10 employees,Manager,4.0
+273,GBR,Finance,2-10 employees,Director,5.0
+274,GBR,Finance,2-10 employees,VP,9.0
+275,GBR,Finance,2-10 employees,CXO,8.0
+276,GBR,Finance,2-10 employees,Partner,7.0
+277,GBR,Finance,2-10 employees,Owner,6.0
+278,GBR,Finance,2-10 employees,Any Job Seniority,1.0
+279,IND,IT,Any Company Size,Unpaid,11.0
+280,IND,IT,Any Company Size,Training,5.0
+281,IND,IT,Any Company Size,Entry,6.0
+282,IND,IT,Any Company Size,Senior,3.0
+283,IND,IT,Any Company Size,Manager,10.0
+284,IND,IT,Any Company Size,Director,7.0
+285,IND,IT,Any Company Size,VP,1.0
+286,IND,IT,Any Company Size,CXO,2.0
+287,IND,IT,Any Company Size,Partner,8.0
+288,IND,IT,11-50 employees,Training,3.0
+289,IND,IT,11-50 employees,Entry,4.0
+290,IND,IT,11-50 employees,Senior,6.0
+291,IND,IT,11-50 employees,Manager,10.0
+292,IND,IT,11-50 employees,Director,7.0
+293,IND,IT,11-50 employees,VP,1.0
+294,IND,IT,11-50 employees,CXO,5.0
+295,IND,IT,11-50 employees,Partner,8.0
+296,IND,IT,11-50 employees,Owner,9.0
+297,IND,Finance,Any Company Size,Unpaid,11.0
+298,IND,Finance,Any Company Size,Training,4.0
+299,IND,Finance,Any Company Size,Entry,9.0
+300,IND,Finance,Any Company Size,Senior,7.0
+301,IND,Finance,Any Company Size,Manager,10.0
+302,IND,Finance,Any Company Size,Director,8.0
+303,IND,Finance,Any Company Size,VP,1.0
+304,IND,Finance,Any Company Size,CXO,3.0
+305,IND,Finance,Any Company Size,Partner,2.0
