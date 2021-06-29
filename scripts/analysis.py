@@ -130,6 +130,7 @@ def filter_reshape(df, country, sector, size):
 
     # df_reshaped = df_reshaped.drop('Unpaid')
     # print(seniority_counter)
+    print(df_reshaped)
     return df_reshaped
 
 def has_unpaid(df):
@@ -315,46 +316,37 @@ def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
     # low_high_ratio(df, country, sector, size)
-    rank_order(df, country,sector,size)
-    # fig = plotter(df)
-    # total_count = 0
-    # if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
-    #     total_count == 0
-    # else:
-    #     total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
+    # rank_order(df, country,sector,size)
+    fig = plotter(df)
+    total_count = 0
+    if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
+        total_count == 0
+    else:
+        total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
 
-    # fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
-    # plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
+    fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
+    plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
 
-    # st.write(fig)
+    st.write(fig)
     
     # save_path = f'plots/plots_data_collection_2 2.4/_{country}_{sector}_{size}.png'
     # # Uncomment to save figures
     # fig.savefig(save_path)
 
 
-def run_analysis():
+def run_analysis(df, country, sector, company_size):
 
     global country_sector_permutation_counter
 
-    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-    company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
-                        '1001-5000 employees', '501-1000 employees', '201-500 employees',
-                        '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    sectors = ['IT', 'Finance']
-
-    
-    # filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
+    for country in countries: 
+        for company_size in company_sizes:
+            for sector in sectors: 
+                filter_reshape_plot(df, country, sector, company_size)
 
     # for country in countries: 
-    #     for company_size in company_sizes:
-    #         for sector in sectors: 
+    #     for sector in sectors: 
+    #         for company_size in company_sizes:
     #             filter_reshape_plot(df, country, sector, company_size)
-
-    for country in countries: 
-        for sector in sectors: 
-            for company_size in company_sizes:
-                filter_reshape_plot(df, country, sector, company_size)
 
     # for company_size in company_sizes:
     #     for sector in sectors: 
@@ -373,6 +365,61 @@ def run_analysis():
     st.write(counter)
 
 
-run_analysis()
+# run_analysis()
 
-# filter_reshape_plot(df, 'USA', 'IT', '10,001+ employees')
+
+# helper function to convert a list to string
+def listToString(s):
+    output_string = ", "
+    return (output_string.join(s))
+
+def test_click():
+    st.write("ayooo")
+
+with st.beta_expander("Choose Parameters"):
+    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+    company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
+                        '1001-5000 employees', '501-1000 employees', '201-500 employees',
+                        '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
+    sectors = ['IT', 'Finance']
+
+    user_input_countries = st.multiselect(
+        "Choose country or countries",
+        countries,
+        countries
+    )
+    
+    user_input_companysizes = st.multiselect(
+        "Choose company size(s)",
+        company_sizes,
+        company_sizes,
+    )
+
+    user_input_sectors = st.multiselect(
+        "Choose sector(s): ", 
+        sectors,
+        sectors
+    )
+    
+    st.write(f'You chose the following country or countries: ', listToString(user_input_countries))
+    st.write(f'You chose the following company size(s): ', listToString(user_input_companysizes))
+    st.write(f'You chose the following sector(s): ', listToString(user_input_sectors))
+
+    user_submit = st.button(
+        "Show plot(s)"
+    )
+
+    # if user_input_countries:
+    #     st.stop()
+    # if user_input_companysizes:
+    #     st.stop()
+    # if user_input_sectors:
+    #     st.stop()
+
+
+
+if user_submit:
+    # del user_input_countries
+    # del user_input_companysizes
+    # del user_input_sectors
+    run_analysis(df, user_input_countries, user_input_sectors, user_input_companysizes)
