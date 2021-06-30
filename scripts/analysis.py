@@ -11,8 +11,8 @@ df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 
 # rename the colums
 df.columns = ['Country', 'Gender', 'Sector', 'Job Seniority', 'Company Size', 'Age Ranges', 'Connectivity Status', 'Count']
-
-st.write(df)
+with st.beta_expander("Toggle display dataframe"):
+    st.write(df)
 
 df_ratio = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Ratio']) # dataframe for the ratio calculations of all permutations
 df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Seniority', 'Rank']) # dataframe that compute average rank value of each permutation
@@ -130,7 +130,7 @@ def filter_reshape(df, country, sector, size):
 
     # df_reshaped = df_reshaped.drop('Unpaid')
     # print(seniority_counter)
-    print(df_reshaped)
+    # print(df_reshaped)
     return df_reshaped
 
 def has_unpaid(df):
@@ -258,6 +258,7 @@ def rank_order(df, country, sector, size):
 def lenz(df):
     return len(df) == 0
 
+@st.cache(hash_funcs={dict: lambda _: None}) # hash_funcs because dict can't be hashed
 def plotter(df):
 
     # Keep track of changes made and add note to the relevant plots
@@ -317,6 +318,7 @@ def filter_reshape_plot(df, country, sector, size):
     df = filter_reshape(df, country, sector, size)
     # low_high_ratio(df, country, sector, size)
     # rank_order(df, country,sector,size)
+    
     fig = plotter(df)
     total_count = 0
     if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
@@ -337,11 +339,12 @@ def filter_reshape_plot(df, country, sector, size):
 def run_analysis(df, country, sector, company_size):
 
     global country_sector_permutation_counter
+    
 
-    for country in countries: 
-        for company_size in company_sizes:
-            for sector in sectors: 
-                filter_reshape_plot(df, country, sector, company_size)
+    for ctry in country: 
+        for cmpy_size in company_size:
+            for sctr in sector:
+                filter_reshape_plot(df, ctry, sctr, cmpy_size)
 
     # for country in countries: 
     #     for sector in sectors: 
@@ -359,7 +362,6 @@ def run_analysis(df, country, sector, company_size):
 
     global df_rankorder
     grouped_df = df_rankorder.groupby(['Country', 'Sector', 'Company Size']).count()
-    print(grouped_df)
 
     st.write('Total Count of Modified Plots')
     st.write(counter)
@@ -386,35 +388,26 @@ with st.beta_expander("Choose Parameters"):
     user_input_countries = st.multiselect(
         "Choose country or countries",
         countries,
-        countries
+        ['USA']
     )
     
     user_input_companysizes = st.multiselect(
         "Choose company size(s)",
         company_sizes,
-        company_sizes,
+        company_sizes
     )
 
     user_input_sectors = st.multiselect(
         "Choose sector(s): ", 
         sectors,
-        sectors
+        ['IT']
     )
-    
-    st.write(f'You chose the following country or countries: ', listToString(user_input_countries))
-    st.write(f'You chose the following company size(s): ', listToString(user_input_companysizes))
-    st.write(f'You chose the following sector(s): ', listToString(user_input_sectors))
 
     user_submit = st.button(
         "Show plot(s)"
     )
 
-    # if user_input_countries:
-    #     st.stop()
-    # if user_input_companysizes:
-    #     st.stop()
-    # if user_input_sectors:
-    #     st.stop()
+
 
 
 
@@ -423,3 +416,10 @@ if user_submit:
     # del user_input_companysizes
     # del user_input_sectors
     run_analysis(df, user_input_countries, user_input_sectors, user_input_companysizes)
+
+if user_input_countries:
+    st.stop()
+if user_input_companysizes:
+    st.stop()
+if user_input_sectors:
+    st.stop()
