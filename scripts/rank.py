@@ -3,34 +3,33 @@ import matplotlib.pyplot as plt
 
 # df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder.csv')
 # df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_1.csv')
-df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_2.csv')
+# df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_2.csv')
+df = pd.read_csv('intermediate/rank_dataframe.py/df_rankorder_3.csv')
 
 country_list = list(df['Country'].unique())
 sector_list = list(df['Sector'].unique())
+companysize_list = list(df['Company Size'].unique())
+
+print(companysize_list)
 
 # for country in country_list:
-    # for sector in sector_list:
-        # df_ctry_sctr = df[(df['Country'] == country) & (df['Sector'] == sector)]
-        # grouped_df = df_ctry_sctr.groupby("Seniority")['Rank'].mean()
-        # print('Country: ', country, '\n', 'Sector: ', sector)
-        # print(grouped_df)
-# print(df[(df['Country'] == 'PHL') & (df['Sector'] == 'Finance')])
-df = df[(df['Country'] == 'PHL') & (df['Sector'] == 'Finance')]
-grouped_df = df.groupby("Seniority")['Rank'].mean()
-print(grouped_df)
-# mean_df = grouped_df['Rank'].mean()
-# mean_df = mean_df.drop('Any Job Seniority')
-# mean_df.sort_values(ascending=True)
-# print(mean_df)
+#     for sector in sector_list:
+#         df_ctry_sctr = df[(df['Country'] == country) & (df['Sector'] == sector)]
+#         grouped_df = df_ctry_sctr.groupby("Seniority")['Rank'].mean()
+#         print('Country: ', country, '\n', 'Sector: ', sector)
+#         # print(grouped_df)
+#         print(df_ctry_sctr.groupby("Seniority")['Rank'].count())
+#         # For each country-sector df, the sum of ranks should be 10, if ranks are computed, or 0, if ranks are not computed. 
+#         assert (sum(grouped_df) == 10 or sum(grouped_df) == 0) 
 
 
-# Sort the job seniorities
-# sorting_dict = {'Unpaid': 0, 'Training': 1, 'Entry': 2, 'Senior': 3, 'Manager':4, 'Director': 5, 'VP': 6, 'CXO': 7, 'Partner': 8, 'Owner': 9, 'Any Job Security': 10}
-# df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
-# mean_df = mean_df.sort_index(key=lambda x: x.map(sorting_dict))
-
-# mean_df.plot()
-
-# Program will only end when plt.show returns, which is after you closed all figures.
-# plt.show(block=True)
-
+for country in country_list:
+    for sector in sector_list:
+        for companysize in companysize_list:
+            df_ctry_sctr = df[(df['Country'] == country) & (df['Sector'] == sector) & (df['Company Size'] == companysize)]
+            grouped_df = df_ctry_sctr.groupby("Seniority")['Rank'].mean()
+            print('Country: ', country, '\n', 'Sector: ', sector, '\n', 'Company Size: ', companysize)
+            print(grouped_df)
+            # print(df_ctry_sctr.groupby("Seniority")['Rank'].count())
+            # For each country-sector df, the sum of ranks should be 10, if ranks are computed, or 0, if ranks are not computed. 
+            assert (sum(grouped_df) == 10 or sum(grouped_df) == 0) 
