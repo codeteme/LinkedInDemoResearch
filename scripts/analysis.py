@@ -16,7 +16,6 @@ with st.beta_expander("Toggle display dataframe"):
 
 df_ratio = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Ratio']) # dataframe for the ratio calculations of all permutations
 df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Seniority', 'Rank']) # dataframe that compute average rank value of each permutation
-df_averagerank = pd.Series()
 counter = 0 # keeps track of modified data frames
 seniority_counter = 0
 country_sector_permutation_counter = 0 # Keeps track of df's which have all four selected seniority values: Entry, Senior, Manager and Director
@@ -100,36 +99,7 @@ def filter_reshape(df, country, sector, size):
 
     # print(df_reshaped['Female to Male']['f:m'].values)
     # print(df_reshaped)
-    
-    # Unpaid is a sparse data and is ignored completely
-    global seniority_counter
-    # if 'Unpaid' in df_reshaped.index: 
-    #     seniority_counter += 1
-    #     df_reshaped = df_reshaped.drop('Unpaid')
-    # if 'Training' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'Entry' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'Senior' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'Manager' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'Director' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'VP' in df_reshaped.index: 
-    #     seniority_counter += 1
-    # if 'CXO' in df_reshaped.index: 
-        # seniority_counter += 1
-    # if 'Partner' in df_reshaped.index: 
-        # seniority_counter += 1
-    # if 'Owner' in df_reshaped.index: 
-        # seniority_counter += 1
-    # if 'Any Job Seniority' in df_reshaped.index: 
-        # seniority_counter += 1
 
-    # df_reshaped = df_reshaped.drop('Unpaid')
-    # print(seniority_counter)
-    # print(df_reshaped)
     return df_reshaped
 
 def has_unpaid(df):
@@ -209,18 +179,12 @@ def low_high_ratio(df, country, sector, size):
     df_ratio_len = len(df_ratio)
     df_ratio.loc[df_ratio_len] = row_value
 
-    # print(df_ratio)
+    # save_path = f'intermediate/ratio_dataframes/df_ratio.csv'
+    # df_ratio.to_csv(save_path)
 
-    # save_path = f'intermediate/ratio_dataframes.py/df_ratio.csv'
-    save_path = f'intermediate/ratio_dataframes.py/df_ratio.xlsx'
-
-    # Uncomment to save df_ratio as a .csv file
-    df_ratio.to_csv(save_path)
-    df_ratio.to_excel(save_path)
-
-    # print(df_ratio)
 
 def rank_order(df, country, sector, size):
+    print(df)
     global df_rankorder
     global country_sector_permutation_counter
 
@@ -236,7 +200,7 @@ def rank_order(df, country, sector, size):
             row_value = [country, sector, size, df['seniority'].iloc[i], df['rank'].iloc[i]]
             df_rankorder_len = len(df_rankorder)
             df_rankorder.loc[df_rankorder_len] = row_value
-    # save_path = f'intermediate/rank_dataframe.py/df_rankorder_3.csv'
+    # save_path = f'intermediate/rank_dataframe/df_rankorder_3.csv'
     # df_rankorder.to_csv(save_path)
 
 
@@ -302,114 +266,107 @@ def filter_reshape_plot(df, country, sector, size):
     df = df_specifier(df, country, sector, size) # USA, IT, Big Companies
     df = filter_reshape(df, country, sector, size)
     # low_high_ratio(df, country, sector, size)
-    # rank_order(df, country,sector,size)
+    rank_order(df, country,sector,size)
     
-    fig = plotter(df)
-    total_count = 0
-    if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
-        total_count == 0
-    else:
-        total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
+    # fig = plotter(df)
+    # total_count = 0
+    # if lenz(df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender']):
+    #     total_count == 0
+    # else:
+    #     total_count = df.loc['Any Job Seniority':]['Count_any_connection', 'Any Gender'][0]
 
-    fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
-    plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
+    # fig_caption = f'Data aggregated for {country} {sector} {size} - {total_count}'
+    # plt.figtext(0.5, 0.0001, fig_caption, wrap=True, horizontalalignment='center', fontsize=12)
 
-    st.write(fig)
+    # st.write(fig)
     
     # save_path = f'plots/plots_data_collection_2 2.4/_{country}_{sector}_{size}.png'
     # # Uncomment to save figures
     # fig.savefig(save_path)
 
 
-def run_analysis(df, country, sector, company_size):
+# def run_analysis(df, country, sector, company_size):
+def run_analysis():
 
     global country_sector_permutation_counter
     
-    # countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-    # # company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
-    # #                     '1001-5000 employees', '501-1000 employees', '201-500 employees',
-    # #                     '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
+    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+    company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
+                        '1001-5000 employees', '501-1000 employees', '201-500 employees',
+                        '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
     # company_sizes_no_anycompanysize = ['10,001+ employees', '5001-10,000 employees',
     #                     '1001-5000 employees', '501-1000 employees', '201-500 employees',
     #                     '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    # sectors = ['IT', 'Finance']
+    sectors = ['IT', 'Finance']
     
 
-    for ctry in country: 
-        for cmpy_size in company_size:
-            for sctr in sector:
-                filter_reshape_plot(df, ctry, sctr, cmpy_size)
+    # for ctry in country: 
+    #     for cmpy_size in company_size:
+    #         for sctr in sector:
+    #             filter_reshape_plot(df, ctry, sctr, cmpy_size)
 
-    # for country in countries: 
-    #     for sector in sectors: 
-    #         for company_size in company_sizes:
-    #             filter_reshape_plot(df, country, sector, company_size)
-
-    # for company_size in company_sizes:
-    #     for sector in sectors: 
-    #         filter_reshape_plot(df, 'USA', sector, company_size)
+    for country in countries: 
+        for sector in sectors: 
+            for company_size in company_sizes:
+                filter_reshape_plot(df, country, sector, company_size)
 
     # filter_reshape_plot(df, 'USA', 'Finance', 'Any Company Size')
 
 
     st.write("Country-Sector permutation counter: ", country_sector_permutation_counter)
-
-    global df_rankorder
-    grouped_df = df_rankorder.groupby(['Country', 'Sector', 'Company Size']).count()
-
     st.write('Total count of modified plots', counter)
 
 
-# run_analysis()
+run_analysis()
 
 
-# helper function to convert a list to string
-def listToString(s):
-    output_string = ", "
-    return (output_string.join(s))
+# # helper function to convert a list to string
+# def listToString(s):
+#     output_string = ", "
+#     return (output_string.join(s))
 
-with st.beta_expander("Choose Parameters"):
-    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-    company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
-                        '1001-5000 employees', '501-1000 employees', '201-500 employees',
-                        '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    sectors = ['IT', 'Finance']
+# with st.beta_expander("Choose Parameters"):
+#     countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+#     company_sizes = ['Any Company Size', '10,001+ employees', '5001-10,000 employees',
+#                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
+#                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
+#     sectors = ['IT', 'Finance']
 
-    user_input_countries = st.multiselect(
-        "Choose country or countries",
-        countries,
-        ['USA']
-    )
+#     user_input_countries = st.multiselect(
+#         "Choose country or countries",
+#         countries,
+#         ['USA']
+#     )
     
-    user_input_companysizes = st.multiselect(
-        "Choose company size(s)",
-        company_sizes,
-        company_sizes
-    )
+#     user_input_companysizes = st.multiselect(
+#         "Choose company size(s)",
+#         company_sizes,
+#         company_sizes
+#     )
 
-    user_input_sectors = st.multiselect(
-        "Choose sector(s): ", 
-        sectors,
-        ['IT']
-    )
+#     user_input_sectors = st.multiselect(
+#         "Choose sector(s): ", 
+#         sectors,
+#         ['IT']
+#     )
 
-    user_submit = st.button(
-        "Show plot(s)"
-    )
-
-
+#     user_submit = st.button(
+#         "Show plot(s)"
+#     )
 
 
 
-if user_submit:
-    # del user_input_countries
-    # del user_input_companysizes
-    # del user_input_sectors
-    run_analysis(df, user_input_countries, user_input_sectors, user_input_companysizes)
 
-if user_input_countries:
-    st.stop()
-if user_input_companysizes:
-    st.stop()
-if user_input_sectors:
-    st.stop()
+
+# if user_submit:
+#     # del user_input_countries
+#     # del user_input_companysizes
+#     # del user_input_sectors
+#     run_analysis(df, user_input_countries, user_input_sectors, user_input_companysizes)
+
+# if user_input_countries:
+#     st.stop()
+# if user_input_companysizes:
+#     st.stop()
+# if user_input_sectors:
+#     st.stop()
