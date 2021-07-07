@@ -19,30 +19,29 @@ from sklearn.linear_model import LinearRegression
 """
 
 df = pd.read_csv('processed/data_collection_2/dataset.csv')
-# df = df.drop(['level_0', 'index', 'Unnamed: 0', 'Unnamed: 0.1'], axis = 1)
-
-
+# Drop unnecessarily first columns
+df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 # Drop all of the “any” age, “any” company size, “any” rank.
 is_not_anycompanysize = df['Company Size'] != 'Any Company Size'
 is_not_anyage = df['Age Ranges'] != 'Any Age Range'
-
 df = (df[is_not_anycompanysize & is_not_anyage]).reset_index()
-
 # Only consider the four least-sparse ranks: selected_seniorities are Entry, Senior, Manager, and Director
 selected_seniorities =  ['Entry', 'Senior', 'Manager', 'Director']
 is_selected_seniorities = df['Job Seniority'].apply(lambda x: x in selected_seniorities) 
 df = (df[is_selected_seniorities]).reset_index()
 
-# # Only consider US and UK for now (**or even just US**)
-# is_USA = df['Country'] == 'USA'
-# df = (df[is_USA]).reset_index(drop=True)
-
 # Global Variables
 df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', 'Rank', '%\Female']) # dataframe that compute average rank value of each permutation
+counter_sparsity_treated = 0 # keeps track of modified data frames
+
+def increment_counter(): # calculate the total number of modified plots
+    global counter_sparsity_treated 
+    counter_sparsity_treated += 1
 
 
 def condition_any_gender(df):
     if (df['Count_with_connection', 'Any Gender'] == 0) and (df['Count_any_connection', 'Any Gender'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Any Gender'] == 0:
         return float('NaN')
@@ -51,6 +50,7 @@ def condition_any_gender(df):
 
 def condition_female(df):
     if (df['Count_with_connection', 'Female'] == 0) and (df['Count_any_connection', 'Female'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Female'] == 0:
         return float('NaN')
@@ -60,6 +60,7 @@ def condition_female(df):
 
 def condition_male(df):
     if (df['Count_with_connection', 'Male'] == 0) and (df['Count_any_connection', 'Male'] > 3000):
+        increment_counter()
         return 290 
     elif df['Count_with_connection', 'Male'] == 0:
         return float('NaN')
@@ -73,6 +74,8 @@ def df_specifier(df, country, sector, size, age, connectivity_status):
     return df.loc[idx]
 
 def filter_reshape(df, country, sector, size, age, connectivity_status): 
+    # Drop unnecessarily first columns
+    df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
     # split data to with connection and any connection
     df_with_connection = df[df['Connectivity Status'] == 'connected to big companies']
     df_any_connection = df[df['Connectivity Status'] == 'connected to any']
@@ -145,23 +148,20 @@ def regression():
 
     """
     The labelencoder assigned the following numbers to the selected categorical variables i.e. no country and no gender | code snippet:  print(labelencoder.classes_)
-    
+    Country: 
+        {'USA', 1, 'GBR': 2', 'VNM': 3, 'IND': 4, 'PHL': 5}
     Sector: 
-        ['Finance' 'IT']
+        {'Finance': 1, 'IT': 2}
     Age:
-        ['18 to 24': 1, '25 to 34': 2, '35 to 54': 3, '55+': 4]
+        {'18 to 24': 1, '25 to 34': 2, '35 to 54': 3, '55+': 4}
     Company Size: 
-        Myself Only': 1, '2-10 employees': 2, '11-50 employees': 3, 
+        {'Myself Only': 1, '2-10 employees': 2, '11-50 employees': 3, 
         '51-200 employees': 4, '201-500 employees': 5, '501-1000 employees': 6, 
-        '1001-5000 employees': 7, '5001-10,000 employees': 8, '10,001+ employees': 9
+        '1001-5000 employees': 7, '5001-10,000 employees': 8, '10,001+ employees': 9}
     Seniority: 
-        'Entry': 1, 'Senior': 2, 'Manager': 3, 'Director': 4
+        {'Entry': 1, 'Senior': 2, 'Manager': 3, 'Director': 4}
 
     """
-
-    # Only consider IT for now
-    is_IT = df_rankorder['Sector'] == 'IT'
-    df_rankorder = (df_rankorder[is_IT])
 
     # creating instance of labelencoder
     labelencoder = LabelEncoder()# Assigning numerical values and storing in another column
@@ -212,23 +212,30 @@ def regression():
 def main(): 
     global df
     global df_rankorder
+    global counter_sparsity_treated # reminder: this variable keeps track of modified 
 
-    # countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-    countries = ['USA']
+    countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
+    # countries = ['USA']
     sectors = ['IT', 'Finance']
+    # sectors = ['IT']
+
     company_sizes_noany = ['10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    agerange_noany = ["18 to 24","25 to 34", "35 to 54", "55+"]
+    agerange_noany = ["18 to 24", "25 to 34", "35 to 54", "55+"]
     connectivity_statuses = ['connected to big companies', 'connected to any']
+
+    country_count_dict = dict() # key = country and value = [total count, sparsity treated count]
     
     for country in countries: 
+        rows_computed = 0
         for sector in sectors: 
             for size in company_sizes_noany:
                 for age in agerange_noany:
                     for connectivity_status in connectivity_statuses:
                         # Some seniority levels may not data so they are dropped
                         try:
+                            rows_computed += 1
                             render(df, country, sector, size, age, connectivity_status)
                             break
                         except:
@@ -238,11 +245,16 @@ def main():
                             if age not in df['Age Ranges'].unique(): print("sector not found")
                             if connectivity_status not in df['Connectivity Status'].unique(): print("connectivity status not found")
                             print("exception")
+        country_count_dict[country] = [rows_computed, counter_sparsity_treated]
 
 
     # render(df, 'USA', 'IT', '5001-10,000 employees', '18 to 24')
 
-    regression()
+    for country, total_sparisty in country_count_dict.items():
+        print('Country: ', country, '| ',  'Total and sparsity counts: ', total_sparisty)
+
+
+    # regression()
     # save_path = f'intermediate/rank_dataframe/df_rankorder_model.csv'
     # df_rankorder.to_csv(save_path)
 
