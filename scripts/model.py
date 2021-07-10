@@ -35,8 +35,14 @@ is_selected_seniorities = df['Job Seniority'].apply(lambda x: x in selected_seni
 df = (df[is_selected_seniorities]).reset_index()
 
 # Global Variables
-# df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', 'Rank', '%\Female']) # dataframe that compute average rank value of each permutation
-df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', '%\Female']) # dataframe that compute average rank value of each permutation
+# df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', 'Rank', '%\Female']) # dataframe that compute average rank 
+df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', 'Connectivity Status', '%\Female']) # dataframe that compute average rank 
+
+"""
+    'Company Size', 'Age Ranges', 'Seniority', 'Connectivity Status', '%\Female'
+"""
+# value of each permutation
+# df_rankorder = pd.DataFrame(columns = ['Country', 'Sector', 'Company Size', 'Age Ranges', 'Seniority', '%\Female']) # dataframe that compute average rank value of each permutation
 
 counter_sparsity_treated = 0 # keeps track of modified data frames
 true_counter = 0 # keeps tracks of non-sparse cases that were part of the
@@ -87,16 +93,21 @@ def filter_reshape(df, country, sector, size, age, connectivity_status):
     df_with_connection = df[df['Connectivity Status'] == 'connected to big companies']
     df_any_connection = df[df['Connectivity Status'] == 'connected to any']
 
-    df_with_connection = df_with_connection.groupby(["Job Seniority", "Gender"]).sum() # filter only job seniority and gender
-    df_with_connection.reset_index(inplace=True) # Unstack the rows 
-    df_with_connection = df_with_connection.pivot(index='Job Seniority', columns='Gender') # make values of Gender the columns headers
 
-    df_any_connection = df_any_connection.groupby(["Job Seniority", "Gender"]).sum()
-    df_any_connection.reset_index(inplace=True)
-    df_any_connection = df_any_connection.pivot(index='Job Seniority', columns='Gender')
+    df_with_connection = df_with_connection.groupby("Gender").sum() # filter only job seniority and gender
+    # df_with_connection.reset_index(inplace=True) # Unstack the rows 
+    # df_with_connection = df_with_connection.pivot(index='Gender', columns='Gender') # make values of Gender the columns headers
 
+    df_any_connection = df_any_connection.groupby("Gender").sum()
+    # df_any_connection.reset_index(inplace=True)
+    # df_any_connection = df_any_connection.pivot(index='Gender', columns='Gender')
+    
+    # print(df_with_connection.head())
+    # print(df_any_connection.head())
 
-    df_reshaped = pd.merge(df_with_connection, df_any_connection, on='Job Seniority', suffixes=('_with_connection', '_any_connection'))
+    df_reshaped = pd.merge(df_with_connection, df_any_connection, on='Gender', suffixes=('_with_connection', '_any_connection'))
+
+    print(df_reshaped.head())
 
     df_reshaped['Count_with_connection', 'Any Gender'] = df_reshaped.apply(condition_any_gender, axis=1)
     df_reshaped['Count_with_connection', 'Female'] = df_reshaped.apply(condition_female, axis=1)
@@ -105,6 +116,7 @@ def filter_reshape(df, country, sector, size, age, connectivity_status):
     df_reshaped['with_:_any', 'Any Gender'] = df_reshaped['Count_with_connection', 'Any Gender'] / df_reshaped['Count_any_connection', 'Any Gender']
     df_reshaped['with_:_any', 'Female'] = df_reshaped['Count_with_connection', 'Female'] / df_reshaped['Count_any_connection', 'Female']
     df_reshaped['with_:_any', 'Male'] = df_reshaped['Count_with_connection', 'Male'] / df_reshaped['Count_any_connection', 'Male']
+
 
     df_reshaped['Gender Proportion', 'Female'] = df_reshaped['Count_any_connection', 'Female'] / df_reshaped['Count_any_connection', 'Any Gender']
     df_reshaped['Gender Proportion', 'Male'] = df_reshaped['Count_any_connection', 'Male'] / df_reshaped['Count_any_connection', 'Any Gender']
@@ -117,10 +129,10 @@ def filter_reshape(df, country, sector, size, age, connectivity_status):
     df_reshaped =  df_reshaped.fillna(value=0)
 
 
-    # Sort the job seniorities
-    sorting_dict = {'Entry': 0, 'Senior': 1, 'Manager':2, 'Director': 3}
-    # df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
-    df_reshaped = df_reshaped.sort_index(key=lambda x: x.map(sorting_dict))
+    # # Sort the job seniorities
+    # sorting_dict = {'Entry': 0, 'Senior': 1, 'Manager':2, 'Director': 3}
+    # # df_reshaped.sort_values(by=df_reshaped.index, key=lambda x: x.map(sorting_dict), inplace=True)
+    # df_reshaped = df_reshaped.sort_index(key=lambda x: x.map(sorting_dict))
 
     # print(df_reshaped['Female to Male']['f:m'].values)
     # print(df_reshaped)
@@ -132,11 +144,11 @@ def rank_order(df, country, sector, size, age, connectivity_status):
 
     # Filter for the four seniority levels: Entry, Senior, Manager and Director
     df['seniority'] = df.index
-    # df['rank'] = df['Female to Male', 'f:m'].rank()
+    df['rank'] = df['Female to Male', 'f:m']
     
     for i in range(0, 4):
-        # row_value = [country, sector, size, age, df['seniority'].iloc[i], df['rank'].iloc[i], df['Gender Proportion', 'Female'].iloc[i]]
-        row_value = [country, sector, size, age, df['seniority'].iloc[i], df['Gender Proportion', 'Female'].iloc[i]]
+        row_value = [country, sector, size, age, df['seniority'].iloc[i], df['rank'].iloc[i], df['Gender Proportion', 'Female'].iloc[i]]
+        # row_value = [country, sector, size, age, df['seniority'].iloc[i], df['Gender Proportion', 'Female'].iloc[i]]
         # print(row_value)
         df_rankorder_len = len(df_rankorder)
         df_rankorder.loc[df_rankorder_len] = row_value
@@ -151,6 +163,7 @@ def render(df, country, sector, size, age, connectivity_status):
     if (before_sparsity_treatment == after_sparsity_treatment): 
         true_counter += 1
         rank_order(df, country, sector, size, age, connectivity_status)
+
 
 def regression_prep(): 
     global df_rankorder    
@@ -250,15 +263,14 @@ def main():
     global true_counter
 
     # countries = ['USA', 'GBR', 'VNM', 'IND', 'PHL']
-    # countries = ['USA']
-    countries = ['USA', 'GBR']
-    sectors = ['IT', 'Finance']
-    # sectors = ['IT']
+    # countries = ['USA', 'GBR']
+    # sectors = ['IT', 'Finance']
+    sectors = ['IT']
 
     company_sizes_noany = ['10,001+ employees', '5001-10,000 employees',
                         '1001-5000 employees', '501-1000 employees', '201-500 employees',
                         '51-200 employees', '11-50 employees', '2-10 employees', 'Myself Only']
-    company_size_any = ['Any Company Size']
+    # company_size_any = ['Any Company Size']
     agerange_noany = ["18 to 24", "25 to 34", "35 to 54", "55+"]
     # agerange_any = ["Any Age Range"]
 
@@ -291,12 +303,12 @@ def main():
     # render(df, 'USA', 'IT', '5001-10,000 employees', '18 to 24')
 
     for country, total_sparisty in country_count_dict.items():
-        print('Country: ', country, '| ',  'Total and sparsity counts: ', total_sparisty)
+        st.write('Country: ', country, '| ',  'Total and sparsity counts: ', total_sparisty)
 
-    print('Computed: ', true_counter)
-    regression_prep()
+    st.write('Computed: ', true_counter)
+    # regression_prep()
 
-    save_path = f'intermediate/rank_dataframe/df_rankorder_model_USA_GBR.csv'
-    df_rankorder.to_csv(save_path)
+    # save_path = f'intermediate/rank_dataframe/df_rankorder_model_USA_GBR.csv'
+    # df_rankorder.to_csv(save_path)
 
 main()
