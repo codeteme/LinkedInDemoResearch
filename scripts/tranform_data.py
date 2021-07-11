@@ -6,6 +6,10 @@ df.drop(df.columns[[0, 1]], axis = 1, inplace = True)
 
 df_transformed = pd.DataFrame()
 
+print('Original shape of the imported dataset - dataset.csv: ', df.shape)
+# Original shape of the imported dataset - dataset.csv:  (33000, 8)
+
+
 def transform(df, country, sector, company_size, job_seniority, age_range): 
     global df_transformed
 
@@ -84,6 +88,8 @@ def main(): # Create# For a given Country, Sector, Company Size, Job Seniority a
     df_transformed = df_transformed.reset_index(drop=True)
     print(df_transformed)
 
+    print('Final shape of the transformed data - dataset_transformation.csv: ', df_transformed.shape)
+    # Final shape of the transformed data - dataset_transformation.csv: 5500
     # save_path = f'processed/data_collection_2/dataset_transformed.csv'
     # df_transformed.to_csv(save_path)    
 
