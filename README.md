@@ -2,11 +2,11 @@
 Using LinkedIn Campaign Manager audience count data to pursue social science research.
 
 Users can specify the attributes for the following variables: 
-- interface locale (required)
-- location (required)
-- gender
-- age range 
-- job seniority
+- Interface locale (required)
+- Location (required)
+- Gender
+- Age range 
+- Job seniority
  
 Users can also append multiple boolean arguments. The following three are supported.
 - OR 
