@@ -1,0 +1,331 @@
+0,1,2,3,4,5
+PHL,Any Gender,Finance,Any Job Seniority,connected to big companies,25000
+PHL,Any Gender,Finance,Any Job Seniority,connected to any,390000
+PHL,Any Gender,Finance,Owner,connected to big companies,560
+PHL,Any Gender,Finance,Owner,connected to any,6700
+PHL,Any Gender,Finance,Partner,connected to big companies,0
+PHL,Any Gender,Finance,Partner,connected to any,1600
+PHL,Any Gender,Finance,CXO,connected to big companies,570
+PHL,Any Gender,Finance,CXO,connected to any,5600
+PHL,Any Gender,Finance,VP,connected to big companies,1600
+PHL,Any Gender,Finance,VP,connected to any,8400
+PHL,Any Gender,Finance,Director,connected to big companies,2500
+PHL,Any Gender,Finance,Director,connected to any,16000
+PHL,Any Gender,Finance,Manager,connected to big companies,3300
+PHL,Any Gender,Finance,Manager,connected to any,33000
+PHL,Any Gender,Finance,Senior,connected to big companies,10000
+PHL,Any Gender,Finance,Senior,connected to any,120000
+PHL,Any Gender,Finance,Entry,connected to big companies,4800
+PHL,Any Gender,Finance,Entry,connected to any,150000
+PHL,Any Gender,Finance,Training,connected to big companies,0
+PHL,Any Gender,Finance,Training,connected to any,3100
+PHL,Any Gender,Finance,Unpaid,connected to big companies,0
+PHL,Any Gender,Finance,Unpaid,connected to any,3000
+PHL,Male,Finance,Any Job Seniority,connected to big companies,11000
+PHL,Male,Finance,Any Job Seniority,connected to any,140000
+PHL,Male,Finance,Owner,connected to big companies,0
+PHL,Male,Finance,Owner,connected to any,2900
+PHL,Male,Finance,Partner,connected to big companies,0
+PHL,Male,Finance,Partner,connected to any,890
+PHL,Male,Finance,CXO,connected to big companies,350
+PHL,Male,Finance,CXO,connected to any,3000
+PHL,Male,Finance,VP,connected to big companies,800
+PHL,Male,Finance,VP,connected to any,3900
+PHL,Male,Finance,Director,connected to big companies,1300
+PHL,Male,Finance,Director,connected to any,7000
+PHL,Male,Finance,Manager,connected to big companies,1500
+PHL,Male,Finance,Manager,connected to any,13000
+PHL,Male,Finance,Senior,connected to big companies,4200
+PHL,Male,Finance,Senior,connected to any,42000
+PHL,Male,Finance,Entry,connected to big companies,1900
+PHL,Male,Finance,Entry,connected to any,48000
+PHL,Male,Finance,Training,connected to big companies,0
+PHL,Male,Finance,Training,connected to any,1000
+PHL,Male,Finance,Unpaid,connected to big companies,0
+PHL,Male,Finance,Unpaid,connected to any,980
+PHL,Female,Finance,Any Job Seniority,connected to big companies,11000
+PHL,Female,Finance,Any Job Seniority,connected to any,190000
+PHL,Female,Finance,Owner,connected to big companies,0
+PHL,Female,Finance,Owner,connected to any,2600
+PHL,Female,Finance,Partner,connected to big companies,0
+PHL,Female,Finance,Partner,connected to any,500
+PHL,Female,Finance,CXO,connected to big companies,0
+PHL,Female,Finance,CXO,connected to any,1600
+PHL,Female,Finance,VP,connected to big companies,610
+PHL,Female,Finance,VP,connected to any,3400
+PHL,Female,Finance,Director,connected to big companies,990
+PHL,Female,Finance,Director,connected to any,7200
+PHL,Female,Finance,Manager,connected to big companies,1400
+PHL,Female,Finance,Manager,connected to any,15000
+PHL,Female,Finance,Senior,connected to big companies,4700
+PHL,Female,Finance,Senior,connected to any,56000
+PHL,Female,Finance,Entry,connected to big companies,2300
+PHL,Female,Finance,Entry,connected to any,72000
+PHL,Female,Finance,Training,connected to big companies,0
+PHL,Female,Finance,Training,connected to any,1600
+PHL,Female,Finance,Unpaid,connected to big companies,0
+PHL,Female,Finance,Unpaid,connected to any,1400
+IND,Any Gender,Finance,Any Job Seniority,connected to big companies,330000
+IND,Any Gender,Finance,Any Job Seniority,connected to any,4000000
+IND,Any Gender,Finance,Owner,connected to big companies,8100
+IND,Any Gender,Finance,Owner,connected to any,81000
+IND,Any Gender,Finance,Partner,connected to big companies,4600
+IND,Any Gender,Finance,Partner,connected to any,23000
+IND,Any Gender,Finance,CXO,connected to big companies,5100
+IND,Any Gender,Finance,CXO,connected to any,37000
+IND,Any Gender,Finance,VP,connected to big companies,26000
+IND,Any Gender,Finance,VP,connected to any,150000
+IND,Any Gender,Finance,Director,connected to big companies,22000
+IND,Any Gender,Finance,Director,connected to any,130000
+IND,Any Gender,Finance,Manager,connected to big companies,45000
+IND,Any Gender,Finance,Manager,connected to any,510000
+IND,Any Gender,Finance,Senior,connected to big companies,120000
+IND,Any Gender,Finance,Senior,connected to any,1200000
+IND,Any Gender,Finance,Entry,connected to big companies,57000
+IND,Any Gender,Finance,Entry,connected to any,1100000
+IND,Any Gender,Finance,Training,connected to big companies,6500
+IND,Any Gender,Finance,Training,connected to any,58000
+IND,Any Gender,Finance,Unpaid,connected to big companies,0
+IND,Any Gender,Finance,Unpaid,connected to any,21000
+IND,Male,Finance,Any Job Seniority,connected to big companies,210000
+IND,Male,Finance,Any Job Seniority,connected to any,2600000
+IND,Male,Finance,Owner,connected to big companies,6200
+IND,Male,Finance,Owner,connected to any,60000
+IND,Male,Finance,Partner,connected to big companies,3600
+IND,Male,Finance,Partner,connected to any,17000
+IND,Male,Finance,CXO,connected to big companies,4000
+IND,Male,Finance,CXO,connected to any,26000
+IND,Male,Finance,VP,connected to big companies,19000
+IND,Male,Finance,VP,connected to any,110000
+IND,Male,Finance,Director,connected to big companies,16000
+IND,Male,Finance,Director,connected to any,97000
+IND,Male,Finance,Manager,connected to big companies,31000
+IND,Male,Finance,Manager,connected to any,360000
+IND,Male,Finance,Senior,connected to big companies,79000
+IND,Male,Finance,Senior,connected to any,800000
+IND,Male,Finance,Entry,connected to big companies,35000
+IND,Male,Finance,Entry,connected to any,670000
+IND,Male,Finance,Training,connected to big companies,3700
+IND,Male,Finance,Training,connected to any,32000
+IND,Male,Finance,Unpaid,connected to big companies,0
+IND,Male,Finance,Unpaid,connected to any,13000
+IND,Female,Finance,Any Job Seniority,connected to big companies,86000
+IND,Female,Finance,Any Job Seniority,connected to any,960000
+IND,Female,Finance,Owner,connected to big companies,1100
+IND,Female,Finance,Owner,connected to any,10000
+IND,Female,Finance,Partner,connected to big companies,600
+IND,Female,Finance,Partner,connected to any,3300
+IND,Female,Finance,CXO,connected to big companies,700
+IND,Female,Finance,CXO,connected to any,4900
+IND,Female,Finance,VP,connected to big companies,4800
+IND,Female,Finance,VP,connected to any,28000
+IND,Female,Finance,Director,connected to big companies,4100
+IND,Female,Finance,Director,connected to any,20000
+IND,Female,Finance,Manager,connected to big companies,11000
+IND,Female,Finance,Manager,connected to any,94000
+IND,Female,Finance,Senior,connected to big companies,33000
+IND,Female,Finance,Senior,connected to any,300000
+IND,Female,Finance,Entry,connected to big companies,17000
+IND,Female,Finance,Entry,connected to any,270000
+IND,Female,Finance,Training,connected to big companies,2300
+IND,Female,Finance,Training,connected to any,19000
+IND,Female,Finance,Unpaid,connected to big companies,0
+IND,Female,Finance,Unpaid,connected to any,4400
+VNM,Any Gender,Finance,Any Job Seniority,connected to big companies,1600
+VNM,Any Gender,Finance,Any Job Seniority,connected to any,150000
+VNM,Any Gender,Finance,Owner,connected to big companies,0
+VNM,Any Gender,Finance,Owner,connected to any,3200
+VNM,Any Gender,Finance,Partner,connected to big companies,0
+VNM,Any Gender,Finance,Partner,connected to any,900
+VNM,Any Gender,Finance,CXO,connected to big companies,0
+VNM,Any Gender,Finance,CXO,connected to any,3300
+VNM,Any Gender,Finance,VP,connected to big companies,0
+VNM,Any Gender,Finance,VP,connected to any,2300
+VNM,Any Gender,Finance,Director,connected to big companies,360
+VNM,Any Gender,Finance,Director,connected to any,8200
+VNM,Any Gender,Finance,Manager,connected to big companies,0
+VNM,Any Gender,Finance,Manager,connected to any,11000
+VNM,Any Gender,Finance,Senior,connected to big companies,480
+VNM,Any Gender,Finance,Senior,connected to any,38000
+VNM,Any Gender,Finance,Entry,connected to big companies,0
+VNM,Any Gender,Finance,Entry,connected to any,41000
+VNM,Any Gender,Finance,Training,connected to big companies,0
+VNM,Any Gender,Finance,Training,connected to any,3900
+VNM,Any Gender,Finance,Unpaid,connected to big companies,0
+VNM,Any Gender,Finance,Unpaid,connected to any,710
+VNM,Male,Finance,Any Job Seniority,connected to big companies,690
+VNM,Male,Finance,Any Job Seniority,connected to any,46000
+VNM,Male,Finance,Owner,connected to big companies,0
+VNM,Male,Finance,Owner,connected to any,1300
+VNM,Male,Finance,Partner,connected to big companies,0
+VNM,Male,Finance,Partner,connected to any,440
+VNM,Male,Finance,CXO,connected to big companies,0
+VNM,Male,Finance,CXO,connected to any,1400
+VNM,Male,Finance,VP,connected to big companies,0
+VNM,Male,Finance,VP,connected to any,840
+VNM,Male,Finance,Director,connected to big companies,0
+VNM,Male,Finance,Director,connected to any,3200
+VNM,Male,Finance,Manager,connected to big companies,0
+VNM,Male,Finance,Manager,connected to any,3700
+VNM,Male,Finance,Senior,connected to big companies,0
+VNM,Male,Finance,Senior,connected to any,12000
+VNM,Male,Finance,Entry,connected to big companies,0
+VNM,Male,Finance,Entry,connected to any,12000
+VNM,Male,Finance,Training,connected to big companies,0
+VNM,Male,Finance,Training,connected to any,980
+VNM,Male,Finance,Unpaid,connected to big companies,0
+VNM,Male,Finance,Unpaid,connected to any,0
+VNM,Female,Finance,Any Job Seniority,connected to big companies,670
+VNM,Female,Finance,Any Job Seniority,connected to any,54000
+VNM,Female,Finance,Owner,connected to big companies,0
+VNM,Female,Finance,Owner,connected to any,1000
+VNM,Female,Finance,Partner,connected to big companies,0
+VNM,Female,Finance,Partner,connected to any,0
+VNM,Female,Finance,CXO,connected to big companies,0
+VNM,Female,Finance,CXO,connected to any,870
+VNM,Female,Finance,VP,connected to big companies,0
+VNM,Female,Finance,VP,connected to any,790
+VNM,Female,Finance,Director,connected to big companies,0
+VNM,Female,Finance,Director,connected to any,3000
+VNM,Female,Finance,Manager,connected to big companies,0
+VNM,Female,Finance,Manager,connected to any,4400
+VNM,Female,Finance,Senior,connected to big companies,0
+VNM,Female,Finance,Senior,connected to any,15000
+VNM,Female,Finance,Entry,connected to big companies,0
+VNM,Female,Finance,Entry,connected to any,15000
+VNM,Female,Finance,Training,connected to big companies,0
+VNM,Female,Finance,Training,connected to any,1300
+VNM,Female,Finance,Unpaid,connected to big companies,0
+VNM,Female,Finance,Unpaid,connected to any,0
+GBR,Any Gender,Finance,Any Job Seniority,connected to big companies,270000
+GBR,Any Gender,Finance,Any Job Seniority,connected to any,1800000
+GBR,Any Gender,Finance,Owner,connected to big companies,9000
+GBR,Any Gender,Finance,Owner,connected to any,53000
+GBR,Any Gender,Finance,Partner,connected to big companies,9900
+GBR,Any Gender,Finance,Partner,connected to any,34000
+GBR,Any Gender,Finance,CXO,connected to big companies,12000
+GBR,Any Gender,Finance,CXO,connected to any,52000
+GBR,Any Gender,Finance,VP,connected to big companies,27000
+GBR,Any Gender,Finance,VP,connected to any,82000
+GBR,Any Gender,Finance,Director,connected to big companies,57000
+GBR,Any Gender,Finance,Director,connected to any,240000
+GBR,Any Gender,Finance,Manager,connected to big companies,23000
+GBR,Any Gender,Finance,Manager,connected to any,170000
+GBR,Any Gender,Finance,Senior,connected to big companies,89000
+GBR,Any Gender,Finance,Senior,connected to any,620000
+GBR,Any Gender,Finance,Entry,connected to big companies,39000
+GBR,Any Gender,Finance,Entry,connected to any,360000
+GBR,Any Gender,Finance,Training,connected to big companies,2100
+GBR,Any Gender,Finance,Training,connected to any,12000
+GBR,Any Gender,Finance,Unpaid,connected to big companies,690
+GBR,Any Gender,Finance,Unpaid,connected to any,19000
+GBR,Male,Finance,Any Job Seniority,connected to big companies,170000
+GBR,Male,Finance,Any Job Seniority,connected to any,1000000
+GBR,Male,Finance,Owner,connected to big companies,6800
+GBR,Male,Finance,Owner,connected to any,38000
+GBR,Male,Finance,Partner,connected to big companies,7400
+GBR,Male,Finance,Partner,connected to any,24000
+GBR,Male,Finance,CXO,connected to big companies,8800
+GBR,Male,Finance,CXO,connected to any,37000
+GBR,Male,Finance,VP,connected to big companies,19000
+GBR,Male,Finance,VP,connected to any,57000
+GBR,Male,Finance,Director,connected to big companies,40000
+GBR,Male,Finance,Director,connected to any,160000
+GBR,Male,Finance,Manager,connected to big companies,14000
+GBR,Male,Finance,Manager,connected to any,95000
+GBR,Male,Finance,Senior,connected to big companies,54000
+GBR,Male,Finance,Senior,connected to any,330000
+GBR,Male,Finance,Entry,connected to big companies,23000
+GBR,Male,Finance,Entry,connected to any,180000
+GBR,Male,Finance,Training,connected to big companies,1100
+GBR,Male,Finance,Training,connected to any,5900
+GBR,Male,Finance,Unpaid,connected to big companies,510
+GBR,Male,Finance,Unpaid,connected to any,12000
+GBR,Female,Finance,Any Job Seniority,connected to big companies,79000
+GBR,Female,Finance,Any Job Seniority,connected to any,660000
+GBR,Female,Finance,Owner,connected to big companies,1700
+GBR,Female,Finance,Owner,connected to any,11000
+GBR,Female,Finance,Partner,connected to big companies,2000
+GBR,Female,Finance,Partner,connected to any,7200
+GBR,Female,Finance,CXO,connected to big companies,2300
+GBR,Female,Finance,CXO,connected to any,10000
+GBR,Female,Finance,VP,connected to big companies,6700
+GBR,Female,Finance,VP,connected to any,20000
+GBR,Female,Finance,Director,connected to big companies,15000
+GBR,Female,Finance,Director,connected to any,66000
+GBR,Female,Finance,Manager,connected to big companies,8100
+GBR,Female,Finance,Manager,connected to any,67000
+GBR,Female,Finance,Senior,connected to big companies,28000
+GBR,Female,Finance,Senior,connected to any,250000
+GBR,Female,Finance,Entry,connected to big companies,13000
+GBR,Female,Finance,Entry,connected to any,160000
+GBR,Female,Finance,Training,connected to big companies,740
+GBR,Female,Finance,Training,connected to any,4400
+GBR,Female,Finance,Unpaid,connected to big companies,0
+GBR,Female,Finance,Unpaid,connected to any,5900
+USA,Any Gender,Finance,Any Job Seniority,connected to big companies,1400000
+USA,Any Gender,Finance,Any Job Seniority,connected to any,9600000
+USA,Any Gender,Finance,Owner,connected to big companies,64000
+USA,Any Gender,Finance,Owner,connected to any,480000
+USA,Any Gender,Finance,Partner,connected to big companies,56000
+USA,Any Gender,Finance,Partner,connected to any,180000
+USA,Any Gender,Finance,CXO,connected to big companies,88000
+USA,Any Gender,Finance,CXO,connected to any,450000
+USA,Any Gender,Finance,VP,connected to big companies,270000
+USA,Any Gender,Finance,VP,connected to any,840000
+USA,Any Gender,Finance,Director,connected to big companies,180000
+USA,Any Gender,Finance,Director,connected to any,580000
+USA,Any Gender,Finance,Manager,connected to big companies,130000
+USA,Any Gender,Finance,Manager,connected to any,810000
+USA,Any Gender,Finance,Senior,connected to big companies,440000
+USA,Any Gender,Finance,Senior,connected to any,2900000
+USA,Any Gender,Finance,Entry,connected to big companies,220000
+USA,Any Gender,Finance,Entry,connected to any,2700000
+USA,Any Gender,Finance,Training,connected to big companies,13000
+USA,Any Gender,Finance,Training,connected to any,53000
+USA,Any Gender,Finance,Unpaid,connected to big companies,3100
+USA,Any Gender,Finance,Unpaid,connected to any,130000
+USA,Male,Finance,Any Job Seniority,connected to big companies,870000
+USA,Male,Finance,Any Job Seniority,connected to any,4700000
+USA,Male,Finance,Owner,connected to big companies,46000
+USA,Male,Finance,Owner,connected to any,320000
+USA,Male,Finance,Partner,connected to big companies,43000
+USA,Male,Finance,Partner,connected to any,130000
+USA,Male,Finance,CXO,connected to big companies,67000
+USA,Male,Finance,CXO,connected to any,320000
+USA,Male,Finance,VP,connected to big companies,180000
+USA,Male,Finance,VP,connected to any,530000
+USA,Male,Finance,Director,connected to big companies,110000
+USA,Male,Finance,Director,connected to any,330000
+USA,Male,Finance,Manager,connected to big companies,75000
+USA,Male,Finance,Manager,connected to any,380000
+USA,Male,Finance,Senior,connected to big companies,250000
+USA,Male,Finance,Senior,connected to any,1300000
+USA,Male,Finance,Entry,connected to big companies,130000
+USA,Male,Finance,Entry,connected to any,1100000
+USA,Male,Finance,Training,connected to big companies,7800
+USA,Male,Finance,Training,connected to any,28000
+USA,Male,Finance,Unpaid,connected to big companies,2000
+USA,Male,Finance,Unpaid,connected to any,63000
+USA,Female,Finance,Any Job Seniority,connected to big companies,470000
+USA,Female,Finance,Any Job Seniority,connected to any,4400000
+USA,Female,Finance,Owner,connected to big companies,14000
+USA,Female,Finance,Owner,connected to any,140000
+USA,Female,Finance,Partner,connected to big companies,11000
+USA,Female,Finance,Partner,connected to any,42000
+USA,Female,Finance,CXO,connected to big companies,18000
+USA,Female,Finance,CXO,connected to any,100000
+USA,Female,Finance,VP,connected to big companies,77000
+USA,Female,Finance,VP,connected to any,270000
+USA,Female,Finance,Director,connected to big companies,54000
+USA,Female,Finance,Director,connected to any,220000
+USA,Female,Finance,Manager,connected to big companies,51000
+USA,Female,Finance,Manager,connected to any,390000
+USA,Female,Finance,Senior,connected to big companies,160000
+USA,Female,Finance,Senior,connected to any,1400000
+USA,Female,Finance,Entry,connected to big companies,84000
+USA,Female,Finance,Entry,connected to any,1400000
+USA,Female,Finance,Training,connected to big companies,4200
+USA,Female,Finance,Training,connected to any,19000
+USA,Female,Finance,Unpaid,connected to big companies,1000
+USA,Female,Finance,Unpaid,connected to any,60000

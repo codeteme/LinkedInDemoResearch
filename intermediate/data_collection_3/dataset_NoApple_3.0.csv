@@ -1,0 +1,331 @@
+Country,Gender,Sector,Job Seniority,Connectivity Status,Count
+PHL,Any Gender,IT,Any Job Seniority,connected to big companies,42000
+PHL,Any Gender,IT,Any Job Seniority,connected to any,930000
+PHL,Any Gender,IT,Owner,connected to big companies,1900
+PHL,Any Gender,IT,Owner,connected to any,17000
+PHL,Any Gender,IT,Partner,connected to big companies,400
+PHL,Any Gender,IT,Partner,connected to any,1700
+PHL,Any Gender,IT,CXO,connected to big companies,1600
+PHL,Any Gender,IT,CXO,connected to any,9700
+PHL,Any Gender,IT,VP,connected to big companies,1300
+PHL,Any Gender,IT,VP,connected to any,9000
+PHL,Any Gender,IT,Director,connected to big companies,3100
+PHL,Any Gender,IT,Director,connected to any,18000
+PHL,Any Gender,IT,Manager,connected to big companies,4700
+PHL,Any Gender,IT,Manager,connected to any,50000
+PHL,Any Gender,IT,Senior,connected to big companies,16000
+PHL,Any Gender,IT,Senior,connected to any,240000
+PHL,Any Gender,IT,Entry,connected to big companies,11000
+PHL,Any Gender,IT,Entry,connected to any,410000
+PHL,Any Gender,IT,Training,connected to big companies,0
+PHL,Any Gender,IT,Training,connected to any,9700
+PHL,Any Gender,IT,Unpaid,connected to big companies,0
+PHL,Any Gender,IT,Unpaid,connected to any,15000
+PHL,Male,IT,Any Job Seniority,connected to big companies,22000
+PHL,Male,IT,Any Job Seniority,connected to any,400000
+PHL,Male,IT,Owner,connected to big companies,1200
+PHL,Male,IT,Owner,connected to any,8600
+PHL,Male,IT,Partner,connected to big companies,0
+PHL,Male,IT,Partner,connected to any,1000
+PHL,Male,IT,CXO,connected to big companies,1100
+PHL,Male,IT,CXO,connected to any,5700
+PHL,Male,IT,VP,connected to big companies,820
+PHL,Male,IT,VP,connected to any,4700
+PHL,Male,IT,Director,connected to big companies,1800
+PHL,Male,IT,Director,connected to any,8900
+PHL,Male,IT,Manager,connected to big companies,2500
+PHL,Male,IT,Manager,connected to any,23000
+PHL,Male,IT,Senior,connected to big companies,8100
+PHL,Male,IT,Senior,connected to any,100000
+PHL,Male,IT,Entry,connected to big companies,5700
+PHL,Male,IT,Entry,connected to any,180000
+PHL,Male,IT,Training,connected to big companies,0
+PHL,Male,IT,Training,connected to any,3800
+PHL,Male,IT,Unpaid,connected to big companies,0
+PHL,Male,IT,Unpaid,connected to any,5500
+PHL,Female,IT,Any Job Seniority,connected to big companies,15000
+PHL,Female,IT,Any Job Seniority,connected to any,350000
+PHL,Female,IT,Owner,connected to big companies,560
+PHL,Female,IT,Owner,connected to any,5400
+PHL,Female,IT,Partner,connected to big companies,0
+PHL,Female,IT,Partner,connected to any,480
+PHL,Female,IT,CXO,connected to big companies,330
+PHL,Female,IT,CXO,connected to any,2300
+PHL,Female,IT,VP,connected to big companies,370
+PHL,Female,IT,VP,connected to any,2700
+PHL,Female,IT,Director,connected to big companies,970
+PHL,Female,IT,Director,connected to any,6300
+PHL,Female,IT,Manager,connected to big companies,1700
+PHL,Female,IT,Manager,connected to any,18000
+PHL,Female,IT,Senior,connected to big companies,6000
+PHL,Female,IT,Senior,connected to any,98000
+PHL,Female,IT,Entry,connected to big companies,4000
+PHL,Female,IT,Entry,connected to any,150000
+PHL,Female,IT,Training,connected to big companies,0
+PHL,Female,IT,Training,connected to any,3700
+PHL,Female,IT,Unpaid,connected to big companies,0
+PHL,Female,IT,Unpaid,connected to any,5900
+IND,Any Gender,IT,Any Job Seniority,connected to big companies,1500000
+IND,Any Gender,IT,Any Job Seniority,connected to any,11000000
+IND,Any Gender,IT,Owner,connected to big companies,43000
+IND,Any Gender,IT,Owner,connected to any,260000
+IND,Any Gender,IT,Partner,connected to big companies,6100
+IND,Any Gender,IT,Partner,connected to any,23000
+IND,Any Gender,IT,CXO,connected to big companies,27000
+IND,Any Gender,IT,CXO,connected to any,110000
+IND,Any Gender,IT,VP,connected to big companies,31000
+IND,Any Gender,IT,VP,connected to any,230000
+IND,Any Gender,IT,Director,connected to big companies,72000
+IND,Any Gender,IT,Director,connected to any,240000
+IND,Any Gender,IT,Manager,connected to big companies,110000
+IND,Any Gender,IT,Manager,connected to any,560000
+IND,Any Gender,IT,Senior,connected to big companies,620000
+IND,Any Gender,IT,Senior,connected to any,3400000
+IND,Any Gender,IT,Entry,connected to big companies,430000
+IND,Any Gender,IT,Entry,connected to any,4200000
+IND,Any Gender,IT,Training,connected to big companies,37000
+IND,Any Gender,IT,Training,connected to any,330000
+IND,Any Gender,IT,Unpaid,connected to big companies,540
+IND,Any Gender,IT,Unpaid,connected to any,54000
+IND,Male,IT,Any Job Seniority,connected to big companies,1000000
+IND,Male,IT,Any Job Seniority,connected to any,6900000
+IND,Male,IT,Owner,connected to big companies,33000
+IND,Male,IT,Owner,connected to any,180000
+IND,Male,IT,Partner,connected to big companies,4700
+IND,Male,IT,Partner,connected to any,17000
+IND,Male,IT,CXO,connected to big companies,21000
+IND,Male,IT,CXO,connected to any,76000
+IND,Male,IT,VP,connected to big companies,23000
+IND,Male,IT,VP,connected to any,150000
+IND,Male,IT,Director,connected to big companies,54000
+IND,Male,IT,Director,connected to any,170000
+IND,Male,IT,Manager,connected to big companies,79000
+IND,Male,IT,Manager,connected to any,390000
+IND,Male,IT,Senior,connected to big companies,420000
+IND,Male,IT,Senior,connected to any,2100000
+IND,Male,IT,Entry,connected to big companies,280000
+IND,Male,IT,Entry,connected to any,2600000
+IND,Male,IT,Training,connected to big companies,22000
+IND,Male,IT,Training,connected to any,180000
+IND,Male,IT,Unpaid,connected to big companies,330
+IND,Male,IT,Unpaid,connected to any,31000
+IND,Female,IT,Any Job Seniority,connected to big companies,360000
+IND,Female,IT,Any Job Seniority,connected to any,2900000
+IND,Female,IT,Owner,connected to big companies,5500
+IND,Female,IT,Owner,connected to any,31000
+IND,Female,IT,Partner,connected to big companies,840
+IND,Female,IT,Partner,connected to any,3200
+IND,Female,IT,CXO,connected to big companies,2900
+IND,Female,IT,CXO,connected to any,14000
+IND,Female,IT,VP,connected to big companies,4500
+IND,Female,IT,VP,connected to any,43000
+IND,Female,IT,Director,connected to big companies,12000
+IND,Female,IT,Director,connected to any,41000
+IND,Female,IT,Manager,connected to big companies,22000
+IND,Female,IT,Manager,connected to any,100000
+IND,Female,IT,Senior,connected to big companies,140000
+IND,Female,IT,Senior,connected to any,910000
+IND,Female,IT,Entry,connected to big companies,110000
+IND,Female,IT,Entry,connected to any,1100000
+IND,Female,IT,Training,connected to big companies,11000
+IND,Female,IT,Training,connected to any,100000
+IND,Female,IT,Unpaid,connected to big companies,0
+IND,Female,IT,Unpaid,connected to any,13000
+VNM,Any Gender,IT,Any Job Seniority,connected to big companies,20000
+VNM,Any Gender,IT,Any Job Seniority,connected to any,350000
+VNM,Any Gender,IT,Owner,connected to big companies,1100
+VNM,Any Gender,IT,Owner,connected to any,7300
+VNM,Any Gender,IT,Partner,connected to big companies,0
+VNM,Any Gender,IT,Partner,connected to any,760
+VNM,Any Gender,IT,CXO,connected to big companies,1300
+VNM,Any Gender,IT,CXO,connected to any,7400
+VNM,Any Gender,IT,VP,connected to big companies,530
+VNM,Any Gender,IT,VP,connected to any,4200
+VNM,Any Gender,IT,Director,connected to big companies,1900
+VNM,Any Gender,IT,Director,connected to any,12000
+VNM,Any Gender,IT,Manager,connected to big companies,1800
+VNM,Any Gender,IT,Manager,connected to any,17000
+VNM,Any Gender,IT,Senior,connected to big companies,6700
+VNM,Any Gender,IT,Senior,connected to any,73000
+VNM,Any Gender,IT,Entry,connected to big companies,5700
+VNM,Any Gender,IT,Entry,connected to any,140000
+VNM,Any Gender,IT,Training,connected to big companies,0
+VNM,Any Gender,IT,Training,connected to any,11000
+VNM,Any Gender,IT,Unpaid,connected to big companies,0
+VNM,Any Gender,IT,Unpaid,connected to any,2300
+VNM,Male,IT,Any Job Seniority,connected to big companies,8700
+VNM,Male,IT,Any Job Seniority,connected to any,120000
+VNM,Male,IT,Owner,connected to big companies,620
+VNM,Male,IT,Owner,connected to any,3200
+VNM,Male,IT,Partner,connected to big companies,0
+VNM,Male,IT,Partner,connected to any,340
+VNM,Male,IT,CXO,connected to big companies,700
+VNM,Male,IT,CXO,connected to any,3200
+VNM,Male,IT,VP,connected to big companies,0
+VNM,Male,IT,VP,connected to any,1600
+VNM,Male,IT,Director,connected to big companies,970
+VNM,Male,IT,Director,connected to any,4700
+VNM,Male,IT,Manager,connected to big companies,820
+VNM,Male,IT,Manager,connected to any,6200
+VNM,Male,IT,Senior,connected to big companies,2700
+VNM,Male,IT,Senior,connected to any,26000
+VNM,Male,IT,Entry,connected to big companies,2400
+VNM,Male,IT,Entry,connected to any,48000
+VNM,Male,IT,Training,connected to big companies,0
+VNM,Male,IT,Training,connected to any,3100
+VNM,Male,IT,Unpaid,connected to big companies,0
+VNM,Male,IT,Unpaid,connected to any,790
+VNM,Female,IT,Any Job Seniority,connected to big companies,6700
+VNM,Female,IT,Any Job Seniority,connected to any,100000
+VNM,Female,IT,Owner,connected to big companies,0
+VNM,Female,IT,Owner,connected to any,1800
+VNM,Female,IT,Partner,connected to big companies,0
+VNM,Female,IT,Partner,connected to any,0
+VNM,Female,IT,CXO,connected to big companies,330
+VNM,Female,IT,CXO,connected to any,1700
+VNM,Female,IT,VP,connected to big companies,0
+VNM,Female,IT,VP,connected to any,1200
+VNM,Female,IT,Director,connected to big companies,600
+VNM,Female,IT,Director,connected to any,3500
+VNM,Female,IT,Manager,connected to big companies,640
+VNM,Female,IT,Manager,connected to any,5200
+VNM,Female,IT,Senior,connected to big companies,2500
+VNM,Female,IT,Senior,connected to any,24000
+VNM,Female,IT,Entry,connected to big companies,1800
+VNM,Female,IT,Entry,connected to any,41000
+VNM,Female,IT,Training,connected to big companies,0
+VNM,Female,IT,Training,connected to any,2900
+VNM,Female,IT,Unpaid,connected to big companies,0
+VNM,Female,IT,Unpaid,connected to any,680
+GBR,Any Gender,IT,Any Job Seniority,connected to big companies,460000
+GBR,Any Gender,IT,Any Job Seniority,connected to any,2200000
+GBR,Any Gender,IT,Owner,connected to big companies,31000
+GBR,Any Gender,IT,Owner,connected to any,110000
+GBR,Any Gender,IT,Partner,connected to big companies,11000
+GBR,Any Gender,IT,Partner,connected to any,21000
+GBR,Any Gender,IT,CXO,connected to big companies,25000
+GBR,Any Gender,IT,CXO,connected to any,57000
+GBR,Any Gender,IT,VP,connected to big companies,23000
+GBR,Any Gender,IT,VP,connected to any,66000
+GBR,Any Gender,IT,Director,connected to big companies,91000
+GBR,Any Gender,IT,Director,connected to any,230000
+GBR,Any Gender,IT,Manager,connected to big companies,49000
+GBR,Any Gender,IT,Manager,connected to any,170000
+GBR,Any Gender,IT,Senior,connected to big companies,170000
+GBR,Any Gender,IT,Senior,connected to any,620000
+GBR,Any Gender,IT,Entry,connected to big companies,76000
+GBR,Any Gender,IT,Entry,connected to any,620000
+GBR,Any Gender,IT,Training,connected to big companies,1700
+GBR,Any Gender,IT,Training,connected to any,16000
+GBR,Any Gender,IT,Unpaid,connected to big companies,1900
+GBR,Any Gender,IT,Unpaid,connected to any,49000
+GBR,Male,IT,Any Job Seniority,connected to big companies,320000
+GBR,Male,IT,Any Job Seniority,connected to any,1400000
+GBR,Male,IT,Owner,connected to big companies,25000
+GBR,Male,IT,Owner,connected to any,81000
+GBR,Male,IT,Partner,connected to big companies,8100
+GBR,Male,IT,Partner,connected to any,15000
+GBR,Male,IT,CXO,connected to big companies,20000
+GBR,Male,IT,CXO,connected to any,44000
+GBR,Male,IT,VP,connected to big companies,19000
+GBR,Male,IT,VP,connected to any,52000
+GBR,Male,IT,Director,connected to big companies,69000
+GBR,Male,IT,Director,connected to any,170000
+GBR,Male,IT,Manager,connected to big companies,32000
+GBR,Male,IT,Manager,connected to any,110000
+GBR,Male,IT,Senior,connected to big companies,110000
+GBR,Male,IT,Senior,connected to any,380000
+GBR,Male,IT,Entry,connected to big companies,50000
+GBR,Male,IT,Entry,connected to any,380000
+GBR,Male,IT,Training,connected to big companies,890
+GBR,Male,IT,Training,connected to any,9100
+GBR,Male,IT,Unpaid,connected to big companies,1600
+GBR,Male,IT,Unpaid,connected to any,31000
+GBR,Female,IT,Any Job Seniority,connected to big companies,120000
+GBR,Female,IT,Any Job Seniority,connected to any,610000
+GBR,Female,IT,Owner,connected to big companies,5100
+GBR,Female,IT,Owner,connected to any,19000
+GBR,Female,IT,Partner,connected to big companies,2000
+GBR,Female,IT,Partner,connected to any,4300
+GBR,Female,IT,CXO,connected to big companies,3300
+GBR,Female,IT,CXO,connected to any,8200
+GBR,Female,IT,VP,connected to big companies,3400
+GBR,Female,IT,VP,connected to any,10000
+GBR,Female,IT,Director,connected to big companies,19000
+GBR,Female,IT,Director,connected to any,53000
+GBR,Female,IT,Manager,connected to big companies,15000
+GBR,Female,IT,Manager,connected to any,53000
+GBR,Female,IT,Senior,connected to big companies,45000
+GBR,Female,IT,Senior,connected to any,190000
+GBR,Female,IT,Entry,connected to big companies,21000
+GBR,Female,IT,Entry,connected to any,180000
+GBR,Female,IT,Training,connected to big companies,640
+GBR,Female,IT,Training,connected to any,5000
+GBR,Female,IT,Unpaid,connected to big companies,300
+GBR,Female,IT,Unpaid,connected to any,15000
+USA,Any Gender,IT,Any Job Seniority,connected to big companies,2900000
+USA,Any Gender,IT,Any Job Seniority,connected to any,12000000
+USA,Any Gender,IT,Owner,connected to big companies,180000
+USA,Any Gender,IT,Owner,connected to any,740000
+USA,Any Gender,IT,Partner,connected to big companies,69000
+USA,Any Gender,IT,Partner,connected to any,130000
+USA,Any Gender,IT,CXO,connected to big companies,180000
+USA,Any Gender,IT,CXO,connected to any,530000
+USA,Any Gender,IT,VP,connected to big companies,160000
+USA,Any Gender,IT,VP,connected to any,370000
+USA,Any Gender,IT,Director,connected to big companies,350000
+USA,Any Gender,IT,Director,connected to any,730000
+USA,Any Gender,IT,Manager,connected to big companies,330000
+USA,Any Gender,IT,Manager,connected to any,1000000
+USA,Any Gender,IT,Senior,connected to big companies,1000000
+USA,Any Gender,IT,Senior,connected to any,3400000
+USA,Any Gender,IT,Entry,connected to big companies,590000
+USA,Any Gender,IT,Entry,connected to any,3800000
+USA,Any Gender,IT,Training,connected to big companies,21000
+USA,Any Gender,IT,Training,connected to any,88000
+USA,Any Gender,IT,Unpaid,connected to big companies,9300
+USA,Any Gender,IT,Unpaid,connected to any,330000
+USA,Male,IT,Any Job Seniority,connected to big companies,1900000
+USA,Male,IT,Any Job Seniority,connected to any,7300000
+USA,Male,IT,Owner,connected to big companies,140000
+USA,Male,IT,Owner,connected to any,520000
+USA,Male,IT,Partner,connected to big companies,52000
+USA,Male,IT,Partner,connected to any,92000
+USA,Male,IT,CXO,connected to big companies,140000
+USA,Male,IT,CXO,connected to any,400000
+USA,Male,IT,VP,connected to big companies,120000
+USA,Male,IT,VP,connected to any,260000
+USA,Male,IT,Director,connected to big companies,230000
+USA,Male,IT,Director,connected to any,470000
+USA,Male,IT,Manager,connected to big companies,200000
+USA,Male,IT,Manager,connected to any,610000
+USA,Male,IT,Senior,connected to big companies,660000
+USA,Male,IT,Senior,connected to any,2000000
+USA,Male,IT,Entry,connected to big companies,370000
+USA,Male,IT,Entry,connected to any,2100000
+USA,Male,IT,Training,connected to big companies,11000
+USA,Male,IT,Training,connected to any,47000
+USA,Male,IT,Unpaid,connected to big companies,7100
+USA,Male,IT,Unpaid,connected to any,180000
+USA,Female,IT,Any Job Seniority,connected to big companies,840000
+USA,Female,IT,Any Job Seniority,connected to any,4200000
+USA,Female,IT,Owner,connected to big companies,37000
+USA,Female,IT,Owner,connected to any,170000
+USA,Female,IT,Partner,connected to big companies,14000
+USA,Female,IT,Partner,connected to any,27000
+USA,Female,IT,CXO,connected to big companies,29000
+USA,Female,IT,CXO,connected to any,95000
+USA,Female,IT,VP,connected to big companies,35000
+USA,Female,IT,VP,connected to any,86000
+USA,Female,IT,Director,connected to big companies,98000
+USA,Female,IT,Director,connected to any,220000
+USA,Female,IT,Manager,connected to big companies,110000
+USA,Female,IT,Manager,connected to any,350000
+USA,Female,IT,Senior,connected to big companies,310000
+USA,Female,IT,Senior,connected to any,1200000
+USA,Female,IT,Entry,connected to big companies,170000
+USA,Female,IT,Entry,connected to any,1400000
+USA,Female,IT,Training,connected to big companies,7100
+USA,Female,IT,Training,connected to any,30000
+USA,Female,IT,Unpaid,connected to big companies,2000
+USA,Female,IT,Unpaid,connected to any,130000
