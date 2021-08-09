@@ -6,6 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+import sklearn
 from sklearn.compose import make_column_selector as col_selector
 
 import streamlit as st
