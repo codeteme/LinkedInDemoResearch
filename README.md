@@ -28,3 +28,28 @@ job seniority:
 company:
 
 Users can also exclude any attributes. For example NO Men aged 55+ from Mali
+
+
+In total, there were a total of three rounds of data collection. Each one builds on top of the other. For example, the last round contains all the variables in the previous round in addition to "recency status".
+
+analysis.py reads in the processed data, produces plots and configures the streamlit app to view plots.
+
+build_grand_database.py reads in all five files (each corresponding to the five countries) then merges them to build one grand file. 
+
+get_alpha2_alpha3.py gets the country names with their respective two digit codes. 
+
+merge_country_files.py finds and merges all files in a given directory.
+
+model.py is probably the most important script. It reads in the processed data and generates a correlation matrix according with a regression model. 
+
+parser.py was used to test the header file later used to send in the request string (the authentication segment). 
+
+The query builder script contains the main code to build and send the request string. 
+variables_dictionaries.py contains all the possible values for each of the inputs - location, gender, job seniorty, member behavior, company industry and company size. 
+
+requester.py contans request sender and reponse parser. More specifically, you can copy and paste the request header from browser's network panel getHeadersFromFirefox converts the string that you can copy in the firefox developer tools (tab network, right click on 1 request -> copy request-header) to a header that can be used
+
+temporary.py is a set up for debugging purposes and does not add any value. 
+
+Sat 4, 2023 | test.py is the new script I added. It's a streamlit app. It takes in a user input. The input is a drop down list of supported countries. 
+            The app then returns a table of 'spend', 'reach', 'cost per 1,000 member accounts reached', 'average frequency' of a day, week and month periods.
