@@ -286,7 +286,7 @@ st.write("""
 ###### Last Update: March 5, 2023
 """)
          
-st.caption("This is a demo application that allows users to select a country from a dropdown list and see the corresponding LinkedIn API request. The application provides four metrics: Spend, Reach, Cost per 1,000 member accounts reached, and Frequency, which are explained in a collapsible container that can be expanded and collapsed as needed. The user can click the \"Get Forecast\" button to retrieve data from LinkedIn's API and view the forecast for the selected country based on the chosen metrics.")
+st.caption('This is a demo application that allows users to select a country from a dropdown list and see the corresponding LinkedIn API request. The application provides four metrics: Spend, Reach, Cost per 1,000 member accounts reached, and Frequency, which are explained in a collapsible container that can be expanded and collapsed as needed. Additionally, the application displays the estimated target audience size for the selected country. The user can click the "Submit Request" button to retrieve data from LinkedIn\'s API and view the forecast for the selected country based on the chosen metrics.')
 
 # Define the text to be displayed when the info button is clicked
 # Define the content to show in the help section
@@ -322,7 +322,7 @@ st.write('Select a country from the dropdown list to see the corresponding Linke
 
 # Create the country dropdown list
 selected_country = st.selectbox('Select a country', list(locationsegments.keys()))
-if st.button("Get Forecast"):
+if st.button("Submit Request"):
     # Get the location segments for the selected country
     target_country = selected_country
     new_key = formatted_locationsegments.get(target_country)[0]
@@ -330,42 +330,56 @@ if st.button("Get Forecast"):
     ancestor_geo_id = formatted_locationsegments.get(target_country)[2]
 
     # Define the LinkedIn API request data
-    data = 'q=criteria&accountId=506462727&adFormats=List(STANDARD_SPONSORED_CONTENT)&runSchedule=(start:1677888000000)&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&objectiveType=BRAND_AWARENESS&costType=CPM&unitCost=(amount:50.79,currencyCode:USD)&dailyBudget=(amount:100.0,currencyCode:USD)&optimizationTargetType=MAX_REACH&audienceExpansionEnabled=true&offsiteDeliveryEnabled=true'.format(geo_id, new_key, ancestor_geo_id)
+    data_forecasting = 'q=criteria&accountId=506462727&adFormats=List(STANDARD_SPONSORED_CONTENT)&runSchedule=(start:1677888000000)&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&objectiveType=BRAND_AWARENESS&costType=CPM&unitCost=(amount:50.79,currencyCode:USD)&dailyBudget=(amount:100.0,currencyCode:USD)&optimizationTargetType=MAX_REACH&audienceExpansionEnabled=true&offsiteDeliveryEnabled=true'.format(geo_id, new_key, ancestor_geo_id)
+    data_audiencecounts = 'q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&withValidation=true'.format(geo_id, new_key, ancestor_geo_id)
 
-    response = requests.post(
+
+    response_forecasting = requests.post(
         'https://www.linkedin.com/campaign-manager-api/campaignManagerForecasting',
         cookies=cookies,
         headers=headers,
-        data=data,
+        data=data_forecasting,
+    )
+
+    response_audiencecounts = requests.post(
+        'https://www.linkedin.com/campaign-manager-api/campaignManagerAudienceCounts',
+        cookies=cookies,
+        headers=headers,
+        data=data_audiencecounts,
     )
 
     # Show the response
     st.write('LinkedIn API response:')
-    # Extract the required information for month
-    parsed_data = json.loads(response.text)
+    # Extract the required information 
+    parsed_data_forecasting = json.loads(response_forecasting.text)
+    parsed_data_audiencecounts = json.loads(response_audiencecounts.text)
 
-    monthly_data = parsed_data['elements'][0]['monthly']
+    count_value = parsed_data_audiencecounts['elements'][0]['count']
+    st.write("Target audience size: ", count_value)
+
+
+    monthly_data = parsed_data_forecasting['elements'][0]['monthly']
     month_spend = f"${monthly_data['spend']['lowEnd']:.2f} - ${monthly_data['spend']['highEnd']:.2f}"
     month_reach = f"{monthly_data['reach']['lowEnd']} - {monthly_data['reach']['highEnd']}"
     month_cost_per_1000 = f"${monthly_data['costPerKeyResult']['lowEnd']:.2f} - ${monthly_data['costPerKeyResult']['highEnd']:.2f}"
     month_avg_frequency = f"{monthly_data['frequencyPerReachedMember']['lowEnd']:.1f} - {monthly_data['frequencyPerReachedMember']['highEnd']:.1f}"
 
     # Extract the required information for week
-    weekly_data = parsed_data['elements'][0]['weekly']
+    weekly_data = parsed_data_forecasting['elements'][0]['weekly']
     week_spend = f"${weekly_data['spend']['lowEnd']:.2f} - ${weekly_data['spend']['highEnd']:.2f}"
     week_reach = f"{weekly_data['reach']['lowEnd']} - {weekly_data['reach']['highEnd']}"
     week_cost_per_1000 = f"${weekly_data['costPerKeyResult']['lowEnd']:.2f} - ${weekly_data['costPerKeyResult']['highEnd']:.2f}"
     week_avg_frequency = f"{weekly_data['frequencyPerReachedMember']['lowEnd']:.1f} - {weekly_data['frequencyPerReachedMember']['highEnd']:.1f}"
 
     # Extract the required information for day
-    daily_data = parsed_data['elements'][0]['daily']
+    daily_data = parsed_data_forecasting['elements'][0]['daily']
     day_spend = f"${daily_data['spend']['lowEnd']:.2f} - ${daily_data['spend']['highEnd']:.2f}"
     day_reach = f"{daily_data['reach']['lowEnd']} - {daily_data['reach']['highEnd']}"
     day_cost_per_1000 = f"${daily_data['costPerKeyResult']['lowEnd']:.2f} - ${daily_data['costPerKeyResult']['highEnd']:.2f}"
     day_avg_frequency = f"{daily_data['frequencyPerReachedMember']['lowEnd']:.1f} - {daily_data['frequencyPerReachedMember']['highEnd']:.1f}"
 
     # Extract the required information for custom
-    custom_data = parsed_data['elements'][0]['custom']
+    custom_data = parsed_data_forecasting['elements'][0]['custom']
     custom_spend = f"${custom_data['spend']['lowEnd']:.2f} - ${custom_data['spend']['highEnd']:.2f}"
     custom_clicks = f"{custom_data['clicks']['lowEnd']} - {custom_data['clicks']['highEnd']}"
     custom_impressions = f"{custom_data['impressions']['lowEnd']} - {custom_data['impressions']['highEnd']}"
@@ -382,7 +396,7 @@ if st.button("Get Forecast"):
 
     data_as_csv= df.to_csv(index=False).encode("utf-8")
     st.download_button(
-        "Download data as CSV", 
+        "Download table as CSV", 
         data_as_csv, 
         f"{selected_country}.csv",
         "text/csv",
