@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 import json
 import pandas as pd
+import time
 
 cookies = {
     'bcookie': '"v=2&f54ea59a-febc-4eac-8157-57571cd2cbed"',
@@ -330,7 +331,10 @@ if st.button("Submit Request"):
     ancestor_geo_id = formatted_locationsegments.get(target_country)[2]
 
     # Define the LinkedIn API request data
-    data_forecasting = 'q=criteria&accountId=506462727&adFormats=List(STANDARD_SPONSORED_CONTENT)&runSchedule=(start:1677888000000)&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&objectiveType=BRAND_AWARENESS&costType=CPM&unitCost=(amount:50.79,currencyCode:USD)&dailyBudget=(amount:100.0,currencyCode:USD)&optimizationTargetType=MAX_REACH&audienceExpansionEnabled=true&offsiteDeliveryEnabled=true'.format(geo_id, new_key, ancestor_geo_id)
+    start_time = 1677974400000
+    st.write(start_time)
+    
+    data_forecasting = 'q=criteria&accountId=506462727&adFormats=List(STANDARD_SPONSORED_CONTENT)&runSchedule=(start:{})&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&objectiveType=BRAND_AWARENESS&costType=CPM&unitCost=(amount:50.79,currencyCode:USD)&dailyBudget=(amount:100.0,currencyCode:USD)&optimizationTargetType=MAX_REACH&audienceExpansionEnabled=true&offsiteDeliveryEnabled=true'.format(start_time, geo_id, new_key, ancestor_geo_id)
     data_audiencecounts = 'q=targetingCriteria&cmTargetingCriteria=(include:(and:List((or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales,name:Interface%20Locales),segments:List((urn:urn%3Ali%3Alocale%3Aen_US,name:English,facetUrn:urn%3Ali%3AadTargetingFacet%3AinterfaceLocales))))),(or:List((facet:(urn:urn%3Ali%3AadTargetingFacet%3Alocations,name:Locations),segments:List((urn:urn%3Ali%3Ageo%3A{},name:{},facetUrn:urn%3Ali%3AadTargetingFacet%3Alocations,ancestorUrns:List(urn%3Ali%3Ageo%3A{})))))))),exclude:(or:List()))&withValidation=true'.format(geo_id, new_key, ancestor_geo_id)
 
 
